@@ -1,0 +1,2 @@
+"""Pinned by the operator on 20 October 2026; never derive approval from disk."""
+APPROVED_EXE_SHA256 = 'DF4A8921C03CAA8C52D4F10D50863ED5B4EA2B56DA7EC5B45DE716F2787B1163'

@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "test": "touch draw and controlled save at DPR 2",
+      "count": 785,
+      "width": 480,
+      "cssWidth": 240,
+      "height": 220,
+      "changes": 1,
+      "saved": true
+    },
+    {
+      "test": "resize preserves ink without onChange",
+      "count": 591,
+      "width": 360,
+      "cssWidth": 180,
+      "height": 220,
+      "changes": 1,
+      "saved": true
+    },
+    {
+      "test": "landscape and DPR 3 preserve ink",
+      "count": 1466,
+      "width": 540,
+      "cssWidth": 180,
+      "height": 330,
+      "changes": 1,
+      "saved": true
+    },
+    {
+      "test": "computed coarse-pointer controls and input font",
+      "iconWidth": 48,
+      "iconHeight": 48,
+      "glyph": "22px",
+      "compactHeight": 44,
+      "input": "16px"
+    },
+    {
+      "test": "legacy print typography and icon dimensions",
+      "font": "15px",
+      "weight": "400",
+      "button": 32
+    },
+    {
+      "test": "clear signature",
+      "count": 0,
+      "width": 540,
+      "cssWidth": 180,
+      "height": 330,
+      "changes": 2,
+      "saved": false
+    },
+    {
+      "test": "restore existing signature image",
+      "count": 1425,
+      "width": 540,
+      "cssWidth": 180,
+      "height": 330,
+      "changes": 2,
+      "saved": false
+    },
+    {
+      "test": "real scale ticket print preview with synthetic data",
+      "width": 793.6875,
+      "display": "block",
+      "text": true
+    }
+  ],
+  "errors": []
+}

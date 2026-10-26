@@ -1,0 +1,6 @@
+{
+  "read_only": true,
+  "database": "postgresql",
+  "migration_applied": false,
+  "duplicate_active_order_groups": 0
+}

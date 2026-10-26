@@ -1,0 +1,1 @@
+import{t as e}from"./api-r9jFnkCv.js";var t=async(t,n)=>(await e.get(`shipping/${t}`,{params:n})).data,n=async(t,n={})=>(await e.post(`shipping/${t}`,n)).data,r=async(t,n)=>(await e.put(`shipping/operations/${t}/`,n)).data;export{t as n,n as r,r as t};

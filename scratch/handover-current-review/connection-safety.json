@@ -1,0 +1,6 @@
+{
+  "configured": true,
+  "https": true,
+  "tls_verification_enabled": false,
+  "live_requests_executed": false
+}

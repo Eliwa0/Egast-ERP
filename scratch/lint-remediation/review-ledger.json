@@ -1,0 +1,691 @@
+[
+  {
+    "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+    "line": 38,
+    "rule": "no-unused-vars",
+    "message": "'setApproveNotes' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/pages/CustomizationDetailPage.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/components/ui/ToastProvider.jsx",
+    "line": 78,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "status": "open",
+    "reason": "Provider/hook share a public module contract. Consumers in protected scope cannot be inspected or migrated under this authorization; no incompatible split or ESLint exception was applied.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx",
+      "frontend/src/hooks/useQualityWizardController.js",
+      "frontend/src/pages/DeliveriesPage.jsx",
+      "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "frontend/src/pages/DeliveryReviewPage.jsx",
+      "frontend/src/pages/GRPOPage.jsx",
+      "frontend/src/pages/GRPOReviewPage.jsx",
+      "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "frontend/src/pages/QualityReviewPage.jsx",
+      "frontend/src/pages/SalesOrdersPage.jsx",
+      "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "frontend/src/pages/SalesQuotationsPage.jsx",
+      "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "frontend/src/pages/ShippingDeliveryPage.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/contexts/AuthContext.jsx",
+    "line": 70,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "status": "open",
+    "reason": "Provider/hook share a public module contract. Consumers in protected scope cannot be inspected or migrated under this authorization; no incompatible split or ESLint exception was applied.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx",
+      "frontend/src/hooks/useRemoteOptions.js",
+      "frontend/src/pages/CreateUserPage.jsx",
+      "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "frontend/src/pages/DeliveriesPage.jsx",
+      "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "frontend/src/pages/Home.jsx",
+      "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "frontend/src/pages/IssueReviewPage.jsx",
+      "frontend/src/pages/IssueWizard.jsx",
+      "frontend/src/pages/LoginPage.jsx",
+      "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "frontend/src/pages/QualityReviewPage.jsx",
+      "frontend/src/pages/ReceiptReviewPage.jsx",
+      "frontend/src/pages/ReceiptWizard.jsx",
+      "frontend/src/pages/ReceivingInspectionWizard.jsx",
+      "frontend/src/pages/RulesHubPage.jsx",
+      "frontend/src/pages/SalesQuotationsPage.jsx",
+      "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "frontend/src/pages/ShippingLoadingPage.jsx",
+      "frontend/src/pages/ShippingReceivingPage.jsx",
+      "frontend/src/pages/TransferReviewPage.jsx",
+      "frontend/src/pages/TransferRulesPage.jsx",
+      "frontend/src/pages/UserManagementPage.jsx",
+      "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/contexts/I18nContext.jsx",
+    "line": 47,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "status": "open",
+    "reason": "Provider/hook share a public module contract. Consumers in protected scope cannot be inspected or migrated under this authorization; no incompatible split or ESLint exception was applied.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx",
+      "frontend/src/components/ProductionPalletCards.jsx",
+      "frontend/src/components/ProductionPalletTypesPanel.jsx",
+      "frontend/src/components/ShippingDeliveryHandoff.jsx",
+      "frontend/src/components/ShippingManifestSummary.jsx",
+      "frontend/src/hooks/useQualityWizardController.js",
+      "frontend/src/pages/ActivityLogPage.jsx",
+      "frontend/src/pages/CreateUserPage.jsx",
+      "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "frontend/src/pages/CustomizationDetailPage.jsx",
+      "frontend/src/pages/CustomizationPage.jsx",
+      "frontend/src/pages/DeliveriesPage.jsx",
+      "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "frontend/src/pages/DeliveryDetailPage.jsx",
+      "frontend/src/pages/DeliveryPage.jsx",
+      "frontend/src/pages/DeliveryReviewPage.jsx",
+      "frontend/src/pages/GRPOPage.jsx",
+      "frontend/src/pages/GRPOReviewPage.jsx",
+      "frontend/src/pages/Home.jsx",
+      "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "frontend/src/pages/IssueReviewPage.jsx",
+      "frontend/src/pages/IssueWizard.jsx",
+      "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "frontend/src/pages/LoginPage.jsx",
+      "frontend/src/pages/Production.jsx",
+      "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "frontend/src/pages/QualityLandingPage.jsx",
+      "frontend/src/pages/QualityReviewPage.jsx",
+      "frontend/src/pages/ReceiptReviewPage.jsx",
+      "frontend/src/pages/ReceiptWizard.jsx",
+      "frontend/src/pages/RulesHubPage.jsx",
+      "frontend/src/pages/SalesDocumentDetailPage.jsx",
+      "frontend/src/pages/SalesDocumentListPage.jsx",
+      "frontend/src/pages/SalesOrdersPage.jsx",
+      "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "frontend/src/pages/SalesQuotationsPage.jsx",
+      "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "frontend/src/pages/ShippingLoadingPage.jsx",
+      "frontend/src/pages/ShippingReceivingPage.jsx",
+      "frontend/src/pages/TransferReviewPage.jsx",
+      "frontend/src/pages/TransferRulesPage.jsx",
+      "frontend/src/pages/UserManagementPage.jsx",
+      "frontend/src/modules/transfer/components/ColdStorageMap.jsx",
+      "frontend/src/modules/transfer/components/PhysicalTransfer.jsx",
+      "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "frontend/src/components/customization/DocumentTraceabilityChain.jsx",
+      "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+      "frontend/src/components/ui/ActionIconButton.jsx",
+      "frontend/src/components/ui/AppLoadingOverlay.jsx",
+      "frontend/src/components/ui/AppPageLoader.jsx",
+      "frontend/src/components/ui/ConfirmDialog.jsx",
+      "frontend/src/components/ui/LoadingSkeleton.jsx",
+      "frontend/src/components/ui/RemoteAutocomplete.jsx",
+      "frontend/src/components/ui/SearchableSelect.jsx",
+      "frontend/src/components/ui/StagedDeleteDialog.jsx",
+      "frontend/src/components/ui/StandardDropdown.jsx",
+      "frontend/src/components/ui/ToastProvider.jsx",
+      "frontend/src/components/ui/WizardStepper.jsx",
+      "frontend/src/components/ui/WorkflowPagination.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/hooks/useCostCenterOptions.js",
+    "line": 44,
+    "rule": "react-hooks/set-state-in-effect",
+    "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  42 |\n  43 |   useEffect(() => {\n> 44 |     requestDimension(1);\n     |     ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  45 |     requestDimension(2);\n  46 |     return () => {\n  47 |       latestRequest.current = {};",
+    "status": "closed",
+    "reason": "Separate initial request from manual loading transition; token identity and real-browser lifecycle regression added.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "frontend/src/pages/PurchaseQuotationDraftPage.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/IssueReviewPage.jsx",
+    "line": 518,
+    "rule": "no-unused-vars",
+    "message": "'res' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 2,
+    "rule": "no-unused-vars",
+    "message": "'binSearch' is defined but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 71,
+    "rule": "no-unused-vars",
+    "message": "'loadingBins' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 71,
+    "rule": "no-unused-vars",
+    "message": "'setLoadingBins' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 1248,
+    "rule": "no-unused-vars",
+    "message": "'selectedBatchDetails' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 503,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has a missing dependency: 't'. Either include it or remove the dependency array.",
+    "status": "closed",
+    "reason": "Dependency repaired after checking consumers: event callback/export memo, guarded one-time effect, or stable filter-open/key subscription. No extra fetch dependency was added to loadDraftData.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 524,
+    "rule": "no-unused-vars",
+    "message": "'toggleOrderVisibility' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 577,
+    "rule": "no-unused-vars",
+    "message": "'hiddenCount' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 819,
+    "rule": "no-unused-vars",
+    "message": "'toggleUserVisibility' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 866,
+    "rule": "no-unused-vars",
+    "message": "'hiddenCount' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 1038,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has a missing dependency: 't'. Either include it or remove the dependency array.",
+    "status": "closed",
+    "reason": "Dependency repaired after checking consumers: event callback/export memo, guarded one-time effect, or stable filter-open/key subscription. No extra fetch dependency was added to loadDraftData.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 1079,
+    "rule": "no-unused-vars",
+    "message": "'filteredWarehouses' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 1268,
+    "rule": "no-unused-vars",
+    "message": "'warehouseDropdownOpen' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 1421,
+    "rule": "no-unused-vars",
+    "message": "'selectedWhLabel' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "line": 356,
+    "rule": "no-unused-vars",
+    "message": "'canApproveForPosting' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "line": 422,
+    "rule": "no-unused-vars",
+    "message": "'currentValue' is assigned a value but never used.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "line": 1261,
+    "rule": "no-unused-vars",
+    "message": "'handleApproveForPosting' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 120,
+    "rule": "no-unused-vars",
+    "message": "'location' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 131,
+    "rule": "no-unused-vars",
+    "message": "'errors' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 145,
+    "rule": "no-unused-vars",
+    "message": "'currencies' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 537,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has missing dependencies: 'vendorCardCode' and 'vendorName'. Either include them or remove the dependency array.",
+    "status": "open",
+    "reason": "Vendor state participates in loadDraftData fallback, which is called from an effect. Blind dependency insertion risks reloading/overwriting vendor edits; unchanged pending lifecycle coverage.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 688,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useEffect has a missing dependency: 'openFilter'. Either include it or remove the dependency array.",
+    "status": "closed",
+    "reason": "Dependency repaired after checking consumers: event callback/export memo, guarded one-time effect, or stable filter-open/key subscription. No extra fetch dependency was added to loadDraftData.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 1372,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has a missing dependency: 'itemDescMap'. Either include it or remove the dependency array.",
+    "status": "closed",
+    "reason": "Dependency repaired after checking consumers: event callback/export memo, guarded one-time effect, or stable filter-open/key subscription. No extra fetch dependency was added to loadDraftData.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 1524,
+    "rule": "no-unused-vars",
+    "message": "'err' is defined but never used.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 1545,
+    "rule": "no-unused-vars",
+    "message": "'err' is defined but never used.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 1774,
+    "rule": "no-unused-vars",
+    "message": "'err' is defined but never used.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 2132,
+    "rule": "no-unused-vars",
+    "message": "'isFirst' is defined but never used.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 15,
+    "rule": "no-unused-vars",
+    "message": "'escapeHtml' is defined but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 357,
+    "rule": "no-unused-vars",
+    "message": "'nextBatchReservation' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 438,
+    "rule": "no-unused-vars",
+    "message": "'remainingQty' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 595,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useEffect has a missing dependency: 'user'. Either include it or remove the dependency array.",
+    "status": "closed",
+    "reason": "Dependency repaired after checking consumers: event callback/export memo, guarded one-time effect, or stable filter-open/key subscription. No extra fetch dependency was added to loadDraftData.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 994,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has a missing dependency: 't'. Either include it or remove the dependency array.",
+    "status": "closed",
+    "reason": "Dependency repaired after checking consumers: event callback/export memo, guarded one-time effect, or stable filter-open/key subscription. No extra fetch dependency was added to loadDraftData.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1034,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useMemo has an unnecessary dependency: 'statusFilter'. Either exclude it or remove the dependency array.",
+    "status": "closed",
+    "reason": "Dependency repaired after checking consumers: event callback/export memo, guarded one-time effect, or stable filter-open/key subscription. No extra fetch dependency was added to loadDraftData.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1047,
+    "rule": "no-unused-vars",
+    "message": "'getInitialField' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1051,
+    "rule": "no-unused-vars",
+    "message": "'currentValue' is assigned a value but never used.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1213,
+    "rule": "no-unused-vars",
+    "message": "'batchTotalsMatch' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1876,
+    "rule": "no-unused-vars",
+    "message": "'subStepPrev' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1978,
+    "rule": "no-unused-vars",
+    "message": "'attrHasCards' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/SalesDocumentListPage.jsx",
+    "line": 24,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "status": "closed",
+    "reason": "Formatting helpers moved into a utility module; existing detail consumer updated, outputs regression-tested.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/pages/CustomizationPage.jsx",
+      "frontend/src/pages/DeliveryPage.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/SalesDocumentListPage.jsx",
+    "line": 31,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "status": "closed",
+    "reason": "Formatting helpers moved into a utility module; existing detail consumer updated, outputs regression-tested.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/pages/CustomizationPage.jsx",
+      "frontend/src/pages/DeliveryPage.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/pages/UserManagementPage.jsx",
+    "line": 407,
+    "rule": "no-unused-vars",
+    "message": "'StatIcon' is defined but never used.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/App.jsx"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  },
+  {
+    "file": "frontend/src/services/purchaseGrpoService.js",
+    "line": 205,
+    "rule": "no-unused-vars",
+    "message": "'err' is defined but never used.",
+    "status": "closed",
+    "reason": "Preserve hook/initializer evaluation; remove unreferenced lexical binding. Functions never invoked by any binding consumer were removed; positional batch argument compatibility preserved with an elided rest tuple.",
+    "nonprotected_direct_consumers": [
+      "frontend/src/hooks/useCostCenterOptions.js",
+      "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "frontend/src/pages/GRPOPage.jsx",
+      "frontend/src/pages/GRPOReviewPage.jsx",
+      "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "frontend/src/services/purchaseQuotationService.js"
+    ],
+    "protected_consumers": "Not inspected; no protected source read for consumer search"
+  }
+]

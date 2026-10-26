@@ -1,0 +1,1298 @@
+[
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 2,
+    "after_requests": 2,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2
+    }
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/customization/drafts/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 3,
+    "after_requests": 3,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/customization-delivery/orders/')": 1
+    }
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 6,
+    "after_requests": 6,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('GET', '/api/shipping/deliveries/')": 2,
+      "('GET', '/api/customization-delivery/delivery/eligible-orders/')": 1,
+      "('GET', '/api/customization-delivery/delivery/drafts/')": 1
+    }
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "before_requests": 10,
+    "after_requests": 10,
+    "same_method_path_counts": true,
+    "before": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    },
+    "after": {
+      "('GET', '/api/me/')": 2,
+      "('POST', '/api/shipping/operations/discover/')": 2,
+      "('GET', '/api/shipping/operations/')": 2,
+      "('GET', '/api/shipping/elements/')": 2,
+      "('GET', '/api/shipping/orders/')": 2
+    }
+  }
+]

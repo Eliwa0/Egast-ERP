@@ -1,0 +1,10 @@
+[
+  {
+    "source": "purchaseQuotationService.js:52",
+    "error": "ReferenceError: loadCostCenters is not defined"
+  },
+  {
+    "source": "DeliveryWorkflowPanel.jsx:531",
+    "error": "ReferenceError: lang is not defined"
+  }
+]

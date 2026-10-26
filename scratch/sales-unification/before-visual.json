@@ -1,0 +1,4322 @@
+[
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-320-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-320-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-320-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-320-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-320-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-320-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-768-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-768-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-768-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-768-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-768-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-768-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-1440-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-1440-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-1440-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-1440-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-1440-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-light-1440-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-320-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-320-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-320-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-320-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-320-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-320-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-768-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-768-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-768-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-768-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-768-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-768-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-1440-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-1440-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-1440-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-1440-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-1440-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "en",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "ltr"
+    },
+    "image": "images/before-en-dark-1440-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-320-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-320-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-320-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-320-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-320-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "light",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-320-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-768-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-768-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-768-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-768-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-768-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "light",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-768-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-1440-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-1440-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-1440-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-1440-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-1440-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "light",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(255, 255, 255)",
+        "border": "rgb(217, 226, 236)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-light-1440-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-320-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-320-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-320-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-320-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-320-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 320,
+    "height": 640,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-320-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-768-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-768-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-768-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-768-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-768-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 768,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "10px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-768-shipping-loading.png"
+  },
+  {
+    "route": "/production",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-1440-production.png"
+  },
+  {
+    "route": "/quality",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "8px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-1440-quality.png"
+  },
+  {
+    "route": "/customization-delivery/quotations",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/customization/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-1440-customization-delivery_quotations.png"
+  },
+  {
+    "route": "/customization-delivery/orders",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-1440-customization-delivery_orders.png"
+  },
+  {
+    "route": "/customization-delivery/deliveries",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/shipping/deliveries/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/eligible-orders/"
+      ],
+      [
+        "GET",
+        "/api/customization-delivery/delivery/drafts/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-1440-customization-delivery_deliveries.png"
+  },
+  {
+    "route": "/shipping-loading",
+    "lang": "ar",
+    "theme": "dark",
+    "width": 1440,
+    "height": 900,
+    "horizontal_overflow": false,
+    "errors": [],
+    "console": [],
+    "calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/2002/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/10/"
+      ]
+    ],
+    "initial_calls": [
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "GET",
+        "/api/me/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "POST",
+        "/api/shipping/operations/discover/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ],
+      [
+        "GET",
+        "/api/shipping/operations/"
+      ],
+      [
+        "GET",
+        "/api/shipping/elements/"
+      ],
+      [
+        "GET",
+        "/api/shipping/orders/"
+      ]
+    ],
+    "metrics": {
+      "card": {
+        "radius": "12px",
+        "background": "rgb(23, 32, 51)",
+        "border": "rgb(43, 58, 80)"
+      },
+      "header": "16px",
+      "dir": "rtl"
+    },
+    "image": "images/before-ar-dark-1440-shipping-loading.png"
+  }
+]

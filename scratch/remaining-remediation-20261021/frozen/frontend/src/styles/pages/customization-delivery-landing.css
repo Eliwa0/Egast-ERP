@@ -1,0 +1,136 @@
+/* Customization & Delivery landing layout. Card visuals come from the shared
+   Home / Production design system. */
+
+.customization-delivery-page .three-cards-grid {
+  width: min(1100px, 100%);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.customization-delivery-page .module-card {
+  height: 100%;
+}
+
+.customization-delivery-page .step-badge {
+  position: absolute;
+  top: 12px;
+  inset-inline-end: 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--bg-primary-soft);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.customization-delivery-page .nav-card {
+  height: 100%;
+}
+
+html[data-theme='dark'] .sales-quotations-empty-state {
+  background: var(--bg-elevated) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+html[data-theme='dark'] .sales-quotations-empty-state__title {
+  color: var(--text) !important;
+}
+
+html[data-theme='dark'] .sales-quotations-empty-state__description {
+  color: var(--text-muted) !important;
+}
+
+html[data-theme='dark'] .sales-quotations-empty-state__icon {
+  background: var(--bg-primary-soft) !important;
+  color: var(--primary) !important;
+}
+
+html[data-theme='dark'] .sales-quotations-empty-state .app-button--secondary {
+  background: var(--bg-soft);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+html[data-theme='dark'] .sales-quotations-empty-state .app-button--primary {
+  background: var(--primary);
+  color: var(--on-accent, #ffffff);
+}
+
+/* Quotation Cards in Sales Quotations Page */
+.quotations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.quotation-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.quotation-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+html[data-theme='dark'] .quotation-card {
+  background: var(--bg-elevated);
+  border-color: var(--border);
+  color: var(--text);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme='dark'] .quotation-card:hover {
+  border-color: var(--border-strong);
+}
+
+.quotation-card__metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+html[data-theme='dark'] .quotation-card__metrics {
+  background: var(--bg-soft);
+  border-color: var(--border);
+}
+
+@media (max-width: 900px) {
+  .customization-delivery-page .three-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .customization-delivery-page .three-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .quotations-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}

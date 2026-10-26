@@ -1,0 +1,61 @@
+{
+  "completed": true,
+  "results": [
+    {
+      "state": "mobile-navigation",
+      "route": "/scale/devices",
+      "width": 390,
+      "height": 320,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 390,
+        "scroll": 390,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Scale Devices & Indicators",
+            "size": "21.6px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-390-mobile-navigation.png"
+    },
+    {
+      "state": "mobile-review-menu",
+      "route": "/scale/devices",
+      "width": 390,
+      "height": 320,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 390,
+        "scroll": 390,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Scale Devices & Indicators",
+            "size": "21.6px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-390-mobile-review-menu.png"
+    }
+  ],
+  "failures": [
+    {
+      "lang": "en",
+      "theme": "light",
+      "width": 390,
+      "height": 320,
+      "route": "http://127.0.0.1:5173/scale/devices",
+      "error": "Locator expected to be visible\nActual value: hidden \nCall log:\n  - Expect \"to_be_visible\" with timeout 5000ms\n  - waiting for locator(\".app-toolbar__actions > .toolbar-review-menu:not(.toolbar-review-menu--review) > button\").first.locator(\"..\").locator(\":scope > .toolbar-review-menu__list\")\n    9 × locator resolved to <div class=\"toolbar-review-menu__list\">…</div>\n      - unexpected value \"hidden\"\n",
+      "exceptions": [],
+      "writes": []
+    }
+  ]
+}

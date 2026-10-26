@@ -1,0 +1,85 @@
+{
+  "database": "postgresql",
+  "run": 14,
+  "failures": [],
+  "errors": [
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_delivery_api_endpoints_permissions",
+      "trace": "Traceback (most recent call last):\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\backends\\utils.py\", line 105, in _execute\n    return self.cursor.execute(sql, params)\n           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\npsycopg2.errors.UniqueViolation: duplicate key value violates unique constraint \"delivery_one_active_order\"\nDETAIL:  Key (sales_order_doc_entry)=(2001) already exists.\n\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\api\\tests_delivery_workflow.py\", line 309, in test_delivery_api_endpoints_permissions\n    draft = DeliveryDraft.objects.create(\n        sales_order_doc_entry=2001,\n    ...<4 lines>...\n        doc_due_date=date(2026, 10, 10),\n    )\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\models\\manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\models\\query.py\", line 669, in create\n    obj.save(force_insert=True, using=self.db)\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\models\\base.py\", line 874, in save\n    self.save_base(\n    ~~~~~~~~~~~~~~^\n        using=using,\n        ^^^^^^^^^^^^\n    ...<2 lines>...\n        update_fields=update_fields,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\models\\base.py\", line 966, in save_base\n    updated = self._save_table(\n        raw,\n    ...<4 lines>...\n        update_fields,\n    )\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\models\\base.py\", line 1169, in _save_table\n    results = self._do_insert(\n        cls._base_manager, using, insert_fields, returning_fields, raw\n    )\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\models\\base.py\", line 1220, in _do_insert\n    return manager._insert(\n           ~~~~~~~~~~~~~~~^\n        [self],\n        ^^^^^^^\n    ...<3 lines>...\n        raw=raw,\n        ^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\models\\manager.py\", line 87, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\models\\query.py\", line 1918, in _insert\n    return query.get_compiler(using=using).execute_sql(returning_fields)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\models\\sql\\compiler.py\", line 1925, in execute_sql\n    cursor.execute(sql, params)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\backends\\utils.py\", line 79, in execute\n    return self._execute_with_wrappers(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        sql, params, many=False, executor=self._execute\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\backends\\utils.py\", line 92, in _execute_with_wrappers\n    return executor(sql, params, many, context)\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\backends\\utils.py\", line 100, in _execute\n    with self.db.wrap_database_errors:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\utils.py\", line 94, in __exit__\n    raise dj_exc_value.with_traceback(traceback) from exc_value\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Lib\\site-packages\\django\\db\\backends\\utils.py\", line 105, in _execute\n    return self.cursor.execute(sql, params)\n           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\ndjango.db.utils.IntegrityError: duplicate key value violates unique constraint \"delivery_one_active_order\"\nDETAIL:  Key (sales_order_doc_entry)=(2001) already exists.\n\n"
+    }
+  ],
+  "skipped": [],
+  "unexpected_http": [],
+  "cases": [
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_calculate_line_open_quantity",
+      "ms": 14.96,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_closed_order_rejection",
+      "ms": 7.46,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_create_draft_from_sales_order",
+      "ms": 21.18,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_delivery_api_endpoints_permissions",
+      "ms": 63.49,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_duplicate_active_delivery_draft_prevention",
+      "ms": 17.73,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_list_available_batches_endpoint",
+      "ms": 25.62,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_live_open_qty_re_verification_detects_concurrency_conflict",
+      "ms": 33.82,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_manager_review_lifecycle",
+      "ms": 24.66,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_native_delivery_note_posting",
+      "ms": 56.15,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_over_delivery_rejection",
+      "ms": 19.89,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_update_draft_and_batch_allocations",
+      "ms": 34.02,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_creation_concurrency.DeliveryCreationConcurrencyTests.test_same_order_initialization_has_one_winner",
+      "ms": 178.83,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_shipping_handoff.ShippingConcurrencyTests.test_concurrent_delivery_creation_returns_one_draft",
+      "ms": 745.5,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_shipping_handoff.ShippingConcurrencyTests.test_concurrent_submission_records_each_pallet_once",
+      "ms": 672.21,
+      "unexpected_http": 0
+    }
+  ]
+}

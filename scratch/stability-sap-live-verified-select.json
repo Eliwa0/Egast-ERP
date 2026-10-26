@@ -1,0 +1,1211 @@
+{
+  "read_only": true,
+  "measurements": [
+    {
+      "label": "SAP authentication",
+      "samples": [
+        {
+          "ms": 8318.32,
+          "blocked_operations": 0,
+          "sap_calls": 1,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 8318.32
+    },
+    {
+      "label": "ProductionOrders first 5 rows",
+      "samples": [
+        {
+          "ms": 471.24,
+          "blocked_operations": 0,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 471.24
+    },
+    {
+      "label": "Warehouse lookup cold",
+      "samples": [
+        {
+          "ms": 312.69,
+          "blocked_operations": 0,
+          "sap_calls": 1,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 312.69
+    },
+    {
+      "label": "Warehouse lookup warm",
+      "samples": [
+        {
+          "ms": 1.62,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 1.06,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.95,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 1.11,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.82,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 1.06
+    },
+    {
+      "label": "Purchase currency lookup cold",
+      "samples": [
+        {
+          "ms": 399.52,
+          "blocked_operations": 0,
+          "sap_calls": 1,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 399.52
+    },
+    {
+      "label": "Purchase currency lookup warm",
+      "samples": [
+        {
+          "ms": 1.11,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.68,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.81,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.87,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.65,
+          "blocked_operations": 0,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 0.81
+    },
+    {
+      "label": "Production order detail and tracking flags cold",
+      "samples": [
+        {
+          "ms": 1766.97,
+          "blocked_operations": 0,
+          "sap_calls": 6,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 1766.97
+    },
+    {
+      "label": "Production order detail and tracking flags warm",
+      "samples": [
+        {
+          "ms": 1404.7,
+          "blocked_operations": 0,
+          "sap_calls": 6,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 933.51,
+          "blocked_operations": 0,
+          "sap_calls": 6,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 1010.03,
+          "blocked_operations": 0,
+          "sap_calls": 6,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 932.26,
+          "blocked_operations": 0,
+          "sap_calls": 6,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 1387.95,
+          "blocked_operations": 0,
+          "sap_calls": 6,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 1010.03
+    }
+  ],
+  "http": [
+    {
+      "method": "POST",
+      "entity": "Login",
+      "status": 200,
+      "ms": 8318.04
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 469.37
+    },
+    {
+      "method": "GET",
+      "entity": "Warehouses",
+      "status": 200,
+      "ms": 170.24
+    },
+    {
+      "method": "GET",
+      "entity": "Currencies",
+      "status": 200,
+      "ms": 392.78
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 402.94
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 123.95
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 154.21
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 533.67
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 267.81
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 281.76
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 185.74
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 217.9
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 141.59
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 421.44
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 294.98
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 139.61
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 216.54
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 139.6
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 124.16
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 139.85
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.28
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.55
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 201.18
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 185.9
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 170.59
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 140.44
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 154.73
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 154.99
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 188.01
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 122.57
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 154.63
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 140.54
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 199.82
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 124.11
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 202.08
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 295.15
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 264.41
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 313.11
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 156.52
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 154.38
+    }
+  ],
+  "blocked": [],
+  "tracking_flag_shapes": [
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tNO",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tNO",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tNO",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tNO",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tNO",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tNO",
+      "ManageSerialNumbers": "tNO"
+    }
+  ],
+  "endpoint_metrics": [
+    {
+      "request_id": "df1b3453e970409bb14f618a4921bc8f",
+      "sap_requests": 1,
+      "sap_ms": 170.32,
+      "sap_records": 10,
+      "sap_pages": 1,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "Warehouses",
+          "method": "GET",
+          "ms": 170.32,
+          "rows": 10
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 1,
+      "cache_loader": 1,
+      "cache_wait": 0,
+      "total_ms": 174.11,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 3.79
+    },
+    {
+      "request_id": "595da0c39e434a00a347009792a77789",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.67,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.67
+    },
+    {
+      "request_id": "d7ac83811878447eaf57ee6a1a5f57e2",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.45,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.45
+    },
+    {
+      "request_id": "6e8f9b8b00444df397ae72a5e1f944bb",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.41,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.41
+    },
+    {
+      "request_id": "4afea0de391f4906b73c195d6288efde",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.58,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.58
+    },
+    {
+      "request_id": "26c6ac396b62499f805113cf99d3f1e8",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.34,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.34
+    },
+    {
+      "request_id": "7bec24cf8c0b4397932e5ba22471602c",
+      "sap_requests": 1,
+      "sap_ms": 392.83,
+      "sap_records": 11,
+      "sap_pages": 1,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "Currencies",
+          "method": "GET",
+          "ms": 392.83,
+          "rows": 11
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 1,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 393.56,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.74
+    },
+    {
+      "request_id": "f3c43d6d4eb047d88d71599ecc5d668b",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.42,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.42
+    },
+    {
+      "request_id": "4ba2358055af477a98eede24ec846cf4",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.25,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.25
+    },
+    {
+      "request_id": "7acf9659fd9d45ba8afc7f4cad74c498",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.23,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.23
+    },
+    {
+      "request_id": "2ba5338161a34f1fbd2dfa791eefa7a0",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.26,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.26
+    },
+    {
+      "request_id": "41306fca99724fb3aba3135dfbcefe50",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.25,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.25
+    },
+    {
+      "request_id": "2c93afb07cfe48cab6b231e4d5e286c6",
+      "sap_requests": 6,
+      "sap_ms": 1764.59,
+      "sap_records": 11,
+      "sap_pages": 3,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "ProductionOrders",
+          "method": "GET",
+          "ms": 402.99,
+          "rows": 1
+        },
+        {
+          "entity": "Items",
+          "method": "GET",
+          "ms": 124.01,
+          "rows": 8
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 154.25,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 533.72,
+          "rows": 0
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 267.84,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 281.79,
+          "rows": 0
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 1766.15,
+      "status": 200,
+      "route": "api/production-orders/<int:doc_entry>/",
+      "django_other_ms": 1.56
+    },
+    {
+      "request_id": "65628bdf8aab4be3af612164996bd9f1",
+      "sap_requests": 6,
+      "sap_ms": 1401.44,
+      "sap_records": 11,
+      "sap_pages": 3,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "ProductionOrders",
+          "method": "GET",
+          "ms": 185.77,
+          "rows": 1
+        },
+        {
+          "entity": "Items",
+          "method": "GET",
+          "ms": 217.93,
+          "rows": 8
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 141.62,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 421.47,
+          "rows": 0
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 295.01,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 139.64,
+          "rows": 0
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 1403.6,
+      "status": 200,
+      "route": "api/production-orders/<int:doc_entry>/",
+      "django_other_ms": 2.16
+    },
+    {
+      "request_id": "acfc684b3b93494aa6ad85bd28b769fa",
+      "sap_requests": 6,
+      "sap_ms": 931.16,
+      "sap_records": 11,
+      "sap_pages": 3,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "ProductionOrders",
+          "method": "GET",
+          "ms": 216.57,
+          "rows": 1
+        },
+        {
+          "entity": "Items",
+          "method": "GET",
+          "ms": 139.64,
+          "rows": 8
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 124.19,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 139.88,
+          "rows": 0
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 155.3,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 155.58,
+          "rows": 0
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 932.66,
+      "status": 200,
+      "route": "api/production-orders/<int:doc_entry>/",
+      "django_other_ms": 1.5
+    },
+    {
+      "request_id": "30dd6de0addd4c5f9c6bc9bf9db30c6e",
+      "sap_requests": 6,
+      "sap_ms": 1007.98,
+      "sap_records": 11,
+      "sap_pages": 3,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "ProductionOrders",
+          "method": "GET",
+          "ms": 201.2,
+          "rows": 1
+        },
+        {
+          "entity": "Items",
+          "method": "GET",
+          "ms": 185.92,
+          "rows": 8
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 170.61,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 140.47,
+          "rows": 0
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 154.76,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 155.02,
+          "rows": 0
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 1009.25,
+      "status": 200,
+      "route": "api/production-orders/<int:doc_entry>/",
+      "django_other_ms": 1.26
+    },
+    {
+      "request_id": "98c822a0da34442e9e3938610c6a011c",
+      "sap_requests": 6,
+      "sap_ms": 929.86,
+      "sap_records": 11,
+      "sap_pages": 3,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "ProductionOrders",
+          "method": "GET",
+          "ms": 188.05,
+          "rows": 1
+        },
+        {
+          "entity": "Items",
+          "method": "GET",
+          "ms": 122.6,
+          "rows": 8
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 154.66,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 140.59,
+          "rows": 0
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 199.84,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 124.13,
+          "rows": 0
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 931.38,
+      "status": 200,
+      "route": "api/production-orders/<int:doc_entry>/",
+      "django_other_ms": 1.51
+    },
+    {
+      "request_id": "7d6158df0b82441ea4eb1af27b664cdf",
+      "sap_requests": 6,
+      "sap_ms": 1385.81,
+      "sap_records": 11,
+      "sap_pages": 3,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "ProductionOrders",
+          "method": "GET",
+          "ms": 202.11,
+          "rows": 1
+        },
+        {
+          "entity": "Items",
+          "method": "GET",
+          "ms": 295.17,
+          "rows": 8
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 264.44,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 313.13,
+          "rows": 0
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "GET",
+          "ms": 156.55,
+          "rows": 1
+        },
+        {
+          "entity": "SQLQueries",
+          "method": "POST",
+          "ms": 154.41,
+          "rows": 0
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 1387.14,
+      "status": 200,
+      "route": "api/production-orders/<int:doc_entry>/",
+      "django_other_ms": 1.33
+    }
+  ],
+  "limitations": "Five sequential samples; no production p95, load test or browser render timings."
+}

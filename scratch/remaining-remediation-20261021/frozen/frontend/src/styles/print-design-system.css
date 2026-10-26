@@ -1,0 +1,523 @@
+/* EGAST Print Design System
+   Shared visual language for browser-generated ERP documents. */
+:root {
+  --print-navy: #163a5f;
+  --print-dark: #0f2942;
+  --print-success: #2e7d32;
+  --print-danger: #c62828;
+  --print-neutral-50: #f8fafc;
+  --print-neutral-100: #f1f5f9;
+  --print-neutral-200: #e2e8f0;
+  --print-neutral-300: #cbd5e1;
+  --print-neutral-500: #64748b;
+  --print-ink: #111827;
+}
+
+.print-document-barcode-card {
+  display: flex;
+  width: 62mm;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  direction: ltr;
+  margin-top: 1mm;
+  padding: 1mm 1.5mm .8mm;
+  box-sizing: border-box;
+  border: 1px solid var(--print-neutral-200);
+  border-radius: 2px;
+  background: #fff;
+  color: #000;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.print-document-barcode-label {
+  color: #000;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: .35px;
+  line-height: 1.2;
+}
+
+.print-document-barcode-svg {
+  width: 100%;
+  max-width: 60mm;
+  height: 12mm;
+  flex: 0 0 12mm;
+  margin: .6mm auto 0;
+  overflow: hidden;
+  background: #fff;
+  line-height: 0;
+}
+
+.print-document-barcode-svg svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.print-document-barcode-number {
+  display: block;
+  flex: 0 0 auto;
+  position: static;
+  margin-top: 1mm;
+  color: #000;
+  font-family: Arial, 'Segoe UI', sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.quality-print-sheet {
+  color: var(--print-ink);
+  background: #fff;
+  font-family: 'Cairo', Arial, 'Segoe UI', sans-serif;
+}
+
+.quality-print-sheet .report-print-logo-row {
+  align-items: center;
+  margin-bottom: 3mm;
+  padding-bottom: 2.5mm;
+  border-bottom: 2px solid var(--print-navy);
+}
+
+.quality-print-sheet .report-header-logo {
+  width: 16mm;
+  height: 16mm;
+  object-fit: contain;
+}
+
+.quality-print-sheet .report-header-text h2,
+.quality-print-sheet .quality-report-title h1 {
+  color: var(--print-dark);
+}
+
+.quality-print-sheet .report-header-text p,
+.quality-print-sheet .quality-report-title span,
+.quality-print-sheet .report-no-lbl {
+  color: var(--print-neutral-500);
+}
+
+.quality-print-sheet .quality-report-identity {
+  min-width: 46mm;
+  padding-inline-start: 3mm;
+  border-inline-start: 1px solid var(--print-neutral-200);
+}
+
+.quality-print-sheet .quality-report-title {
+  margin-bottom: 3mm;
+  padding: 1.5mm 2mm;
+  background: var(--print-neutral-100);
+  border-block: 1px solid var(--print-neutral-200);
+}
+
+.quality-print-sheet .quality-report-title h1 {
+  margin: 0 0 .5mm;
+  font-size: 18px;
+}
+
+.quality-print-sheet .quality-report-title span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .4px;
+}
+
+.quality-print-sheet .quality-section-header {
+  margin: 2.5mm 0 1.5mm;
+  padding: 1mm 2mm;
+  color: var(--print-dark);
+  background: var(--print-neutral-100);
+  border: 0;
+  border-inline-start: 3px solid var(--print-navy);
+  font-size: 12px;
+}
+
+.quality-print-sheet .report-info-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5mm;
+  margin-bottom: 2.5mm;
+  padding: 2mm;
+  background: #fff;
+  border: 1px solid var(--print-neutral-300);
+  border-radius: 3px;
+}
+
+.quality-print-sheet .report-info-grid .info-cell {
+  min-width: 0;
+  padding: 1mm 1.5mm;
+  border-inline-start: 2px solid var(--print-neutral-200);
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+
+.quality-print-sheet .report-kpi-row {
+  gap: 1.5mm;
+  margin-bottom: 2.5mm;
+}
+
+.quality-print-sheet .kpi-mini-box {
+  min-width: 0;
+  padding: 1.5mm;
+  background: var(--print-neutral-50);
+  border: 1px solid var(--print-neutral-200);
+  border-top: 2px solid var(--print-navy);
+  border-radius: 3px;
+}
+
+.quality-print-sheet table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.quality-print-sheet table th {
+  color: #fff;
+  background: var(--print-navy);
+  border-color: var(--print-navy);
+}
+
+.quality-print-sheet table td {
+  color: var(--print-ink);
+  border-color: var(--print-neutral-300);
+}
+
+.quality-print-sheet .report-signature-row,
+.quality-print-sheet .report-print-footer {
+  border-top-color: var(--print-neutral-300);
+}
+
+.delivery-print-sheet {
+  color: var(--print-ink);
+  background: #fff;
+  font-family: 'Cairo', Arial, 'Segoe UI', sans-serif;
+}
+
+.delivery-print-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.5mm;
+  border-bottom: 2px solid var(--print-navy);
+}
+
+.delivery-print-header .report-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 3mm;
+}
+
+.delivery-print-header .report-header-text h2,
+.delivery-print-header .report-header-text p,
+.delivery-print-title h1,
+.delivery-print-title span {
+  margin: 0;
+}
+
+.delivery-print-title {
+  margin: 2.5mm 0;
+  padding: 2mm;
+  text-align: center;
+  background: var(--print-neutral-100);
+  border-block: 1px solid var(--print-neutral-200);
+}
+
+.delivery-print-title h1 {
+  color: var(--print-dark);
+  font-size: 18px;
+}
+
+.delivery-print-title span {
+  color: var(--print-neutral-500);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.delivery-print-scope {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1mm 4mm;
+  margin: 0 0 2mm;
+  color: var(--print-ink);
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.delivery-print-scope strong {
+  color: var(--print-dark);
+}
+
+.delivery-print-filter-grid,
+.delivery-print-identity {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.5mm;
+}
+
+.delivery-print-filter-grid > div {
+  padding: 1.5mm;
+  border: 1px solid var(--print-neutral-300);
+  background: #fff;
+}
+
+.delivery-print-filter-grid span,
+.delivery-print-filter-grid strong,
+.delivery-print-identity .cell-lbl,
+.delivery-print-identity strong {
+  display: block;
+}
+
+.delivery-print-filter-grid span,
+.delivery-print-identity .cell-lbl {
+  color: var(--print-neutral-500);
+  font-size: 8px;
+}
+
+.delivery-print-filter-grid strong,
+.delivery-print-identity strong {
+  color: var(--print-ink);
+  font-size: 9px;
+}
+
+.delivery-print-kpis {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.5mm;
+}
+
+.delivery-print-kpis .kpi-mini-box {
+  text-align: center;
+}
+
+.delivery-print-kpis strong,
+.delivery-print-kpis span {
+  display: block;
+}
+
+.delivery-print-kpis strong {
+  margin-top: .5mm;
+  color: var(--print-dark);
+  font-size: 14px;
+}
+
+.delivery-print-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2mm 3mm;
+}
+
+.delivery-print-section {
+  min-width: 0;
+  break-inside: avoid;
+}
+
+.delivery-print-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.delivery-print-table thead {
+  display: table-header-group;
+}
+
+.delivery-print-table tr {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.delivery-print-table th,
+.delivery-print-table td {
+  padding: 1.2mm 1.5mm;
+  border: 1px solid var(--print-neutral-300);
+  color: var(--print-ink);
+  background: #fff;
+  font-size: 8px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.delivery-print-table th {
+  color: #fff;
+  background: var(--print-navy);
+  font-weight: 800;
+}
+
+.delivery-print-note {
+  margin-top: 3mm;
+  padding: 2mm;
+  color: var(--print-ink);
+  border: 1px solid var(--print-neutral-300);
+  background: var(--print-neutral-50);
+  font-size: 9px;
+}
+
+.delivery-print-footer {
+  margin-top: 3mm;
+  padding-top: 1.5mm;
+  color: var(--print-neutral-500);
+  border-top: 1px solid var(--print-neutral-300);
+  font-size: 8px;
+  text-align: center;
+}
+
+@media print {
+  .a4-print-sheet,
+  .gp-doc,
+  .sr-doc,
+  .final-weight-label {
+    color: var(--print-ink) !important;
+    background: #fff !important;
+    font-family: 'Cairo', Arial, 'Segoe UI', sans-serif !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .report-print-logo-row {
+    align-items: center !important;
+    border-bottom: 2px solid var(--print-navy) !important;
+  }
+
+  .report-header-logo {
+    width: 16mm !important;
+    height: 16mm !important;
+    max-height: 16mm !important;
+    object-fit: contain !important;
+  }
+
+  .report-header-text h2 {
+    color: var(--print-dark) !important;
+    font-weight: 800 !important;
+    letter-spacing: -.1px !important;
+  }
+
+  .report-header-text p,
+  .report-no-lbl,
+  .report-main-title span,
+  .cell-lbl,
+  .kpi-lbl {
+    color: var(--print-neutral-500) !important;
+  }
+
+  .report-doc-no {
+    min-width: 34mm !important;
+    padding-inline-start: 3mm !important;
+    border-inline-start: 1px solid var(--print-neutral-200) !important;
+  }
+
+  .report-badge {
+    color: var(--print-navy) !important;
+    background: var(--print-neutral-100) !important;
+    border: 1px solid var(--print-neutral-300) !important;
+    border-radius: 2px !important;
+    letter-spacing: .25px !important;
+  }
+
+  .report-main-title {
+    padding: 1.5mm 2mm !important;
+    background: linear-gradient(90deg, #fff 0%, var(--print-neutral-100) 50%, #fff 100%) !important;
+    border-block: 1px solid var(--print-neutral-200) !important;
+  }
+
+  .report-main-title h1 {
+    color: var(--print-dark) !important;
+    letter-spacing: -.15px !important;
+  }
+
+  .report-info-grid {
+    background: #fff !important;
+    border: 1px solid var(--print-neutral-300) !important;
+    border-radius: 3px !important;
+  }
+
+  .report-info-grid .info-cell {
+    min-width: 0 !important;
+    border-inline-start: 2px solid var(--print-neutral-200) !important;
+  }
+
+  .report-info-grid .info-cell strong {
+    color: var(--print-dark) !important;
+    font-weight: 700 !important;
+  }
+
+  .report-kpi-row .kpi-mini-box {
+    background: var(--print-neutral-50) !important;
+    border: 1px solid var(--print-neutral-200) !important;
+    border-top: 2px solid var(--print-navy) !important;
+    border-radius: 3px !important;
+  }
+
+  .kpi-mini-box strong { color: var(--print-dark) !important; }
+  .kpi-mini-box.status-accepted strong { color: var(--print-success) !important; }
+  .kpi-mini-box.status-rejected strong { color: var(--print-danger) !important; }
+
+  .report-section-header {
+    color: var(--print-dark) !important;
+    border-bottom: 1px solid var(--print-neutral-300) !important;
+    border-inline-start: 3px solid var(--print-navy) !important;
+    background: var(--print-neutral-100) !important;
+  }
+
+  .a4-print-sheet table th,
+  .quality-print-document table th {
+    color: #fff !important;
+    background: var(--print-navy) !important;
+    border-color: var(--print-navy) !important;
+    font-weight: 800 !important;
+  }
+
+  .a4-print-sheet table td,
+  .quality-print-document table td {
+    color: var(--print-ink) !important;
+    background: #fff !important;
+    border-color: var(--print-neutral-300) !important;
+  }
+
+  .a4-print-sheet table tbody tr:nth-child(even) td,
+  .quality-print-document table tbody tr:nth-child(even) td {
+    background: var(--print-neutral-50) !important;
+  }
+
+  .a4-print-sheet table tfoot td,
+  .quality-print-document table tfoot td,
+  .a4-print-sheet table .totals-row td,
+  .quality-print-document table .totals-row td {
+    color: var(--print-dark) !important;
+    background: #e8eef5 !important;
+    border-top: 2px solid var(--print-navy) !important;
+    font-weight: 800 !important;
+  }
+
+  .print-notes-box {
+    color: var(--print-ink) !important;
+    background: var(--print-neutral-50) !important;
+    border: 1px solid var(--print-neutral-300) !important;
+    border-inline-start: 3px solid var(--print-navy) !important;
+    border-radius: 2px !important;
+  }
+
+  .print-notes-box strong { color: var(--print-dark) !important; }
+
+  .report-signature-row {
+    border-top-color: var(--print-neutral-300) !important;
+  }
+
+  .sig-line { background: var(--print-neutral-500) !important; }
+
+  .report-print-footer,
+  .quality-print-page-number {
+    color: var(--print-neutral-500) !important;
+    border-top-color: var(--print-neutral-300) !important;
+  }
+
+  .report-print-footer-brand {
+    color: var(--print-dark) !important;
+    font-weight: 700 !important;
+  }
+
+  .print-document-barcode-card,
+  .print-document-barcode-svg {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

@@ -1,0 +1,6163 @@
+{
+  "scope": "Allowed frontend source and test files only; protected paths pruned before traversal or read.",
+  "files_scanned": 180,
+  "parse_failures": [],
+  "targets": [
+    "frontend/src/contexts/AuthContext.jsx",
+    "frontend/src/contexts/I18nContext.jsx",
+    "frontend/src/components/ui/ToastProvider.jsx"
+  ],
+  "exports": [
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 7,
+      "names": [
+        "ToastProvider"
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 78,
+      "names": [
+        "useToast"
+      ]
+    },
+    {
+      "file": "frontend/src/contexts/AuthContext.jsx",
+      "line": 6,
+      "names": [
+        "AuthProvider"
+      ]
+    },
+    {
+      "file": "frontend/src/contexts/AuthContext.jsx",
+      "line": 70,
+      "names": [
+        "useAuth"
+      ]
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 13,
+      "names": [
+        "I18nProvider"
+      ]
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 47,
+      "names": [
+        "useI18n"
+      ]
+    }
+  ],
+  "carriers": [
+    "frontend/src/contexts/AuthContext.jsx",
+    "frontend/src/contexts/I18nContext.jsx",
+    "frontend/src/components/ui/ToastProvider.jsx"
+  ],
+  "related": [
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../../src/contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "AuthProvider",
+          "local": "AuthProvider",
+          "uses": [
+            {
+              "line": 9,
+              "column": 25,
+              "kind": "jsx-render"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../../src/contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "I18nProvider",
+          "local": "I18nProvider",
+          "uses": [
+            {
+              "line": 9,
+              "column": 39,
+              "kind": "jsx-render"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../../src/components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "ToastProvider",
+          "local": "ToastProvider",
+          "uses": [
+            {
+              "line": 9,
+              "column": 53,
+              "kind": "jsx-render"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../../src/contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "AuthProvider",
+          "local": "AuthProvider",
+          "uses": [
+            {
+              "line": 34,
+              "column": 53,
+              "kind": "jsx-render"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../../src/contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "I18nProvider",
+          "local": "I18nProvider",
+          "uses": [
+            {
+              "line": 34,
+              "column": 67,
+              "kind": "jsx-render"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 9,
+      "column": 1,
+      "specifier": "./contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "AuthProvider",
+          "local": "AuthProvider",
+          "uses": [
+            {
+              "line": 793,
+              "column": 8,
+              "kind": "jsx-render"
+            }
+          ]
+        },
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 105,
+              "column": 20,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 121,
+              "column": 20,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 151,
+              "column": 32,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 10,
+      "column": 1,
+      "specifier": "./contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "I18nProvider",
+          "local": "I18nProvider",
+          "uses": [
+            {
+              "line": 792,
+              "column": 6,
+              "kind": "jsx-render"
+            }
+          ]
+        },
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 94,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 135,
+              "column": 32,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 152,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 11,
+      "column": 1,
+      "specifier": "./components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "ToastProvider",
+          "local": "ToastProvider",
+          "uses": [
+            {
+              "line": 794,
+              "column": 10,
+              "kind": "jsx-render"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 16,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 17,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/customization/DocumentTraceabilityChain.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 14,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 124,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 125,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ProductionPalletCards.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 6,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ProductionPalletTypesPanel.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 6,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ShippingDeliveryHandoff.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 9,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ShippingManifestSummary.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 5,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/ActionIconButton.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 62,
+              "column": 20,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 97,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/AppLoadingOverlay.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 20,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/AppPageLoader.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 23,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/ConfirmDialog.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 15,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/LoadingSkeleton.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 5,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/RemoteAutocomplete.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 11,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/SearchableSelect.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 91,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/StagedDeleteDialog.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 19,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/StandardDropdown.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 12,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 8,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/WizardStepper.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../context/I18nContext",
+      "resolved": null,
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 13,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/components/ui/WorkflowPagination.jsx",
+      "line": 1,
+      "column": 1,
+      "specifier": "../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 4,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/hooks/useQualityWizardController.js",
+      "line": 3,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 100,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/hooks/useQualityWizardController.js",
+      "line": 4,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 101,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/hooks/useRemoteOptions.js",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 8,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/modules/transfer/components/ColdStorageMap.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 90,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/modules/transfer/components/PhysicalTransfer.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 7,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "line": 2,
+      "column": 1,
+      "specifier": "../../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 17,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "line": 3,
+      "column": 1,
+      "specifier": "../../../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 18,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../../../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 154,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../../../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 104,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 155,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ActivityLogPage.jsx",
+      "line": 7,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 228,
+              "column": 23,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 356,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/CreateUserPage.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 13,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/CreateUserPage.jsx",
+      "line": 7,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 14,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 11,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 12,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDetailPage.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 8,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/CustomizationPage.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 10,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 21,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 41,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 22,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 42,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 23,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 43,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 27,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 92,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 28,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 93,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 29,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 94,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveryDetailPage.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 8,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveryPage.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 8,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+      "line": 8,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 44,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+      "line": 9,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 46,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/GRPOPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 20,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/GRPOPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 21,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/GRPOReviewPage.jsx",
+      "line": 14,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 29,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/GRPOReviewPage.jsx",
+      "line": 15,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 30,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/Home.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 17,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/Home.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 18,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 98,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 97,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 99,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 17,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 46,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 102,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 173,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 245,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 384,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 18,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 385,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/IssueWizard.jsx",
+      "line": 21,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 40,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/IssueWizard.jsx",
+      "line": 22,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 41,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 32,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 33,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/LoginPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 15,
+              "column": 25,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/LoginPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 16,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/Production.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 9,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 1547,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 267,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 282,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 351,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 371,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 697,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 983,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 1244,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 1548,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 7,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 260,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 8,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 261,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 10,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 262,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 121,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 7,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 116,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 9,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 122,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 38,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 39,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 94,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 95,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 149,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 150,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/QualityLandingPage.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 8,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 248,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 7,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 249,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 8,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 250,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 8,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 466,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 9,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 144,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 161,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 203,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 300,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 393,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 467,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 11,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 301,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 12,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 177,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 224,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 302,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ReceivingInspectionWizard.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 25,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/RulesHubPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 10,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/RulesHubPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 11,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesDocumentDetailPage.jsx",
+      "line": 17,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 42,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesDocumentListPage.jsx",
+      "line": 18,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 48,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersPage.jsx",
+      "line": 20,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 36,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersPage.jsx",
+      "line": 21,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 37,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "line": 19,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 40,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "line": 20,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 42,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "line": 26,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 59,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "line": 27,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 60,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 23,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 49,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 24,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 50,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 25,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 51,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "line": 22,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 39,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "line": 23,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 41,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 21,
+              "column": 23,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 22,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 7,
+      "column": 1,
+      "specifier": "../components/ui/ToastProvider",
+      "resolved": "frontend/src/components/ui/ToastProvider.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useToast",
+          "local": "useToast",
+          "uses": [
+            {
+              "line": 24,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+      "line": 2,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 20,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 21,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+      "line": 3,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 10,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+      "line": 4,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 11,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/TransferReviewPage.jsx",
+      "line": 5,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 123,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/TransferReviewPage.jsx",
+      "line": 8,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 124,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/TransferRulesPage.jsx",
+      "line": 6,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 25,
+              "column": 20,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/TransferRulesPage.jsx",
+      "line": 7,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 26,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/UserManagementPage.jsx",
+      "line": 11,
+      "column": 1,
+      "specifier": "../contexts/AuthContext",
+      "resolved": "frontend/src/contexts/AuthContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useAuth",
+          "local": "useAuth",
+          "uses": [
+            {
+              "line": 100,
+              "column": 24,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "file": "frontend/src/pages/UserManagementPage.jsx",
+      "line": 12,
+      "column": 1,
+      "specifier": "../contexts/I18nContext",
+      "resolved": "frontend/src/contexts/I18nContext.jsx",
+      "kind": "static-import",
+      "bindings": [
+        {
+          "imported": "useI18n",
+          "local": "useI18n",
+          "uses": [
+            {
+              "line": 57,
+              "column": 17,
+              "kind": "binding-reference"
+            },
+            {
+              "line": 101,
+              "column": 17,
+              "kind": "binding-reference"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lexical_mentions": [
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 4,
+      "column": 9,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 4,
+      "column": 48,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 5,
+      "column": 9,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 5,
+      "column": 48,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 6,
+      "column": 9,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 6,
+      "column": 54,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 9,
+      "column": 25,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 9,
+      "column": 39,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 9,
+      "column": 53,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 11,
+      "column": 13,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 11,
+      "column": 29,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+      "line": 11,
+      "column": 44,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 5,
+      "column": 50,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 6,
+      "column": 50,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 34,
+      "column": 53,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 34,
+      "column": 67,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 34,
+      "column": 93,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+      "line": 34,
+      "column": 108,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-physical-transfer.mjs",
+      "line": 19,
+      "column": 31,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-physical-transfer.mjs",
+      "line": 19,
+      "column": 71,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-physical-transfer.mjs",
+      "line": 21,
+      "column": 31,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-physical-transfer.mjs",
+      "line": 21,
+      "column": 71,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-predeploy-ui-regressions.mjs",
+      "line": 17,
+      "column": 34,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-predeploy-ui-regressions.mjs",
+      "line": 17,
+      "column": 74,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-predeploy-ui-regressions.mjs",
+      "line": 18,
+      "column": 34,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-predeploy-ui-regressions.mjs",
+      "line": 18,
+      "column": 74,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-sales-direct-pagination.py",
+      "line": 17,
+      "column": 14,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-sales-direct-pagination.py",
+      "line": 17,
+      "column": 56,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-sales-direct-pagination.py",
+      "line": 26,
+      "column": 29,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-shipping-loading-wizard.mjs",
+      "line": 27,
+      "column": 32,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-shipping-loading-wizard.mjs",
+      "line": 27,
+      "column": 72,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-shipping-loading-wizard.mjs",
+      "line": 28,
+      "column": 32,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-shipping-loading-wizard.mjs",
+      "line": 28,
+      "column": 72,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-stage5-wizard.mjs",
+      "line": 27,
+      "column": 31,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-stage5-wizard.mjs",
+      "line": 27,
+      "column": 70,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-stage5-wizard.mjs",
+      "line": 34,
+      "column": 31,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-stage5-wizard.mjs",
+      "line": 36,
+      "column": 81,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-destination-bins.mjs",
+      "line": 33,
+      "column": 104,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-destination-bins.mjs",
+      "line": 34,
+      "column": 30,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-destination-bins.mjs",
+      "line": 35,
+      "column": 32,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-destination-bins.mjs",
+      "line": 35,
+      "column": 72,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-destination-bins.mjs",
+      "line": 36,
+      "column": 32,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-destination-bins.mjs",
+      "line": 36,
+      "column": 72,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-review.mjs",
+      "line": 24,
+      "column": 62,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-review.mjs",
+      "line": 25,
+      "column": 62,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-review.mjs",
+      "line": 28,
+      "column": 32,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-review.mjs",
+      "line": 28,
+      "column": 72,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-review.mjs",
+      "line": 29,
+      "column": 32,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-review.mjs",
+      "line": 29,
+      "column": 72,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-review.mjs",
+      "line": 35,
+      "column": 30,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-review.mjs",
+      "line": 36,
+      "column": 30,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-warehouse-search.mjs",
+      "line": 23,
+      "column": 32,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/scripts/test-transfer-warehouse-search.mjs",
+      "line": 23,
+      "column": 72,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 9,
+      "column": 10,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 9,
+      "column": 24,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 9,
+      "column": 51,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 10,
+      "column": 10,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 10,
+      "column": 24,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 10,
+      "column": 51,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 11,
+      "column": 10,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 11,
+      "column": 48,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 94,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 105,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 121,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 135,
+      "column": 32,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 151,
+      "column": 32,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 152,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 792,
+      "column": 6,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 793,
+      "column": 8,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 794,
+      "column": 10,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 801,
+      "column": 11,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 802,
+      "column": 9,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/App.jsx",
+      "line": 803,
+      "column": 7,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "line": 3,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "line": 4,
+      "column": 41,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "line": 16,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+      "line": 17,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/customization/DocumentTraceabilityChain.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/customization/DocumentTraceabilityChain.jsx",
+      "line": 4,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/customization/DocumentTraceabilityChain.jsx",
+      "line": 14,
+      "column": 20,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+      "line": 2,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+      "line": 3,
+      "column": 41,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+      "line": 124,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+      "line": 125,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ProductionPalletCards.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ProductionPalletCards.jsx",
+      "line": 2,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ProductionPalletCards.jsx",
+      "line": 6,
+      "column": 20,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ProductionPalletTypesPanel.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ProductionPalletTypesPanel.jsx",
+      "line": 3,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ProductionPalletTypesPanel.jsx",
+      "line": 6,
+      "column": 20,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ShippingDeliveryHandoff.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ShippingDeliveryHandoff.jsx",
+      "line": 3,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ShippingDeliveryHandoff.jsx",
+      "line": 9,
+      "column": 20,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ShippingManifestSummary.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ShippingManifestSummary.jsx",
+      "line": 2,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ShippingManifestSummary.jsx",
+      "line": 5,
+      "column": 20,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ActionIconButton.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ActionIconButton.jsx",
+      "line": 2,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ActionIconButton.jsx",
+      "line": 62,
+      "column": 20,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ActionIconButton.jsx",
+      "line": 97,
+      "column": 20,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/AppLoadingOverlay.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/AppLoadingOverlay.jsx",
+      "line": 3,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/AppLoadingOverlay.jsx",
+      "line": 20,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/AppPageLoader.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/AppPageLoader.jsx",
+      "line": 4,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/AppPageLoader.jsx",
+      "line": 23,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ConfirmDialog.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ConfirmDialog.jsx",
+      "line": 2,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ConfirmDialog.jsx",
+      "line": 15,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/LoadingSkeleton.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/LoadingSkeleton.jsx",
+      "line": 2,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/LoadingSkeleton.jsx",
+      "line": 5,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/RemoteAutocomplete.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/RemoteAutocomplete.jsx",
+      "line": 6,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/RemoteAutocomplete.jsx",
+      "line": 11,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/SearchableSelect.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/SearchableSelect.jsx",
+      "line": 6,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/SearchableSelect.jsx",
+      "line": 91,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/StagedDeleteDialog.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/StagedDeleteDialog.jsx",
+      "line": 2,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/StagedDeleteDialog.jsx",
+      "line": 19,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/StandardDropdown.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/StandardDropdown.jsx",
+      "line": 3,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/StandardDropdown.jsx",
+      "line": 12,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 2,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 7,
+      "column": 17,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 8,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 78,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 81,
+      "column": 22,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/ToastProvider.jsx",
+      "line": 81,
+      "column": 51,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/WizardStepper.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/WizardStepper.jsx",
+      "line": 2,
+      "column": 40,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/WizardStepper.jsx",
+      "line": 13,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/WorkflowPagination.jsx",
+      "line": 1,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/WorkflowPagination.jsx",
+      "line": 1,
+      "column": 41,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/components/ui/WorkflowPagination.jsx",
+      "line": 4,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/AuthContext.jsx",
+      "line": 4,
+      "column": 7,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/AuthContext.jsx",
+      "line": 6,
+      "column": 17,
+      "token": "AuthProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/AuthContext.jsx",
+      "line": 64,
+      "column": 6,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/AuthContext.jsx",
+      "line": 66,
+      "column": 7,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/AuthContext.jsx",
+      "line": 70,
+      "column": 14,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/AuthContext.jsx",
+      "line": 70,
+      "column": 41,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 4,
+      "column": 7,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 13,
+      "column": 17,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 41,
+      "column": 6,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 43,
+      "column": 7,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 47,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 48,
+      "column": 26,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 49,
+      "column": 30,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/contexts/I18nContext.jsx",
+      "line": 49,
+      "column": 58,
+      "token": "I18nProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/hooks/useQualityWizardController.js",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/hooks/useQualityWizardController.js",
+      "line": 3,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/hooks/useQualityWizardController.js",
+      "line": 4,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/hooks/useQualityWizardController.js",
+      "line": 4,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/hooks/useQualityWizardController.js",
+      "line": 100,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/hooks/useQualityWizardController.js",
+      "line": 101,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/hooks/useRemoteOptions.js",
+      "line": 4,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/hooks/useRemoteOptions.js",
+      "line": 4,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/hooks/useRemoteOptions.js",
+      "line": 8,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/components/ColdStorageMap.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/components/ColdStorageMap.jsx",
+      "line": 2,
+      "column": 44,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/components/ColdStorageMap.jsx",
+      "line": 90,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/components/PhysicalTransfer.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/components/PhysicalTransfer.jsx",
+      "line": 2,
+      "column": 44,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/components/PhysicalTransfer.jsx",
+      "line": 7,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "line": 2,
+      "column": 44,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "line": 3,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "line": 3,
+      "column": 44,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "line": 17,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+      "line": 18,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "line": 5,
+      "column": 44,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "line": 6,
+      "column": 44,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "line": 104,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "line": 154,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+      "line": 155,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ActivityLogPage.jsx",
+      "line": 7,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ActivityLogPage.jsx",
+      "line": 7,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ActivityLogPage.jsx",
+      "line": 228,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ActivityLogPage.jsx",
+      "line": 356,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CreateUserPage.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CreateUserPage.jsx",
+      "line": 6,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CreateUserPage.jsx",
+      "line": 7,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CreateUserPage.jsx",
+      "line": 7,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CreateUserPage.jsx",
+      "line": 13,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CreateUserPage.jsx",
+      "line": 14,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "line": 3,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "line": 11,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+      "line": 12,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDetailPage.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDetailPage.jsx",
+      "line": 2,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationDetailPage.jsx",
+      "line": 8,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationPage.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationPage.jsx",
+      "line": 2,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/CustomizationPage.jsx",
+      "line": 10,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 21,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 21,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 22,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 22,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 23,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 23,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 41,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 42,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveriesPage.jsx",
+      "line": 43,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 27,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 27,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 28,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 28,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 29,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 29,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 92,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 93,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+      "line": 94,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryDetailPage.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryDetailPage.jsx",
+      "line": 2,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryDetailPage.jsx",
+      "line": 8,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryPage.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryPage.jsx",
+      "line": 2,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryPage.jsx",
+      "line": 8,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+      "line": 8,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+      "line": 8,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+      "line": 9,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+      "line": 9,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+      "line": 44,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+      "line": 46,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOPage.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOPage.jsx",
+      "line": 5,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOPage.jsx",
+      "line": 20,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOPage.jsx",
+      "line": 21,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOReviewPage.jsx",
+      "line": 14,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOReviewPage.jsx",
+      "line": 14,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOReviewPage.jsx",
+      "line": 15,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOReviewPage.jsx",
+      "line": 15,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOReviewPage.jsx",
+      "line": 29,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/GRPOReviewPage.jsx",
+      "line": 30,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/Home.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/Home.jsx",
+      "line": 3,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/Home.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/Home.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/Home.jsx",
+      "line": 17,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/Home.jsx",
+      "line": 18,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 5,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 6,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 97,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 98,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+      "line": 99,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 17,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 17,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 18,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 18,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 46,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 102,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 173,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 245,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 384,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueReviewPage.jsx",
+      "line": 385,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueWizard.jsx",
+      "line": 21,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueWizard.jsx",
+      "line": 21,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueWizard.jsx",
+      "line": 22,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueWizard.jsx",
+      "line": 22,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueWizard.jsx",
+      "line": 40,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/IssueWizard.jsx",
+      "line": 41,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "line": 5,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "line": 6,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "line": 32,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+      "line": 33,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/LoginPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/LoginPage.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/LoginPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/LoginPage.jsx",
+      "line": 5,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/LoginPage.jsx",
+      "line": 15,
+      "column": 25,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/LoginPage.jsx",
+      "line": 16,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/Production.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/Production.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/Production.jsx",
+      "line": 9,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 5,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 6,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 267,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 282,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 351,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 371,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 697,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 983,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 1244,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 1547,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+      "line": 1548,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 7,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 7,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 8,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 8,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 10,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 10,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 260,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 261,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+      "line": 262,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 6,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 7,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 7,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 9,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 9,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 116,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 121,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+      "line": 122,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "line": 5,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "line": 38,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+      "line": 39,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "line": 3,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "line": 4,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "line": 94,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+      "line": 95,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "line": 5,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "line": 149,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+      "line": 150,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityLandingPage.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityLandingPage.jsx",
+      "line": 3,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityLandingPage.jsx",
+      "line": 8,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 5,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 7,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 7,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 8,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 8,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 248,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 249,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/QualityReviewPage.jsx",
+      "line": 250,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 8,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 8,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 9,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 9,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 144,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 161,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 203,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 300,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 393,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 466,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+      "line": 467,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 11,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 11,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 12,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 12,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 177,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 224,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 301,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceiptWizard.jsx",
+      "line": 302,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceivingInspectionWizard.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceivingInspectionWizard.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ReceivingInspectionWizard.jsx",
+      "line": 25,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/RulesHubPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/RulesHubPage.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/RulesHubPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/RulesHubPage.jsx",
+      "line": 5,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/RulesHubPage.jsx",
+      "line": 10,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/RulesHubPage.jsx",
+      "line": 11,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesDocumentDetailPage.jsx",
+      "line": 17,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesDocumentDetailPage.jsx",
+      "line": 17,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesDocumentDetailPage.jsx",
+      "line": 42,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesDocumentListPage.jsx",
+      "line": 18,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesDocumentListPage.jsx",
+      "line": 18,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesDocumentListPage.jsx",
+      "line": 48,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersPage.jsx",
+      "line": 20,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersPage.jsx",
+      "line": 20,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersPage.jsx",
+      "line": 21,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersPage.jsx",
+      "line": 21,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersPage.jsx",
+      "line": 36,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersPage.jsx",
+      "line": 37,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "line": 19,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "line": 19,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "line": 20,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "line": 20,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "line": 40,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+      "line": 42,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "line": 26,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "line": 26,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "line": 27,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "line": 27,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "line": 59,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+      "line": 60,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 23,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 23,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 24,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 24,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 25,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 25,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 49,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 50,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+      "line": 51,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "line": 22,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "line": 22,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "line": 23,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "line": 23,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "line": 39,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+      "line": 41,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 5,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 7,
+      "column": 10,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 7,
+      "column": 44,
+      "token": "ToastProvider",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 21,
+      "column": 23,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 22,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+      "line": 24,
+      "column": 17,
+      "token": "useToast",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+      "line": 2,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+      "line": 2,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+      "line": 3,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+      "line": 20,
+      "column": 20,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+      "line": 21,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+      "line": 3,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+      "line": 3,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+      "line": 4,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+      "line": 4,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+      "line": 10,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+      "line": 11,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferReviewPage.jsx",
+      "line": 5,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferReviewPage.jsx",
+      "line": 5,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferReviewPage.jsx",
+      "line": 8,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferReviewPage.jsx",
+      "line": 8,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferReviewPage.jsx",
+      "line": 123,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferReviewPage.jsx",
+      "line": 124,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferRulesPage.jsx",
+      "line": 6,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferRulesPage.jsx",
+      "line": 6,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferRulesPage.jsx",
+      "line": 7,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferRulesPage.jsx",
+      "line": 7,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferRulesPage.jsx",
+      "line": 25,
+      "column": 20,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/TransferRulesPage.jsx",
+      "line": 26,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/UserManagementPage.jsx",
+      "line": 11,
+      "column": 10,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/UserManagementPage.jsx",
+      "line": 11,
+      "column": 38,
+      "token": "AuthContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/UserManagementPage.jsx",
+      "line": 12,
+      "column": 10,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/UserManagementPage.jsx",
+      "line": 12,
+      "column": 38,
+      "token": "I18nContext",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/UserManagementPage.jsx",
+      "line": 57,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/UserManagementPage.jsx",
+      "line": 100,
+      "column": 24,
+      "token": "useAuth",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    },
+    {
+      "file": "frontend/src/pages/UserManagementPage.jsx",
+      "line": 101,
+      "column": 17,
+      "token": "useI18n",
+      "kind": "supplemental-text-match-may-be-comment-or-test-string"
+    }
+  ],
+  "python_text_mentions": [
+    {
+      "file": "frontend/scripts/test-sales-direct-pagination.py",
+      "line": 17,
+      "text": "const {I18nProvider}=await import('/src/contexts/I18nContext.jsx');",
+      "kind": "python-test-source-text-not-module-import"
+    }
+  ],
+  "computed_imports": [
+    {
+      "file": "frontend/scripts/check-i18n.js",
+      "line": 96,
+      "kind": "computed-import",
+      "expression": "pathToFileURL(translationsFile).href"
+    },
+    {
+      "file": "frontend/src/services/performanceMetrics.test.mjs",
+      "line": 9,
+      "kind": "computed-import",
+      "expression": "'data:text/javascript;base64,' + Buffer.from(text).toString('base64')"
+    }
+  ],
+  "protected_boundary_references": [
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 76,
+      "specifier": "./modules/scale/pages/ScaleLandingPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 77,
+      "specifier": "./modules/scale/pages/ScaleReceiptPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 78,
+      "specifier": "./modules/scale/pages/ScaleWeighingPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 79,
+      "specifier": "./modules/scale/pages/ScaleDraftsPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 80,
+      "specifier": "./modules/scale/pages/ScaleDraftDetailPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 81,
+      "specifier": "./modules/scale/pages/ScaleDevicesPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 82,
+      "specifier": "./modules/scale/pages/ScaleItemElementsPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 83,
+      "specifier": "./modules/scale/pages/ScaleEntryExitPermitsPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 84,
+      "specifier": "./modules/scale/pages/ScaleEntryPermitPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 85,
+      "specifier": "./modules/scale/pages/ScaleExitPermitPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/main.jsx",
+      "line": 14,
+      "specifier": "./styles/responsive-mobile.css",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/services/issueReview.test.mjs",
+      "line": 18,
+      "specifier": "../i18n/translations.js",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/services/productionIssueService.test.mjs",
+      "line": 12,
+      "specifier": "../i18n/translations.js",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    }
+  ],
+  "complete_for_protected_consumers": false
+}

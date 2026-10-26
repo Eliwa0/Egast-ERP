@@ -1,0 +1,13 @@
+[
+  {
+    "name": "backend",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\sales-unification\\backend.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\sales-unification\\frozen",
+    "exit_code": 0,
+    "seconds": 170.33,
+    "snapshot_sha256": "b95a39ef3497ebaeff504850e17fcd05e732af0fb0c93b32a4201140fbe64715"
+  }
+]

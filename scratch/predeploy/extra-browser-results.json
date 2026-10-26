@@ -1,0 +1,17 @@
+[
+  {
+    "source": "frontend/scripts/test-select-ux-browser.py",
+    "exit_code": 1,
+    "adapter_changes": "origin/artifact path only"
+  },
+  {
+    "source": "frontend/scripts/test-master-search-workflow-ui.py",
+    "exit_code": 1,
+    "adapter_changes": "origin/artifact path only"
+  },
+  {
+    "source": "frontend/scripts/test-sales-order-independent-ui.py",
+    "exit_code": 1,
+    "adapter_changes": "origin/artifact path only"
+  }
+]

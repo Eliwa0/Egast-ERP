@@ -1,0 +1,34 @@
+{
+  "read_only": true,
+  "database_vendor": "postgresql",
+  "server_read_only": "on",
+  "server_version": "16.13",
+  "delivery_constraint_indexes": [],
+  "active_drafts": 0,
+  "duplicate_groups": [],
+  "api_leaves": [
+    [
+      "api",
+      "0066_alter_transferwarehouserule_stage"
+    ]
+  ],
+  "unapplied_plan": [
+    {
+      "app": "api",
+      "name": "0065_delivery_one_active_order",
+      "backwards": false
+    },
+    {
+      "app": "api",
+      "name": "0066_alter_transferwarehouserule_stage",
+      "backwards": false
+    }
+  ],
+  "applied_api_tail": [
+    "0060_deactivate_pre_export_inspection_stage",
+    "0061_physical_transfer_custody",
+    "0062_shipping_manifest_handoff",
+    "0063_production_pallet_types",
+    "0064_quality_grade_category"
+  ]
+}

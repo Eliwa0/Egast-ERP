@@ -1,0 +1,29 @@
+.receipt-wizard .receipt-quantity-panel {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+.receipt-quantity-panel .page-title {
+  font-size: clamp(22px, 2.4vw, 34px);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.receipt-quantity-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.receipt-quantity-column { min-width: 0; }
+.receipt-quantity-column .form-field { margin-bottom: 16px; }
+.receipt-quantity-column .qty-display-card { padding: 18px; margin-top: 16px; }
+.receipt-quantity-column .qty-display-card__value { font-size: clamp(30px, 4vw, 48px); }
+.receipt-quantity-column .uom-chips-wrap { max-height: 280px; overflow-y: auto; }
+.receipt-quantity-panel .wizard-nav-row { padding-top: 20px; border-top: 1px solid var(--border); }
+@media (max-width: 720px) {
+  .receipt-quantity-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .receipt-wizard .receipt-quantity-panel { padding: 16px; }
+  .receipt-quantity-panel .production-pallet-choices__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .receipt-quantity-panel .production-pallet-choice { min-width: 0; }
+}

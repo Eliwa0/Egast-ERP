@@ -1,0 +1,20 @@
+{
+  "database": "postgresql",
+  "run": 1,
+  "failures": [
+    {
+      "test": "api.tests_delivery_creation_concurrency.DeliveryCreationConcurrencyTests.test_same_order_initialization_has_one_winner",
+      "trace": "Traceback (most recent call last):\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\api\\tests_delivery_creation_concurrency.py\", line 47, in test_same_order_initialization_has_one_winner\n    self.assertEqual(sorted(value[0] for value in outcomes), ['conflict', 'created'])\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Lists differ: ['created', 'created'] != ['conflict', 'created']\n\nFirst differing element 0:\n'created'\n'conflict'\n\n- ['created', 'created']\n?    ^^^ --\n\n+ ['conflict', 'created']\n?    ^^^^^^\n\n"
+    }
+  ],
+  "errors": [],
+  "skipped": [],
+  "unexpected_http": [],
+  "cases": [
+    {
+      "test": "api.tests_delivery_creation_concurrency.DeliveryCreationConcurrencyTests.test_same_order_initialization_has_one_winner",
+      "ms": 101.73,
+      "unexpected_http": 0
+    }
+  ]
+}

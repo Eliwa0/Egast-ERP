@@ -1,0 +1,35 @@
+[
+  {
+    "name": "test-select-ux-browser.py",
+    "snapshot_sha256": "f8c9b184202d3dc7f44adb5c31896f6fe64b7b2e7e3e331d5e9452f8e6ea60d4",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final\\frontend\\scripts\\test-select-ux-browser.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final",
+    "exit_code": 0,
+    "elapsed_s": 10.77
+  },
+  {
+    "name": "test-master-search-workflow-ui.py",
+    "snapshot_sha256": "f8c9b184202d3dc7f44adb5c31896f6fe64b7b2e7e3e331d5e9452f8e6ea60d4",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final\\frontend\\scripts\\test-master-search-workflow-ui.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final",
+    "exit_code": 0,
+    "elapsed_s": 4.53
+  },
+  {
+    "name": "test-sales-order-independent-ui.py",
+    "snapshot_sha256": "f8c9b184202d3dc7f44adb5c31896f6fe64b7b2e7e3e331d5e9452f8e6ea60d4",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final\\frontend\\scripts\\test-sales-order-independent-ui.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final",
+    "exit_code": 0,
+    "elapsed_s": 6.02
+  }
+]

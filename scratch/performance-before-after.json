@@ -1,0 +1,178 @@
+[
+  {
+    "workflow": "production_item_flags",
+    "items": 1,
+    "mode": "legacy",
+    "samples": 10,
+    "median_ms": 5.05,
+    "sap_calls": 2,
+    "equivalent": true,
+    "note": "fixture transport delay 2ms per call; no production p95"
+  },
+  {
+    "workflow": "production_item_flags",
+    "items": 1,
+    "mode": "bulk",
+    "samples": 10,
+    "median_ms": 2.71,
+    "sap_calls": 1,
+    "equivalent": true,
+    "note": "fixture transport delay 2ms per call; no production p95"
+  },
+  {
+    "workflow": "production_item_flags",
+    "items": 10,
+    "mode": "legacy",
+    "samples": 10,
+    "median_ms": 50.37,
+    "sap_calls": 20,
+    "equivalent": true,
+    "note": "fixture transport delay 2ms per call; no production p95"
+  },
+  {
+    "workflow": "production_item_flags",
+    "items": 10,
+    "mode": "bulk",
+    "samples": 10,
+    "median_ms": 2.59,
+    "sap_calls": 1,
+    "equivalent": true,
+    "note": "fixture transport delay 2ms per call; no production p95"
+  },
+  {
+    "workflow": "production_item_flags",
+    "items": 50,
+    "mode": "legacy",
+    "samples": 10,
+    "median_ms": 251.27,
+    "sap_calls": 100,
+    "equivalent": true,
+    "note": "fixture transport delay 2ms per call; no production p95"
+  },
+  {
+    "workflow": "production_item_flags",
+    "items": 50,
+    "mode": "bulk",
+    "samples": 10,
+    "median_ms": 8.23,
+    "sap_calls": 3,
+    "equivalent": true,
+    "note": "fixture transport delay 2ms per call; no production p95"
+  },
+  {
+    "workflow": "production_item_flags",
+    "items": 101,
+    "mode": "legacy",
+    "samples": 10,
+    "median_ms": 511.78,
+    "sap_calls": 202,
+    "equivalent": true,
+    "note": "fixture transport delay 2ms per call; no production p95"
+  },
+  {
+    "workflow": "production_item_flags",
+    "items": 101,
+    "mode": "bulk",
+    "samples": 10,
+    "median_ms": 16.01,
+    "sap_calls": 6,
+    "equivalent": true,
+    "note": "fixture transport delay 2ms per call; no production p95"
+  },
+  {
+    "workflow": "candidate_reads",
+    "candidates": 1,
+    "mode": "legacy",
+    "sap_calls": 1,
+    "elapsed_ms": 2.14,
+    "note": "one fixture sample, simulated 2ms RTT, all candidate eligibility preserved"
+  },
+  {
+    "workflow": "candidate_reads",
+    "candidates": 1,
+    "mode": "batch",
+    "sap_calls": 1,
+    "elapsed_ms": 2.36,
+    "note": "one fixture sample, simulated 2ms RTT, all candidate eligibility preserved"
+  },
+  {
+    "workflow": "candidate_reads",
+    "candidates": 10,
+    "mode": "legacy",
+    "sap_calls": 10,
+    "elapsed_ms": 25.43,
+    "note": "one fixture sample, simulated 2ms RTT, all candidate eligibility preserved"
+  },
+  {
+    "workflow": "candidate_reads",
+    "candidates": 10,
+    "mode": "batch",
+    "sap_calls": 1,
+    "elapsed_ms": 3.04,
+    "note": "one fixture sample, simulated 2ms RTT, all candidate eligibility preserved"
+  },
+  {
+    "workflow": "candidate_reads",
+    "candidates": 50,
+    "mode": "legacy",
+    "sap_calls": 50,
+    "elapsed_ms": 125.07,
+    "note": "one fixture sample, simulated 2ms RTT, all candidate eligibility preserved"
+  },
+  {
+    "workflow": "candidate_reads",
+    "candidates": 50,
+    "mode": "batch",
+    "sap_calls": 3,
+    "elapsed_ms": 7.64,
+    "note": "one fixture sample, simulated 2ms RTT, all candidate eligibility preserved"
+  },
+  {
+    "workflow": "candidate_reads",
+    "candidates": 101,
+    "mode": "legacy",
+    "sap_calls": 7,
+    "elapsed_ms": 17.93,
+    "note": "one fixture sample, simulated 2ms RTT, all candidate eligibility preserved"
+  },
+  {
+    "workflow": "candidate_reads",
+    "candidates": 101,
+    "mode": "batch",
+    "sap_calls": 7,
+    "elapsed_ms": 18.46,
+    "note": "one fixture sample, simulated 2ms RTT, all candidate eligibility preserved"
+  },
+  {
+    "workflow": "cache_load",
+    "mode": "legacy",
+    "state": "cold",
+    "concurrent_readers": 8,
+    "loader_calls": 8,
+    "elapsed_ms": 36.24
+  },
+  {
+    "workflow": "cache_load",
+    "mode": "legacy",
+    "state": "warm",
+    "concurrent_readers": 8,
+    "loader_calls": 0,
+    "elapsed_ms": 2.93
+  },
+  {
+    "workflow": "cache_load",
+    "mode": "single_loader",
+    "state": "cold",
+    "concurrent_readers": 8,
+    "loader_calls": 1,
+    "elapsed_ms": 24.29
+  },
+  {
+    "workflow": "cache_load",
+    "mode": "single_loader",
+    "state": "warm",
+    "concurrent_readers": 8,
+    "loader_calls": 0,
+    "elapsed_ms": 2.89
+  }
+]

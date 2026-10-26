@@ -1,0 +1,13 @@
+[
+  {
+    "name": "backend",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\remaining-remediation-20261021\\backend.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\remaining-remediation-20261021\\frozen",
+    "exit_code": 0,
+    "seconds": 162.24,
+    "snapshot_sha256": "6fd5b4174d4cec8d504b927c3b31404436ae3e78d1ce294a65dab0a554420e9a"
+  }
+]

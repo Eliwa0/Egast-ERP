@@ -1,0 +1,32 @@
+{
+  "snapshot_sha256": "f8c9b184202d3dc7f44adb5c31896f6fe64b7b2e7e3e331d5e9452f8e6ea60d4",
+  "changed_since_task_start": [
+    "frontend/src/i18n/translations.js",
+    "frontend/src/pages/TransferReviewPage.jsx",
+    "frontend/src/services/purchaseQuotationService.js",
+    "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+    "frontend/src/components/print/DeliveryReportPrintable.jsx",
+    "frontend/src/components/ui/SearchableSelect.jsx",
+    "frontend/scripts/check-i18n.js",
+    "frontend/scripts/test-master-search-workflow-ui.py",
+    "frontend/scripts/test-sales-order-independent-ui.py",
+    "frontend/scripts/test-select-ux-browser.py",
+    "frontend/scripts/test-transfer-review.mjs",
+    "frontend/scripts/test-transfer-stage2-destination-integrity.mjs",
+    "frontend/scripts/fixtures/select-ux-harness.jsx",
+    "docs/PREDEPLOY_REVIEW_AR.md"
+  ],
+  "working_tree_drift_since_freeze": [],
+  "frozen_input_drift": [],
+  "protected_scale_source_files": 56,
+  "protected_scale_source_changed": [],
+  "backend_changed": [],
+  "frontend_python_scripts_not_run": [
+    "frontend/scripts/test-master-search-backend.py",
+    "frontend/scripts/test-master-search-live.py",
+    "frontend/scripts/test-sales-direct-pagination.py",
+    "frontend/scripts/test-sales-journey-browser.py",
+    "frontend/scripts/test-sales-print-readiness.py",
+    "frontend/scripts/test-transfer-policy-ui.py"
+  ]
+}

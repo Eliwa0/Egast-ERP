@@ -1,0 +1,798 @@
+/* ── Wizard card ────────────────────────────────────────────────── */
+
+.app-content:has(.transfer-page) {
+  width: min(1440px, calc(100% - 32px));
+  padding-top: 14px;
+}
+
+.transfer-page {
+  width: 100%;
+  min-width: 0;
+  gap: 10px;
+  overflow-x: clip;
+}
+
+.transfer-page .page-header {
+  margin-bottom: 0;
+}
+
+.transfer-page .page-header__content {
+  gap: 4px;
+}
+
+.transfer-page .section-kicker {
+  font-size: 11px;
+}
+
+.transfer-page .page-title {
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.transfer-page .wizard-stepbar-wrap {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 6px 12px 10px;
+}
+
+.transfer-page .wizard-step__circle {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.transfer-page .wizard-connector {
+  margin-top: 15px;
+}
+
+.transfer-wizard-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: min(1280px, 100%);
+  max-width: 1280px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: clamp(16px, 2vw, 24px);
+  box-sizing: border-box;
+}
+
+.transfer-wizard-card > * {
+  min-width: 0;
+}
+
+.transfer-access-message {
+  width: min(1280px, 100%);
+  max-width: 1280px;
+  margin: 0 auto 10px;
+}
+
+/* ── Step heading ───────────────────────────────────────────────── */
+
+.transfer-wizard-heading {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.transfer-wizard-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 4px;
+}
+
+.transfer-wizard-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Stage selector ─────────────────────────────────────────────── */
+
+.transfer-stage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.transfer-stage-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  background: var(--bg-elevated);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color var(--transition),
+    background var(--transition),
+    box-shadow var(--transition);
+  font-family: var(--font-family);
+}
+
+.transfer-stage-btn:hover {
+  border-color: var(--primary);
+  background: var(--bg-primary-soft);
+}
+
+.transfer-stage-btn--active {
+  border-color: var(--primary);
+  background: var(--bg-primary-soft);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 15%, transparent);
+}
+
+.transfer-stage-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  align-self: flex-start;
+}
+
+.transfer-stage-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.transfer-stage-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ── Destination wrapper (Step 3) ───────────────────────────────── */
+
+.transfer-destination-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Destination type selector (Stage 2 only) ───────────────────── */
+
+.transfer-dest-type-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transfer-dest-type-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+
+.transfer-dest-type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+/* ── Form grid ──────────────────────────────────────────────────── */
+
+.transfer-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+/* ── Scan bar ───────────────────────────────────────────────────── */
+
+.transfer-scan-bar {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 12px;
+}
+
+.transfer-scan-bar .transfer-scan-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.transfer-scan-input {
+  min-height: 44px;
+  font-family: monospace;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.transfer-scan-bar .app-button {
+  flex: 0 0 auto;
+  min-width: 132px;
+  min-height: 44px;
+  white-space: nowrap;
+}
+
+.transfer-scan-error {
+  margin-bottom: 0;
+}
+
+.transfer-assigned-route {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-soft);
+}
+
+.transfer-assigned-route__item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.transfer-assigned-route__item span {
+  color: var(--text-subtle);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.transfer-assigned-route__item strong {
+  color: var(--text);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.transfer-inline-bin {
+  margin-top: 14px;
+}
+
+/* ── Batch lines table ──────────────────────────────────────────── */
+
+.transfer-lines-wrapper {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-top: 10px;
+}
+
+.transfer-lines-table {
+  width: 100%;
+  min-width: 1080px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.transfer-lines-table th {
+  padding: 9px 10px;
+  text-align: start;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.transfer-lines-table td {
+  padding: 8px 10px;
+  text-align: start;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: middle;
+}
+
+.transfer-lines-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.transfer-lines-table tbody tr:hover td {
+  background: var(--bg-soft);
+}
+
+.transfer-line--mock td {
+  opacity: 0.7;
+}
+
+.transfer-source-badge {
+  display: inline-flex;
+  align-items: center;
+  width: max-content;
+  max-width: 180px;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.transfer-source-badge--sap {
+  color: var(--success);
+  background: var(--bg-success-soft);
+  border-color: rgba(22, 128, 60, 0.25);
+}
+
+.transfer-source-badge--local {
+  color: var(--warning);
+  background: var(--bg-warning-soft);
+  border-color: var(--warning-border);
+}
+
+.transfer-source-badge--missing {
+  color: var(--danger);
+  background: var(--bg-danger-soft);
+  border-color: rgba(194, 65, 12, 0.22);
+}
+
+.transfer-source-note {
+  display: block;
+  margin-top: 4px;
+  max-width: 240px;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.transfer-source-warning {
+  margin-top: 10px;
+  padding: 10px 12px;
+  color: var(--warning);
+  background: var(--bg-warning-soft);
+  border-color: var(--warning-border);
+  line-height: 1.55;
+}
+
+.transfer-lines-mono {
+  font-family: monospace;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.transfer-lines-num {
+  text-align: end !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.transfer-page .wizard-nav-row {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.transfer-page .wizard-nav-btn {
+  min-width: 112px;
+  min-height: 44px;
+}
+
+/* ── Qty input inside table ─────────────────────────────────────── */
+
+.transfer-lines-qty-cell {
+  min-width: 130px;
+}
+
+.transfer-qty-input {
+  width: 100px;
+  padding: 5px 8px;
+  font-size: 13px;
+}
+
+.transfer-qty-error {
+  display: block;
+  font-size: 11px;
+  color: var(--danger) !important;
+  margin-top: 3px;
+}
+
+/* ── Remove button ──────────────────────────────────────────────── */
+
+.transfer-remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-subtle);
+  font-size: 18px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+}
+
+.transfer-remove-btn:hover {
+  color: var(--danger);
+  background: var(--bg-danger-soft);
+}
+
+/* ── Empty hint ─────────────────────────────────────────────────── */
+
+.transfer-empty-hint {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 12px 0 0;
+}
+
+/* ── Review step ────────────────────────────────────────────────── */
+
+.transfer-review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.transfer-review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px 20px;
+  padding: 16px 20px;
+  background: var(--bg-soft);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.transfer-review-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.transfer-review-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-subtle);
+}
+
+.transfer-review-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ── Submit button ──────────────────────────────────────────────── */
+
+.transfer-submit-btn {
+  min-width: 220px;
+}
+
+/* ── Field error ────────────────────────────────────────────────── */
+
+.transfer-field-error {
+  color: var(--danger) !important;
+}
+
+/* ── Success block ──────────────────────────────────────────────── */
+
+.transfer-success-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.transfer-success-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.transfer-success-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.transfer-success-meta strong {
+  color: var(--text-subtle);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.transfer-success-lines-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.transfer-success-lines-table th {
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+}
+
+.transfer-success-lines-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.transfer-success-lines-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ── Mobile ─────────────────────────────────────────────────────── */
+
+@media (max-width: 960px) {
+  .transfer-wizard-card {
+    max-width: 100%;
+  }
+
+  .transfer-stage-grid,
+  .transfer-dest-type-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transfer-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transfer-assigned-route {
+    grid-template-columns: 1fr;
+  }
+
+  .transfer-review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .transfer-scan-bar {
+    flex-direction: column;
+  }
+
+  .transfer-scan-bar .app-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .transfer-review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transfer-qty-input {
+    width: 80px;
+  }
+
+  .transfer-success-block {
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .transfer-success-lines-table,
+  .transfer-success-lines-table thead,
+  .transfer-success-lines-table tbody,
+  .transfer-success-lines-table tr,
+  .transfer-success-lines-table th,
+  .transfer-success-lines-table td {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .transfer-success-lines-table {
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+    background: transparent;
+  }
+
+  .transfer-success-lines-table thead {
+    display: none;
+  }
+
+  .transfer-success-lines-table tbody {
+    display: grid;
+    gap: 10px;
+  }
+
+  .transfer-success-lines-table tr {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-elevated);
+    overflow: hidden;
+  }
+
+  .transfer-success-lines-table td {
+    display: grid;
+    grid-template-columns: minmax(88px, 34%) minmax(0, 1fr);
+    gap: 8px;
+    align-items: start;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    text-align: start;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .transfer-success-lines-table td:last-child {
+    border-bottom: 0;
+  }
+
+  .transfer-success-lines-table td::before {
+    color: var(--text-subtle);
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+  }
+
+  .transfer-success-lines-table td:nth-child(1)::before { content: "Batch number"; }
+  .transfer-success-lines-table td:nth-child(2)::before { content: "Item code"; }
+  .transfer-success-lines-table td:nth-child(3)::before { content: "Item name"; }
+  .transfer-success-lines-table td:nth-child(4)::before { content: "Qty"; }
+  .transfer-success-lines-table td:nth-child(5)::before { content: "UOM"; }
+
+  .transfer-success-lines-table .transfer-lines-mono,
+  .transfer-success-lines-table .transfer-lines-num {
+    text-align: start;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (min-width: 961px) {
+  .transfer-wizard-card {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 960px) {
+  .app-content:has(.transfer-page) {
+    padding-top: 10px;
+  }
+
+  .transfer-page {
+    gap: 10px;
+  }
+
+  .transfer-page .wizard-stepbar-wrap {
+    padding-top: 6px;
+    padding-bottom: 8px;
+  }
+
+  .transfer-wizard-card {
+    padding: clamp(14px, 2.5vw, 18px);
+  }
+}
+
+@media (max-width: 480px) {
+  .transfer-page .page-title {
+    font-size: 24px;
+  }
+
+  .transfer-page .wizard-stepbar-wrap {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    gap: 0;
+    padding: 6px 12px 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .transfer-page .wizard-stepbar-wrap::-webkit-scrollbar {
+    display: none;
+  }
+
+  .transfer-page .wizard-step {
+    flex: 0 0 46px;
+    width: 46px;
+    min-width: 46px !important;
+    gap: 4px;
+    padding: 0;
+    scroll-snap-align: center;
+  }
+
+  .transfer-page .wizard-step--active {
+    flex-basis: 62px;
+    width: 62px;
+    min-width: 62px !important;
+  }
+
+  .transfer-page .wizard-step__circle {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-width: 2px;
+    font-size: 12px;
+  }
+
+  .transfer-page .wizard-step--done .wizard-step__circle {
+    font-size: 11px;
+  }
+
+  .transfer-page .wizard-step--active .wizard-step__circle {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    box-shadow: 0 0 0 3px var(--bg-primary-soft);
+  }
+
+  .transfer-page .wizard-step__label {
+    display: block !important;
+    max-width: 46px;
+    font-size: 8px;
+    line-height: 1.1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .transfer-page .wizard-step--active .wizard-step__label {
+    max-width: 62px;
+    font-size: 9px;
+    font-weight: 800;
+  }
+
+  .transfer-page .wizard-connector {
+    flex: 0 0 16px;
+    min-width: 16px;
+    width: 16px;
+    margin-top: 14px;
+  }
+
+  .transfer-wizard-heading {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .transfer-page .wizard-nav-row {
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+
+  .transfer-page .wizard-nav-btn {
+    flex: 1 1 120px;
+    min-width: 0;
+  }
+
+  .transfer-stage-btn {
+    padding: 12px;
+  }
+}

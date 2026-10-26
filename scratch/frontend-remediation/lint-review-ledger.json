@@ -1,0 +1,884 @@
+[
+  {
+    "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+    "line": 38,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'setApproveNotes' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  const [showRejectModal, setShowRejectModal] = useState(false);",
+      "  const [rejectionReason, setRejectionReason] = useState('');",
+      "  const [approveNotes, setApproveNotes] = useState('');",
+      "  const [docDueDate, setDocDueDate] = useState('');",
+      ""
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/components/ui/ToastProvider.jsx",
+    "line": 78,
+    "severity": 2,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "source_context": [
+      "}",
+      "",
+      "export function useToast() {",
+      "  const context = useContext(ToastContext);",
+      "  if (!context) {"
+    ],
+    "disposition": "Unresolved: mixed component/hook/helper exports; splitting module contracts requires further focused regression checks. No rule disabled."
+  },
+  {
+    "file": "frontend/src/contexts/AuthContext.jsx",
+    "line": 70,
+    "severity": 2,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "source_context": [
+      "}",
+      "",
+      "export const useAuth = () => useContext(AuthContext);"
+    ],
+    "disposition": "Unresolved: mixed component/hook/helper exports; splitting module contracts requires further focused regression checks. No rule disabled."
+  },
+  {
+    "file": "frontend/src/contexts/I18nContext.jsx",
+    "line": 47,
+    "severity": 2,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "source_context": [
+      "}",
+      "",
+      "export function useI18n() {",
+      "  const ctx = useContext(I18nContext);",
+      "  if (!ctx) throw new Error('useI18n must be used inside I18nProvider');"
+    ],
+    "disposition": "Unresolved: mixed component/hook/helper exports; splitting module contracts requires further focused regression checks. No rule disabled."
+  },
+  {
+    "file": "frontend/src/hooks/useCostCenterOptions.js",
+    "line": 44,
+    "severity": 2,
+    "rule": "react-hooks/set-state-in-effect",
+    "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  42 |\n  43 |   useEffect(() => {\n> 44 |     requestDimension(1);\n     |     ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  45 |     requestDimension(2);\n  46 |     return () => {\n  47 |       latestRequest.current = {};",
+    "source_context": [
+      "",
+      "  useEffect(() => {",
+      "    requestDimension(1);",
+      "    requestDimension(2);",
+      "    return () => {"
+    ],
+    "disposition": "Unresolved: synchronous loading state in shared cost-center effect; no render-loop failure proved here, no scheduling/performance rewrite made."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 2208,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'vehicleNumber'.",
+    "source_context": [
+      "      newVehicleModalTitle: 'Vehicle Entry & Registration',",
+      "",
+      "      vehicleNumber: 'Vehicle Number / Plate',",
+      "",
+      "      company: 'Transport Company',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 2254,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'noDevicesFound'.",
+    "source_context": [
+      "      noDraftsFound: 'No weighing drafts found.',",
+      "",
+      "      noDevicesFound: 'No scale devices found.',",
+      "",
+      "      ticketHeader: 'WEIGHBRIDGE TICKET / تصريح ميزان البسكول',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 2296,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'packageType'.",
+    "source_context": [
+      "      batchOrPivot: 'Batch / Pivot #',",
+      "",
+      "      packageType: 'Package Type',",
+      "",
+      "      packageCount: 'Package Count',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 2376,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'grossWeight'.",
+    "source_context": [
+      "      weighingSection: 'Load Weight Statement',",
+      "",
+      "      grossWeight: 'Gross',",
+      "",
+      "      tareWeight: 'Tare',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 2378,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'tareWeight'.",
+    "source_context": [
+      "      grossWeight: 'Gross',",
+      "",
+      "      tareWeight: 'Tare',",
+      "",
+      "      netWeight: 'Net',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 2380,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'netWeight'.",
+    "source_context": [
+      "      tareWeight: 'Tare',",
+      "",
+      "      netWeight: 'Net',",
+      "",
+      "      kgLabel: 'kg',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 6872,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'vehicleNumber'.",
+    "source_context": [
+      "      newVehicleModalTitle: 'تسجيل ودخول سيارة جديدة',",
+      "",
+      "      vehicleNumber: 'رقم اللوحة / العربية',",
+      "",
+      "      company: 'شركة النقل',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 6918,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'noDevicesFound'.",
+    "source_context": [
+      "      noDraftsFound: 'لا توجد مسودات توزين.',",
+      "",
+      "      noDevicesFound: 'لا توجد أجهزة ميزان.',",
+      "",
+      "      ticketHeader: 'تصريح ميزان البسكول / WEIGHBRIDGE TICKET',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 6960,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'packageType'.",
+    "source_context": [
+      "      batchOrPivot: 'رقم التشغيلة / البيفوت',",
+      "",
+      "      packageType: 'نوع العبوة',",
+      "",
+      "      packageCount: 'عدد العبوات',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 7040,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'grossWeight'.",
+    "source_context": [
+      "      weighingSection: 'بيان وزن الحمولة',",
+      "",
+      "      grossWeight: 'القائم',",
+      "",
+      "      tareWeight: 'الفارغ',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 7042,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'tareWeight'.",
+    "source_context": [
+      "      grossWeight: 'القائم',",
+      "",
+      "      tareWeight: 'الفارغ',",
+      "",
+      "      netWeight: 'الصافي',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/i18n/translations.js",
+    "line": 7044,
+    "severity": 2,
+    "rule": "no-dupe-keys",
+    "message": "Duplicate key 'netWeight'.",
+    "source_context": [
+      "      tareWeight: 'الفارغ',",
+      "",
+      "      netWeight: 'الصافي',",
+      "",
+      "      kgLabel: 'كيلو',"
+    ],
+    "disposition": "Unresolved: protected scale translation namespace; not edited under explicit user exclusion."
+  },
+  {
+    "file": "frontend/src/pages/IssueReviewPage.jsx",
+    "line": 518,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'res' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "    setActionFeedback(null);",
+      "    try {",
+      "      const res = await approvePostPendingIssue(activeIssue.id);",
+      "      setShowApproveModal(false);",
+      "      setActionFeedback({"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 2,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'binSearch' is defined but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "import SearchableSelect from '../components/ui/SearchableSelect';",
+      "import { binSearch } from '../services/masterDataSearch';",
+      "import React, { useState, useEffect, useMemo, useRef } from 'react';",
+      "import { useNavigate } from 'react-router-dom';"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 71,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'loadingBins' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  // Cache of warehouseCode -> bin list",
+      "  const [warehouseBinsCache, setWarehouseBinsCache] = useState({});",
+      "  const [loadingBins, setLoadingBins] = useState(false);",
+      "  // Batch lookup loading states",
+      "  const [batchLookupLoading, setBatchLookupLoading] = useState({});"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 71,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'setLoadingBins' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  // Cache of warehouseCode -> bin list",
+      "  const [warehouseBinsCache, setWarehouseBinsCache] = useState({});",
+      "  const [loadingBins, setLoadingBins] = useState(false);",
+      "  // Batch lookup loading states",
+      "  const [batchLookupLoading, setBatchLookupLoading] = useState({});"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 1248,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'selectedBatchDetails' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "                          const lookupKey = `${comp.lineNumber}-${idx}`;",
+      "                          const isLookingUp = batchLookupLoading[lookupKey];",
+      "                          const selectedBatchDetails = (availableBatchesCache[comp.lineNumber] || []).find(",
+      "                            (b) => (b.batch_number || b.dist_number) === alloc.batchNumber",
+      "                          );"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 503,
+    "severity": 1,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has a missing dependency: 't'. Either include it or remove the dependency array.",
+    "source_context": [
+      "      setLookupError(err.response?.data?.error || err.message || 'Failed to load order.');",
+      "    } finally { setLookingUp(false); }",
+      "  }, [fetchOptionsForOrder]);",
+      "",
+      "  const handleLoadFromSidebar = useCallback(async (entry) => {"
+    ],
+    "disposition": "Unresolved: hook dependency review needs lifecycle scenarios; adding dependencies blindly may change reload behavior. Warning retained."
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 524,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'toggleOrderVisibility' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  }, [fetchOptionsForOrder]);",
+      "",
+      "  const toggleOrderVisibility = (key) => {",
+      "    setLocalVisibility((prev) =>",
+      "      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 577,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'hiddenCount' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "",
+      "  const configuredCount = RULE_FIELDS.filter((f) => (localRules[f.key] || []).length > 0).length;",
+      "  const hiddenCount = localVisibility.length;",
+      "",
+      "  return ("
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 819,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'toggleUserVisibility' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  };",
+      "",
+      "  const toggleUserVisibility = (key) => {",
+      "    setLocalVisibility((prev) =>",
+      "      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 866,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'hiddenCount' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "",
+      "  const configuredCount = RULE_FIELDS.filter((f) => (localRules[f.key] || []).length > 0).length;",
+      "  const hiddenCount = localVisibility.length;",
+      "",
+      "  return ("
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 1038,
+    "severity": 1,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has a missing dependency: 't'. Either include it or remove the dependency array.",
+    "source_context": [
+      "      setLoadingOrders(false);",
+      "    }",
+      "  }, []);",
+      "",
+      "  const handleSelectWarehouse = (code) => {"
+    ],
+    "disposition": "Unresolved: hook dependency review needs lifecycle scenarios; adding dependencies blindly may change reload behavior. Warning retained."
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 1079,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'filteredWarehouses' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  const selectedWh = warehouses.find((w) => w.code === selectedWhCode);",
+      "",
+      "  const filteredWarehouses = warehouses.filter((w) => {",
+      "    if (!whSearch.trim()) return true;",
+      "    const q = whSearch.toLowerCase();"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 1268,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'warehouseDropdownOpen' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  const [saveSuccess, setSaveSuccess] = useState('');",
+      "  const [deletingCode, setDeletingCode] = useState(null);",
+      "  const [warehouseDropdownOpen, setWarehouseDropdownOpen] = useState(false);",
+      "",
+      "  const srcRef = useRef({ uomOpts: [], companyOpts: [] });"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 1421,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'selectedWhLabel' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "",
+      "  const selectedWh = warehouses.find((w) => w.code === selectedWhCode);",
+      "  const selectedWhLabel = selectedWh",
+      "    ? `${selectedWh.code}${selectedWh.name ? ` — ${selectedWh.name}` : ''}`",
+      "    : (loadingWarehouses ? t('rules.loadingWarehouses') : t('rules.selectWarehouseDefault'));"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "line": 356,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'canApproveForPosting' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  const isManual = isManualCreate || isManualDraft;",
+      "  const canEdit = !postedViewOnly && Boolean(isManualCreate || (draft && EDITABLE_STATUSES.has(draft.status)));",
+      "  const canApproveForPosting = canManageGrpo(user) && draft && EDITABLE_STATUSES.has(draft.status);",
+      "  const canPostToSap = canAccessGrpo(user) && Boolean(draft && (EDITABLE_STATUSES.has(draft.status) || draft.status === 'APPROVED_FOR_POSTING'));",
+      "  const hasSapDocumentInfo = draft?.status === 'POSTED' || hasValue(draft?.sap_doc_entry) || hasValue(draft?.sap_doc_num);"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "line": 422,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'currentValue' is assigned a value but never used.",
+    "source_context": [
+      "  }), []);",
+      "",
+      "  const getBatchFieldOptions = useCallback((fieldKey, currentValue = '', fallbackOptions = []) => {",
+      "    const stored = (batchAttributes.field_options?.[fieldKey] || []).map((i) => ({",
+      "      value: i.value,"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "line": 1261,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'handleApproveForPosting' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  };",
+      "",
+      "  const handleApproveForPosting = async () => {",
+      "    if (!draft || approving || isPosted) return;",
+      "    if (canEdit && !validateAllEditableSteps()) return;"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 120,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'location' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  const { draftId } = useParams();",
+      "  const navigate = useNavigate();",
+      "  const location = useLocation();",
+      "  const { t, lang } = useI18n();",
+      "  const toast = useToast();"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 131,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'errors' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  const [cancelling, setCancelling] = useState(false);",
+      "  const [verifyingPayload, setVerifyingPayload] = useState(false);",
+      "  const [errors, setErrors] = useState({});",
+      "  const [activeStep, setActiveStep] = useState(0);",
+      "  const [maxReachedStep, setMaxReachedStep] = useState(0);"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 145,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'currencies' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "    reloadCostCenter,",
+      "  } = useCostCenterOptions();",
+      "  const [currencies, setCurrencies] = useState([]);",
+      "  const [farms, setFarms] = useState([]);",
+      "  const [itemGroups, setItemGroups] = useState([]);"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 537,
+    "severity": 1,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has missing dependencies: 'vendorCardCode' and 'vendorName'. Either include them or remove the dependency array.",
+    "source_context": [
+      "      setLoading(false);",
+      "    }",
+      "  }, [currency, draftId]);",
+      "",
+      "  useEffect(() => {"
+    ],
+    "disposition": "Unresolved: hook dependency review needs lifecycle scenarios; adding dependencies blindly may change reload behavior. Warning retained."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 688,
+    "severity": 1,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useEffect has a missing dependency: 'openFilter'. Either include it or remove the dependency array.",
+    "source_context": [
+      "      if (filterRafRef.current) cancelAnimationFrame(filterRafRef.current);",
+      "    };",
+      "  }, [getFilterPosition, openFilter?.fk]);",
+      "",
+      "  // ── derived: top-level filtered receipts ──────────────────────────────────────"
+    ],
+    "disposition": "Unresolved: hook dependency review needs lifecycle scenarios; adding dependencies blindly may change reload behavior. Warning retained."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 1372,
+    "severity": 1,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has a missing dependency: 'itemDescMap'. Either include it or remove the dependency array.",
+    "source_context": [
+      "        };",
+      "      });",
+      "  }, [filteredRows, selectedIds, getRowKey, getReceiptId, getBatchId, edits]);",
+      "",
+      "  const handleExportExcel = useCallback(() => {"
+    ],
+    "disposition": "Unresolved: hook dependency review needs lifecycle scenarios; adding dependencies blindly may change reload behavior. Warning retained."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 1524,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'err' is defined but never used.",
+    "source_context": [
+      "            const orderRes = await API.get(`/production-orders/by-number/${sourceOrderNumber}/`);",
+      "            orderCache.set(sourceOrderNumber, orderRes.data.data?.order || null);",
+      "          } catch (err) {",
+      "            orderCache.set(sourceOrderNumber, null);",
+      "          }"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 1545,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'err' is defined but never used.",
+    "source_context": [
+      "              const binRes = await API.get(`/bin-locations/${warehouseCode}/`);",
+      "              binCache.set(warehouseCode, binRes.data.data?.locations || []);",
+      "            } catch (err) {",
+      "              binCache.set(warehouseCode, []);",
+      "            }"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 1774,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'err' is defined but never used.",
+    "source_context": [
+      "      const preview = await buildImportPreview(rows, lookupReceipts);",
+      "      setImportModal({ fileName: file.name, preview, error: '' });",
+      "    } catch (err) {",
+      "      setImportModal({ fileName: file.name, preview: null, error: 'Could not read Excel file.' });",
+      "    }"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 2132,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'isFirst' is defined but never used.",
+    "source_context": [
+      "",
+      "                <tbody>",
+      "                  {filteredRows.map(({ r, b, isFirst }) => {",
+      "                    const bg           = colorMap.get(r.id) || 'var(--bg-elevated)';",
+      "                    const rowKey       = b ? getRowKey(r, b) : '';"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 15,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'escapeHtml' is defined but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "import { canManageProduction } from '../utils/roles';",
+      "import {",
+      "  escapeHtml, getCleanProductName, getUomMeasurement, printBatchLabels,",
+      "} from '../utils/printBatchLabels';",
+      ""
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 357,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'nextBatchReservation' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  const [companyOptions, setCompanyOptions] = useState([]);",
+      "  const [batchUdfMetadata, setBatchUdfMetadata] = useState({});",
+      "  const [nextBatchReservation, setNextBatchReservation] = useState({ batch_number: '', reservation_id: null });",
+      "  const [addingBatch, setAddingBatch] = useState(false);",
+      "  const [loadingOrderData, setLoadingOrderData] = useState(false);"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 438,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'remainingQty' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  const plannedQty = orderFull?.PlannedQuantity || selectedOrder?.plannedQty || 0;",
+      "  const completedQty = orderFull?.CompletedQuantity || selectedOrder?.completedQty || 0;",
+      "  const remainingQty = plannedQty - completedQty;",
+      "",
+      "  useEffect(() => {"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 595,
+    "severity": 1,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useEffect has a missing dependency: 'user'. Either include it or remove the dependency array.",
+    "source_context": [
+      "      setUserHiddenFields(hidden);",
+      "    });",
+      "  }, []);",
+      "",
+      "  // ── auto-scroll active attribute chip into view (mobile UX) ──────────────"
+    ],
+    "disposition": "Unresolved: hook dependency review needs lifecycle scenarios; adding dependencies blindly may change reload behavior. Warning retained."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 994,
+    "severity": 1,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useCallback has a missing dependency: 't'. Either include it or remove the dependency array.",
+    "source_context": [
+      "      console.timeEnd('load-order-data');",
+      "    }",
+      "  }, [",
+      "    loadBatchAttributesForItem,",
+      "    loadBinLocationsForWarehouse,"
+    ],
+    "disposition": "Unresolved: hook dependency review needs lifecycle scenarios; adding dependencies blindly may change reload behavior. Warning retained."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1034,
+    "severity": 1,
+    "rule": "react-hooks/exhaustive-deps",
+    "message": "React Hook useMemo has an unnecessary dependency: 'statusFilter'. Either exclude it or remove the dependency array.",
+    "source_context": [
+      "    const db = getOrderCompareDate(b).replace(/-/g, '');",
+      "    return db.localeCompare(da);",
+      "  }), [openOrders, search, statusFilter, dateFilter, userWarehouse]);",
+      "",
+      "  const hasActiveFilters = search.trim() || statusFilter !== 'all' || dateFilter;"
+    ],
+    "disposition": "Unresolved: hook dependency review needs lifecycle scenarios; adding dependencies blindly may change reload behavior. Warning retained."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1047,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'getInitialField' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  }, [batchUdfMetadata]);",
+      "",
+      "  const getInitialField = useCallback((key, fallback = '') =>",
+      "    batchAttributes.latest_batch_fields?.[key] || getUdfDefault(key, fallback),",
+      "    [batchAttributes, getUdfDefault]);"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1051,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'currentValue' is assigned a value but never used.",
+    "source_context": [
+      "    [batchAttributes, getUdfDefault]);",
+      "",
+      "  const getBatchFieldOptions = useCallback((fieldKey, currentValue = '', fallbackOptions = []) => {",
+      "    const stored = (batchAttributes.field_options?.[fieldKey] || []).map((i) => ({",
+      "      value: i.value, label: i.description && i.description !== i.value ? `${i.value} - ${i.description}` : i.value,"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1213,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'batchTotalsMatch' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "  const totalBatchUnitCount = useMemo(() =>",
+      "    batches.reduce((s, b) => s + (parseInt(b.unitCount) || 0), 0), [batches]);",
+      "  const batchTotalsMatch = Math.abs(totalBatchQty - Number(quantity || 0)) <= 0.01;",
+      "  const batchUnitCountsMatch = totalBatchUnitCount === Number(unitCount || 0);",
+      ""
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1876,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'subStepPrev' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "              };",
+      "              const subStepNext = () => goToSubStep(Math.min(2, subStep + 1));",
+      "              const subStepPrev = () => setBatchSubSteps((s) => ({ ...s, [batch.id]: Math.max(0, (s[batch.id] ?? 0) - 1) }));",
+      "              const goToBatchStep = (i) => { if (i <= subMaxReached) setBatchSubSteps((s) => ({ ...s, [batch.id]: i })); };",
+      "              const batchUomOption = findBatchUomOption(batch);"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 1978,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'attrHasCards' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+    "source_context": [
+      "              // UI-only intersection of order + user + warehouse rules — never touches state or payload",
+      "              const attrOpts = applyAllowedRules(attrDef.key, rawAttrOpts, orderAttributeRules, userAttributeRules, warehouseAttrRules);",
+      "              const attrHasCards = attrOpts.length > 0;",
+      "              const attrNext = () => {",
+      "                const nextIdx = attrIdx + 1;"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/pages/SalesDocumentListPage.jsx",
+    "line": 24,
+    "severity": 2,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "source_context": [
+      "import '../styles/pages/customization-delivery.css';",
+      "",
+      "export function formatQuantity(value) {",
+      "  if (value === null || value === undefined || value === '') return '—';",
+      "  const numeric = Number(value);"
+    ],
+    "disposition": "Unresolved: mixed component/hook/helper exports; splitting module contracts requires further focused regression checks. No rule disabled."
+  },
+  {
+    "file": "frontend/src/pages/SalesDocumentListPage.jsx",
+    "line": 31,
+    "severity": 2,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "source_context": [
+      "}",
+      "",
+      "export function formatMoney(value, currency) {",
+      "  if (value === null || value === undefined || value === '') return '—';",
+      "  const numeric = Number(value);"
+    ],
+    "disposition": "Unresolved: mixed component/hook/helper exports; splitting module contracts requires further focused regression checks. No rule disabled."
+  },
+  {
+    "file": "frontend/src/pages/UserManagementPage.jsx",
+    "line": 407,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'StatIcon' is defined but never used.",
+    "source_context": [
+      "          { label: t('users.active'), value: activeCount, icon: CircleCheck, tone: 'success' },",
+      "          { label: t('users.disabled'), value: disabledCount, icon: CircleOff, tone: 'danger' },",
+      "        ].map(({ label, value, icon: StatIcon, tone }) => (",
+      "          <div key={label} className=\"um-stat-card\">",
+      "            <div className={`um-stat-card__icon um-stat-card__icon--${tone}`}><StatIcon size={17} /></div>"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  },
+  {
+    "file": "frontend/src/services/purchaseGrpoService.js",
+    "line": 205,
+    "severity": 2,
+    "rule": "no-unused-vars",
+    "message": "'err' is defined but never used.",
+    "source_context": [
+      "    const response = await API.get(`/quality/batches/${encodeURIComponent(batchNumber)}/`);",
+      "    return response.data?.batch || null;",
+      "  } catch (err) {",
+      "    return null;",
+      "  }"
+    ],
+    "disposition": "Unresolved: unused binding/handler/parameter; no runtime ReferenceError implied. Existing functionality not deleted solely to pass lint."
+  }
+]

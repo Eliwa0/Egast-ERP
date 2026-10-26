@@ -1,0 +1,787 @@
+/* Issue for Production Review Page Styles */
+
+.issue-review-page {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 60px;
+}
+
+/* ── Toolbar & Filters ── */
+.issue-review-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.issue-review-search-wrap {
+  flex: 1;
+  min-width: min(260px, 100%);
+  position: relative;
+}
+
+.issue-review-search-input {
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 16px;
+  padding-inline-start: 40px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-background);
+  color: var(--color-text);
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.issue-review-search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: var(--focus-ring);
+}
+
+.issue-review-search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  inset-inline-start: 12px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.issue-review-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.issue-review-status-select {
+  min-height: 42px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.issue-review-status-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.issue-review-refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+/* ── Status Badges ── */
+.issue-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.issue-status-badge--pending {
+  background: var(--bg-warning-soft, #fff8e1);
+  color: var(--color-warning, #b7791f);
+  border: 1px solid rgba(183, 121, 31, 0.25);
+}
+
+.issue-status-badge--posting {
+  background: var(--color-primary-soft, #e8f0fe);
+  color: var(--color-primary, #1a73e8);
+  border: 1px solid rgba(26, 115, 232, 0.25);
+}
+
+.issue-status-badge--posted {
+  background: var(--bg-success-soft, #e8f5e9);
+  color: var(--color-success, #16803c);
+  border: 1px solid rgba(22, 128, 60, 0.25);
+}
+
+.issue-status-badge--failed {
+  background: var(--bg-danger-soft, #fef2f2);
+  color: var(--color-danger, #dc2626);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+}
+
+.issue-status-badge--rejected {
+  background: var(--color-surface-hover, #f1f5f9);
+  color: var(--color-text-muted, #64748b);
+  border: 1px solid var(--color-border, #cbd5e1);
+}
+
+.issue-status-badge--ambiguous {
+  background: var(--bg-warning-soft, #fff8e1);
+  color: #b45309;
+  border: 1px solid rgba(180, 83, 9, 0.35);
+}
+
+/* ── Table Card ── */
+.issue-review-table-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.issue-review-table-wrap {
+  overflow-x: auto;
+}
+
+.issue-review-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: start;
+  font-size: 0.92rem;
+}
+
+.issue-review-table th {
+  background: var(--color-surface-hover);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.issue-review-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  vertical-align: middle;
+}
+
+.issue-review-table tbody tr:hover {
+  background: var(--color-surface-hover);
+}
+
+.issue-review-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.issue-id-cell {
+  font-weight: 700;
+  font-family: monospace;
+  color: var(--color-primary);
+}
+
+.issue-product-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.issue-product-code {
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.issue-product-name {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.issue-qty-cell {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* ── Empty & Loading States ── */
+.issue-review-empty {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.issue-review-empty p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.issue-review-loading {
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ── Detail View Container ── */
+.issue-detail-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.issue-detail-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.issue-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+}
+
+/* ── High Visibility Status Banners ── */
+.issue-status-banner {
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.2s ease;
+}
+
+.issue-status-banner--pending {
+  background: var(--bg-warning-soft, #fffdf5);
+  border-color: rgba(183, 121, 31, 0.35);
+}
+
+.issue-status-banner--posted {
+  background: var(--bg-success-soft, #f0fdf4);
+  border-color: rgba(22, 128, 60, 0.35);
+}
+
+.issue-status-banner--posting {
+  background: var(--color-primary-soft, #f0f7ff);
+  border-color: rgba(26, 115, 232, 0.35);
+}
+
+.issue-status-banner--failed {
+  background: var(--bg-danger-soft, #fef2f2);
+  border-color: rgba(220, 38, 38, 0.35);
+}
+
+.issue-status-banner--ambiguous {
+  background: var(--bg-warning-soft, #fffdf5);
+  border-color: rgba(217, 119, 6, 0.45);
+}
+
+.issue-status-banner--rejected {
+  background: var(--color-surface-hover, #f8fafc);
+  border-color: var(--color-border, #cbd5e1);
+}
+
+.issue-status-banner__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.issue-status-banner__title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.issue-status-banner__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.issue-status-banner__desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.issue-status-banner__meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.issue-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.issue-meta-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.issue-meta-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.issue-meta-value--highlight {
+  color: var(--color-success, #16803c);
+  font-size: 1.05rem;
+}
+
+.issue-error-box {
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  color: var(--color-danger, #dc2626);
+  font-size: 0.9rem;
+  font-family: monospace;
+  word-break: break-word;
+}
+
+.issue-error-box--ambiguous {
+  background: rgba(217, 119, 6, 0.08);
+  border-color: rgba(217, 119, 6, 0.35);
+  color: #92400e;
+  font-family: inherit;
+}
+
+.issue-ambiguous-explainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #b45309;
+}
+
+.issue-reason-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* ── Section Cards ── */
+.issue-section-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.issue-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 14px;
+}
+
+.issue-section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.issue-section-subtitle {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 4px 0 0;
+}
+
+/* ── Metadata Grid ── */
+.issue-order-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px 24px;
+}
+
+/* ── Allocation Group ── */
+.issue-alloc-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  background: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.issue-alloc-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.issue-alloc-comp-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.issue-alloc-badge-match {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-success-soft, #e8f5e9);
+  color: var(--color-success, #16803c);
+  border: 1px solid rgba(22, 128, 60, 0.25);
+}
+
+.issue-alloc-badge-mismatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-danger-soft, #fef2f2);
+  color: var(--color-danger, #dc2626);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+}
+
+.issue-alloc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.issue-alloc-table th {
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  padding: 8px 12px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-border);
+  text-align: start;
+}
+
+.issue-alloc-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.issue-alloc-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ── Actions Bar ── */
+.issue-review-actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.issue-action-btn-danger {
+  background: transparent;
+  color: var(--color-danger, #dc2626);
+  border: 1px solid rgba(220, 38, 38, 0.35);
+  min-height: 42px;
+  padding: 8px 20px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.issue-action-btn-danger:hover:not(:disabled) {
+  background: rgba(220, 38, 38, 0.08);
+  border-color: var(--color-danger, #dc2626);
+}
+
+.issue-action-btn-danger:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.issue-action-btn-post {
+  min-height: 44px;
+  padding: 10px 28px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+}
+
+/* ── Modal Dialogs ── */
+.issue-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+  backdrop-filter: blur(2px);
+}
+
+.issue-modal {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  width: min(540px, 100%);
+  padding: 24px;
+  box-shadow: var(--shadow-lg, 0 10px 25px -5px rgba(0, 0, 0, 0.2));
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.issue-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+}
+
+.issue-modal-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.issue-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.issue-modal-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-background);
+  color: var(--color-text);
+  font-size: 0.95rem;
+  resize: vertical;
+}
+
+.issue-modal-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: var(--focus-ring);
+}
+
+.issue-modal-recap {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.issue-modal-warning-text {
+  font-size: 0.9rem;
+  color: var(--color-warning, #b7791f);
+  background: var(--bg-warning-soft, #fffdf5);
+  border: 1px solid rgba(183, 121, 31, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  line-height: 1.45;
+}
+
+.issue-modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.issue-action-btn-reconcile {
+  background: #d97706;
+  color: #ffffff;
+  min-height: 44px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.issue-action-btn-reconcile:hover:not(:disabled) {
+  background: #b45309;
+  box-shadow: 0 2px 8px rgba(180, 83, 9, 0.3);
+}
+
+.issue-action-btn-reconcile:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.issue-modal-reconcile-desc {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.issue-reconcile-points {
+  margin: 0;
+  padding-inline-start: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+.issue-reconcile-points li {
+  line-height: 1.4;
+}
+
+.issue-reconcile-manual-section {
+  border-top: 1px dashed var(--color-border);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.issue-reconcile-toggle-btn {
+  background: transparent;
+  border: none;
+  padding: 4px 0;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.issue-reconcile-toggle-btn:hover {
+  text-decoration: underline;
+}
+
+.issue-reconcile-manual-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  background: var(--color-background);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.issue-modal-input {
+  width: 100%;
+  min-height: 38px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.issue-modal-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: var(--focus-ring);
+}
+
+/* ── Mobile Responsive Adjustments ── */
+@media (max-width: 768px) {
+  .issue-review-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .issue-review-filters {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .issue-review-status-select {
+    flex: 1;
+  }
+
+  .issue-section-card {
+    padding: 16px;
+  }
+
+  .issue-review-actions-bar {
+    flex-direction: column-reverse;
+  }
+
+  .issue-review-actions-bar button {
+    width: 100%;
+  }
+
+  .issue-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .issue-modal-actions button {
+    width: 100%;
+  }
+}

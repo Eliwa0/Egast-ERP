@@ -1,0 +1,977 @@
+{
+  "note": "Historical baseline used only for comparison; current run was executed independently",
+  "cases": [
+    {
+      "route": "/production",
+      "language": "en",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "en",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "en",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "en",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "en",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "en",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "en",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "en",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "en",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "en",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "en",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "en",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "en",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "en",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "en",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "en",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "en",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "en",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "en",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "en",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "en",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "en",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "en",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "en",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "en",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "en",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "en",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "en",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "en",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "en",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "en",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "en",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "en",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "en",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "en",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "en",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "en",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "en",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "en",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "en",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "en",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "en",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "en",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "en",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "en",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "en",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "en",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "en",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "en",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "en",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "en",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "en",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "en",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "en",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "ar",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "ar",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "ar",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "ar",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "ar",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "ar",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "ar",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "ar",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "ar",
+      "theme": "light",
+      "width": 320,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "ar",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "ar",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "ar",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "ar",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "ar",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "ar",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "ar",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "ar",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "ar",
+      "theme": "light",
+      "width": 768,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "ar",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "ar",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "ar",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "ar",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "ar",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "ar",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "ar",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "ar",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "ar",
+      "theme": "light",
+      "width": 1440,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "ar",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "ar",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "ar",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "ar",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "ar",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "ar",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "ar",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "ar",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "ar",
+      "theme": "dark",
+      "width": 320,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "ar",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "ar",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "ar",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "ar",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "ar",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "ar",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "ar",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "ar",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "ar",
+      "theme": "dark",
+      "width": 768,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/production",
+      "language": "ar",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/quality",
+      "language": "ar",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 2,
+      "current_measured_requests": 2,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "language": "ar",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "language": "ar",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 3,
+      "current_measured_requests": 3,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "language": "ar",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 6,
+      "current_measured_requests": 6,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/shipping-loading",
+      "language": "ar",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 10,
+      "current_measured_requests": 10,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/1001",
+      "language": "ar",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/orders/documents/2002",
+      "language": "ar",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 4,
+      "current_measured_requests": 4,
+      "equal_method_path_counts": true
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/2002",
+      "language": "ar",
+      "theme": "dark",
+      "width": 1440,
+      "historical_baseline_requests": 5,
+      "current_measured_requests": 5,
+      "equal_method_path_counts": true
+    }
+  ]
+}

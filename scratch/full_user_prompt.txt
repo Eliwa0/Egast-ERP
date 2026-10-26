@@ -1,0 +1,432 @@
+<USER_REQUEST>
+GRPO PROJECT HANDOFF — CONTINUE EXISTING WORK, DO NOT RESTART
+
+You are taking over an existing GRPO frontend cleanup task from another coding agent whose credits have ended.
+
+IMPORTANT:
+This is a CONTINUATION task.
+
+Do NOT restart the previous work.
+Do NOT revert previous changes.
+Do NOT recreate already-implemented functionality.
+First inspect the current git status/diff and the current implementation of:
+
+frontend/src/pages/PurchaseGRPODraftPage.jsx
+frontend/src/i18n/translations.js
+
+The existing changes are intentional and must be preserved.
+
+==================================================
+CURRENT GRPO STATE — ALREADY IMPLEMENTED
+==================================================
+
+The previous agent completed several GRPO UX cleanups.
+
+1. GRPO Batch Data was simplified to exactly 6 custom attributes:
+
+- Vendor
+- Part
+- Company
+- Season
+- Batch Attribute 1
+- Batch Attribute 2
+
+The old attributes were removed from the UI:
+
+- Size
+- Brand
+- Category
+- Packing
+- Extra Specification
+- Number
+- Details
+
+Do NOT bring these back.
+
+2. GRPO duplicate-data cleanup was implemented.
+
+Warehouse and Bin Location now have one authoritative interactive owner:
+
+"المخزن والخلية"
+
+The step:
+
+"المستودع والتسعير"
+
+must contain item/pricing information only.
+
+The previous agent removed from "المستودع والتسعير":
+
+- Warehouse selector
+- Bin Location selector
+- Bin search
+- Bin card grid
+
+3. Bin Location SAP/state behavior was preserved.
+
+Do NOT break or rename:
+
+- form.warehouse_code
+- form.bin_code
+- form.bin_abs_entry
+- batches[i].bin_location_code
+- batches[i].bin_abs_entry
+- DocumentLinesBinAllocations
+- existing SAP GRPO payload mapping
+
+The Warehouse/Bin is selected once in "المخزن والخلية".
+
+Batch Data may display the assigned Bin as READ-ONLY information, but must not provide another interactive Bin selector.
+
+4. These line-item fields were moved to Item Data / "المستودع والتسعير":
+
+- tax_code
+- discount_percent
+- location
+- general
+
+5. GRPO Quantity was deduplicated and is now owned by the Item/Product step.
+
+6. Batch operational fields were deduplicated.
+
+These should be entered in the Batch/Operations section only:
+
+- Batch Number
+- Production Date
+- Entry Date
+- Expiry Date
+
+7. Contractor was removed from the GRPO UI because it is not used/sent to SAP.
+
+8. Container No. and No. Packed were already implemented and must remain unchanged.
+
+9. Existing draft save/load, batch allocation, bin allocation, SAP posting, and backend compatibility must be preserved.
+
+==================================================
+CURRENT PROBLEM / REMAINING TASK
+==================================================
+
+After the previous cleanup, the first visible GRPO step is now:
+
+"بيانات المورد والمستند"
+
+But this step has become effectively useless.
+
+The current screen is essentially an informational/confirmation page saying that the manual receiving data was saved, followed by a "التالي" button.
+
+It no longer contains meaningful user input.
+
+Therefore the remaining task is:
+
+REMOVE THIS ENTIRE WIZARD STEP.
+
+==================================================
+FINAL DESIRED GRPO WIZARD
+==================================================
+
+The final wizard should have exactly 5 visible steps:
+
+1. المستودع والتسعير
+2. المخزن والخلية
+3. التشغيل والوزن
+4. بيانات التشغيلات والخواص
+5. المراجعة والترحيل إلى SAP
+
+There must NOT be:
+
+"بيانات المورد والمستند"
+
+as a separate wizard step.
+
+Do NOT replace it with another blank/confirmation step.
+
+==================================================
+CRITICAL: AUDIT BEFORE REMOVING
+==================================================
+
+Before deleting the step, inspect what data was historically associated with it.
+
+Do NOT delete actual required data just because the step is being removed.
+
+Verify where these values currently come from:
+
+- Vendor / Supplier
+- Container No.
+- No. Packed
+- Posting Date
+- Document Date
+- Due Date
+- GRPO Comments
+- Inspection ID / Quality context
+- Any other header-level information
+
+If the values are already handled elsewhere or automatically populated, preserve them.
+
+If any required field genuinely depends on the old step, move ONLY that field to the correct existing step.
+
+Do not create duplicate controls.
+
+==================================================
+REMOVE THE STEP COMPLETELY
+==================================================
+
+Remove the obsolete wizard step from:
+
+- step definitions
+- stepper labels
+- step descriptions
+- rendering branches
+- step-specific validation
+- navigation logic
+- step-specific confirmation UI
+
+Also remove state/functions ONLY if they become genuinely unused after this change.
+
+Do not delete backend fields merely because the UI step is removed.
+
+==================================================
+STEP INDEXES
+==================================================
+
+The current implementation may use variables such as:
+
+- headerIndex
+- itemIndex
+- warehouseIndex
+- operationalIndex
+- batchesIndex
+- reviewIndex
+
+and/or:
+
+- MANUAL_INTAKE_STEPS
+- STANDARD_GRPO_STEPS
+- CONTINUOUS_GRPO_STEPS
+
+Inspect the actual current code before changing them.
+
+After removing the obsolete first step, update all indexes and navigation safely.
+
+There must be no stale references where an old index still points to the deleted step.
+
+Check:
+
+- activeStep
+- validateStep()
+- validateAllEditableSteps()
+- Next
+- Previous
+- Review navigation
+- Stepper click/navigation if supported
+
+Do NOT leave gaps in indexes.
+
+==================================================
+MANUAL GRPO
+==================================================
+
+Be especially careful with Manual GRPO.
+
+The previous workflow originally included:
+
+- Shipment/Container
+- Supplier
+- Product
+- Warehouse
+- Batch
+- Review
+
+Do NOT accidentally remove the actual Supplier or Container functionality.
+
+The goal is to remove ONLY the now-empty "بيانات المورد والمستند" wizard step.
+
+If Vendor, Container No., No. Packed, dates, comments, etc. are already handled by other existing parts of the wizard, preserve them exactly there.
+
+Do NOT move fields unnecessarily.
+
+==================================================
+QUALITY / WEIGHBRIDGE GRPO
+==================================================
+
+Preserve the existing Quality/Weighbridge behavior.
+
+In particular:
+
+- Container No. comes automatically from the weighbridge/inspection context.
+- It remains read-only for Quality GRPO.
+- No. Packed remains editable according to the existing implementation.
+- Do not break inspection_context.
+- Do not break draft loading.
+
+==================================================
+PRESERVE CURRENT BATCH IMPLEMENTATION
+==================================================
+
+Batch Data must continue to contain exactly:
+
+1. Vendor
+2. Part
+3. Company
+4. Season
+5. Batch Attribute 1
+6. Batch Attribute 2
+
+And the operational batch fields:
+
+- Batch Number
+- Production Date
+- Entry Date
+- Expiry Date
+- Quantity
+
+Preserve:
+
+- multiple batches
+- Add Batch
+- Duplicate Batch
+- Remove Batch
+- quantity allocation
+- SAP BatchNumbers mapping
+
+Do NOT restore:
+
+- Size
+- Brand
+- Category
+- Packing
+- Extra Specification
+- Number
+- Details
+
+==================================================
+PRESERVE WAREHOUSE / BIN IMPLEMENTATION
+==================================================
+
+The ONLY interactive Warehouse/Bin step must remain:
+
+"المخزن والخلية"
+
+It must contain:
+
+- Warehouse selector
+- Bin Location search
+- Bin Location selection
+
+"المستودع والتسعير" must NOT contain:
+
+- Warehouse selector
+- Bin selector
+- Bin search
+- Bin card grid
+
+Batch Data must NOT contain interactive Bin selection.
+
+Only a read-only assigned-bin indicator is allowed there.
+
+==================================================
+DO NOT TOUCH UNRELATED MODULES
+==================================================
+
+Do NOT modify:
+
+- Purchase Quotation
+- Receipt from Production
+- Weighbridge
+- Scale Agent
+- SAP currency logic
+- Master-data caching
+- unrelated backend functionality
+
+Do NOT make broad refactors.
+
+Do NOT redesign the wizard.
+
+Do NOT change styling unless required because the step is being removed.
+
+==================================================
+IMPORTANT: INSPECT CURRENT WORK FIRST
+==================================================
+
+Before editing:
+
+1. Run git status.
+2. Inspect git diff.
+3. Inspect the current PurchaseGRPODraftPage.jsx.
+4. Identify the current step definitions.
+5. Identify all activeStep/index references.
+6. Identify the current manual/standard/continuous flows.
+7. Identify what the current "بيانات المورد والمستند" branch actually renders.
+
+Do NOT assume the old code structure.
+
+The previous agent already modified this file significantly.
+
+Your job is to CONTINUE from the current state.
+
+==================================================
+VERIFICATION
+==================================================
+
+After implementation verify:
+
+1. "بيانات المورد والمستند" no longer exists as a wizard step.
+2. Exactly 5 visible GRPO steps remain.
+3. First visible step is "المستودع والتسعير".
+4. Second is "المخزن والخلية".
+5. Third is "التشغيل والوزن".
+6. Fourth is "بيانات التشغيلات والخواص".
+7. Fifth is "المراجعة والترحيل إلى SAP".
+8. No blank/confirmation-only step remains.
+9. Warehouse still has exactly one interactive owner.
+10. Bin Location still has exactly one interactive owner.
+11. GRPO Quantity remains in its current correct step.
+12. Batch Number and dates remain in Batch Data.
+13. The six finalized batch attributes remain unchanged.
+14. Container No. remains functional.
+15. No. Packed remains functional.
+16. Draft save/load remains functional.
+17. Back/Next navigation works correctly.
+18. Validation indexes are correct.
+19. Review remains the final step.
+20. SAP posting/payload behavior remains unchanged.
+
+==================================================
+TESTS
+==================================================
+
+Run:
+
+- PurchaseGRPOManualReceivingTests
+- PurchaseGRPODraftWorkflowTests
+- BatchPayloadMappingTests if available/relevant
+
+Also run:
+
+npm run i18n:check
+npm run build
+
+Do not skip tests.
+
+==================================================
+FINAL REPORT
+==================================================
+
+Report:
+
+1. What was removed.
+2. Final 5-step wizard order.
+3. Any fields that required relocation.
+4. Files changed.
+5. Confirmation that existing state was preserved.
+6. Confirmation that SAP payload/bin allocation was preserved.
+7. Test results.
+8. i18n result.
+9. Build result.
+10. Any potential remaining issue.
+
+IMPORTANT:
+Do not claim success without actually verifying the current code and running the checks.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-21T21:22:36+03:00.
+</ADDITIONAL_METADATA>

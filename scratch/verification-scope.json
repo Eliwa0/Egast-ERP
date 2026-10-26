@@ -1,0 +1,9 @@
+{
+  "applicationFiles": 237,
+  "changed": [
+    "frontend\\src\\App.jsx",
+    "frontend\\src\\styles\\pages\\sales-readiness.css",
+    "frontend\\src\\styles\\responsive-mobile.css"
+  ],
+  "unexpected": []
+}

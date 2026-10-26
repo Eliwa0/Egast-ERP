@@ -1,0 +1,30 @@
+[
+  {
+    "file": "frontend/scripts/test-click-traceability.mjs",
+    "reason": "legacy CDP/scale checks excluded; not part of isolated Node suite"
+  },
+  {
+    "file": "frontend/scripts/test-module-permissions.mjs",
+    "reason": "scale or weight fixture dependencies excluded by user"
+  },
+  {
+    "file": "frontend/scripts/test-print-render.mjs",
+    "reason": "legacy CDP/scale checks excluded; not part of isolated Node suite"
+  },
+  {
+    "file": "frontend/scripts/test-responsive-browser.mjs",
+    "reason": "legacy CDP/scale checks excluded; not part of isolated Node suite"
+  },
+  {
+    "file": "frontend/scripts/test-scale-monitor.mjs",
+    "reason": "scale or weight fixture dependencies excluded by user"
+  },
+  {
+    "file": "frontend/scripts/test-shipping-loading-wizard.mjs",
+    "reason": "scale or weight fixture dependencies excluded by user"
+  },
+  {
+    "file": "frontend/scripts/test_modal.mjs",
+    "reason": "legacy CDP/scale checks excluded; not part of isolated Node suite"
+  }
+]

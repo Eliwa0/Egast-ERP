@@ -1,0 +1,211 @@
+{
+  "results": [
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 280,
+      "touch": false,
+      "height": 480,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "26px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 60,
+      "scroll": 265,
+      "viewport": 265,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 280,
+      "touch": false,
+      "height": 480,
+      "smallTargets": [],
+      "fonts": [],
+      "url": "/",
+      "body": 647,
+      "scroll": 265,
+      "viewport": 265,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/production",
+      "lang": "en",
+      "width": 280,
+      "touch": false,
+      "height": 480,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        }
+      ],
+      "url": "/production",
+      "body": 241,
+      "scroll": 265,
+      "viewport": 265,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/receipt",
+      "lang": "en",
+      "width": 280,
+      "touch": false,
+      "height": 480,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "page-title",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input wizard-date-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/receipt",
+      "body": 258,
+      "scroll": 265,
+      "viewport": 265,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 280,
+      "touch": false,
+      "height": 480,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 355,
+      "scroll": 265,
+      "viewport": 265,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 280,
+      "touch": false,
+      "height": 480,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 268,
+      "scroll": 265,
+      "viewport": 265,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    }
+  ],
+  "requests": [
+    "/api/me/",
+    "/api/production/pallet-types/",
+    "/api/open-production-orders/",
+    "/api/uoms/",
+    "/api/batch-udf-metadata/",
+    "/api/uom-options/",
+    "/api/company-options/",
+    "/api/user-attribute-rules/me/",
+    "/api/user-attribute-visibility/me/",
+    "/api/admin/pending-issues/"
+  ],
+  "blockedWrites": [],
+  "simulatedWrites": [],
+  "fixtureMode": "populated",
+  "auditTheme": "light"
+}

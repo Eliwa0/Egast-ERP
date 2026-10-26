@@ -1,0 +1,29 @@
+﻿diff --git a/frontend/src/contexts/I18nContext.jsx b/frontend/src/contexts/I18nContext.jsx
+index 188eee5..c431372 100644
+--- a/frontend/src/contexts/I18nContext.jsx
++++ b/frontend/src/contexts/I18nContext.jsx
+@@ -1,4 +1,4 @@
+-import React, { createContext, useContext, useEffect, useState } from 'react';
++import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
+ import { translations } from '../i18n/translations';
+ 
+ const I18nContext = createContext(null);
+@@ -24,7 +24,8 @@ export function I18nProvider({ children }) {
+   }, [lang]);
+ 
+   // t('wizard.step1')  or  t('common.save')
+-  const t = (path, ...args) => {
++  const t = useCallback((path, ...args) => {
++    if (!path || typeof path !== 'string') return '';
+     const keys = path.split('.');
+     let node = translations[lang];
+     for (const k of keys) {
+@@ -34,7 +35,7 @@ export function I18nProvider({ children }) {
+     if (typeof node === 'function') return node(...args);
+     if (typeof node === 'string') return node;
+     return path;
+-  };
++  }, [lang]);
+ 
+   return (
+     <I18nContext.Provider value={{ lang, setLang, t }}>

@@ -1,0 +1,9 @@
+{
+  "baseline_sha256_reference_only": "6fd5b4174d4cec8d504b927c3b31404436ae3e78d1ce294a65dab0a554420e9a",
+  "baseline_source_drift": [],
+  "scan_source_drift": [],
+  "baseline_comparison_scope": "Intersection of final allowed frontend scan and previous manifest only",
+  "initial_scope_error": "Five previously excluded mixed test scripts read during initial static collection; not executed or changed. Initial artifacts retained. Final collection excludes prior exclusion list before reading.",
+  "application_modified": false,
+  "general_tests_rerun": false
+}

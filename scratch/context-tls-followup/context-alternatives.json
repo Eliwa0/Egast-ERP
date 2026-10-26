@@ -1,0 +1,112 @@
+{
+  "diagnostic_assertions": 15,
+  "rows": [
+    {
+      "provider": "AuthProvider",
+      "hook": "useAuth",
+      "variant": "original-contract",
+      "refresh_errors": 1,
+      "contract_preserved": true
+    },
+    {
+      "provider": "AuthProvider",
+      "hook": "useAuth",
+      "variant": "reexport-hook",
+      "refresh_errors": 1,
+      "contract_preserved": true
+    },
+    {
+      "provider": "AuthProvider",
+      "hook": "useAuth",
+      "variant": "reexport-both",
+      "refresh_errors": 1,
+      "contract_preserved": true
+    },
+    {
+      "provider": "AuthProvider",
+      "hook": "useAuth",
+      "variant": "provider-only",
+      "refresh_errors": 0,
+      "contract_preserved": false
+    },
+    {
+      "provider": "AuthProvider",
+      "hook": "useAuth",
+      "variant": "hook-only",
+      "refresh_errors": 0,
+      "contract_preserved": false
+    },
+    {
+      "provider": "I18nProvider",
+      "hook": "useI18n",
+      "variant": "original-contract",
+      "refresh_errors": 1,
+      "contract_preserved": true
+    },
+    {
+      "provider": "I18nProvider",
+      "hook": "useI18n",
+      "variant": "reexport-hook",
+      "refresh_errors": 1,
+      "contract_preserved": true
+    },
+    {
+      "provider": "I18nProvider",
+      "hook": "useI18n",
+      "variant": "reexport-both",
+      "refresh_errors": 1,
+      "contract_preserved": true
+    },
+    {
+      "provider": "I18nProvider",
+      "hook": "useI18n",
+      "variant": "provider-only",
+      "refresh_errors": 0,
+      "contract_preserved": false
+    },
+    {
+      "provider": "I18nProvider",
+      "hook": "useI18n",
+      "variant": "hook-only",
+      "refresh_errors": 0,
+      "contract_preserved": false
+    },
+    {
+      "provider": "ToastProvider",
+      "hook": "useToast",
+      "variant": "original-contract",
+      "refresh_errors": 1,
+      "contract_preserved": true
+    },
+    {
+      "provider": "ToastProvider",
+      "hook": "useToast",
+      "variant": "reexport-hook",
+      "refresh_errors": 1,
+      "contract_preserved": true
+    },
+    {
+      "provider": "ToastProvider",
+      "hook": "useToast",
+      "variant": "reexport-both",
+      "refresh_errors": 1,
+      "contract_preserved": true
+    },
+    {
+      "provider": "ToastProvider",
+      "hook": "useToast",
+      "variant": "provider-only",
+      "refresh_errors": 0,
+      "contract_preserved": false
+    },
+    {
+      "provider": "ToastProvider",
+      "hook": "useToast",
+      "variant": "hook-only",
+      "refresh_errors": 0,
+      "contract_preserved": false
+    }
+  ],
+  "actual_errors": 3,
+  "actual_warnings": 0
+}

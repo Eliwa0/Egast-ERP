@@ -1,0 +1,7 @@
+{
+  "flag": "SAP_VERIFY_SSL",
+  "source": "backend/.env",
+  "verification_enabled": false,
+  "live_connections": 0,
+  "server_certificate_verified": false
+}

@@ -1,0 +1,27 @@
+{
+  "server_url": "http://localhost:8000",
+  "local_api_host": "127.0.0.1",
+  "local_api_port": 8998,
+  "push_interval": 0.5,
+  "auth_token": "",
+  "log_level": "INFO",
+  "log_max_bytes": 5242880,
+  "log_backup_count": 3,
+  "devices": [
+    {
+      "device_id": "SCALE-01",
+      "device_name": "Main Scale",
+      "device_type": "local",
+      "com_port": "COM3",
+      "baud_rate": 9600,
+      "data_bits": 8,
+      "stop_bits": 1,
+      "parity": "N",
+      "serial_timeout": 1.0,
+      "poll_interval": 0.1,
+      "stable_sample_count": 3,
+      "stable_delta": 0.02,
+      "reconnect_delay": 5.0
+    }
+  ]
+}

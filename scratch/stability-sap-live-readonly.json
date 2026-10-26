@@ -1,0 +1,1129 @@
+{
+  "read_only": true,
+  "measurements": [
+    {
+      "label": "SAP authentication",
+      "samples": [
+        {
+          "ms": 3929.91,
+          "sap_calls": 1,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 3929.91
+    },
+    {
+      "label": "Items first 5 rows",
+      "samples": [
+        {
+          "ms": 2348.46,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 1329.49,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 1433.84,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 1410.34,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 1675.68,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 1433.84
+    },
+    {
+      "label": "Warehouses first 5 rows",
+      "samples": [
+        {
+          "ms": 132.1,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 171.73,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 141.97,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 159.32,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 171.83,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 159.32
+    },
+    {
+      "label": "BusinessPartners first 5 rows",
+      "samples": [
+        {
+          "ms": 1266.11,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 465.21,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 400.84,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 417.94,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 1324.37,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 465.21
+    },
+    {
+      "label": "ProductionOrders first 5 rows",
+      "samples": [
+        {
+          "ms": 752.99,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 356.74,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 329.02,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 357.93,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 312.68,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 356.74
+    },
+    {
+      "label": "Orders first 5 rows",
+      "samples": [
+        {
+          "ms": 1468.35,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 705.59,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 631.38,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 580.95,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 704.67,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 704.67
+    },
+    {
+      "label": "DeliveryNotes first 5 rows",
+      "samples": [
+        {
+          "ms": 1598.5,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 780.91,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 670.55,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 622.52,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 653.12,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 670.55
+    },
+    {
+      "label": "PurchaseOrders first 5 rows",
+      "samples": [
+        {
+          "ms": 1404.56,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 690.14,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 611.75,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 688.08,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 677.04,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 688.08
+    },
+    {
+      "label": "PurchaseDeliveryNotes first 5 rows",
+      "samples": [
+        {
+          "ms": 1516.24,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 736.91,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 702.32,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 828.25,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 854.74,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 828.25
+    },
+    {
+      "label": "PurchaseQuotations first 5 rows",
+      "samples": [
+        {
+          "ms": 1352.9,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 422.03,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 3443.81,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 462.94,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 1675.06,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 1352.9
+    },
+    {
+      "label": "Quotations first 5 rows",
+      "samples": [
+        {
+          "ms": 4576.53,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 458.46,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 456.43,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 545.67,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 455.59,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 458.46
+    },
+    {
+      "label": "StockTransfers first 5 rows",
+      "samples": [
+        {
+          "ms": 926.15,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 563.67,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 531.76,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 579.37,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        },
+        {
+          "ms": 533.17,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 563.67
+    },
+    {
+      "label": "Warehouse lookup cold",
+      "samples": [
+        {
+          "ms": 308.72,
+          "sap_calls": 1,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 308.72
+    },
+    {
+      "label": "Warehouse lookup warm",
+      "samples": [
+        {
+          "ms": 1.09,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.69,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.66,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.61,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 1.07,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 0.69
+    },
+    {
+      "label": "Purchase currency lookup cold",
+      "samples": [
+        {
+          "ms": 231.32,
+          "sap_calls": 1,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 231.32
+    },
+    {
+      "label": "Purchase currency lookup warm",
+      "samples": [
+        {
+          "ms": 1.25,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.72,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.65,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.65,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 0.7,
+          "sap_calls": 0,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 0.7
+    },
+    {
+      "label": "Production order detail and tracking flags cold",
+      "samples": [
+        {
+          "ms": 0.27,
+          "sap_calls": 0,
+          "success": false,
+          "error": "operation failed; response details deliberately excluded"
+        }
+      ],
+      "median_ms": 0.27
+    },
+    {
+      "label": "Production order detail and tracking flags warm",
+      "samples": [
+        {
+          "ms": 0.22,
+          "sap_calls": 0,
+          "success": false,
+          "error": "operation failed; response details deliberately excluded"
+        }
+      ],
+      "median_ms": 0.22
+    }
+  ],
+  "http": [
+    {
+      "method": "POST",
+      "entity": "Login",
+      "status": 200,
+      "ms": 3929.53
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 2324.06
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 1303.94
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 1405.95
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 1373.96
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 1652.61
+    },
+    {
+      "method": "GET",
+      "entity": "Warehouses",
+      "status": 200,
+      "ms": 131.73
+    },
+    {
+      "method": "GET",
+      "entity": "Warehouses",
+      "status": 200,
+      "ms": 171.42
+    },
+    {
+      "method": "GET",
+      "entity": "Warehouses",
+      "status": 200,
+      "ms": 141.56
+    },
+    {
+      "method": "GET",
+      "entity": "Warehouses",
+      "status": 200,
+      "ms": 158.96
+    },
+    {
+      "method": "GET",
+      "entity": "Warehouses",
+      "status": 200,
+      "ms": 171.44
+    },
+    {
+      "method": "GET",
+      "entity": "BusinessPartners",
+      "status": 200,
+      "ms": 1265.17
+    },
+    {
+      "method": "GET",
+      "entity": "BusinessPartners",
+      "status": 200,
+      "ms": 464.22
+    },
+    {
+      "method": "GET",
+      "entity": "BusinessPartners",
+      "status": 200,
+      "ms": 399.97
+    },
+    {
+      "method": "GET",
+      "entity": "BusinessPartners",
+      "status": 200,
+      "ms": 417.19
+    },
+    {
+      "method": "GET",
+      "entity": "BusinessPartners",
+      "status": 200,
+      "ms": 1323.61
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 751.89
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 355.45
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 327.75
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 356.26
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 311.53
+    },
+    {
+      "method": "GET",
+      "entity": "Orders",
+      "status": 200,
+      "ms": 1467.01
+    },
+    {
+      "method": "GET",
+      "entity": "Orders",
+      "status": 200,
+      "ms": 704.15
+    },
+    {
+      "method": "GET",
+      "entity": "Orders",
+      "status": 200,
+      "ms": 629.61
+    },
+    {
+      "method": "GET",
+      "entity": "Orders",
+      "status": 200,
+      "ms": 578.77
+    },
+    {
+      "method": "GET",
+      "entity": "Orders",
+      "status": 200,
+      "ms": 702.94
+    },
+    {
+      "method": "GET",
+      "entity": "DeliveryNotes",
+      "status": 200,
+      "ms": 1596.84
+    },
+    {
+      "method": "GET",
+      "entity": "DeliveryNotes",
+      "status": 200,
+      "ms": 779.26
+    },
+    {
+      "method": "GET",
+      "entity": "DeliveryNotes",
+      "status": 200,
+      "ms": 669.03
+    },
+    {
+      "method": "GET",
+      "entity": "DeliveryNotes",
+      "status": 200,
+      "ms": 620.59
+    },
+    {
+      "method": "GET",
+      "entity": "DeliveryNotes",
+      "status": 200,
+      "ms": 651.66
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseOrders",
+      "status": 200,
+      "ms": 1402.9
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseOrders",
+      "status": 200,
+      "ms": 688.32
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseOrders",
+      "status": 200,
+      "ms": 609.91
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseOrders",
+      "status": 200,
+      "ms": 686.11
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseOrders",
+      "status": 200,
+      "ms": 675.22
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseDeliveryNotes",
+      "status": 200,
+      "ms": 1514.68
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseDeliveryNotes",
+      "status": 200,
+      "ms": 735.28
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseDeliveryNotes",
+      "status": 200,
+      "ms": 700.59
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseDeliveryNotes",
+      "status": 200,
+      "ms": 825.68
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseDeliveryNotes",
+      "status": 200,
+      "ms": 853.18
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseQuotations",
+      "status": 200,
+      "ms": 1351.36
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseQuotations",
+      "status": 200,
+      "ms": 420.13
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseQuotations",
+      "status": 200,
+      "ms": 3441.35
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseQuotations",
+      "status": 200,
+      "ms": 461.48
+    },
+    {
+      "method": "GET",
+      "entity": "PurchaseQuotations",
+      "status": 200,
+      "ms": 1673.47
+    },
+    {
+      "method": "GET",
+      "entity": "Quotations",
+      "status": 200,
+      "ms": 4574.92
+    },
+    {
+      "method": "GET",
+      "entity": "Quotations",
+      "status": 200,
+      "ms": 456.84
+    },
+    {
+      "method": "GET",
+      "entity": "Quotations",
+      "status": 200,
+      "ms": 454.73
+    },
+    {
+      "method": "GET",
+      "entity": "Quotations",
+      "status": 200,
+      "ms": 543.84
+    },
+    {
+      "method": "GET",
+      "entity": "Quotations",
+      "status": 200,
+      "ms": 453.88
+    },
+    {
+      "method": "GET",
+      "entity": "StockTransfers",
+      "status": 200,
+      "ms": 922.83
+    },
+    {
+      "method": "GET",
+      "entity": "StockTransfers",
+      "status": 200,
+      "ms": 559.79
+    },
+    {
+      "method": "GET",
+      "entity": "StockTransfers",
+      "status": 200,
+      "ms": 528.3
+    },
+    {
+      "method": "GET",
+      "entity": "StockTransfers",
+      "status": 200,
+      "ms": 576.09
+    },
+    {
+      "method": "GET",
+      "entity": "StockTransfers",
+      "status": 200,
+      "ms": 529.38
+    },
+    {
+      "method": "GET",
+      "entity": "Warehouses",
+      "status": 200,
+      "ms": 166.31
+    },
+    {
+      "method": "GET",
+      "entity": "Currencies",
+      "status": 200,
+      "ms": 224.12
+    }
+  ],
+  "blocked": [],
+  "endpoint_metrics": [
+    {
+      "request_id": "635febc9f8614dd288d03350acfce966",
+      "sap_requests": 1,
+      "sap_ms": 166.37,
+      "sap_records": 10,
+      "sap_pages": 1,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "Warehouses",
+          "method": "GET",
+          "ms": 166.37,
+          "rows": 10
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 1,
+      "cache_loader": 1,
+      "cache_wait": 0,
+      "total_ms": 170.48,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 4.1
+    },
+    {
+      "request_id": "e92b7610f4424ccdaf8fff158579b3c5",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.46,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.46
+    },
+    {
+      "request_id": "b9930ca2aadc45a4b221a30648b7f646",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.27,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.27
+    },
+    {
+      "request_id": "2c5b6fa5db924db68be2d9befef0c8b5",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.29,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.29
+    },
+    {
+      "request_id": "35c320cab8fc4220808fd3d32d3ebd25",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.25,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.25
+    },
+    {
+      "request_id": "22a3d3828e094b6ca87b15019ca3a2d4",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.48,
+      "status": 200,
+      "route": "api/warehouses/",
+      "django_other_ms": 0.48
+    },
+    {
+      "request_id": "614ff2a23ac84cd684b1399dc0d74305",
+      "sap_requests": 1,
+      "sap_ms": 224.17,
+      "sap_records": 11,
+      "sap_pages": 1,
+      "sap_errors": 0,
+      "sap_calls": [
+        {
+          "entity": "Currencies",
+          "method": "GET",
+          "ms": 224.17,
+          "rows": 11
+        }
+      ],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 0,
+      "cache_miss": 1,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 225.11,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.94
+    },
+    {
+      "request_id": "af4939426c244c4e899077699190e85b",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.41,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.41
+    },
+    {
+      "request_id": "9215cdd19e23441197bdbef2cd1073e4",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.25,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.25
+    },
+    {
+      "request_id": "42ed5d6b8a88406d908738e7dfab5986",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.23,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.23
+    },
+    {
+      "request_id": "d36730c814d14681b9fc16cdf2a6fe09",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.25,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.25
+    },
+    {
+      "request_id": "a7745413eb19499bafde312b3302a6e8",
+      "sap_requests": 0,
+      "sap_ms": 0.0,
+      "sap_records": 0,
+      "sap_pages": 0,
+      "sap_errors": 0,
+      "sap_calls": [],
+      "db_queries": 0,
+      "db_ms": 0.0,
+      "cache_hit": 1,
+      "cache_miss": 0,
+      "cache_loader": 0,
+      "cache_wait": 0,
+      "total_ms": 0.28,
+      "status": 200,
+      "route": "api/currencies/",
+      "django_other_ms": 0.28
+    }
+  ],
+  "limitations": "Five sequential samples; no production p95, load test or browser render timings."
+}

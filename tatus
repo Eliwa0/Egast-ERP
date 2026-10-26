@@ -1,0 +1,51 @@
+warning: in the working copy of 'backend/.env.example', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/api/admin.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/api/models.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/api/urls.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/receipt_project/settings.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/receipt_project/urls.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/requirements.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docker-compose.yml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/Loading.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/pages/Production.jsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/services/api.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/styles/global.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/utils/printBatchLabels.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/utils/roles.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/vite.config.js', LF will be replaced by CRLF the next time Git touches it
+ backend/.env.example                       |    44 [32m+[m[31m-[m
+ backend/api/admin.py                       |   206 [32m+[m[31m-[m
+ backend/api/models.py                      |   335 [32m+[m[31m-[m
+ backend/api/services/sap_service.py        |  1041 [32m+[m[31m-[m
+ backend/api/tests.py                       |  1119 [32m+[m[31m-[m
+ backend/api/urls.py                        |   425 [32m+[m[31m-[m
+ backend/api/views.py                       | 15766 [32m+++++++++++++++++++++[m[31m------[m
+ backend/receipt_project/settings.py        |    86 [32m+[m[31m-[m
+ backend/receipt_project/urls.py            |     2 [32m+[m
+ backend/requirements.txt                   |   Bin [31m526[m -> [32m265[m bytes
+ docker-compose.yml                         |     9 [32m+[m
+ frontend/package-lock.json                 |   736 [32m+[m[31m-[m
+ frontend/package.json                      |     7 [32m+[m[31m-[m
+ frontend/src/App.jsx                       |   982 [32m+[m[31m-[m
+ frontend/src/assets/logos/egast-logo.png   |   Bin [31m173950[m -> [32m173931[m bytes
+ frontend/src/components/Layout.jsx         |     0
+ frontend/src/components/Loading.jsx        |    19 [32m+[m[31m-[m
+ frontend/src/components/ProductionCard.jsx |     0
+ frontend/src/components/StockTable.jsx     |     0
+ frontend/src/contexts/I18nContext.jsx      |     7 [32m+[m[31m-[m
+ frontend/src/i18n/translations.js          |  9938 [32m+++++++++++++++[m[31m--[m
+ frontend/src/main.jsx                      |    10 [32m+[m
+ frontend/src/pages/Dashboard.jsx           |   120 [31m-[m
+ frontend/src/pages/Home.jsx                |   103 [32m+[m[31m-[m
+ frontend/src/pages/Production.jsx          |    95 [32m+[m[31m-[m
+ frontend/src/pages/ReceiptReviewPage.jsx   |   384 [32m+[m[31m-[m
+ frontend/src/pages/ReceiptWizard.jsx       |  1009 [32m+[m[31m-[m
+ frontend/src/pages/Reports.jsx             |     0
+ frontend/src/services/api.js               |    68 [32m+[m[31m-[m
+ frontend/src/styles/global.css             |  1801 [32m++[m[31m-[m
+ frontend/src/utils/printBatchLabels.js     |    77 [32m+[m[31m-[m
+ frontend/src/utils/roles.js                |   217 [32m+[m[31m-[m
+ frontend/vite.config.js                    |     4 [32m+[m
+ 33 files changed, 29794 insertions(+), 4816 deletions(-)

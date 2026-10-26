@@ -1,0 +1,110 @@
+[
+  {
+    "list": "Customers",
+    "dataset": 1000,
+    "browser_requests": 4,
+    "sap_reads": 3,
+    "initial_bytes": 7988,
+    "search_bytes": 406,
+    "initial_rows": 25,
+    "next_rows": 25,
+    "search_rows": 1,
+    "server_cached": true
+  },
+  {
+    "list": "Items",
+    "dataset": 1000,
+    "browser_requests": 4,
+    "sap_reads": 4,
+    "initial_bytes": 7883,
+    "search_bytes": 398,
+    "initial_rows": 25,
+    "next_rows": 25,
+    "search_rows": 1,
+    "server_cached": false
+  },
+  {
+    "list": "Warehouses",
+    "dataset": 1000,
+    "browser_requests": 4,
+    "sap_reads": 3,
+    "initial_bytes": 2132,
+    "search_bytes": 142,
+    "initial_rows": 25,
+    "next_rows": 25,
+    "search_rows": 1,
+    "server_cached": true
+  },
+  {
+    "list": "Customers",
+    "dataset": 5000,
+    "browser_requests": 4,
+    "sap_reads": 3,
+    "initial_bytes": 7988,
+    "search_bytes": 406,
+    "initial_rows": 25,
+    "next_rows": 25,
+    "search_rows": 1,
+    "server_cached": true
+  },
+  {
+    "list": "Items",
+    "dataset": 5000,
+    "browser_requests": 4,
+    "sap_reads": 4,
+    "initial_bytes": 7883,
+    "search_bytes": 398,
+    "initial_rows": 25,
+    "next_rows": 25,
+    "search_rows": 1,
+    "server_cached": false
+  },
+  {
+    "list": "Warehouses",
+    "dataset": 5000,
+    "browser_requests": 4,
+    "sap_reads": 3,
+    "initial_bytes": 2132,
+    "search_bytes": 142,
+    "initial_rows": 25,
+    "next_rows": 25,
+    "search_rows": 1,
+    "server_cached": true
+  },
+  {
+    "list": "Customers",
+    "dataset": 10000,
+    "browser_requests": 4,
+    "sap_reads": 3,
+    "initial_bytes": 7988,
+    "search_bytes": 406,
+    "initial_rows": 25,
+    "next_rows": 25,
+    "search_rows": 1,
+    "server_cached": true
+  },
+  {
+    "list": "Items",
+    "dataset": 10000,
+    "browser_requests": 4,
+    "sap_reads": 4,
+    "initial_bytes": 7883,
+    "search_bytes": 398,
+    "initial_rows": 25,
+    "next_rows": 25,
+    "search_rows": 1,
+    "server_cached": false
+  },
+  {
+    "list": "Warehouses",
+    "dataset": 10000,
+    "browser_requests": 4,
+    "sap_reads": 3,
+    "initial_bytes": 2132,
+    "search_bytes": 142,
+    "initial_rows": 25,
+    "next_rows": 25,
+    "search_rows": 1,
+    "server_cached": true
+  }
+]

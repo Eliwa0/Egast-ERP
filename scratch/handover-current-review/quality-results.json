@@ -1,0 +1,49 @@
+[
+  {
+    "name": "lint",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "node_modules/eslint/bin/eslint.js",
+      ".",
+      "--ignore-pattern",
+      "**/modules/scale/**",
+      "--ignore-pattern",
+      "**/*[Ss]cale*",
+      "--ignore-pattern",
+      "**/fixtures/responsive-harness.jsx",
+      "--ignore-pattern",
+      "**/i18n/translations.js",
+      "--format",
+      "json",
+      "--output-file",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\handover-current-review\\lint-final.json"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\handover-current-review\\frozen\\frontend",
+    "exit_code": 1,
+    "seconds": 35.16,
+    "snapshot_sha256": "6fd5b4174d4cec8d504b927c3b31404436ae3e78d1ce294a65dab0a554420e9a"
+  },
+  {
+    "name": "translations",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "scripts/check-i18n.js"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\handover-current-review\\frozen\\frontend",
+    "exit_code": 0,
+    "seconds": 0.29,
+    "snapshot_sha256": "6fd5b4174d4cec8d504b927c3b31404436ae3e78d1ce294a65dab0a554420e9a"
+  },
+  {
+    "name": "build",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "node_modules/vite/bin/vite.js",
+      "build"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\handover-current-review\\frozen\\frontend",
+    "exit_code": 0,
+    "seconds": 2.1,
+    "snapshot_sha256": "6fd5b4174d4cec8d504b927c3b31404436ae3e78d1ce294a65dab0a554420e9a"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "steps": [
+    "duplicate data blocks 0065 atomically; both rows preserved",
+    "0065 prevents duplicate active insertion on PostgreSQL",
+    "0066 then 0065 reverse to 0064; all rehearsal rows/statuses unchanged",
+    "0065 then 0066 reapply; rows unchanged",
+    "makemigrations --check --dry-run: no changes"
+  ],
+  "isolated_test_database": true,
+  "operational_migrations_applied": false,
+  "test_database_destroyed": true
+}

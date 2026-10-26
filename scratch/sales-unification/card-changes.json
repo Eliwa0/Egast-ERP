@@ -1,0 +1,32 @@
+[
+  {
+    "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+    "line": 481,
+    "change": "reuse SalesDocumentCard; preserve active order border via prop"
+  },
+  {
+    "file": "frontend/src/pages/SalesOrdersPage.jsx",
+    "line": 258,
+    "change": "reuse SalesDocumentCard; preserve active order border via prop"
+  },
+  {
+    "file": "frontend/src/pages/SalesOrdersPage.jsx",
+    "line": 358,
+    "change": "responsive quantity summary; same children/data"
+  },
+  {
+    "file": "frontend/src/pages/DeliveriesPage.jsx",
+    "line": 242,
+    "change": "reuse SalesDocumentCard; preserve active order border via prop"
+  },
+  {
+    "file": "frontend/src/pages/DeliveriesPage.jsx",
+    "line": 407,
+    "change": "reuse SalesDocumentCard; preserve active order border via prop"
+  },
+  {
+    "file": "frontend/src/pages/DeliveriesPage.jsx",
+    "line": 491,
+    "change": "responsive quantity summary; same children/data"
+  }
+]

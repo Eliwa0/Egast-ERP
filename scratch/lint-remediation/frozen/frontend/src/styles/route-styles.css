@@ -1,0 +1,16 @@
+/* Keep the established global CSS cascade while route JavaScript loads on demand. */
+@import "../components/ui/SearchableSelect.css";
+@import "../components/ProductionPalletCards.css";
+@import "pages/receipt-quantity.css";
+@import "pages/IssueWizard.css";
+@import "pages/IssueReviewPage.css";
+@import "../modules/transfer/components/ColdStorageMap.css";
+@import "../modules/transfer/pages/TransferPage.css";
+@import "pages/ActivityLogPage.css";
+@import "pages/receipt-review.css";
+@import "pages/transfer-review.css";
+@import "pages/quality-inspection.css";
+@import "pages/customization-delivery-landing.css";
+@import "pages/sales-readiness.css";
+@import "pages/customization-delivery.css";
+@import "pages/shipping-loading.css";

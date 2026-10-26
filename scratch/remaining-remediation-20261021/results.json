@@ -1,0 +1,1518 @@
+{
+  "completed": true,
+  "cases": [
+    {
+      "language": "en",
+      "width": 320,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 80.859375,
+        "brand": {
+          "x": 12,
+          "y": 10,
+          "width": 242,
+          "height": 59.859375,
+          "top": 10,
+          "right": 254,
+          "bottom": 69.859375,
+          "left": 12
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 80.859375,
+        "brand": {
+          "x": 12,
+          "y": 10,
+          "width": 242,
+          "height": 59.859375,
+          "top": 10,
+          "right": 254,
+          "bottom": 69.859375,
+          "left": 12
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 320,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 80.859375,
+        "brand": {
+          "x": 12,
+          "y": 10,
+          "width": 242,
+          "height": 59.859375,
+          "top": 10,
+          "right": 254,
+          "bottom": 69.859375,
+          "left": 12
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 80.859375,
+        "brand": {
+          "x": 12,
+          "y": 10,
+          "width": 242,
+          "height": 59.859375,
+          "top": 10,
+          "right": 254,
+          "bottom": 69.859375,
+          "left": 12
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 768,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 65,
+        "brand": {
+          "x": 12,
+          "y": 12.859375,
+          "width": 690,
+          "height": 38.265625,
+          "top": 12.859375,
+          "right": 702,
+          "bottom": 51.125,
+          "left": 12
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 80.859375,
+        "brand": {
+          "x": 12,
+          "y": 10,
+          "width": 690,
+          "height": 59.859375,
+          "top": 10,
+          "right": 702,
+          "bottom": 69.859375,
+          "left": 12
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 768,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 65,
+        "brand": {
+          "x": 12,
+          "y": 12.859375,
+          "width": 690,
+          "height": 38.265625,
+          "top": 12.859375,
+          "right": 702,
+          "bottom": 51.125,
+          "left": 12
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 80.859375,
+        "brand": {
+          "x": 12,
+          "y": 10,
+          "width": 690,
+          "height": 59.859375,
+          "top": 10,
+          "right": 702,
+          "bottom": 69.859375,
+          "left": 12
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1024,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 165,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 992,
+          "height": 80,
+          "top": 16,
+          "right": 1008,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 16,
+          "y": 112,
+          "width": 992,
+          "height": 36,
+          "top": 112,
+          "right": 1008,
+          "bottom": 148,
+          "left": 16
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 165,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 992,
+          "height": 80,
+          "top": 16,
+          "right": 1008,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 16,
+          "y": 112,
+          "width": 992,
+          "height": 36,
+          "top": 112,
+          "right": 1008,
+          "bottom": 148,
+          "left": 16
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1024,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 165,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 992,
+          "height": 80,
+          "top": 16,
+          "right": 1008,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 16,
+          "y": 112,
+          "width": 992,
+          "height": 36,
+          "top": 112,
+          "right": 1008,
+          "bottom": 148,
+          "left": 16
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 165,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 992,
+          "height": 80,
+          "top": 16,
+          "right": 1008,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 16,
+          "y": 112,
+          "width": 992,
+          "height": 36,
+          "top": 112,
+          "right": 1008,
+          "bottom": 148,
+          "left": 16
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1101,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 423.921875,
+          "height": 80,
+          "top": 16,
+          "right": 439.921875,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 455.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1085,
+          "bottom": 74,
+          "left": 455.921875
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 423.921875,
+          "height": 80,
+          "top": 16,
+          "right": 439.921875,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 455.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1085,
+          "bottom": 74,
+          "left": 455.921875
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1101,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 423.921875,
+          "height": 80,
+          "top": 16,
+          "right": 439.921875,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 455.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1085,
+          "bottom": 74,
+          "left": 455.921875
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 423.921875,
+          "height": 80,
+          "top": 16,
+          "right": 439.921875,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 455.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1085,
+          "bottom": 74,
+          "left": 455.921875
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1280,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 40,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 594.921875,
+          "bottom": 96,
+          "left": 40
+        },
+        "actions": {
+          "x": 610.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1240,
+          "bottom": 74,
+          "left": 610.921875
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 40,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 594.921875,
+          "bottom": 96,
+          "left": 40
+        },
+        "actions": {
+          "x": 610.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1240,
+          "bottom": 74,
+          "left": 610.921875
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1280,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 40,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 594.921875,
+          "bottom": 96,
+          "left": 40
+        },
+        "actions": {
+          "x": 610.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1240,
+          "bottom": 74,
+          "left": 610.921875
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 40,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 594.921875,
+          "bottom": 96,
+          "left": 40
+        },
+        "actions": {
+          "x": 610.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1240,
+          "bottom": 74,
+          "left": 610.921875
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1440,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 120,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 674.921875,
+          "bottom": 96,
+          "left": 120
+        },
+        "actions": {
+          "x": 690.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1320,
+          "bottom": 74,
+          "left": 690.921875
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 120,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 674.921875,
+          "bottom": 96,
+          "left": 120
+        },
+        "actions": {
+          "x": 690.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1320,
+          "bottom": 74,
+          "left": 690.921875
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1440,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 120,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 674.921875,
+          "bottom": 96,
+          "left": 120
+        },
+        "actions": {
+          "x": 690.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1320,
+          "bottom": 74,
+          "left": 690.921875
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 120,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 674.921875,
+          "bottom": 96,
+          "left": 120
+        },
+        "actions": {
+          "x": 690.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1320,
+          "bottom": 74,
+          "left": 690.921875
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1920,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 360,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 914.921875,
+          "bottom": 96,
+          "left": 360
+        },
+        "actions": {
+          "x": 930.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1560,
+          "bottom": 74,
+          "left": 930.921875
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 360,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 914.921875,
+          "bottom": 96,
+          "left": 360
+        },
+        "actions": {
+          "x": 930.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1560,
+          "bottom": 74,
+          "left": 930.921875
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "en",
+      "width": 1920,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 360,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 914.921875,
+          "bottom": 96,
+          "left": 360
+        },
+        "actions": {
+          "x": 930.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1560,
+          "bottom": 74,
+          "left": 930.921875
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 360,
+          "y": 16,
+          "width": 554.921875,
+          "height": 80,
+          "top": 16,
+          "right": 914.921875,
+          "bottom": 96,
+          "left": 360
+        },
+        "actions": {
+          "x": 930.921875,
+          "y": 38,
+          "width": 629.078125,
+          "height": 36,
+          "top": 38,
+          "right": 1560,
+          "bottom": 74,
+          "left": 930.921875
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 320,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 80.859375,
+        "brand": {
+          "x": 66,
+          "y": 10,
+          "width": 242,
+          "height": 59.859375,
+          "top": 10,
+          "right": 308,
+          "bottom": 69.859375,
+          "left": 66
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 80.859375,
+        "brand": {
+          "x": 66,
+          "y": 10,
+          "width": 242,
+          "height": 59.859375,
+          "top": 10,
+          "right": 308,
+          "bottom": 69.859375,
+          "left": 66
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 320,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 80.859375,
+        "brand": {
+          "x": 66,
+          "y": 10,
+          "width": 242,
+          "height": 59.859375,
+          "top": 10,
+          "right": 308,
+          "bottom": 69.859375,
+          "left": 66
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 80.859375,
+        "brand": {
+          "x": 66,
+          "y": 10,
+          "width": 242,
+          "height": 59.859375,
+          "top": 10,
+          "right": 308,
+          "bottom": 69.859375,
+          "left": 66
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 768,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 65,
+        "brand": {
+          "x": 66,
+          "y": 12.859375,
+          "width": 690,
+          "height": 38.265625,
+          "top": 12.859375,
+          "right": 756,
+          "bottom": 51.125,
+          "left": 66
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 80.859375,
+        "brand": {
+          "x": 66,
+          "y": 10,
+          "width": 690,
+          "height": 59.859375,
+          "top": 10,
+          "right": 756,
+          "bottom": 69.859375,
+          "left": 66
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 768,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 65,
+        "brand": {
+          "x": 66,
+          "y": 12.859375,
+          "width": 690,
+          "height": 38.265625,
+          "top": 12.859375,
+          "right": 756,
+          "bottom": 51.125,
+          "left": 66
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 80.859375,
+        "brand": {
+          "x": 66,
+          "y": 10,
+          "width": 690,
+          "height": 59.859375,
+          "top": 10,
+          "right": 756,
+          "bottom": 69.859375,
+          "left": 66
+        },
+        "actions": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1024,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 165,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 992,
+          "height": 80,
+          "top": 16,
+          "right": 1008,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 16,
+          "y": 112,
+          "width": 992,
+          "height": 36,
+          "top": 112,
+          "right": 1008,
+          "bottom": 148,
+          "left": 16
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 165,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 992,
+          "height": 80,
+          "top": 16,
+          "right": 1008,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 16,
+          "y": 112,
+          "width": 992,
+          "height": 36,
+          "top": 112,
+          "right": 1008,
+          "bottom": 148,
+          "left": 16
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1024,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 165,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 992,
+          "height": 80,
+          "top": 16,
+          "right": 1008,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 16,
+          "y": 112,
+          "width": 992,
+          "height": 36,
+          "top": 112,
+          "right": 1008,
+          "bottom": 148,
+          "left": 16
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 165,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 992,
+          "height": 80,
+          "top": 16,
+          "right": 1008,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 16,
+          "y": 112,
+          "width": 992,
+          "height": 36,
+          "top": 112,
+          "right": 1008,
+          "bottom": 148,
+          "left": 16
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1101,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 347.34375,
+          "height": 80,
+          "top": 16,
+          "right": 363.34375,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 379.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1085,
+          "bottom": 74,
+          "left": 379.34375
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 347.34375,
+          "height": 80,
+          "top": 16,
+          "right": 363.34375,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 379.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1085,
+          "bottom": 74,
+          "left": 379.34375
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1101,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 347.34375,
+          "height": 80,
+          "top": 16,
+          "right": 363.34375,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 379.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1085,
+          "bottom": 74,
+          "left": 379.34375
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 16,
+          "y": 16,
+          "width": 347.34375,
+          "height": 80,
+          "top": 16,
+          "right": 363.34375,
+          "bottom": 96,
+          "left": 16
+        },
+        "actions": {
+          "x": 379.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1085,
+          "bottom": 74,
+          "left": 379.34375
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1280,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 40,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 518.34375,
+          "bottom": 96,
+          "left": 40
+        },
+        "actions": {
+          "x": 534.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1240,
+          "bottom": 74,
+          "left": 534.34375
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 40,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 518.34375,
+          "bottom": 96,
+          "left": 40
+        },
+        "actions": {
+          "x": 534.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1240,
+          "bottom": 74,
+          "left": 534.34375
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1280,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 40,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 518.34375,
+          "bottom": 96,
+          "left": 40
+        },
+        "actions": {
+          "x": 534.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1240,
+          "bottom": 74,
+          "left": 534.34375
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 40,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 518.34375,
+          "bottom": 96,
+          "left": 40
+        },
+        "actions": {
+          "x": 534.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1240,
+          "bottom": 74,
+          "left": 534.34375
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1440,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 120,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 598.34375,
+          "bottom": 96,
+          "left": 120
+        },
+        "actions": {
+          "x": 614.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1320,
+          "bottom": 74,
+          "left": 614.34375
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 120,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 598.34375,
+          "bottom": 96,
+          "left": 120
+        },
+        "actions": {
+          "x": 614.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1320,
+          "bottom": 74,
+          "left": 614.34375
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1440,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 120,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 598.34375,
+          "bottom": 96,
+          "left": 120
+        },
+        "actions": {
+          "x": 614.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1320,
+          "bottom": 74,
+          "left": 614.34375
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 120,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 598.34375,
+          "bottom": 96,
+          "left": 120
+        },
+        "actions": {
+          "x": 614.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1320,
+          "bottom": 74,
+          "left": 614.34375
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1920,
+      "route": "/customization-delivery/quotations",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 360,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 838.34375,
+          "bottom": 96,
+          "left": 360
+        },
+        "actions": {
+          "x": 854.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1560,
+          "bottom": 74,
+          "left": 854.34375
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 360,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 838.34375,
+          "bottom": 96,
+          "left": 360
+        },
+        "actions": {
+          "x": 854.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1560,
+          "bottom": 74,
+          "left": 854.34375
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    },
+    {
+      "language": "ar",
+      "width": 1920,
+      "route": "/customization-delivery/orders",
+      "normal": {
+        "height": 113,
+        "brand": {
+          "x": 360,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 838.34375,
+          "bottom": 96,
+          "left": 360
+        },
+        "actions": {
+          "x": 854.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1560,
+          "bottom": 74,
+          "left": 854.34375
+        },
+        "overflow": false
+      },
+      "long": {
+        "height": 113,
+        "brand": {
+          "x": 360,
+          "y": 16,
+          "width": 478.34375,
+          "height": 80,
+          "top": 16,
+          "right": 838.34375,
+          "bottom": 96,
+          "left": 360
+        },
+        "actions": {
+          "x": 854.34375,
+          "y": 38,
+          "width": 705.65625,
+          "height": 36,
+          "top": 38,
+          "right": 1560,
+          "bottom": 74,
+          "left": 854.34375
+        },
+        "overflow": false
+      },
+      "page_errors": []
+    }
+  ],
+  "css_sha256": "1dabc22097e649933d40a11258033ab35ec3e2a3acfd587601b83a4ff0ba3414"
+}

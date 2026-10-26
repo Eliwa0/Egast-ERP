@@ -1,0 +1,141 @@
+{
+  "mismatches": [],
+  "stability_manifest": {
+    "existing_files_changed": [
+      {
+        "path": "backend/api/models_delivery.py",
+        "sha256": "9dc43a23f11c7bc3985ee7f1b8d624df857efe4e33085cdff13cf3ff43774d29"
+      },
+      {
+        "path": "backend/api/tests.py",
+        "sha256": "20c06de1ec45c6f76abcebb95be39e9b2b8ac26b4ee7b4b2bc3ae1cf3c61f0ec"
+      },
+      {
+        "path": "backend/api/tests_cold_storage_outbound_api.py",
+        "sha256": "518befaaec743e5ff236c4a59b516b728e4bb1bf51aad355bd742f4e2f3a7432"
+      },
+      {
+        "path": "backend/api/tests_cold_storage_outbound_e2e.py",
+        "sha256": "321b2b4400c2e38d401fe97333d043b7c721e792b1877b88fd33b1abde1d1f51"
+      },
+      {
+        "path": "backend/api/tests_delivery_workflow.py",
+        "sha256": "37ddfd986b6a62b51ac5e62cacc9b8022ec9517572c7333a3b38d70761aa55d8"
+      },
+      {
+        "path": "backend/api/tests_pending_transfer_posting_concurrency.py",
+        "sha256": "2eab4cbc703e35bc5459331e2116f20fc22d6b5e373f24fb81e98f023986c314"
+      },
+      {
+        "path": "backend/api/tests_persisted_transfer_policy.py",
+        "sha256": "c4da215b75fe6049222815033e0765f7cc1e1d9cb43370c69a3d9eb59c6b5c3e"
+      },
+      {
+        "path": "backend/api/tests_physical_transfer.py",
+        "sha256": "26151676e41991b5ab7d083723e2a3ef1a1b1a6d4d71cc1b0cb2ec565257a2de"
+      },
+      {
+        "path": "backend/api/tests_production_issue.py",
+        "sha256": "d3fe6a8de7a93afbca7f77134d63d1510fb6a95e43007bc1e8cdcf76a96cb351"
+      },
+      {
+        "path": "backend/api/tests_sales_quotation_currency.py",
+        "sha256": "827fe9f69e56079fa54200015798ed7857814718586e728dedcef8634141971a"
+      },
+      {
+        "path": "backend/api/tests_sales_scope_regressions.py",
+        "sha256": "43e88ef1d68fddffaa222737c8e7e2b993aac78a505ce0956f152c1196dcc88c"
+      },
+      {
+        "path": "backend/api/tests_stage2_policy_positions.py",
+        "sha256": "c0ed43817673bf69c3ac7db016c0f9148a98f29b16401cedee30f7fffe96fd81"
+      },
+      {
+        "path": "backend/api/tests_transfer_policy.py",
+        "sha256": "aba9f262279ea9f923096a8cf965e22a3b39e2626be161b3294351fe3d9c85c4"
+      },
+      {
+        "path": "backend/api/tests_transfer_policy_authority.py",
+        "sha256": "0369c26bdf01e246faff30d036f70f38184a7f8a4d8ffbecbd7618c1a4b87f9f"
+      },
+      {
+        "path": "backend/api/tests_transfer_policy_migration.py",
+        "sha256": "ce8200a64420d1101f3a2cde4033f25d0eee0e97c9e9ad95ed9c7fbbe0499bab"
+      },
+      {
+        "path": "backend/scale/tests.py",
+        "sha256": "6ecee84db1e6846819934dd07bbcc655e41a8f70a7c351a95f72e843ab1070a9"
+      },
+      {
+        "path": "backend/scale/tests_deployment.py",
+        "sha256": "9412b5068492d028d20f72e62afe19ea8c8aa97cb01e53f0af5b04a1bed8a5d5"
+      },
+      {
+        "path": "backend/scale/tests_release_deployment.py",
+        "sha256": "6f40ba32ad412011e4d3bb918a3a389e7916ed56af4b0b8dca4b1a65433980a7"
+      },
+      {
+        "path": "backend/scale/services/deployment_service.py",
+        "sha256": "801478e69c75d22f746828f50eb39d47b5c2db42be7a1eadf57671d6e049a753"
+      },
+      {
+        "path": "backend/api/services/delivery_posting_service.py",
+        "sha256": "fbbac7b968bc18d78c64d19bda8bb6a5883de1b63fb1d0339d7a07f1d4301464"
+      },
+      {
+        "path": "docs/APPLICATION_PERFORMANCE_IMPLEMENTATION_AR.md",
+        "sha256": "38d7edb195369dcf2897504a393b0034451124b9e4649b076dc7160d6fb4fbf6"
+      }
+    ],
+    "pre_performance_source_comparison": {
+      "backend\\api\\models_delivery.py": true,
+      "backend\\api\\tests_transfer_destination_bins.py": true,
+      "backend\\api\\urls.py": true,
+      "backend\\scale\\services\\deployment_service.py": true,
+      "backend\\api\\services\\delivery_posting_service.py": true,
+      "backend\\api\\services\\physical_transfer_service.py": true,
+      "backend\\api\\services\\transfer_destination_bins.py": true
+    },
+    "executable_sha256": "DF4A8921C03CAA8C52D4F10D50863ED5B4EA2B56DA7EC5B45DE716F2787B1163",
+    "no_reset_checkout_or_user_file_deletions": true,
+    "new_task_files": [
+      {
+        "path": "backend/audit_stability_failures.py",
+        "sha256": "bf361d82d939cf327b7892d728d38b063d5bebd8f05671e80b43cf68d554aa9b"
+      },
+      {
+        "path": "backend/run_stability_tests.py",
+        "sha256": "2c0d12ede5569e0d7fabc28a39c260728477344d8a7fdda0aad35767f84bf0d0"
+      },
+      {
+        "path": "backend/measure_sap_readonly.py",
+        "sha256": "7ece5894399ae6da04b5cd4df43c874df46ef15f336a246aeee71dc8fb1e3869"
+      },
+      {
+        "path": "backend/api/tests_delivery_creation_concurrency.py",
+        "sha256": "5d439df577e4c20972ea9ff2067def878a791cadbbb7c1203ecbe5a588dc7e7b"
+      },
+      {
+        "path": "backend/api/migrations/0065_delivery_one_active_order.py",
+        "sha256": "5cf4c5e9269aaf82b9b601a958c26b258fdb26f50c2eb25da89e52dd1058ba1d"
+      },
+      {
+        "path": "backend/api/migrations/0066_alter_transferwarehouserule_stage.py",
+        "sha256": "f8777bc78dc4f79021a6ed57dbb8d933451b2c6fa55d9c3a986582484f3a57d2"
+      },
+      {
+        "path": "backend/scale/release.py",
+        "sha256": "06eb04981d3b3d6acacccbc305a2d3f2500e415f841b5256c321759ee2a3ede7"
+      },
+      {
+        "path": "docs/STABILITY_FAILURE_ROOT_CAUSES_AR.md",
+        "sha256": "5e098e659132bf84759cbe13fed30effb0dd2e59aac8e3512a740c88192a680c"
+      },
+      {
+        "path": "docs/STABILITY_REMEDIATION_REPORT_AR.md",
+        "sha256": "1b51312221d3dc95ee4528fcc00626e62bf11441b74106f2637726da361552b9"
+      }
+    ],
+    "report_links_missing": []
+  }
+}

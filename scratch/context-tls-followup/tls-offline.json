@@ -1,0 +1,15 @@
+{
+  "flag": "SAP_VERIFY_SSL",
+  "source": "backend/.env",
+  "verification_enabled": false,
+  "requests_ca_bundle_configured": false,
+  "curl_ca_bundle_configured": false,
+  "live_requests": 0,
+  "server_chain_verified": false,
+  "offline_tests": {
+    "run": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

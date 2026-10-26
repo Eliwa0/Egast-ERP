@@ -1,0 +1,25 @@
+{
+  "snapshot_sha256": "8070e3575d2a3f4d6493aa42ddeb4b9b49b76a6a8e8f7193a5fd2703760bc4f2",
+  "pinned_nonprotected_files": 497,
+  "changed_since_start": [
+    "frontend/src/hooks/useCostCenterOptions.js",
+    "frontend/src/pages/IssueReviewPage.jsx",
+    "frontend/src/pages/IssueWizard.jsx",
+    "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "frontend/src/pages/ReceiptReviewPage.jsx",
+    "frontend/src/pages/ReceiptWizard.jsx",
+    "frontend/src/pages/SalesDocumentDetailPage.jsx",
+    "frontend/src/pages/SalesDocumentListPage.jsx",
+    "frontend/src/pages/UserManagementPage.jsx",
+    "frontend/src/services/purchaseGrpoService.js",
+    "frontend/src/components/customization/CustomizationWorkflowPanel.jsx"
+  ],
+  "frozen_input_drift": [],
+  "working_tree_drift": [],
+  "closed_lint_findings": 43,
+  "open_lint_findings": 4,
+  "protected_translation_errors": "12 historical findings not reopened or rechecked; entire protected translation source excluded from ESLint in this run",
+  "protected_source_content_rehashed": false
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "page": "SalesQuotationsPage",
+    "unchangedExceptPresentationAttributesAndCardWrapper": true
+  },
+  {
+    "page": "SalesOrdersPage",
+    "unchangedExceptPresentationAttributesAndCardWrapper": true
+  },
+  {
+    "page": "DeliveriesPage",
+    "unchangedExceptPresentationAttributesAndCardWrapper": true
+  }
+]

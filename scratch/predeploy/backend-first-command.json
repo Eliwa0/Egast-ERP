@@ -1,0 +1,10 @@
+{
+  "command": [
+    "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+    "backend/run_stability_tests.py",
+    "--postgres"
+  ],
+  "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production",
+  "exit_code": 1,
+  "elapsed_s": 170.28
+}

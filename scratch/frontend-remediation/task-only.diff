@@ -1,0 +1,625 @@
+--- start/frontend/src/i18n/translations.js
++++ current/frontend/src/i18n/translations.js
+@@ -1232,9 +1232,9 @@
+ 
+       statusDisabled: '○ Disabled',
+ 
+-      roleAdmin: '⭐ Admin',
+-
+-      roleUser: '👤 User',
++      
++
++      
+ 
+       createModal: 'Create new user',
+ 
+@@ -1286,7 +1286,7 @@
+ 
+       saveChanges: 'Save changes',
+ 
+-      deleteConfirm: (username) => `Are you sure you want to permanently delete `,
++      deleteConfirm: () => `Are you sure you want to permanently delete `,
+ 
+       deleteUsername: (username) => username,
+ 
+@@ -2529,7 +2529,7 @@
+ 
+       title: 'Quality Criteria Master',
+ 
+-      description: 'Manage all quality defect criteria and formula calculation keys.',
++      
+ 
+       total: 'Total Criteria',
+ 
+@@ -2939,7 +2939,7 @@
+ 
+       quantityMismatch: (diff) => `Allocated quantity does not match total required quantity (Difference: ${diff}).`,
+ 
+-      addBatch: '＋ Add Batch',
++      
+ 
+       duplicateBatch: '⧉ Duplicate',
+ 
+@@ -3636,6 +3636,7 @@
+     },
+ 
+     grpo: {
++      openTimeoutRetrying: 'The operation is taking longer than expected. Refreshing the list…',
+ 
+       title: 'Receiving',
+ 
+@@ -4202,8 +4203,8 @@
+         brand: 'Brand',
+ 
+         packaging: 'Packaging',
+-        notes: 'Notes',
+-        sourceQuotation: 'Source Quotation',
++        
++        
+ 
+         saveDraft: 'Save Changes',
+ 
+@@ -5895,9 +5896,9 @@
+ 
+       statusDisabled: '○ معطّل',
+ 
+-      roleAdmin: '⭐ مدير',
+-
+-      roleUser: '👤 مستخدم',
++      
++
++      
+ 
+       createModal: 'إنشاء مستخدم جديد',
+ 
+@@ -5949,7 +5950,7 @@
+ 
+       saveChanges: 'حفظ التعديلات',
+ 
+-      deleteConfirm: (username) => `هل أنت متأكد من الحذف النهائي لـ `,
++      deleteConfirm: () => `هل أنت متأكد من الحذف النهائي لـ `,
+ 
+       deleteUsername: (username) => username,
+ 
+@@ -7192,7 +7193,7 @@
+ 
+       title: 'دليل معايير وعيوب الجودة',
+ 
+-      description: 'إدارة معايير الفحص وعيوب الجودة ومعاملات الحساب الإحصائي.',
++      
+ 
+       total: 'إجمالي المعايير',
+ 
+@@ -7602,7 +7603,7 @@
+ 
+       quantityMismatch: (diff) => `الكمية الموزعة لا تتطابق مع الكمية المطلوبة (الفارق: ${diff}).`,
+ 
+-      addBatch: '＋ إضافة تشغيلة',
++      
+ 
+       duplicateBatch: '⧉ تكرار',
+ 
+@@ -8300,6 +8301,7 @@
+     },
+ 
+     grpo: {
++      openTimeoutRetrying: 'استغرقت العملية وقتًا أطول من المتوقع، جارٍ تحديث القائمة…',
+ 
+       title: 'الاستلام',
+ 
+@@ -8866,73 +8868,73 @@
+         brand: 'العلامة التجارية',
+ 
+         packaging: 'التعبئة والتغليف',
+-        notes: 'الملاحظات',
++        
++        
++
++        saveDraft: 'حفظ التغييرات',
++
++        submitReview: 'إرسال للمراجعة',
++
++        approve: 'اعتماد',
++
++        reject: 'رفض',
++
++        syncQuotation: 'تحديث عرض السعر في SAP',
++
++        customerApproval: 'موافقة العميل',
++
++        recordCustomerApproval: 'تسجيل موافقة العميل',
++
++        approvalType: 'نوع إثبات الموافقة',
++
++        referenceNumber: 'رقم أمر الشراء / المرجع',
++
++        contactPerson: 'المسؤول لدى العميل',
++
++        createOrder: 'إنشاء أمر البيع',
++
++        salesOrderCreated: 'تم إنشاء أمر البيع في SAP',
++
++        deliveryCreated: 'تم إنشاء إذن التسليم في SAP',
++
++        postDelivery: 'ترحيل إذن التسليم إلى SAP',
++
++        batches: 'التشغيلات ومواقع التخزين',
++
++        batchNumber: 'رقم التشغيلة',
++
++        binCode: 'موقع التخزين',
++
++        allocatedQuantity: 'الكمية المخصصة',
++
++        addBatch: 'إضافة تشغيلة',
++
++        orderQuantity: 'كمية الطلب',
++
++        openQuantity: 'الكمية المتبقية',
++
++        deliveryQuantity: 'كمية التسليم',
++
++        notes: 'ملاحظات',
++
++        rejectionReason: 'سبب الرفض',
++
++        relationshipMapInfo: 'مرتبط أصلياً في خريطة العلاقات بـ SAP Business One',
++
++        poApproval: 'أمر شراء من العميل',
++
++        signedDocApproval: 'عرض سعر موقع',
++
++        emailApproval: 'تأكيد كتابي بالبريد الإلكتروني',
++
++        unselectedNotice: 'البنود غير المحددة تظل مفتوحة في عرض السعر في SAP ولن يتم تضمينها في أمر البيع.',
++
++        viewOrder: 'عرض أمر البيع',
++
++        viewQuotation: 'عرض عرض السعر',
++
+         sourceQuotation: 'عرض السعر المصدر',
+ 
+-        saveDraft: 'حفظ التغييرات',
+-
+-        submitReview: 'إرسال للمراجعة',
+-
+-        approve: 'اعتماد',
+-
+-        reject: 'رفض',
+-
+-        syncQuotation: 'تحديث عرض السعر في SAP',
+-
+-        customerApproval: 'موافقة العميل',
+-
+-        recordCustomerApproval: 'تسجيل موافقة العميل',
+-
+-        approvalType: 'نوع إثبات الموافقة',
+-
+-        referenceNumber: 'رقم أمر الشراء / المرجع',
+-
+-        contactPerson: 'المسؤول لدى العميل',
+-
+-        createOrder: 'إنشاء أمر البيع',
+-
+-        salesOrderCreated: 'تم إنشاء أمر البيع في SAP',
+-
+-        deliveryCreated: 'تم إنشاء إذن التسليم في SAP',
+-
+-        postDelivery: 'ترحيل إذن التسليم إلى SAP',
+-
+-        batches: 'التشغيلات ومواقع التخزين',
+-
+-        batchNumber: 'رقم التشغيلة',
+-
+-        binCode: 'موقع التخزين',
+-
+-        allocatedQuantity: 'الكمية المخصصة',
+-
+-        addBatch: 'إضافة تشغيلة',
+-
+-        orderQuantity: 'كمية الطلب',
+-
+-        openQuantity: 'الكمية المتبقية',
+-
+-        deliveryQuantity: 'كمية التسليم',
+-
+-        notes: 'ملاحظات',
+-
+-        rejectionReason: 'سبب الرفض',
+-
+-        relationshipMapInfo: 'مرتبط أصلياً في خريطة العلاقات بـ SAP Business One',
+-
+-        poApproval: 'أمر شراء من العميل',
+-
+-        signedDocApproval: 'عرض سعر موقع',
+-
+-        emailApproval: 'تأكيد كتابي بالبريد الإلكتروني',
+-
+-        unselectedNotice: 'البنود غير المحددة تظل مفتوحة في عرض السعر في SAP ولن يتم تضمينها في أمر البيع.',
+-
+-        viewOrder: 'عرض أمر البيع',
+-
+-        viewQuotation: 'عرض عرض السعر',
+-
+-        sourceQuotation: 'عرض السعر المصدر',
+-
+         costingDimensions: 'أبعاد مراكز التكلفة (تكلفة البضاعة المباعة)',
+ 
+         deliveryHistory: 'سجل أذون التسليم',
+--- start/frontend/src/pages/TransferReviewPage.jsx
++++ current/frontend/src/pages/TransferReviewPage.jsx
+@@ -1,5 +1,5 @@
+ import StandardDropdown from '../components/ui/StandardDropdown';
+-import { transferWarehouseSearch, binSearch } from '../services/masterDataSearch';
++import { transferWarehouseSearch } from '../services/masterDataSearch';
+ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+ import API from '../services/api';
+ import { useAuth } from '../contexts/AuthContext';
+@@ -195,7 +195,6 @@
+   );
+ 
+   const warehouses = [];
+-  const binsByWarehouse = {};
+ 
+   const loadTransfers = useCallback(() => {
+     setLoading(true);
+--- start/frontend/src/services/purchaseQuotationService.js
++++ current/frontend/src/services/purchaseQuotationService.js
+@@ -1,4 +1,5 @@
+ import API from './api';
++import { loadCostCenters } from './purchaseGrpoService';
+ 
+ export async function loadPurchaseQuotationDrafts(search = '') {
+   const query = search ? `?search=${encodeURIComponent(search)}` : '';
+--- start/frontend/src/components/delivery/DeliveryWorkflowPanel.jsx
++++ current/frontend/src/components/delivery/DeliveryWorkflowPanel.jsx
+@@ -121,7 +121,7 @@
+ }
+ 
+ export default function DeliveryWorkflowPanel({ order, onRefresh }) {
+-  const { t } = useI18n();
++  const { t, lang } = useI18n();
+   const { user } = useAuth();
+   const isManager = canManageDelivery(user);
+ 
+--- start/frontend/src/components/print/DeliveryReportPrintable.jsx
++++ current/frontend/src/components/print/DeliveryReportPrintable.jsx
+@@ -39,7 +39,7 @@
+ 
+ export default function DeliveryReportPrintable({ report, filters, filterLabels, delivery, generatedAt, t }) {
+   if (delivery) {
+-    const { draft, date, items, quantity } = delivery;
++    const { draft, date, quantity } = delivery;
+     return (
+       <div className="a4-print-sheet quality-print-sheet delivery-print-sheet">
+         <PrintHeader title={t('customizationDelivery.deliveryDocument')} subtitle={`#${draft.sap_doc_num}`} />
+--- start/frontend/src/components/ui/SearchableSelect.jsx
++++ current/frontend/src/components/ui/SearchableSelect.jsx
+@@ -29,7 +29,7 @@
+ 
+ function renderBidiLabel(label) {
+   if (!label || typeof label !== 'string') return label;
+-  const match = label.match(/^([A-Za-z0-9_\-\.\/]+(?:\s*\([^)]*\))?)(\s+-\s+)(.*)$/);
++  const match = label.match(/^([A-Za-z0-9_./-]+(?:\s*\([^)]*\))?)(\s+-\s+)(.*)$/);
+   if (match) {
+     const [, code, sep, rest] = match;
+     return (
+@@ -82,6 +82,7 @@
+   onSearchResults,
+   onSelectOption,
+   selectedOptions = [],
++  selectedLabel,
+   onOpen,
+   onClose,
+   searchInDropdown = false,
+@@ -166,7 +167,7 @@
+     ? (Array.isArray(value) ? value : []).map(String).map((code) => selectionOptions.find((option) => option.value === code)
+       || (searchSource ? { value: code, label: code } : null)).filter(Boolean)
+     : (stringValue ? (selectionOptions.find((option) => option.value === stringValue)
+-      || (searchSource ? { value: stringValue, label: stringValue } : null)) : null);
++      || (searchSource ? { value: stringValue, label: selectedLabel || stringValue } : null)) : null);
+   const renderedPlaceholder = placeholder || (options[0]?.value === '' ? options[0].label : t('common.selectOption'));
+   const listboxId = selectId ? `${selectId}-listbox` : undefined;
+ 
+--- start/frontend/scripts/check-i18n.js
++++ current/frontend/scripts/check-i18n.js
+@@ -1,4 +1,5 @@
+ import fs from 'fs';
++import process from 'node:process';
+ import path from 'path';
+ import { fileURLToPath, pathToFileURL } from 'url';
+ 
+--- start/frontend/scripts/test-master-search-workflow-ui.py
++++ current/frontend/scripts/test-master-search-workflow-ui.py
+@@ -4,8 +4,11 @@
+ Run Vite on 127.0.0.1:5189 before this script.
+ """
+ import json
++import os
+ from urllib.parse import urlparse, parse_qs
+ from playwright.sync_api import sync_playwright, expect
++
++ORIGIN = os.environ.get('TEST_FRONTEND_ORIGIN', 'http://127.0.0.1:5189').rstrip('/')
+ 
+ USER = {'id': 1, 'username': 'search-fixture', 'role': 'admin', 'is_superuser': True}
+ calls, errors = [], []
+@@ -14,7 +17,7 @@
+     request = route.request
+     parsed = urlparse(request.url)
+     params = parse_qs(parsed.query)
+-    headers = {'Access-Control-Allow-Origin': 'http://127.0.0.1:5189',
++    headers = {'Access-Control-Allow-Origin': ORIGIN,
+                'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': '*'}
+     def respond(payload, status=200):
+         route.fulfill(status=status, content_type='application/json', headers=headers, body=json.dumps(payload))
+@@ -52,7 +55,7 @@
+     context.route('**/api/**', handle)
+     page = context.new_page()
+     page.on('pageerror', lambda error: errors.append(str(error)))
+-    page.goto('http://127.0.0.1:5189/customization-delivery/quotations/new')
++    page.goto(ORIGIN + '/customization-delivery/quotations/new')
+     customer = page.get_by_role('combobox').first
+     expect(customer).to_be_visible()
+     assert not any(path.endswith(('/customers/', '/items/')) for path, _ in calls)
+@@ -71,8 +74,10 @@
+     expect(page.locator('.MuiAutocomplete-noOptions')).to_be_visible()
+     page.keyboard.press('Escape')
+     page.get_by_role('button', name='Add Item', exact=True).click()
+-    expect(page.get_by_text('Fixture Fruit', exact=True).first).to_be_visible()
+-    expect(page.locator('input[value="12.5"]').first).to_be_visible()
++    added_row = page.locator('tbody tr').filter(has_text='270001')
++    expect(added_row).to_have_count(1)
++    expect(added_row.locator('strong').first).to_contain_text('Fixture Fruit')
++    expect(added_row.locator('input[value="12.5"]')).to_be_visible()
+     item.fill('FAIL')
+     expect(page.locator('.MuiAutocomplete-noOptions')).to_contain_text('Search failed')
+     page.keyboard.press('Escape')
+--- start/frontend/scripts/test-sales-order-independent-ui.py
++++ current/frontend/scripts/test-sales-order-independent-ui.py
+@@ -1,7 +1,10 @@
+ """Browser regression with intercepted APIs; never posts a real SAP document."""
+ import json
++import os
+ from urllib.parse import urlparse
+ from playwright.sync_api import sync_playwright, expect
++
++ORIGIN = os.environ.get('TEST_FRONTEND_ORIGIN', 'http://127.0.0.1:5189').rstrip('/')
+ 
+ USER = {'id': 1, 'username': 'order-fixture', 'role': 'admin', 'is_superuser': True}
+ DRAFT = {'id': 41, 'status': 'READY_FOR_ORDER', 'is_local_creation': True,
+@@ -22,13 +25,16 @@
+ def handle(route):
+     request = route.request
+     path = urlparse(request.url).path
+-    headers = {'Access-Control-Allow-Origin': 'http://127.0.0.1:5189', 'Access-Control-Allow-Credentials': 'true',
++    headers = {'Access-Control-Allow-Origin': ORIGIN, 'Access-Control-Allow-Credentials': 'true',
+                'Access-Control-Allow-Headers': '*', 'Access-Control-Allow-Methods': 'GET,POST,OPTIONS'}
+     def respond(data, status=200):
+         route.fulfill(status=status, content_type='application/json', headers=headers, body=json.dumps(data))
+     if request.method == 'OPTIONS': respond({}); return
+     calls.append((request.method, path))
+     if path.endswith('/me/'): respond({'data': USER}); return
++    if path.endswith('/shipping/deliveries/'):
++        assert request.method == 'GET'
++        respond({'operations': [], 'next_offset': None}); return
+     if path.endswith('/create-order/'):
+         assert request.method == 'POST'
+         DRAFT.update(status='ORDER_POSTED', sap_order_doc_entry='2002', sap_order_doc_num='7002')
+@@ -60,7 +66,7 @@
+     context.route('**/api/**', handle)
+     page = context.new_page()
+     page.on('pageerror', lambda error: errors.append(str(error)))
+-    page.goto('http://127.0.0.1:5189/customization-delivery/quotations')
++    page.goto(ORIGIN + '/customization-delivery/quotations')
+     page.get_by_role('button', name='Create Sales Order in SAP', exact=True).click()
+     expect(page.get_by_role('heading', name='Sales Order Created Successfully in SAP!', exact=True)).to_be_visible()
+     expect(page.locator('.modal-backdrop').get_by_text('2002', exact=True)).to_be_visible()
+@@ -70,18 +76,18 @@
+     assert [path for method, path in calls if method == 'POST'] == ['/api/customization-delivery/customization/drafts/41/create-order/']
+     assert not any('/delivery/' in path for _, path in calls), 'Order success must not even load a delivery workflow.'
+     page.get_by_role('button', name='Done', exact=True).click()
+-    page.goto('http://127.0.0.1:5189/customization-delivery/orders')
++    page.goto(ORIGIN + '/customization-delivery/orders')
+     page.get_by_role('button', name='View Sales Order Details', exact=True).click()
+-    expect(page).to_have_url('http://127.0.0.1:5189/customization-delivery/orders/documents/2002')
++    expect(page).to_have_url(ORIGIN + '/customization-delivery/orders/documents/2002')
+     expect(page.get_by_text('Fixture Customer', exact=False).first).to_be_visible()
+     assert not any('/delivery/drafts/' in path for _, path in calls), 'Viewing an order must not load/create delivery drafts.'
+-    page.goto('http://127.0.0.1:5189/customization-delivery/orders')
++    page.goto(ORIGIN + '/customization-delivery/orders')
+     page.get_by_role('button', name='Open Delivery Module', exact=True).click()
+-    expect(page).to_have_url('http://127.0.0.1:5189/customization-delivery/deliveries')
++    expect(page).to_have_url(ORIGIN + '/customization-delivery/deliveries')
+     expect(page.get_by_role('button', name='Create Delivery Note in SAP', exact=True)).to_be_visible()
+     assert sum(method == 'POST' for method, _ in calls) == 1, 'Opening the independent module must not create a delivery.'
+     page.get_by_role('button', name='Create Delivery Note in SAP', exact=True).click()
+-    expect(page).to_have_url('http://127.0.0.1:5189/customization-delivery/deliveries/new/2002')
++    expect(page).to_have_url(ORIGIN + '/customization-delivery/deliveries/new/2002')
+     page.wait_for_function("document.body.innerText.includes('7002')")
+     assert sum(method == 'POST' and path.endswith('/delivery/drafts/') for method, path in calls) >= 1
+     assert len(delivery_drafts) == 1
+--- start/frontend/scripts/test-select-ux-browser.py
++++ current/frontend/scripts/test-select-ux-browser.py
+@@ -3,10 +3,13 @@
+ Run Vite at 127.0.0.1:5189. The test entry is not part of the production build.
+ """
+ import json
++import os
+ import re
+ from pathlib import Path
+ from urllib.parse import parse_qs, urlparse
+ from playwright.sync_api import sync_playwright, expect
++
++ORIGIN = os.environ.get('TEST_FRONTEND_ORIGIN', 'http://127.0.0.1:5189').rstrip('/')
+ 
+ USER = {'id': 1, 'username': 'ux-fixture', 'role': 'admin', 'is_superuser': True}
+ calls, errors = [], []
+@@ -17,7 +20,7 @@
+     request = route.request
+     parsed = urlparse(request.url)
+     params = parse_qs(parsed.query, keep_blank_values=True)
+-    headers = {'Access-Control-Allow-Origin': 'http://127.0.0.1:5189', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': '*'}
++    headers = {'Access-Control-Allow-Origin': ORIGIN, 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': '*'}
+     def respond(data, status=200):
+         route.fulfill(status=status, content_type='application/json', headers=headers, body=json.dumps(data))
+     if request.method == 'OPTIONS':
+@@ -46,13 +49,13 @@
+         collection = 'users'
+         rows = [{'id': i, 'username': f'Operator {i:03}'} for i in range(1, 61)]
+     elif parsed.path.endswith('/customers/'):
+-        assert len(query) >= 2 and 'initial' not in params
++        assert query and 'initial' not in params
+         collection = 'customers'
+-        rows = [{'card_code': f'C{i:03}', 'card_name': f'Buyer {i:03}'} for i in range(1, 61)]
++        rows = [] if len(query) < 2 else [{'card_code': f'C{i:03}', 'card_name': f'Buyer {i:03}'} for i in range(1, 61)]
+     elif parsed.path.endswith('/items/'):
+-        assert len(query) >= 2 and 'initial' not in params
++        assert params.get('initial') == ['1'], 'The shared itemSearch source declares browse mode'
+         collection = 'items'
+-        rows = [{'item_code': f'I{i:03}', 'item_name': f'Fruit {i:03}', 'sales_unit': 'KG'} for i in range(1, 61)]
++        rows = [] if len(query) < 2 else [{'item_code': f'I{i:03}', 'item_name': f'Fruit {i:03}', 'sales_unit': 'KG'} for i in range(1, 61)]
+     else:
+         raise AssertionError(f'Unexpected API: {parsed.path}')
+     if query and query != 'FAIL':
+@@ -72,7 +75,7 @@
+     context.route('**/__select-ux-test__', entry)
+     page = context.new_page()
+     page.on('pageerror', lambda error: errors.append(error.stack or str(error)))
+-    page.goto('http://127.0.0.1:5189/__select-ux-test__')
++    page.goto(ORIGIN + '/__select-ux-test__')
+     stage = page.get_by_role('combobox', name='Stage', exact=True)
+     expect(stage).to_be_visible()
+     assert stage.evaluate('(node)=>node.tagName') == 'SELECT'
+@@ -127,11 +130,15 @@
+     assert values()['user'] == '2'
+ 
+     customer = page.get_by_role('combobox', name='Customer', exact=True)
++    expect(page.get_by_role('combobox', name='Saved warehouse', exact=True)).to_have_value('Saved warehouse label')
++    assert page.locator('[selectedlabel]').count() == 0, 'selectedLabel must never reach a DOM element'
+     customer.click()
+-    expect(page.locator('.MuiAutocomplete-noOptions')).to_contain_text('at least 2')
++    expect(page.locator('.MuiAutocomplete-noOptions')).to_contain_text('Search by name, description or code')
++    assert not any(path.endswith('/customers/') for path, _ in calls), 'Empty search must not request customers.'
+     customer.fill('B')
+     page.wait_for_timeout(350)
+-    assert not any(path.endswith('/customers/') for path, _ in calls)
++    assert sum(path.endswith('/customers/') and params.get('search') == ['B'] for path, params in calls) == 1
++    expect(page.locator('.MuiAutocomplete-noOptions')).to_be_visible()
+     customer.fill('Buyer')
+     expect(page.get_by_role('listbox').get_by_role('option')).to_have_count(25)
+     page.get_by_role('listbox').evaluate('(list)=>{list.scrollTop=list.scrollHeight;list.dispatchEvent(new Event("scroll"));}')
+--- start/frontend/scripts/test-transfer-review.mjs
++++ current/frontend/scripts/test-transfer-review.mjs
+@@ -5,10 +5,11 @@
+ import { createServer } from 'vite';
+ import { fileURLToPath } from 'node:url';
+ import { MemoryRouter } from 'react-router-dom';
++import { readFile } from 'node:fs/promises';
+ 
+ const root = fileURLToPath(new URL('../', import.meta.url));
+ const fixture = globalThis.__transferReviewTest = {};
+-const server = await createServer({ root, server: { middlewareMode: true }, plugins: [{
++const server = await createServer({ root, cacheDir: 'node_modules/.vite-transfer-review-test', server: { middlewareMode: true }, plugins: [{
+   name: 'transfer-review-unit-fixtures', enforce: 'pre',
+   resolveId(id) { if (id.startsWith('virtual:review-')) return '\0' + id; },
+   load(id) {
+@@ -44,16 +45,19 @@
+   fixture.beforeFix = false;
+   server.moduleGraph.invalidateAll();
+   const { default: Page } = await server.ssrLoadModule('/src/pages/TransferReviewPage.jsx');
+-  const {default:Operations}=await server.ssrLoadModule('/src/pages/TransferReviewOperationsPage.jsx');
+-  const landing=renderToString(React.createElement(MemoryRouter,null,React.createElement(Operations)));
+-  assert.ok(landing.includes('href="/transfer-review/internal"'));assert.ok(landing.includes('href="/transfer-review/shipping"'));
+-  assert.ok(landing.includes('physicalTransfer.internalReview'));assert.ok(!landing.includes('tr-workflow-table'));
++  const routes = await readFile(new URL('../src/App.jsx', import.meta.url), 'utf8');
++  assert.match(routes, /path="\/transfer-review"[^\n]*<TransferReviewPage/);
++  for (const alias of ['internal', 'shipping']) {
++    assert.ok(routes.includes(`path="/transfer-review/${alias}"`));
++    assert.match(routes.split(`path="/transfer-review/${alias}"`)[1].split('\n')[0], /Navigate to="\/transfer-review"/);
++  }
+   const render = () => { fixture.index = 0; fixture.effects = []; return renderToString(React.createElement(Page)); };
+   let checks = 0;
+   async function scenario(response, { error = null, reserved = [] } = {}) {
+     fixture.states = []; fixture.calls = [];
+     fixture.get = async (url, options) => {
+       fixture.calls.push([url, options]);
++      if (url.includes('/transfer/physical/events/')) return { data: { data: { events: [] } } };
+       if (url.includes('/bin-locations/')) return { data: { data: {
+         warehouse_code: decodeURIComponent(url.split('/')[2]), requires_bin: true,
+         locations: [{ code: 'VALID-DESTINATION-BIN', name: 'Valid destination', absEntry: 42 }],
+@@ -67,8 +71,10 @@
+     effects.forEach(effect => effect());
+     await new Promise(resolve => setImmediate(resolve));
+     const html = render();
+-    assert.equal(fixture.calls.length, 2);
+-    assert.equal(fixture.calls[0][1].params.refresh_sources, 'false');
++    assert.deepEqual(fixture.calls.map(([url]) => url).sort(), [
++      '/admin/pending-transfers/', '/admin/reports/reserved-outbound-positions/', '/transfer/physical/events/',
++    ].sort());
++    assert.equal(fixture.calls.find(([url]) => url === '/admin/pending-transfers/')[1].params.refresh_sources, 'false');
+     checks++;
+     return html;
+   }
+@@ -82,17 +88,15 @@
+   const stage4={...pending,id:40,transfer_stage:'STAGE_4_TO_DESTINATION',from_warehouse:'SOURCE-4',to_warehouse:'DEST-4',
+     lines:[{batch_number:'INTERNAL-PALLET'}],sap_doc_num:444};
+   const separated=await scenario({data:{transfers:[stage4,pending]}});
+-  const internalSection=separated.slice(separated.indexOf('aria-labelledby="internal-transfers-title"'),separated.indexOf('aria-labelledby="sap-review-title"'));
+-  assert.ok(internalSection.includes('INTERNAL-PALLET'));assert.ok(internalSection.includes('SOURCE-4'));assert.ok(internalSection.includes('DEST-4'));
+-  assert.ok(!internalSection.includes('PALLET-ONE'));assert.ok(!internalSection.includes('physicalTransfer.container'));
+-  assert.ok(!separated.includes('physicalTransfer.history'));assert.ok(!separated.includes('physicalTransfer.shippingHall'));
+-  assert.ok(!separated.includes('shipping-loading-title')); // Shipping history has its own navigation destination.
++  for (const value of ['INTERNAL-PALLET', 'SOURCE-4', 'DEST-4', 'PALLET-ONE']) assert.ok(separated.includes(value));
++  assert.ok(separated.includes('tr-table')); // Current review combines stages in one table.
+   const stage2 = { ...pending, id: 2, status: 'POSTED', transfer_stage: 'STAGE_2_TO_FRIDGE',
+     from_warehouse: '90214', to_warehouse: '20201', to_bin: 'ACTUAL-SECOND-BIN',
+     pallet_position_code: 'ACTUAL-USER-POSITION', sap_doc_entry: 123, sap_doc_num: 456,
+     raw_payload_json: { policy: { allowed_destination_bins: {} } } };
+   let html = await scenario({ data: { transfers: [stage2] } });
+-  for (const value of ['transferReview.stage2', 'ACTUAL-USER-POSITION', 'ACTUAL-SECOND-BIN', '123', '456']) assert.ok(html.includes(value));
++  for (const value of ['transferReview.stage2', 'ACTUAL-USER-POSITION', 'ACTUAL-SECOND-BIN', '456']) assert.ok(html.includes(value), value);
++  assert.ok((await scenario({ data: { transfers: [{ ...stage2, sap_doc_num: null }] } })).includes('123'), 'DocEntry is the reference fallback when SAP DocNum is absent');
+   html = await scenario({ data: { transfers: [{ ...stage2, id: 3, transfer_stage: 'STAGE_3_FROM_FRIDGE',
+     from_warehouse: '20201', to_warehouse: 'DESTINATION', source_pallet_position_code: 'ACTUAL-SOURCE-POSITION',
+     pallet_position_code: null, to_bin: null }] } });
+@@ -114,9 +118,13 @@
+   fixture.effects[0](); // Resolve warehouse requirements after records load.
+   await new Promise(resolve => setImmediate(resolve));
+   html = render();
+-  assert.match(html, /transfer.destinationSapBin/);
++  assert.ok(fixture.calls.some(([url]) => url.includes('/bin-locations/20201/')), 'Validate destination bin requirements for the actual destination warehouse');
+   assert.match(html, /Original SAP rejection/);
+   assert.match(html, /class="app-button app-button--success tr-post-btn" disabled/);
++  await scenario({ data: { transfers: [{ ...stage2, id: 6, status: 'FAILED', transfer_stage: 'STAGE_3_FROM_FRIDGE', to_bin: 'VALID-DESTINATION-BIN' }] } });
++  fixture.effects[0]();
++  await new Promise(resolve => setImmediate(resolve));
++  assert.doesNotMatch(render(), /class="app-button app-button--success tr-post-btn" disabled/, 'A validated explicit bin enables posting');
+   console.log(`PASS: ${checks} Transfer Review component scenarios; no operational/SAP calls.`);
+ } finally {
+   await server.close(); delete globalThis.__transferReviewTest;
+--- start/frontend/scripts/test-transfer-stage2-destination-integrity.mjs
++++ current/frontend/scripts/test-transfer-stage2-destination-integrity.mjs
+@@ -3,7 +3,7 @@
+ 
+ const workflow = fs.readFileSync('src/modules/transfer/hooks/useTransferWorkflow.js', 'utf8');
+ const page = fs.readFileSync('src/modules/transfer/pages/TransferPage.jsx', 'utf8');
+-const map = fs.readFileSync('src/modules/transfer/components/ColdStorageMap.jsx', 'utf8');
++const map = fs.readFileSync('src/modules/transfer/components/ColdStorageMap.jsx', 'utf8').replace(/\r\n/g, '\n');
+ 
+ const setToBinBody = workflow.match(/const setToBin = \(code\) => \{([\s\S]*?)\n  \};/)?.[1] || '';
+ assert(setToBinBody.includes('setPalletPositionIdState(null)'));
+--- start/frontend/scripts/fixtures/select-ux-harness.jsx
++++ current/frontend/scripts/fixtures/select-ux-harness.jsx
+@@ -12,10 +12,11 @@
+ import '../../src/styles/global.css';
+ import '../../src/styles/design-system.css';
+ 
+-function Harness() {
++export function Harness() {
+   const [values, setValues] = useState({ stage: 'S1', roles: ['transfer'], warehouse: '', bin: '', user: '', customer: '', item: null, location: 'L1', general: 'G1' });
+   const set = (field, value) => setValues((previous) => ({ ...previous, [field]: value, ...(field === 'warehouse' ? { bin: '' } : {}) }));
+   return <main style={{ width: '100%', maxWidth: 600, minWidth: 0, boxSizing: 'border-box', padding: 16, display: 'grid', gap: 16, color: 'var(--text-primary)' }}>
++    <SearchableSelect label="Saved warehouse" options={[]} searchSource={warehouseSearch} value="SAVED" selectedLabel="Saved warehouse label" disabled />
+     <StandardDropdown label="Stage" allowClear={false} value={values.stage} onChange={(event) => set('stage', event.target.value)}>
+       <option value="S1">Stage 1</option><option value="S2">Stage 2</option><option value="S3">Stage 3</option>
+     </StandardDropdown>

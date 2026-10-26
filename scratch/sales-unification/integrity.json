@@ -1,0 +1,23 @@
+{
+  "snapshot_sha256": "b95a39ef3497ebaeff504850e17fcd05e732af0fb0c93b32a4201140fbe64715",
+  "pinned_nonprotected_files": 499,
+  "changed_files": [
+    "frontend/src/pages/DeliveriesPage.jsx",
+    "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "frontend/src/pages/SalesOrdersPage.jsx",
+    "frontend/src/pages/SalesQuotationsPage.jsx",
+    "frontend/src/styles/pages/customization-delivery.css",
+    "frontend/src/styles/pages/shipping-loading.css"
+  ],
+  "new_frontend_files": [
+    "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+    "frontend/src/components/ui/SalesDocumentCard.jsx"
+  ],
+  "working_tree_drift": [],
+  "frozen_input_drift": [],
+  "before_visual_cases": 72,
+  "after_visual_cases": 108,
+  "comparable_cases": 72,
+  "api_count_differences": [],
+  "protected_content_rehashed": false
+}

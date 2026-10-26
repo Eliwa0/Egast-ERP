@@ -1,0 +1,37 @@
+[
+  {
+    "name": "node",
+    "snapshot_sha256": "f8c9b184202d3dc7f44adb5c31896f6fe64b7b2e7e3e331d5e9452f8e6ea60d4",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "--test",
+      "--test-concurrency=1",
+      "src\\pages\\transferRulesSelection.test.mjs",
+      "src\\services\\costCenterLoader.test.mjs",
+      "src\\services\\issueReview.test.mjs",
+      "src\\services\\performanceMetrics.test.mjs",
+      "src\\services\\productionIssueService.test.mjs",
+      "scripts\\test-activity-log-frontend.mjs",
+      "scripts\\test-cold-storage-map-logic.mjs",
+      "scripts\\test-cold-storage-positions-ui.mjs",
+      "scripts\\test-grpo-navigation.mjs",
+      "scripts\\test-phase6-step3-transfer-positions.mjs",
+      "scripts\\test-phase6-step7-outbound-frontend.mjs",
+      "scripts\\test-physical-transfer.mjs",
+      "scripts\\test-predeploy-ui-regressions.mjs",
+      "scripts\\test-quality-grades.mjs",
+      "scripts\\test-sales-scope-regressions.mjs",
+      "scripts\\test-search-cache.mjs",
+      "scripts\\test-select-ux.mjs",
+      "scripts\\test-stage5-wizard.mjs",
+      "scripts\\test-transfer-destination-bins.mjs",
+      "scripts\\test-transfer-review.mjs",
+      "scripts\\test-transfer-stage2-destination-integrity.mjs",
+      "scripts\\test-transfer-warehouse-search.mjs",
+      "scripts\\test-workflow-read-dedup.mjs"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final\\frontend",
+    "exit_code": 0,
+    "elapsed_s": 19.48
+  }
+]

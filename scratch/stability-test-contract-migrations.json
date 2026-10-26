@@ -1,0 +1,77 @@
+[
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_super_admin_can_review_effective_policy_without_module_grants",
+    "replacement": "test_removed_policy_endpoint_remains_removed_for_super_admin"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_activation_unavailable_and_stale_edit_http_feedback",
+    "replacement": "test_historical_domain_unavailable_and_stale_edit_fail_closed"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_full_admin_lifecycle_and_immutable_history_api",
+    "replacement": "test_historical_domain_lifecycle_keeps_immutable_history"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_stage3_incomplete_draft_get_and_activation_feedback",
+    "replacement": "test_historical_stage3_incomplete_draft_cannot_activate"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_review_reports_invalid_mapping_and_unavailable_sap_separately",
+    "replacement": "test_historical_validation_distinguishes_invalid_metadata_and_unavailable_sap"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_admin_review_returns_fresh_readiness_without_updating_revision",
+    "replacement": "test_historical_domain_readiness_is_fresh_without_mutating_revision"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_stage4_disabled_legacy_multi_source_history_is_incomplete_without_guessing",
+    "replacement": "test_historical_stage4_multi_source_data_is_not_guessed_or_rewritten"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_stage4_configuration_api_activation_reload_and_sap_configured_source",
+    "replacement": "test_historical_stage4_service_preserves_explicit_sources_and_destination"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_admin_effective_form_metadata_has_no_seeded_routes_or_bins",
+    "replacement": "test_removed_effective_form_endpoint_does_not_seed_revisions"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_successful_posting_uses_saved_route_not_new_active_route",
+    "replacement": "test_runtime_ignores_retired_snapshots_but_preserves_user_selected_route"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_admin_and_super_admin_management_audited",
+    "replacement": "test_removed_admin_api_cannot_mutate_or_audit_historical_revisions"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_user_cannot_review_or_modify_policies",
+    "replacement": "test_removed_policy_api_is_unavailable_to_regular_users"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_pending_creation_and_update_snapshot_preserved",
+    "replacement": "test_pending_creation_and_update_strip_retired_policy_snapshot"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_company_and_endpoint_isolation",
+    "replacement": "test_company_and_endpoint_isolation"
+  },
+  {
+    "file": "backend/api/tests_persisted_transfer_policy.py",
+    "original": "test_stage1_binned_warehouse_route_ready_and_activates_without_technical_fields",
+    "replacement": "test_historical_stage1_domain_validates_without_technical_fields"
+  }
+]

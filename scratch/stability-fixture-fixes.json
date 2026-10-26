@@ -1,0 +1,435 @@
+{
+  "database": "sqlite",
+  "run": 74,
+  "failures": [
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_02_sap_failure_retains_reserved_outbound",
+      "trace": "Traceback (most recent call last):\n  File \"C:\\Users\\hp\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\unittest\\mock.py\", line 1432, in patched\n    return func(*newargs, **newkeywargs)\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\api\\tests_cold_storage_outbound_e2e.py\", line 244, in test_02_sap_failure_retains_reserved_outbound\n    self.assertIn(\"504\", pending.error_message)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: '504' not found in \"'to_warehouse'\"\n"
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_grpo_vehicle_number_survives_save_reload_and_appears_in_review",
+      "trace": "Traceback (most recent call last):\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\run_stability_tests.py\", line 60, in stopTest\n    raise AssertionError(f'{len(unexpected)} unexpected HTTP attempts were caught inside application code')\nAssertionError: 1 unexpected HTTP attempts were caught inside application code\n"
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_creates_grpo_draft",
+      "trace": "Traceback (most recent call last):\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\run_stability_tests.py\", line 60, in stopTest\n    raise AssertionError(f'{len(unexpected)} unexpected HTTP attempts were caught inside application code')\nAssertionError: 1 unexpected HTTP attempts were caught inside application code\n"
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_is_idempotent",
+      "trace": "Traceback (most recent call last):\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\run_stability_tests.py\", line 60, in stopTest\n    raise AssertionError(f'{len(unexpected)} unexpected HTTP attempts were caught inside application code')\nAssertionError: 1 unexpected HTTP attempts were caught inside application code\n"
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_serializer_scale_draft_and_quality_draft",
+      "trace": "Traceback (most recent call last):\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\run_stability_tests.py\", line 60, in stopTest\n    raise AssertionError(f'{len(unexpected)} unexpected HTTP attempts were caught inside application code')\nAssertionError: 2 unexpected HTTP attempts were caught inside application code\n"
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_actual_position_is_still_required",
+      "trace": "Traceback (most recent call last):\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\api\\tests_stage2_policy_positions.py\", line 53, in test_actual_position_is_still_required\n    self.assertEqual(response.status_code,400,response.data)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 409 != 400 : {'success': False, 'error': \"Stage 2 destination SAP Bin '20201-F01-R01-C01-RA' requires a physical pallet position.\", 'detail': \"Stage 2 destination SAP Bin '20201-F01-R01-C01-RA' requires a physical pallet position.\"}\n"
+    }
+  ],
+  "errors": [
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_pending_shipments_exposes_unconsumed_scale_draft_and_avoids_duplicate",
+      "trace": "Traceback (most recent call last):\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\api\\tests.py\", line 1079, in test_pending_shipments_exposes_unconsumed_scale_draft_and_avoids_duplicate\n    self.assertEqual(service.create_draft_from_scale(self.scale_draft).id, existing.id)\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\hp\\Desktop\\receipt_from_production\\backend\\api\\services\\purchase_grpo_service.py\", line 356, in create_draft_from_scale\n    raise ActivePurchaseGRPODraftExists(\n        \"This scale draft already has an active Purchase GRPO draft.\"\n    )\napi.services.purchase_grpo_service.ActivePurchaseGRPODraftExists: This scale draft already has an active Purchase GRPO draft.\n"
+    }
+  ],
+  "skipped": [],
+  "unexpected_http": [
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_grpo_vehicle_number_survives_save_reload_and_appears_in_review",
+      "method": "https://192.168.1.102:50000/b1s/v2/Login"
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_pending_shipments_exposes_unconsumed_scale_draft_and_avoids_duplicate",
+      "method": "https://192.168.1.102:50000/b1s/v2/Login"
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_creates_grpo_draft",
+      "method": "https://192.168.1.102:50000/b1s/v2/Login"
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_is_idempotent",
+      "method": "https://192.168.1.102:50000/b1s/v2/Login"
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_serializer_scale_draft_and_quality_draft",
+      "method": "https://192.168.1.102:50000/b1s/v2/Login"
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_serializer_scale_draft_and_quality_draft",
+      "method": "https://192.168.1.102:50000/b1s/v2/Login"
+    }
+  ],
+  "cases": [
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_01_create_pending_outbound_transfer_reserves_occupied_position",
+      "ms": 18.32,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_02_transfer_move_api_creates_pending_and_reserves_position",
+      "ms": 45.11,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_03_attempt_reserve_already_reserved_outbound_position_fails",
+      "ms": 19.58,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_04_attempt_reserve_available_position_for_outbound_fails",
+      "ms": 11.98,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_05_attempt_reserve_maintenance_position_fails",
+      "ms": 11.41,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_06_missing_source_pallet_position_id_fails_validation",
+      "ms": 8.56,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_07_non_existent_source_pallet_position_id_fails",
+      "ms": 9.63,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_08_bin_mismatch_fails_validation",
+      "ms": 11.82,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_09_warehouse_mismatch_fails_validation",
+      "ms": 8.31,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_10_non_allocatable_bin_fails_validation",
+      "ms": 9.78,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_11_sap_posting_success_vacates_position",
+      "ms": 34.61,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_12_definitive_sap_failure_restores_occupied",
+      "ms": 34.11,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_13_sap_timeout_retains_reserved_outbound",
+      "ms": 26.86,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_14_retry_failed_outbound_transfer_succeeds",
+      "ms": 34.7,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_15_delete_pending_transfer_releases_to_occupied",
+      "ms": 22.73,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_16_delete_failed_transfer_releases_to_occupied",
+      "ms": 23.17,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_17_idempotent_vacate_returns_cleanly",
+      "ms": 12.88,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_18_admin_vacate_endpoint_remains_functional",
+      "ms": 21.61,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_19_sap_payload_contains_source_bin_allocations_and_no_physical_pos",
+      "ms": 10.55,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_20_inbound_transfers_regression_free",
+      "ms": 36.08,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_21_batch_mismatch_is_conflict_before_reservation",
+      "ms": 21.38,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_22_missing_position_batch_is_conflict",
+      "ms": 9.9,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_23_multiple_batches_for_one_position_are_rejected",
+      "ms": 8.88,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_definitive_failure_retry_reserves_then_posts",
+      "ms": 50.15,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_structured_sap_error_is_classified_as_definitive",
+      "ms": 9.19,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.TransferBatchBinQuantityTests.test_empty_from_bin_keeps_warehouse_level_query",
+      "ms": 0.42,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.TransferBatchBinQuantityTests.test_source_bin_with_batch_quantity_is_allowed",
+      "ms": 0.41,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.TransferBatchBinQuantityTests.test_source_bin_with_zero_batch_quantity_is_rejected",
+      "ms": 4.86,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_01_complete_outbound_success_lifecycle",
+      "ms": 47.25,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_02_sap_failure_retains_reserved_outbound",
+      "ms": 26.03,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_03_outbound_cancellation_reverts_to_occupied_with_batch",
+      "ms": 21.84,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_04_concurrency_conflict_returns_409",
+      "ms": 22.04,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_05_non_allocatable_bin_position_rejected",
+      "ms": 18.43,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_06_sap_payload_inspection_no_physical_position_leak",
+      "ms": 9.75,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_07_inbound_flow_remains_operational",
+      "ms": 35.7,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_08_historical_transfer_null_position_compatibility",
+      "ms": 17.3,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_09_admin_vacate_endpoint_isolation",
+      "ms": 15.66,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_arrival_and_load_are_atomic_audited_local_operations",
+      "ms": 27.84,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_duplicate_arrival_returns_409",
+      "ms": 22.18,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_duplicate_loading_and_second_container_return_409",
+      "ms": 33.7,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_invalid_container_does_not_change_state",
+      "ms": 23.63,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_no_hall_no_load_and_unknown_batch_rejected",
+      "ms": 17.25,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_nullable_legacy_metadata_and_later_stage2_move",
+      "ms": 19.81,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_permissions_and_admin_review_unchanged",
+      "ms": 29.69,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_physical_stages_cannot_be_posted_as_sap_transfers",
+      "ms": 7.29,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_stage5_direct_warehouse_to_container_loading",
+      "ms": 23.54,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_transaction_failure_preserves_previous_state_and_history",
+      "ms": 30.05,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_worker_without_intermediate_departure_grant_is_denied",
+      "ms": 12.69,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_wrong_latest_stage_or_destination_rejected",
+      "ms": 17.31,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_cost_center_endpoints_load_each_requested_dimension",
+      "ms": 17.29,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_grpo_vehicle_number_survives_save_reload_and_appears_in_review",
+      "ms": 69.88,
+      "unexpected_http": 1
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_pending_shipments_exposes_unconsumed_scale_draft_and_avoids_duplicate",
+      "ms": 39.8,
+      "unexpected_http": 1
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_incomplete_scale_draft_returns_4xx",
+      "ms": 14.15,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_creates_grpo_draft",
+      "ms": 22.97,
+      "unexpected_http": 1
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_is_idempotent",
+      "ms": 39.24,
+      "unexpected_http": 1
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_profit_center_sap_query_is_filtered_and_bounded",
+      "ms": 7.34,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_serializer_scale_draft_and_quality_draft",
+      "ms": 23.54,
+      "unexpected_http": 2
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_non_cold_storage_destination_without_position_still_works",
+      "ms": 28.64,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_nonexistent_position_returns_clear_409",
+      "ms": 28.11,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_posting_revalidates_before_sap_and_position_mutation",
+      "ms": 42.03,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_required_cold_storage_destination_without_position_is_rejected",
+      "ms": 25.72,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_valid_destination_position_succeeds",
+      "ms": 34.08,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_wrong_bin_returns_409_without_pending_or_mutation",
+      "ms": 27.38,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_wrong_warehouse_returns_409_without_pending_or_mutation",
+      "ms": 26.66,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_actual_position_is_still_required",
+      "ms": 32.06,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_historical_pending_contract_keeps_its_original_bin_restriction",
+      "ms": 29.61,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_nonphysical_stage2_route_remains_supported",
+      "ms": 33.09,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_occupied_position_is_unavailable",
+      "ms": 35.24,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_old_revision_not_mutated_or_applied_to_new_movements",
+      "ms": 27.2,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_policy_has_no_fixed_destination_or_default_position",
+      "ms": 22.57,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_second_transfer_cannot_reserve_same_position",
+      "ms": 49.75,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_selected_position_must_match_bin",
+      "ms": 30.73,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_selected_position_must_match_warehouse",
+      "ms": 42.55,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_selected_second_bin_and_position_are_reserved_without_first_bin_override",
+      "ms": 37.47,
+      "unexpected_http": 0
+    }
+  ]
+}

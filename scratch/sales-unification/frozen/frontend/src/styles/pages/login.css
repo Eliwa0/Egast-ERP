@@ -1,0 +1,125 @@
+.app-shell:has(.login-shell) .app-toolbar {
+  display: none;
+}
+
+.app-shell:has(.login-shell) .app-content {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 0;
+}
+
+.login-page,
+.login-shell {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, var(--login-overlay-a), var(--login-overlay-b)),
+    var(--page-bg);
+}
+
+.login-card {
+  width: min(100%, 420px);
+  max-width: 420px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  padding: 28px;
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.login-brand img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.login-card h1 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 1.55rem;
+}
+
+.login-card p {
+  margin: 6px 0 0;
+  color: var(--color-text-muted);
+}
+
+.login-form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.form-field label {
+  color: var(--color-text);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  min-height: 44px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 0 12px;
+}
+
+.form-field input[aria-invalid="true"] {
+  border-color: var(--color-danger);
+}
+
+.form-error {
+  border: 1px solid var(--danger-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+  padding: 10px 12px;
+  font-weight: 700;
+}
+
+.login-actions {
+  display: grid;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.login-actions .primary-btn {
+  width: 100%;
+}
+
+@media (max-width: 520px) {
+  .login-card {
+    padding: 20px;
+  }
+}
+
+@media (max-height: 560px) {
+  .login-page,
+  .login-shell {
+    align-items: flex-start;
+    overflow-y: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

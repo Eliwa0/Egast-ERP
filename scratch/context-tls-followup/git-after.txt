@@ -1,0 +1,344 @@
+ M backend/.env.example
+ M backend/api/admin.py
+ M backend/api/models.py
+ M backend/api/services/sap_service.py
+ M backend/api/tests.py
+ M backend/api/urls.py
+ M backend/api/views.py
+ M backend/receipt_project/settings.py
+ M backend/receipt_project/urls.py
+AM backend/requirements.txt
+ M docker-compose.yml
+ M frontend/package-lock.json
+ M frontend/package.json
+ M frontend/src/App.jsx
+ M frontend/src/assets/logos/egast-logo.png
+ D frontend/src/components/Layout.jsx
+ M frontend/src/components/Loading.jsx
+ D frontend/src/components/ProductionCard.jsx
+ D frontend/src/components/StockTable.jsx
+ M frontend/src/contexts/I18nContext.jsx
+ M frontend/src/i18n/translations.js
+ M frontend/src/main.jsx
+ D frontend/src/pages/Dashboard.jsx
+ M frontend/src/pages/Home.jsx
+ M frontend/src/pages/LoginPage.jsx
+ M frontend/src/pages/Production.jsx
+ M frontend/src/pages/ReceiptReviewPage.jsx
+ M frontend/src/pages/ReceiptWizard.jsx
+ D frontend/src/pages/Reports.jsx
+ M frontend/src/services/api.js
+ M frontend/src/styles/global.css
+ M frontend/src/utils/printBatchLabels.js
+ M frontend/src/utils/roles.js
+ M frontend/vite.config.js
+?? .agent.md
+?? SCALE_MODULE_ACTUAL_IMPLEMENTATION_REPORT.md
+?? backend/api/audit_views.py
+?? backend/api/cold_storage_report_views.py
+?? backend/api/customization_delivery_views.py
+?? backend/api/customization_views.py
+?? backend/api/delivery_views.py
+?? backend/api/grpo_views.py
+?? backend/api/issue_views.py
+?? backend/api/migrations/0012_pendingtransferrequest.py
+?? backend/api/migrations/0013_expand_userprofile_roles.py
+?? backend/api/migrations/0014_pendingqualityinspection.py
+?? backend/api/migrations/0015_pendingqualityinspection_quantity_and_more.py
+?? backend/api/migrations/0016_qualityitemsequence.py
+?? backend/api/migrations/0017_qualitycriterion_itemqualitycriterion.py
+?? backend/api/migrations/0018_qualitycategory_refactor_criterion_category.py
+?? backend/api/migrations/0019_seed_receiving_quality_criteria.py
+?? backend/api/migrations/0020_inspectionstage_itemcriteria_stage.py
+?? backend/api/migrations/0021_fix_inspection_stage_arabic_names.py
+?? backend/api/migrations/0022_inspectionstage_item_code_prefix.py
+?? backend/api/migrations/0023_remove_inspectionstage_item_code_prefix.py
+?? backend/api/migrations/0024_qualitycriterion_inspection_stage.py
+?? backend/api/migrations/0025_qualitycriterion_calculation_key.py
+?? backend/api/migrations/0026_unique_quality_criterion_calc_key_per_stage.py
+?? backend/api/migrations/0027_seed_pre_export_quality_criteria.py
+?? backend/api/migrations/0028_quality_inspection_uom.py
+?? backend/api/migrations/0029_pendingqualityinspection_unit_price.py
+?? backend/api/migrations/0030_quality_grpo_preparation_fields.py
+?? backend/api/migrations/0031_purchasegrpodraft.py
+?? backend/api/migrations/0032_purchasegrpodraft_posted_by_and_more.py
+?? backend/api/migrations/0033_pendingqualityinspection_scale_draft_and_more.py
+?? backend/api/migrations/0034_pendingqualityinspection_general_and_more.py
+?? backend/api/migrations/0035_purchasequotationdraft_and_more.py
+?? backend/api/migrations/0036_purchasequotationdraft_container_quantity_and_more.py
+?? backend/api/migrations/0037_purchasegrpodraftbatch.py
+?? backend/api/migrations/0038_pendingqualityinspection_container_quantity_and_more.py
+?? backend/api/migrations/0039_purchasegrpodraftbatch_batch_attribute_1_and_more.py
+?? backend/api/migrations/0040_pendingqualityinspection_journal_remark_and_more.py
+?? backend/api/migrations/0041_purchasegrpodraft_car_number_and_more.py
+?? backend/api/migrations/0042_coldstoragebinlayout_coldstoragepalletposition.py
+?? backend/api/migrations/0043_coldstoragebinlayout_capacity_source_and_more.py
+?? backend/api/migrations/0044_coldstoragebinlayout_allocation_type_and_more.py
+?? backend/api/migrations/0045_pendingtransferrequest_pallet_position_and_more.py
+?? backend/api/migrations/0046_pendingtransferrequest_source_pallet_position_and_more.py
+?? backend/api/migrations/0047_pendingtransferrequest_posting_status.py
+?? backend/api/migrations/0048_auditlog.py
+?? backend/api/migrations/0049_active_transfer_batch_guard.py
+?? backend/api/migrations/0050_transfer_position_reconciliation.py
+?? backend/api/migrations/0051_usermodulepermission.py
+?? backend/api/migrations/0052_userwarehouseaccess.py
+?? backend/api/migrations/0053_pendingissue_pendingissueline_and_more.py
+?? backend/api/migrations/0054_customization_delivery_module_permissions.py
+?? backend/api/migrations/0055_customizationdraft_customizationdraftline_and_more.py
+?? backend/api/migrations/0056_customizationdraft_is_local_creation_and_more.py
+?? backend/api/migrations/0057_customizationdraft_comments_and_more.py
+?? backend/api/migrations/0058_deliverydraft_cost_center_1_and_more.py
+?? backend/api/migrations/0059_transfer_policy_revisions.py
+?? backend/api/migrations/0060_deactivate_pre_export_inspection_stage.py
+?? backend/api/migrations/0061_physical_transfer_custody.py
+?? backend/api/migrations/0062_shipping_manifest_handoff.py
+?? backend/api/migrations/0063_production_pallet_types.py
+?? backend/api/migrations/0064_quality_grade_category.py
+?? backend/api/migrations/0065_delivery_one_active_order.py
+?? backend/api/migrations/0066_alter_transferwarehouserule_stage.py
+?? backend/api/models_cold_storage.py
+?? backend/api/models_customization.py
+?? backend/api/models_delivery.py
+?? backend/api/models_issue.py
+?? backend/api/models_physical_transfer.py
+?? backend/api/models_purchase_quotation.py
+?? backend/api/models_quality.py
+?? backend/api/models_shipping.py
+?? backend/api/models_transfer_policy.py
+?? backend/api/performance.py
+?? backend/api/physical_transfer_views.py
+?? backend/api/production_pallet_views.py
+?? backend/api/purchase_quotation_views.py
+?? backend/api/quality_serializers.py
+?? backend/api/quality_views.py
+?? backend/api/role_permissions.py
+?? backend/api/services/audit_service.py
+?? backend/api/services/bin_discovery_service.py
+?? backend/api/services/cache_service.py
+?? backend/api/services/cold_storage_layout_service.py
+?? backend/api/services/customization_patch_builder.py
+?? backend/api/services/customization_service.py
+?? backend/api/services/delivery_payload_builder.py
+?? backend/api/services/delivery_posting_service.py
+?? backend/api/services/delivery_review_report.py
+?? backend/api/services/master_data_search.py
+?? backend/api/services/persisted_transfer_policy_service.py
+?? backend/api/services/physical_transfer_service.py
+?? backend/api/services/production_issue_payload_builder.py
+?? backend/api/services/purchase_grpo_payload_builder.py
+?? backend/api/services/purchase_grpo_posting_service.py
+?? backend/api/services/purchase_grpo_service.py
+?? backend/api/services/purchase_quotation_payload_builder.py
+?? backend/api/services/purchase_quotation_posting_service.py
+?? backend/api/services/purchase_quotation_service.py
+?? backend/api/services/quality_service.py
+?? backend/api/services/sales_document_normalizer.py
+?? backend/api/services/sales_order_payload_builder.py
+?? backend/api/services/sales_order_service.py
+?? backend/api/services/sales_posting_journal.py
+?? backend/api/services/sales_quotation_service.py
+?? backend/api/services/sap_transport.py
+?? backend/api/services/shipping_service.py
+?? backend/api/services/transfer_destination_bins.py
+?? backend/api/services/transfer_policy_service.py
+?? backend/api/services/transfer_service.py
+?? backend/api/services/workflow_order_reads.py
+?? backend/api/services/workflow_pagination.py
+?? backend/api/shipping_views.py
+?? backend/api/tests_audit_log.py
+?? backend/api/tests_cold_storage_allocation.py
+?? backend/api/tests_cold_storage_discovery.py
+?? backend/api/tests_cold_storage_mutation_security.py
+?? backend/api/tests_cold_storage_outbound_api.py
+?? backend/api/tests_cold_storage_outbound_domain.py
+?? backend/api/tests_cold_storage_outbound_e2e.py
+?? backend/api/tests_cold_storage_positions.py
+?? backend/api/tests_cold_storage_reserved_outbound_report.py
+?? backend/api/tests_cold_storage_transfer_integration.py
+?? backend/api/tests_cost_centers_cache.py
+?? backend/api/tests_customization_delivery.py
+?? backend/api/tests_customization_workflow.py
+?? backend/api/tests_delivery_creation_concurrency.py
+?? backend/api/tests_delivery_workflow.py
+?? backend/api/tests_grpo_direct_post.py
+?? backend/api/tests_grpo_scale_draft_lifecycle.py
+?? backend/api/tests_master_data_search.py
+?? backend/api/tests_module_permissions.py
+?? backend/api/tests_pending_transfer_creation_concurrency.py
+?? backend/api/tests_pending_transfer_posting_concurrency.py
+?? backend/api/tests_performance_improvements.py
+?? backend/api/tests_persisted_transfer_policy.py
+?? backend/api/tests_physical_transfer.py
+?? backend/api/tests_production_issue.py
+?? backend/api/tests_production_pallet_types.py
+?? backend/api/tests_quality_inspection_submit.py
+?? backend/api/tests_sales_document_amounts.py
+?? backend/api/tests_sales_journey_audit.py
+?? backend/api/tests_sales_performance.py
+?? backend/api/tests_sales_quotation_currency.py
+?? backend/api/tests_sales_readiness.py
+?? backend/api/tests_sales_scope_regressions.py
+?? backend/api/tests_shipping_handoff.py
+?? backend/api/tests_stage2_policy_positions.py
+?? backend/api/tests_stage5_loading.py
+?? backend/api/tests_transfer_configuration_cleanup.py
+?? backend/api/tests_transfer_destination_bins.py
+?? backend/api/tests_transfer_policy.py
+?? backend/api/tests_transfer_policy_authority.py
+?? backend/api/tests_transfer_policy_migration.py
+?? backend/api/tests_transfer_position_reconciliation.py
+?? backend/api/tests_transfer_stage2_destination_integrity.py
+?? backend/api/tests_transfer_stage_permissions.py
+?? backend/audit_performance_map.py
+?? backend/audit_stability_failures.py
+?? backend/benchmark_performance.py
+?? backend/benchmark_sap_transport.py
+?? backend/clean_fixture.py
+?? backend/compare_performance_legacy.py
+?? backend/load_without_signals.py
+?? backend/measure_sap_readonly.py
+?? backend/run_live_uat.py
+?? backend/run_sales_readiness_tests.py
+?? backend/run_stability_tests.py
+?? backend/scale/
+?? backend/scratch_audit_batches.py
+?? backend/scratch_audit_bins.py
+?? backend/scratch_audit_cust_items.py
+?? backend/scratch_audit_direct_odata.py
+?? backend/scratch_audit_masterdata.py
+?? backend/scratch_audit_quotation.py
+?? backend/scratch_check_batches.py
+?? backend/scratch_check_item.py
+?? backend/scratch_check_items_stock.py
+?? backend/scratch_check_orange.py
+?? backend/scratch_check_rdr1_udf.py
+?? backend/scratch_check_udf.py
+?? backend/scratch_extract_sample_data.py
+?? backend/scratch_find_open_order_with_batches.py
+?? backend/scratch_find_potato.py
+?? backend/scratch_inspect_order_211007991.py
+?? backend/scratch_inspect_pending_issues.py
+?? backend/scratch_inspect_sap.py
+?? backend/scratch_list_all_quotes.py
+?? backend/scratch_query_orders.py
+?? backend/scratch_run_smoke_test.py
+?? backend/scratch_test_batch_ux.py
+?? backend/scratch_test_bp_fields.py
+?? backend/scratch_test_bp_filter.py
+?? backend/scratch_test_bp_query.py
+?? backend/scratch_test_cust_order.py
+?? backend/scratch_test_item_prices.py
+?? backend/scratch_test_items_order.py
+?? backend/scratch_test_items_query.py
+?? backend/scratch_test_octg.py
+?? backend/scratch_test_posting.py
+?? backend/scratch_test_search.py
+?? backend/scratch_test_skip.py
+?? backend/scratch_test_ui_buttons.py
+?? backend/scratch_trace_post_button.py
+?? backend/scratch_verify_sap_master_data.py
+?? backend/sqlite_backup_data.json
+?? backend/sqlite_backup_data_clean.json
+?? backend/uat_results.json
+?? backups_original/
+?? cleanup_report.md
+?? docs/
+?? frontend/public/fonts/
+?? frontend/public/logos/
+?? frontend/responsive-screenshots/
+?? frontend/scripts/
+?? frontend/src/assets/fonts/
+?? frontend/src/components/ExcelSummaryMatrix.jsx
+?? frontend/src/components/ProductionPalletCards.css
+?? frontend/src/components/ProductionPalletCards.jsx
+?? frontend/src/components/ProductionPalletTypesPanel.jsx
+?? frontend/src/components/ShippingDeliveryHandoff.jsx
+?? frontend/src/components/ShippingManifestSummary.jsx
+?? frontend/src/components/common/
+?? frontend/src/components/customization/
+?? frontend/src/components/delivery/
+?? frontend/src/components/print/
+?? frontend/src/components/quality/
+?? frontend/src/components/ui/
+?? frontend/src/config/
+?? frontend/src/hooks/
+?? frontend/src/i18n/physicalTransferTranslations.js
+?? frontend/src/i18n/searchTranslations.js
+?? frontend/src/modules/
+?? frontend/src/pages/ActivityLogPage.jsx
+?? frontend/src/pages/CreateUserPage.jsx
+?? frontend/src/pages/CustomizationDeliveryPage.jsx
+?? frontend/src/pages/CustomizationDetailPage.jsx
+?? frontend/src/pages/CustomizationPage.jsx
+?? frontend/src/pages/DeliveriesPage.jsx
+?? frontend/src/pages/DeliveryCreateWizardPage.jsx
+?? frontend/src/pages/DeliveryDetailPage.jsx
+?? frontend/src/pages/DeliveryPage.jsx
+?? frontend/src/pages/DeliveryReviewPage.jsx
+?? frontend/src/pages/GRPOPage.jsx
+?? frontend/src/pages/GRPOReviewPage.jsx
+?? frontend/src/pages/InspectionStagesManagementPage.jsx
+?? frontend/src/pages/IssueReviewPage.jsx
+?? frontend/src/pages/IssueWizard.jsx
+?? frontend/src/pages/ItemCriteriaMappingPage.jsx
+?? frontend/src/pages/ProductionOrderRulesPage.jsx
+?? frontend/src/pages/PurchaseGRPODraftPage.jsx
+?? frontend/src/pages/PurchaseQuotationDraftPage.jsx
+?? frontend/src/pages/PurchaseQuotationPage.jsx
+?? frontend/src/pages/PurchaseQuotationReviewPage.jsx
+?? frontend/src/pages/QualityCategoriesManagementPage.jsx
+?? frontend/src/pages/QualityCriteriaManagementPage.jsx
+?? frontend/src/pages/QualityLandingPage.jsx
+?? frontend/src/pages/QualityReviewPage.jsx
+?? frontend/src/pages/ReceivingInspectionWizard.jsx
+?? frontend/src/pages/RulesHubPage.jsx
+?? frontend/src/pages/SalesDocumentDetailPage.jsx
+?? frontend/src/pages/SalesDocumentListPage.jsx
+?? frontend/src/pages/SalesOrdersPage.jsx
+?? frontend/src/pages/SalesOrdersReviewPage.jsx
+?? frontend/src/pages/SalesQuotationCreatePage.jsx
+?? frontend/src/pages/SalesQuotationReviewPage.jsx
+?? frontend/src/pages/SalesQuotationsPage.jsx
+?? frontend/src/pages/SalesQuotationsReviewPage.jsx
+?? frontend/src/pages/ShippingDeliveryPage.jsx
+?? frontend/src/pages/ShippingLoadingPage.jsx
+?? frontend/src/pages/ShippingReceivingPage.jsx
+?? frontend/src/pages/TransferReviewPage.jsx
+?? frontend/src/pages/TransferRulesPage.jsx
+?? frontend/src/pages/UserManagementPage.jsx
+?? frontend/src/pages/transferRulesSelection.js
+?? frontend/src/pages/transferRulesSelection.test.mjs
+?? frontend/src/services/costCenterLoader.js
+?? frontend/src/services/costCenterLoader.test.mjs
+?? frontend/src/services/customizationDeliveryService.js
+?? frontend/src/services/issueReview.test.mjs
+?? frontend/src/services/masterDataSearch.js
+?? frontend/src/services/performanceMetrics.js
+?? frontend/src/services/performanceMetrics.test.mjs
+?? frontend/src/services/productionIssueService.js
+?? frontend/src/services/productionIssueService.test.mjs
+?? frontend/src/services/purchaseGrpoService.js
+?? frontend/src/services/purchaseQuotationService.js
+?? frontend/src/services/remoteOptions.js
+?? frontend/src/services/searchCache.js
+?? frontend/src/services/shippingService.js
+?? frontend/src/styles/design-system.css
+?? frontend/src/styles/fonts.css
+?? frontend/src/styles/pages/
+?? frontend/src/styles/print-design-system.css
+?? frontend/src/styles/responsive-mobile.css
+?? frontend/src/styles/route-styles.css
+?? frontend/src/styles/selects.css
+?? frontend/src/styles/toast.css
+?? frontend/src/utils/latestRequest.js
+?? frontend/src/utils/printDocument.js
+?? frontend/src/utils/productIcon.js
+?? frontend/src/utils/qualityCalculations.js
+?? frontend/src/utils/qualityCriteriaAdapter.js
+?? frontend/src/utils/quotationPostingRecovery.js
+?? frontend/src/utils/salesDocumentFormatting.js
+?? frontend/src/utils/salesDocumentFormatting.test.mjs
+?? frontend/src/utils/shippingReceivingPrintIdentifiers.js
+?? scale_agent/
+?? scratch/
+?? tmp/

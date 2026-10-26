@@ -1,0 +1,12 @@
+# ── Scale Agent dependency manifest ──────────────────────────────────────────
+#
+# Runtime dependencies: imported by the Agent and BUNDLED into ScaleAgent.exe
+# by PyInstaller. These must also be installed in the Python env used to build.
+pyserial>=3.5,<4.0
+pystray>=0.19,<1.0
+Pillow>=9.0,<14.0
+requests>=2.28,<3.0
+
+# Build-only dependencies: needed ONLY to package ScaleAgent.exe, never bundled
+# into the application and never needed on the target Windows PC.
+#   pyinstaller>=6.0,<7.0

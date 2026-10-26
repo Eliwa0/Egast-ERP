@@ -1,0 +1,101 @@
+{
+  "cases": 2556,
+  "routes": 71,
+  "actualRoutes": 62,
+  "sourceHashes": {
+    "App.jsx": "667f60ec8d762fdad1f0743fb991b48911eb920fe50ba6aa9557ad12c2d323cc",
+    "styles/global.css": "a31d775f81bb60ec64c9020abebfae928fe32ffe59a4ba55ce2cdf02f657a30b",
+    "styles/responsive-mobile.css": "9c7eb92e6e60fed90ad492960a3bb7dba565f029f44b22af940095e7f79012be",
+    "styles/pages/sales-readiness.css": "7c42fb596f768e964c0967fe1b0e47dcc4324800a793bf1676a3d99ddff8d178"
+  },
+  "modes": [
+    {
+      "theme": "light",
+      "cases": 1278,
+      "overflow": 0,
+      "exceptions": 0,
+      "consoleWarningCases": 6,
+      "navigations": 142,
+      "resizes": 1136,
+      "blockedWrites": [],
+      "simulatedWrites": [
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "cases": 1278,
+      "overflow": 0,
+      "exceptions": 0,
+      "consoleWarningCases": 6,
+      "navigations": 142,
+      "resizes": 1136,
+      "blockedWrites": [],
+      "simulatedWrites": [
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        },
+        {
+          "method": "POST",
+          "path": "/api/shipping/operations/discover/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "name": "lint",
+    "snapshot_sha256": "f8c9b184202d3dc7f44adb5c31896f6fe64b7b2e7e3e331d5e9452f8e6ea60d4",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final\\frontend\\node_modules\\eslint\\bin\\eslint.js",
+      ".",
+      "--ignore-pattern",
+      "src/modules/scale/**",
+      "--format",
+      "json",
+      "--output-file",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\lint-final.json"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final\\frontend",
+    "exit_code": 1,
+    "elapsed_s": 13.23
+  },
+  {
+    "name": "translations",
+    "snapshot_sha256": "f8c9b184202d3dc7f44adb5c31896f6fe64b7b2e7e3e331d5e9452f8e6ea60d4",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "scripts/check-i18n.js"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final\\frontend",
+    "exit_code": 0,
+    "elapsed_s": 0.3
+  },
+  {
+    "name": "build",
+    "snapshot_sha256": "f8c9b184202d3dc7f44adb5c31896f6fe64b7b2e7e3e331d5e9452f8e6ea60d4",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final\\frontend\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final\\frontend",
+    "exit_code": 0,
+    "elapsed_s": 2.17
+  }
+]

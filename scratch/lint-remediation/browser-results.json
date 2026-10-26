@@ -1,0 +1,46 @@
+[
+  {
+    "name": "test-select-ux-browser.py",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen\\frontend\\scripts\\test-select-ux-browser.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen",
+    "exit_code": 0,
+    "seconds": 10.23,
+    "snapshot_sha256": "8070e3575d2a3f4d6493aa42ddeb4b9b49b76a6a8e8f7193a5fd2703760bc4f2"
+  },
+  {
+    "name": "test-master-search-workflow-ui.py",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen\\frontend\\scripts\\test-master-search-workflow-ui.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen",
+    "exit_code": 0,
+    "seconds": 5.47,
+    "snapshot_sha256": "8070e3575d2a3f4d6493aa42ddeb4b9b49b76a6a8e8f7193a5fd2703760bc4f2"
+  },
+  {
+    "name": "test-sales-order-independent-ui.py",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen\\frontend\\scripts\\test-sales-order-independent-ui.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen",
+    "exit_code": 0,
+    "seconds": 6.17,
+    "snapshot_sha256": "8070e3575d2a3f4d6493aa42ddeb4b9b49b76a6a8e8f7193a5fd2703760bc4f2"
+  },
+  {
+    "name": "test-cost-center-lifecycle-browser.py",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen\\frontend\\scripts\\test-cost-center-lifecycle-browser.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen",
+    "exit_code": 0,
+    "seconds": 3.22,
+    "snapshot_sha256": "8070e3575d2a3f4d6493aa42ddeb4b9b49b76a6a8e8f7193a5fd2703760bc4f2"
+  }
+]

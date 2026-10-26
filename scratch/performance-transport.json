@@ -1,0 +1,18 @@
+[
+  {
+    "mode": "requests_each_call",
+    "samples": 30,
+    "connections": 30,
+    "median_ms": 2.553,
+    "p95_ms": 20.614,
+    "environment": "loopback HTTP/1.1"
+  },
+  {
+    "mode": "thread_pool",
+    "samples": 30,
+    "connections": 1,
+    "median_ms": 1.828,
+    "p95_ms": 2.379,
+    "environment": "loopback HTTP/1.1"
+  }
+]

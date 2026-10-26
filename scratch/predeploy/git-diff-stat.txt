@@ -1,0 +1,34 @@
+ backend/.env.example                       |    44 +-
+ backend/api/admin.py                       |   206 +-
+ backend/api/models.py                      |   335 +-
+ backend/api/services/sap_service.py        |  1041 +-
+ backend/api/tests.py                       |  1119 +-
+ backend/api/urls.py                        |   425 +-
+ backend/api/views.py                       | 15766 +++++++++++++++++++++------
+ backend/receipt_project/settings.py        |    86 +-
+ backend/receipt_project/urls.py            |     2 +
+ backend/requirements.txt                   |   Bin 526 -> 265 bytes
+ docker-compose.yml                         |     9 +
+ frontend/package-lock.json                 |   736 +-
+ frontend/package.json                      |     7 +-
+ frontend/src/App.jsx                       |   979 +-
+ frontend/src/assets/logos/egast-logo.png   |   Bin 173950 -> 173931 bytes
+ frontend/src/components/Layout.jsx         |     0
+ frontend/src/components/Loading.jsx        |    19 +-
+ frontend/src/components/ProductionCard.jsx |     0
+ frontend/src/components/StockTable.jsx     |     0
+ frontend/src/contexts/I18nContext.jsx      |     6 +-
+ frontend/src/i18n/translations.js          |  9924 +++++++++++++++--
+ frontend/src/main.jsx                      |    10 +
+ frontend/src/pages/Dashboard.jsx           |   120 -
+ frontend/src/pages/Home.jsx                |   103 +-
+ frontend/src/pages/Production.jsx          |    95 +-
+ frontend/src/pages/ReceiptReviewPage.jsx   |   368 +-
+ frontend/src/pages/ReceiptWizard.jsx       |   990 +-
+ frontend/src/pages/Reports.jsx             |     0
+ frontend/src/services/api.js               |    68 +-
+ frontend/src/styles/global.css             |  1801 ++-
+ frontend/src/utils/printBatchLabels.js     |    77 +-
+ frontend/src/utils/roles.js                |   217 +-
+ frontend/vite.config.js                    |     4 +
+ 33 files changed, 29763 insertions(+), 4794 deletions(-)

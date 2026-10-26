@@ -1,0 +1,13 @@
+[
+  {
+    "name": "backend",
+    "snapshot_sha256": "f8c9b184202d3dc7f44adb5c31896f6fe64b7b2e7e3e331d5e9452f8e6ea60d4",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\backend_no_scale.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\frontend-remediation\\frozen-final",
+    "exit_code": 0,
+    "elapsed_s": 148.64
+  }
+]

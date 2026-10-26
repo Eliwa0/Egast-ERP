@@ -1,0 +1,13 @@
+[
+  {
+    "name": "backend",
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\backend.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen",
+    "exit_code": 0,
+    "seconds": 124.73,
+    "snapshot_sha256": "8070e3575d2a3f4d6493aa42ddeb4b9b49b76a6a8e8f7193a5fd2703760bc4f2"
+  }
+]

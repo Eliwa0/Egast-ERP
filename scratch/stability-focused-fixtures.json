@@ -1,0 +1,585 @@
+{
+  "database": "sqlite",
+  "run": 115,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "unexpected_http": [],
+  "cases": [
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_01_create_pending_outbound_transfer_reserves_occupied_position",
+      "ms": 17.64,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_02_transfer_move_api_creates_pending_and_reserves_position",
+      "ms": 43.22,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_03_attempt_reserve_already_reserved_outbound_position_fails",
+      "ms": 17.05,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_04_attempt_reserve_available_position_for_outbound_fails",
+      "ms": 12.02,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_05_attempt_reserve_maintenance_position_fails",
+      "ms": 10.88,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_06_missing_source_pallet_position_id_fails_validation",
+      "ms": 11.16,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_07_non_existent_source_pallet_position_id_fails",
+      "ms": 10.19,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_08_bin_mismatch_fails_validation",
+      "ms": 12.59,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_09_warehouse_mismatch_fails_validation",
+      "ms": 13.56,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_10_non_allocatable_bin_fails_validation",
+      "ms": 9.46,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_11_sap_posting_success_vacates_position",
+      "ms": 35.23,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_12_definitive_sap_failure_restores_occupied",
+      "ms": 38.68,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_13_sap_timeout_retains_reserved_outbound",
+      "ms": 27.92,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_14_retry_failed_outbound_transfer_succeeds",
+      "ms": 39.84,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_15_delete_pending_transfer_releases_to_occupied",
+      "ms": 26.03,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_16_delete_failed_transfer_releases_to_occupied",
+      "ms": 25.63,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_17_idempotent_vacate_returns_cleanly",
+      "ms": 13.07,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_18_admin_vacate_endpoint_remains_functional",
+      "ms": 21.56,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_19_sap_payload_contains_source_bin_allocations_and_no_physical_pos",
+      "ms": 12.16,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_20_inbound_transfers_regression_free",
+      "ms": 38.14,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_21_batch_mismatch_is_conflict_before_reservation",
+      "ms": 32.44,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_22_missing_position_batch_is_conflict",
+      "ms": 9.66,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_23_multiple_batches_for_one_position_are_rejected",
+      "ms": 13.98,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_definitive_failure_retry_reserves_then_posts",
+      "ms": 50.42,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.ColdStorageOutboundAPITests.test_structured_sap_error_is_classified_as_definitive",
+      "ms": 9.25,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.TransferBatchBinQuantityTests.test_empty_from_bin_keeps_warehouse_level_query",
+      "ms": 0.44,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.TransferBatchBinQuantityTests.test_source_bin_with_batch_quantity_is_allowed",
+      "ms": 0.43,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_api.TransferBatchBinQuantityTests.test_source_bin_with_zero_batch_quantity_is_rejected",
+      "ms": 3.3,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_01_complete_outbound_success_lifecycle",
+      "ms": 49.88,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_02_sap_failure_retains_reserved_outbound",
+      "ms": 28.19,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_03_outbound_cancellation_reverts_to_occupied_with_batch",
+      "ms": 26.3,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_04_concurrency_conflict_returns_409",
+      "ms": 29.04,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_05_non_allocatable_bin_position_rejected",
+      "ms": 19.73,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_06_sap_payload_inspection_no_physical_position_leak",
+      "ms": 10.23,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_07_inbound_flow_remains_operational",
+      "ms": 38.28,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_08_historical_transfer_null_position_compatibility",
+      "ms": 17.96,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_cold_storage_outbound_e2e.ColdStorageOutboundEndToEndTests.test_09_admin_vacate_endpoint_isolation",
+      "ms": 16.3,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_arrival_and_load_are_atomic_audited_local_operations",
+      "ms": 34.05,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_duplicate_arrival_returns_409",
+      "ms": 29.28,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_duplicate_loading_and_second_container_return_409",
+      "ms": 34.4,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_invalid_container_does_not_change_state",
+      "ms": 24.7,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_no_hall_no_load_and_unknown_batch_rejected",
+      "ms": 17.66,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_nullable_legacy_metadata_and_later_stage2_move",
+      "ms": 21.17,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_permissions_and_admin_review_unchanged",
+      "ms": 28.46,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_physical_stages_cannot_be_posted_as_sap_transfers",
+      "ms": 7.1,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_stage5_direct_warehouse_to_container_loading",
+      "ms": 24.92,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_transaction_failure_preserves_previous_state_and_history",
+      "ms": 36.22,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_worker_without_intermediate_departure_grant_is_denied",
+      "ms": 13.56,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferTests.test_wrong_latest_stage_or_destination_rejected",
+      "ms": 17.53,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_cost_center_endpoints_load_each_requested_dimension",
+      "ms": 22.93,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_grpo_vehicle_number_survives_save_reload_and_appears_in_review",
+      "ms": 83.81,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_pending_shipments_exposes_unconsumed_scale_draft_and_avoids_duplicate",
+      "ms": 35.06,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_incomplete_scale_draft_returns_4xx",
+      "ms": 14.43,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_creates_grpo_draft",
+      "ms": 25.2,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_is_idempotent",
+      "ms": 38.23,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_profit_center_sap_query_is_filtered_and_bounded",
+      "ms": 8.48,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_serializer_scale_draft_and_quality_draft",
+      "ms": 24.29,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_non_cold_storage_destination_without_position_still_works",
+      "ms": 28.6,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_nonexistent_position_returns_clear_409",
+      "ms": 26.89,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_posting_revalidates_before_sap_and_position_mutation",
+      "ms": 53.38,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_required_cold_storage_destination_without_position_is_rejected",
+      "ms": 25.76,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_valid_destination_position_succeeds",
+      "ms": 32.57,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_wrong_bin_returns_409_without_pending_or_mutation",
+      "ms": 27.28,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_stage2_destination_integrity.Stage2DestinationPositionIntegrityTests.test_wrong_warehouse_returns_409_without_pending_or_mutation",
+      "ms": 28.46,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_actual_position_is_still_required",
+      "ms": 30.62,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_historical_pending_contract_keeps_its_original_bin_restriction",
+      "ms": 28.14,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_nonphysical_stage2_route_remains_supported",
+      "ms": 41.58,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_occupied_position_is_unavailable",
+      "ms": 36.33,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_old_revision_not_mutated_or_applied_to_new_movements",
+      "ms": 29.95,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_policy_has_no_fixed_destination_or_default_position",
+      "ms": 24.42,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_second_transfer_cannot_reserve_same_position",
+      "ms": 51.41,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_selected_position_must_match_bin",
+      "ms": 37.49,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_selected_position_must_match_warehouse",
+      "ms": 32.85,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage2_policy_positions.Stage2PolicyPositionTests.test_selected_second_bin_and_position_are_reserved_without_first_bin_override",
+      "ms": 38.64,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeployAuthTestCase.test_production_user_rejected",
+      "ms": 17.96,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeployAuthTestCase.test_scale_admin_allowed_but_exe_missing_returns_clear_error",
+      "ms": 13.9,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeployAuthTestCase.test_scale_operator_rejected",
+      "ms": 15.02,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeployAuthTestCase.test_unauthenticated_rejected",
+      "ms": 7.67,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeployServerUrlTestCase.test_missing_server_url_returns_400",
+      "ms": 10.96,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentAutoConfigTestCase.test_auto_device_deployable_via_api",
+      "ms": 871.49,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentAutoConfigTestCase.test_auto_device_emits_auto_for_com_and_baud",
+      "ms": 5.4,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentAutoConfigTestCase.test_auto_device_only_port_with_manual_baud",
+      "ms": 5.05,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentAutoConfigTestCase.test_existing_manual_config_keeps_explicit_values",
+      "ms": 5.35,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentConfigGenerationTestCase.test_config_contains_only_the_dedicated_agent_credential",
+      "ms": 5.22,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentConfigGenerationTestCase.test_config_includes_active_scales_only",
+      "ms": 8.25,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentConfigGenerationTestCase.test_device_mapping_uses_existing_fields",
+      "ms": 6.56,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentConfigGenerationTestCase.test_download_cannot_ship_an_unconfigured_credential",
+      "ms": 4.96,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentConfigGenerationTestCase.test_single_scale_selection",
+      "ms": 6.39,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentConfigGenerationTestCase.test_specific_server_url_used",
+      "ms": 4.6,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentErrorHandlingTestCase.test_inactive_scale_raises_400",
+      "ms": 5.88,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentErrorHandlingTestCase.test_invalid_scale_id_raises_404",
+      "ms": 5.64,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentErrorHandlingTestCase.test_missing_exe_raises_clear_error",
+      "ms": 4.9,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentErrorHandlingTestCase.test_no_active_scales_raises_404",
+      "ms": 7.02,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentErrorHandlingTestCase.test_non_local_scale_raises_400",
+      "ms": 5.75,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_install_script_checks_required_files_before_install",
+      "ms": 45.79,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_install_script_requires_admin_without_escalation_tricks",
+      "ms": 9.78,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_install_script_targets_program_files",
+      "ms": 9.28,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_missing_exe_still_returns_clear_400",
+      "ms": 7.59,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_no_0_0_0_0_binding_introduced",
+      "ms": 11.18,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_no_broad_destructive_filesystem_commands",
+      "ms": 10.44,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_no_broad_process_kill_commands",
+      "ms": 10.59,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_readme_documents_installation",
+      "ms": 11.03,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_scripts_use_crlf_line_endings",
+      "ms": 10.13,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_uninstall_script_targets_program_files",
+      "ms": 9.81,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentScriptSafetyTestCase.test_zip_contains_install_and_uninstall_scripts",
+      "ms": 9.65,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentZIPTestCase.test_inactive_scale_via_http_returns_400",
+      "ms": 16.84,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentZIPTestCase.test_invalid_scale_id_via_http_returns_404",
+      "ms": 42.08,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentZIPTestCase.test_path_traversal_scale_id_returns_404",
+      "ms": 16.34,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentZIPTestCase.test_scale_id_is_sanitized_in_filename",
+      "ms": 17.67,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentZIPTestCase.test_zip_download_all_scales",
+      "ms": 19.63,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_deployment.DeploymentZIPTestCase.test_zip_download_single_scale_and_filename",
+      "ms": 20.43,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_release_deployment.RecoveryReleaseDownloadTests.test_all_active_local_scales_download_approved_executable",
+      "ms": 989.35,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_release_deployment.RecoveryReleaseDownloadTests.test_invalid_approval_configuration_fails_closed",
+      "ms": 38.65,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_release_deployment.RecoveryReleaseDownloadTests.test_selected_scale_download_approved_executable",
+      "ms": 974.9,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests_release_deployment.RecoveryReleaseDownloadTests.test_unapproved_executable_is_rejected_without_returning_zip",
+      "ms": 27.8,
+      "unexpected_http": 0
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "node",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "--test",
+      "--test-concurrency=1",
+      "src\\pages\\transferRulesSelection.test.mjs",
+      "src\\services\\costCenterLoader.test.mjs",
+      "src\\services\\issueReview.test.mjs",
+      "src\\services\\performanceMetrics.test.mjs",
+      "src\\services\\productionIssueService.test.mjs",
+      "scripts\\test-activity-log-frontend.mjs",
+      "scripts\\test-cold-storage-map-logic.mjs",
+      "scripts\\test-cold-storage-positions-ui.mjs",
+      "scripts\\test-grpo-navigation.mjs",
+      "scripts\\test-phase6-step3-transfer-positions.mjs",
+      "scripts\\test-phase6-step7-outbound-frontend.mjs",
+      "scripts\\test-physical-transfer.mjs",
+      "scripts\\test-predeploy-ui-regressions.mjs",
+      "scripts\\test-quality-grades.mjs",
+      "scripts\\test-sales-scope-regressions.mjs",
+      "scripts\\test-search-cache.mjs",
+      "scripts\\test-select-ux.mjs",
+      "scripts\\test-stage5-wizard.mjs",
+      "scripts\\test-transfer-destination-bins.mjs",
+      "scripts\\test-transfer-review.mjs",
+      "scripts\\test-transfer-stage2-destination-integrity.mjs",
+      "scripts\\test-transfer-warehouse-search.mjs",
+      "scripts\\test-workflow-read-dedup.mjs",
+      "src/utils/salesDocumentFormatting.test.mjs"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\sales-unification\\frozen\\frontend",
+    "exit_code": 0,
+    "seconds": 23.16,
+    "snapshot_sha256": "b95a39ef3497ebaeff504850e17fcd05e732af0fb0c93b32a4201140fbe64715"
+  }
+]

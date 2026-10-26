@@ -1,0 +1,194 @@
+[
+  {
+    "scope": "en.users.roleAdmin",
+    "lines": [
+      1235,
+      1275
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "en.users.roleUser",
+    "lines": [
+      1237,
+      1273
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "en.scale.noDevicesFound",
+    "lines": [
+      2036,
+      2254
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "en.scale.vehicleNumber",
+    "lines": [
+      2058,
+      2208
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "en.scale.packageType",
+    "lines": [
+      2072,
+      2296
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "en.scale.grossWeight",
+    "lines": [
+      2166,
+      2376
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "en.scale.tareWeight",
+    "lines": [
+      2168,
+      2378
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "en.scale.netWeight",
+    "lines": [
+      2170,
+      2380
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "en.qualityCriteria.description",
+    "lines": [
+      2532,
+      2594
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "en.quality.addBatch",
+    "lines": [
+      2942,
+      3522
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "en.customizationDelivery.workflow.notes",
+    "lines": [
+      4206,
+      4253
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "en.customizationDelivery.workflow.sourceQuotation",
+    "lines": [
+      4207,
+      4271
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "ar.users.roleAdmin",
+    "lines": [
+      5899,
+      5939
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "ar.users.roleUser",
+    "lines": [
+      5901,
+      5937
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "ar.scale.noDevicesFound",
+    "lines": [
+      6700,
+      6918
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "ar.scale.vehicleNumber",
+    "lines": [
+      6722,
+      6872
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "ar.scale.packageType",
+    "lines": [
+      6736,
+      6960
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "ar.scale.grossWeight",
+    "lines": [
+      6830,
+      7040
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "ar.scale.tareWeight",
+    "lines": [
+      6832,
+      7042
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "ar.scale.netWeight",
+    "lines": [
+      6834,
+      7044
+    ],
+    "action": "excluded scale namespace; unchanged"
+  },
+  {
+    "scope": "ar.qualityCriteria.description",
+    "lines": [
+      7196,
+      7258
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "ar.quality.addBatch",
+    "lines": [
+      7606,
+      8187
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "ar.customizationDelivery.workflow.notes",
+    "lines": [
+      8871,
+      8918
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  },
+  {
+    "scope": "ar.customizationDelivery.workflow.sourceQuotation",
+    "lines": [
+      8872,
+      8936
+    ],
+    "action": "remove overwritten declaration; retain last effective value"
+  }
+]

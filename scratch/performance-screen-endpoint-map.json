@@ -1,0 +1,4295 @@
+{
+  "kind": "static source inventory; references may be dynamic or indirect",
+  "screens": [
+    {
+      "route": "/login",
+      "components": [
+        "LoginPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\LoginPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/login/'",
+        "../services/api"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/",
+      "components": [
+        "Home"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\Home.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/production",
+      "components": [
+        "Production"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\Production.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/receipt",
+      "components": [
+        "ReceiptWizard"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\ReceiptWizard.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/batch-udf-metadata/'",
+        "'/company-options/'",
+        "'/open-production-orders/'",
+        "'/pending-receipts/'",
+        "'/production/pallet-types/'",
+        "'/uom-options/'",
+        "'/uoms/'",
+        "'/user-attribute-rules/me/'",
+        "'/user-attribute-visibility/me/'",
+        "../services/api",
+        "`/bin-locations/${whCode}/`",
+        "`/item-batch-attributes/${itemCode}/`",
+        "`/item-name/${iCode}/`",
+        "`/order-attribute-visibility/${docEntry}/`",
+        "`/production-order-attribute-rules/${docEntry}/`",
+        "`/production-order-warehouse/${docEntry}/`",
+        "`/production-orders/by-number/${docNum}/`",
+        "`/warehouse-attribute-rules/${whCode}/`",
+        "`/warehouse-attribute-visibility-rules/${whCode}/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/issue",
+      "components": [
+        "IssueWizard"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\IssueWizard.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/masterDataSearch",
+        "../services/productionIssueService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/issue-review",
+      "components": [
+        "IssueReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\IssueReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/productionIssueService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/receipt-review",
+      "components": [
+        "ReceiptReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\ReceiptReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/admin/pending-receipt-batches/bulk-update/'",
+        "'/admin/pending-receipts/?include_batches=true&status=all'",
+        "'/admin/pending-receipts/?include_batches=true'",
+        "'/batch-udf-metadata/'",
+        "'/company-options/'",
+        "'/open-production-orders/'",
+        "'/pending-receipts/'",
+        "'/uom-options/'",
+        "../services/api",
+        "`/admin/pending-receipts/${info.receiptId}/batches/${batchId}/`",
+        "`/admin/pending-receipts/${job.receiptId}/approve-post/`",
+        "`/admin/pending-receipts/${receipt.id}/approve-post/`",
+        "`/admin/pending-receipts/${receipt.id}/batches/${batch.id}/delete/`",
+        "`/admin/pending-receipts/${receipt.id}/batches/${batch.id}/duplicate/`",
+        "`/admin/pending-receipts/${receipt.id}/post-extra-quantity/`",
+        "`/admin/pending-receipts/${receiptId}/batches/${batchId}/`",
+        "`/admin/pending-receipts/${receiptId}/change-order/`",
+        "`/admin/pending-receipts/${receiptId}/reject/`",
+        "`/admin/pending-receipts/${row.receiptId}/batches/${row.batchId}/`",
+        "`/bin-locations/${warehouseCode}/`",
+        "`/item-name/${code}/`",
+        "`/production-orders/by-number/${sourceOrderNumber}/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/review",
+      "components": [
+        "GlobalReviewRoute"
+      ],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/transfer",
+      "components": [
+        "TransferPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\transfer\\pages\\TransferPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../../../services/masterDataSearch",
+        "../hooks/useTransferWorkflow",
+        "../services/transferService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/transfer/internal",
+      "components": [],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/transfer/shipping",
+      "components": [],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/transfer-review",
+      "components": [
+        "TransferReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\TransferReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/admin/pending-transfers/'",
+        "'/admin/pending-transfers/post-selected/'",
+        "'/admin/reports/reserved-outbound-positions/'",
+        "../modules/transfer/services/transferService",
+        "../services/api",
+        "../services/masterDataSearch",
+        "`/admin/pending-transfers/${transfer.id}/`",
+        "`/admin/pending-transfers/${transfer.id}/post/`",
+        "`/admin/pending-transfers/${transfer.id}/reconcile-positions/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/transfer-review/internal",
+      "components": [],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/transfer-review/shipping",
+      "components": [],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/quality",
+      "components": [
+        "QualityLandingPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\QualityLandingPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/quality/receiving",
+      "components": [
+        "ReceivingInspectionWizard"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\ReceivingInspectionWizard.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useQualityWizardController",
+        "../hooks/useQualityWizardState"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/quality/pre-export",
+      "components": [],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/quality-review",
+      "components": [
+        "QualityReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\QualityReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/quality/inspections/'",
+        "../services/api",
+        "../services/masterDataSearch",
+        "`/quality/approve-bulk/`",
+        "`/quality/delete-bulk/`",
+        "`/quality/inspections/${deletingInspection.id}/delete/`",
+        "`/quality/inspections/${inspection.id}/approve/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/quality/grpo-drafts/:draftId",
+      "components": [
+        "PurchaseGRPODraftPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseGRPODraftPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/batch-udf-metadata/'",
+        "'/company-options/'",
+        "../hooks/useCostCenterOptions",
+        "../services/api",
+        "../services/masterDataSearch",
+        "../services/purchaseGrpoService",
+        "../services/searchCache",
+        "`/bin-locations/${encodeURIComponent(form.warehouse_code",
+        "`/item-batch-attributes/${currentItemCode}/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/quality/grpo-documents/:draftId",
+      "components": [
+        "PurchaseGRPODraftPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseGRPODraftPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/batch-udf-metadata/'",
+        "'/company-options/'",
+        "../hooks/useCostCenterOptions",
+        "../services/api",
+        "../services/masterDataSearch",
+        "../services/purchaseGrpoService",
+        "../services/searchCache",
+        "`/bin-locations/${encodeURIComponent(form.warehouse_code",
+        "`/item-batch-attributes/${currentItemCode}/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/shipping-receiving",
+      "components": [
+        "ShippingReceivingPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\ShippingReceivingPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/shipping-delivery",
+      "components": [
+        "ShippingDeliveryPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\ShippingDeliveryPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/purchaseQuotationService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/shipping-loading",
+      "components": [
+        "ShippingLoadingPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\ShippingLoadingPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/shippingService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/shipping-delivery/review",
+      "components": [
+        "PurchaseQuotationReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseQuotationReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/purchaseQuotationService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/shipping-delivery/:draftId",
+      "components": [
+        "PurchaseQuotationDraftPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseQuotationDraftPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/quality/items/'",
+        "../hooks/useCostCenterOptions",
+        "../services/api",
+        "../services/masterDataSearch",
+        "../services/purchaseQuotationService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/shipping-delivery/documents/:draftId",
+      "components": [
+        "PurchaseQuotationDraftPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseQuotationDraftPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/quality/items/'",
+        "../hooks/useCostCenterOptions",
+        "../services/api",
+        "../services/masterDataSearch",
+        "../services/purchaseQuotationService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/grpo",
+      "components": [
+        "GRPOPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\GRPOPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/purchaseGrpoService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/grpo/review",
+      "components": [
+        "GRPOReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\GRPOReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/purchaseGrpoService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/grpo/manual/new",
+      "components": [
+        "PurchaseGRPODraftPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseGRPODraftPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/batch-udf-metadata/'",
+        "'/company-options/'",
+        "../hooks/useCostCenterOptions",
+        "../services/api",
+        "../services/masterDataSearch",
+        "../services/purchaseGrpoService",
+        "../services/searchCache",
+        "`/bin-locations/${encodeURIComponent(form.warehouse_code",
+        "`/item-batch-attributes/${currentItemCode}/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/grpo/:draftId",
+      "components": [
+        "PurchaseGRPODraftPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseGRPODraftPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/batch-udf-metadata/'",
+        "'/company-options/'",
+        "../hooks/useCostCenterOptions",
+        "../services/api",
+        "../services/masterDataSearch",
+        "../services/purchaseGrpoService",
+        "../services/searchCache",
+        "`/bin-locations/${encodeURIComponent(form.warehouse_code",
+        "`/item-batch-attributes/${currentItemCode}/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/grpo/documents/:draftId",
+      "components": [
+        "PurchaseGRPODraftPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseGRPODraftPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/batch-udf-metadata/'",
+        "'/company-options/'",
+        "../hooks/useCostCenterOptions",
+        "../services/api",
+        "../services/masterDataSearch",
+        "../services/purchaseGrpoService",
+        "../services/searchCache",
+        "`/bin-locations/${encodeURIComponent(form.warehouse_code",
+        "`/item-batch-attributes/${currentItemCode}/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/purchase-quotations",
+      "components": [
+        "PurchaseQuotationPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseQuotationPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/purchase-quotations/review",
+      "components": [
+        "PurchaseQuotationReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseQuotationReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/purchaseQuotationService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/purchase-quotations/:draftId",
+      "components": [
+        "PurchaseQuotationDraftPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseQuotationDraftPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/quality/items/'",
+        "../hooks/useCostCenterOptions",
+        "../services/api",
+        "../services/masterDataSearch",
+        "../services/purchaseQuotationService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/purchase-quotations/documents/:draftId",
+      "components": [
+        "PurchaseQuotationDraftPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\PurchaseQuotationDraftPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/quality/items/'",
+        "../hooks/useCostCenterOptions",
+        "../services/api",
+        "../services/masterDataSearch",
+        "../services/purchaseQuotationService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery",
+      "components": [
+        "CustomizationDeliveryPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\CustomizationDeliveryPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/quotations",
+      "components": [
+        "SalesQuotationsPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\SalesQuotationsPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useWorkflowPagination",
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "components": [
+        "SalesQuotationCreatePage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\SalesQuotationCreatePage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/customizationDeliveryService",
+        "../services/masterDataSearch",
+        "../services/purchaseGrpoService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/quotations/review",
+      "components": [
+        "SalesQuotationsReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\SalesQuotationsReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useWorkflowPagination",
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/review",
+      "components": [
+        "SalesOrdersReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\SalesOrdersReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useWorkflowPagination",
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/review/deliveries",
+      "components": [
+        "DeliveryReviewPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\DeliveryReviewPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useWorkflowPagination",
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "components": [
+        "SalesOrdersPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\SalesOrdersPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useWorkflowPagination",
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "components": [
+        "DeliveriesPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\DeliveriesPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useWorkflowPagination",
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/deliveries/new/:docEntry",
+      "components": [
+        "DeliveryCreateWizardPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\DeliveryCreateWizardPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/api",
+        "../services/customizationDeliveryService",
+        "../services/masterDataSearch",
+        "../services/purchaseGrpoService",
+        "`/bin-locations/${encodeURIComponent(code"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/customization/documents/:docEntry",
+      "components": [
+        "CustomizationDetailPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\CustomizationDetailPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/quotations/documents/:docEntry",
+      "components": [
+        "CustomizationDetailPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\CustomizationDetailPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/delivery/documents/:docEntry",
+      "components": [
+        "DeliveryDetailPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\DeliveryDetailPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/orders/documents/:docEntry",
+      "components": [
+        "DeliveryDetailPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\DeliveryDetailPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/customizationDeliveryService"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/customization",
+      "components": [],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/customization-delivery/delivery",
+      "components": [],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/users",
+      "components": [
+        "UserManagementPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\UserManagementPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/admin/module-permissions/modules/'",
+        "'/admin/users/'",
+        "'/create-user/'",
+        "../services/api",
+        "`/admin/users/${deleteTarget.id}/delete/`",
+        "`/admin/users/${editTarget.id}/`",
+        "`/admin/users/${editTarget.id}/reset-password/`",
+        "`/admin/users/${permissionTarget.id}/module-permissions/`",
+        "`/admin/users/${u.id}/set-active/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/users/activity-log",
+      "components": [
+        "ActivityLogPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\ActivityLogPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/audit-log/'",
+        "../services/api"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/create-user",
+      "components": [
+        "CreateUserPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\CreateUserPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/create-user/'",
+        "../services/api",
+        "../services/masterDataSearch"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/order-rules",
+      "components": [],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/order-rules/production",
+      "components": [
+        "ProductionOrderRulesPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\ProductionOrderRulesPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/admin/attribute-rules/'",
+        "'/admin/attribute-rules/save/'",
+        "'/admin/order-attribute-visibility/'",
+        "'/admin/order-attribute-visibility/set/'",
+        "'/admin/production-order-visibility-rules/bulk-update/'",
+        "'/admin/user-attribute-rules/'",
+        "'/admin/user-attribute-rules/set/'",
+        "'/admin/user-attribute-visibility/'",
+        "'/admin/user-attribute-visibility/set/'",
+        "'/admin/warehouse-attribute-rules/'",
+        "'/admin/warehouse-attribute-rules/set/'",
+        "'/admin/warehouse-visibility-rules/'",
+        "'/admin/warehouse-visibility-rules/set/'",
+        "'/batch-udf-metadata/'",
+        "'/company-options/'",
+        "'/open-production-orders/'",
+        "'/uoms/'",
+        "../services/api",
+        "../services/masterDataSearch",
+        "`/admin/attribute-rules/order/${docEntry}/`",
+        "`/admin/order-attribute-visibility/order/${docEntry}/`",
+        "`/admin/production-order-visibility-rules/?warehouse_code=${whCode}`",
+        "`/admin/user-attribute-rules/${userId}/delete/`",
+        "`/admin/user-attribute-visibility/${userId}/delete/`",
+        "`/admin/warehouse-attribute-rules/${whCode}/delete/`",
+        "`/admin/warehouse-visibility-rules/by-warehouse/${whCode}/delete/`",
+        "`/item-batch-attributes/${itemCode}/`",
+        "`/order-attribute-visibility/${docEntry}/`",
+        "`/production-order-attribute-rules/${docEntry}/`",
+        "`/production-orders/by-number/${trimmed}/`",
+        "`/warehouse-attribute-visibility-rules/${code}/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/order-rules/transfer",
+      "components": [
+        "TransferRulesPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\TransferRulesPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "'/admin/users/'",
+        "'/transfer/rules/warehouse-access/'",
+        "../services/api",
+        "../services/masterDataSearch",
+        "`/transfer/rules/warehouse-access/${rule.id}/`",
+        "`/transfer/rules/warehouse-access/${ruleId}/`"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/order-rules/quality",
+      "components": [],
+      "sources": [],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/order-rules/quality/stages",
+      "components": [
+        "InspectionStagesManagementPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\InspectionStagesManagementPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useInspectionStagesManagement"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/order-rules/quality/categories",
+      "components": [
+        "QualityCategoriesManagementPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\QualityCategoriesManagementPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useQualityCategoriesManagement"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/order-rules/quality/criteria",
+      "components": [
+        "QualityCriteriaManagementPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\QualityCriteriaManagementPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useQualityCriteriaManagement"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/order-rules/quality/item-criteria",
+      "components": [
+        "ItemCriteriaMappingPage"
+      ],
+      "sources": [
+        "frontend\\src\\pages\\ItemCriteriaMappingPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useItemQualityCriteriaMapping",
+        "../services/masterDataSearch"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale",
+      "components": [
+        "ScaleLandingPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleLandingPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale/weighing",
+      "components": [
+        "ScaleWeighingPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleWeighingPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useLiveScaleWeight",
+        "../hooks/useScaleDraftWorkflow",
+        "../services/scaleApi"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale/receipt",
+      "components": [
+        "ScaleReceiptPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleReceiptPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/scaleApi"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale/drafts",
+      "components": [
+        "ScaleDraftsPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleDraftsPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/scaleApi"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale/drafts/:draftId",
+      "components": [
+        "ScaleDraftDetailPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleDraftDetailPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useScaleDraftWorkflow",
+        "../services/scaleApi"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale/devices",
+      "components": [
+        "ScaleDevicesPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleDevicesPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../hooks/useLiveScaleWeight",
+        "../services/monitorSelection",
+        "../services/scaleApi"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale/item-elements",
+      "components": [
+        "ScaleItemElementsPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleItemElementsPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [
+        "../services/scaleApi"
+      ],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale/entry-exit-permits",
+      "components": [
+        "ScaleEntryExitPermitsPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleEntryExitPermitsPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale/entry-exit-permits/entry",
+      "components": [
+        "ScaleEntryPermitPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleEntryPermitPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    },
+    {
+      "route": "/scale/entry-exit-permits/exit",
+      "components": [
+        "ScaleExitPermitPage"
+      ],
+      "sources": [
+        "frontend\\src\\modules\\scale\\pages\\ScaleExitPermitPage.jsx"
+      ],
+      "static_endpoint_or_service_references": [],
+      "runtime_measured": false
+    }
+  ],
+  "endpoint_definitions": [
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production/pallet-types/",
+      "callback": "production_pallet_views.pallet_types",
+      "line": 37,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\production_pallet_views.py",
+      "function": "pallet_types",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/operations/",
+      "callback": "shipping_views.shipping_list",
+      "line": 38,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_list",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/operations/discover/",
+      "callback": "shipping_views.shipping_discover",
+      "line": 39,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_discover",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/operations/<int:pk>/",
+      "callback": "shipping_views.shipping_detail",
+      "line": 40,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_detail",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/operations/<int:pk>/submit/",
+      "callback": "shipping_views.shipping_action",
+      "line": 41,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_action",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/operations/<int:pk>/reopen/",
+      "callback": "shipping_views.shipping_action",
+      "line": 42,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_action",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/sources/<str:batch>/",
+      "callback": "shipping_views.shipping_source",
+      "line": 43,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_source",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/elements/",
+      "callback": "shipping_views.shipping_elements",
+      "line": 44,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_elements",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/orders/",
+      "callback": "shipping_views.shipping_orders",
+      "line": 45,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_orders",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "SAPServiceLayer().get_sales_orders"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/orders/<int:entry>/",
+      "callback": "shipping_views.shipping_order",
+      "line": 46,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_order",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/deliveries/",
+      "callback": "shipping_views.shipping_delivery_list",
+      "line": 47,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_delivery_list",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "shipping/operations/<int:pk>/delivery/",
+      "callback": "shipping_views.shipping_create_delivery",
+      "line": 48,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\shipping_views.py",
+      "function": "shipping_create_delivery",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "login/",
+      "callback": "views.login_view",
+      "line": 50,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "login_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "me/",
+      "callback": "views.me_view",
+      "line": 52,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "me_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "logout/",
+      "callback": "views.logout_view",
+      "line": 54,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "logout_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "create-user/",
+      "callback": "views.create_user_view",
+      "line": 56,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "create_user_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "test/",
+      "callback": "views.test_api",
+      "line": 58,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "test_api",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/physical/batches/<str:batch_number>/",
+      "callback": "views.require_transfer_access(physical_transfer_views.physical_batch)",
+      "line": 60,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "require_transfer_access",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/physical/arrival/",
+      "callback": "views.require_transfer_access(physical_transfer_views.physical_move)",
+      "line": 61,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "require_transfer_access",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/physical/load/",
+      "callback": "views.require_transfer_access(physical_transfer_views.physical_move)",
+      "line": 62,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "require_transfer_access",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/physical/events/",
+      "callback": "transfer_admin(physical_transfer_views.physical_review)",
+      "line": 63,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\physical_transfer_views.py",
+      "function": "physical_review",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PhysicalTransferEvent.objects.filter(pallet__company_scope=company_scope()).select_related"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/warehouse-access/me/",
+      "callback": "views.transfer_my_warehouse_access",
+      "line": 65,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "transfer_my_warehouse_access",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/rules/warehouse-access/",
+      "callback": "transfer_admin(views.transfer_warehouse_access_rules)",
+      "line": 67,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "transfer_warehouse_access_rules",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "TransferWarehouseRule.objects.select_related",
+        "TransferWarehouseRule.objects.select_related('user').order_by",
+        "User.objects.prefetch_related"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/rules/warehouse-access/<int:rule_id>/",
+      "callback": "transfer_admin(views.transfer_warehouse_access_rule_detail)",
+      "line": 69,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "transfer_warehouse_access_rule_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "TransferWarehouseRule.objects.select_related",
+        "TransferWarehouseRule.objects.select_related('user').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/intermediate-warehouses/",
+      "callback": "views.transfer_intermediate_warehouses",
+      "line": 71,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "transfer_intermediate_warehouses",
+      "sap_call_references": [
+        "sap.get_warehouses"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/warehouses/",
+      "callback": "views.transfer_warehouses",
+      "line": 73,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "transfer_warehouses",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "lookup_response"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/batches/<str:batch_number>/",
+      "callback": "views.transfer_batch_details",
+      "line": 75,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "transfer_batch_details",
+      "sap_call_references": [
+        "_decorate_sap_transfer_batch"
+      ],
+      "query_optimization_references": [
+        "PendingReceiptBatch.objects.select_related",
+        "PendingReceiptBatch.objects.select_related('pending_receipt').filter",
+        "PendingReceiptBatch.objects.select_related('pending_receipt').filter(batch_number__iexact=normalized).exclude"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "transfer/move/",
+      "callback": "views.transfer_move",
+      "line": 77,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "transfer_move",
+      "sap_call_references": [
+        "_decorate_sap_transfer_batch"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-transfers/",
+      "callback": "views.list_pending_transfers",
+      "line": 79,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "list_pending_transfers",
+      "sap_call_references": [
+        "_decorate_sap_transfer_batch"
+      ],
+      "query_optimization_references": [
+        "PendingTransferRequest.objects.select_related"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/reports/reserved-outbound-positions/",
+      "callback": "transfer_admin(cold_storage_report_views.list_reserved_outbound_positions)",
+      "line": 81,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\cold_storage_report_views.py",
+      "function": "list_reserved_outbound_positions",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "ColdStoragePalletPosition.objects.filter(status=ColdStoragePalletPosition.RESERVED_OUTBOUND).select_related",
+        "ColdStoragePalletPosition.objects.filter(status=ColdStoragePalletPosition.RESERVED_OUTBOUND).select_related('reserved_by').order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-transfers/post-selected/",
+      "callback": "transfer_admin(views.post_selected_pending_transfers)",
+      "line": 85,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "post_selected_pending_transfers",
+      "sap_call_references": [
+        "(sap_batch or {}).get",
+        "SAPPostingConfirmedLocalError",
+        "_assert_transfer_payload_sap_available",
+        "_decorate_sap_transfer_batch",
+        "_recover_confirmed_sap_posting"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-transfers/<int:transfer_id>/",
+      "callback": "transfer_admin(views.get_pending_transfer_detail)",
+      "line": 87,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_pending_transfer_detail",
+      "sap_call_references": [
+        "_decorate_sap_transfer_batch"
+      ],
+      "query_optimization_references": [
+        "PendingTransferRequest.objects.select_related",
+        "PendingTransferRequest.objects.select_related('created_by', 'posted_by').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-transfers/<int:transfer_id>/post/",
+      "callback": "transfer_admin(views.post_pending_transfer)",
+      "line": 89,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "post_pending_transfer",
+      "sap_call_references": [
+        "(sap_batch or {}).get",
+        "SAPPostingConfirmedLocalError",
+        "_assert_transfer_payload_sap_available",
+        "_decorate_sap_transfer_batch",
+        "_recover_confirmed_sap_posting"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-transfers/<int:transfer_id>/reconcile-positions/",
+      "callback": "transfer_admin(views.reconcile_pending_transfer_positions)",
+      "line": 91,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "reconcile_pending_transfer_positions",
+      "sap_call_references": [
+        "_decorate_sap_transfer_batch"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "uoms/",
+      "callback": "prod(views.get_all_uoms)",
+      "line": 92,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_all_uoms",
+      "sap_call_references": [
+        "sap.get_all_uoms",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "open-production-orders/",
+      "callback": "prod(views.get_open_production_orders)",
+      "line": 94,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_open_production_orders",
+      "sap_call_references": [
+        "sap.get_open_production_orders"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-orders/",
+      "callback": "prod(views.get_production_orders)",
+      "line": 96,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_production_orders",
+      "sap_call_references": [
+        "sap.get_production_orders"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-orders/by-number/<int:doc_number>/",
+      "callback": "prod(views.get_production_order_by_number)",
+      "line": 98,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_production_order_by_number",
+      "sap_call_references": [
+        "sap._request"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-orders/<int:doc_entry>/",
+      "callback": "prod(views.get_production_order)",
+      "line": 106,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_production_order",
+      "sap_call_references": [
+        "sap.get_item_tracking_flags_bulk",
+        "sap.get_production_order"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-orders/<int:doc_entry>/close/",
+      "callback": "prod(views.close_production_order)",
+      "line": 108,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "close_production_order",
+      "sap_call_references": [
+        "sap.close_production_order"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "receipts/",
+      "callback": "prod(views.get_receipts)",
+      "line": 110,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_receipts",
+      "sap_call_references": [
+        "sap.get_receipts"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "receipts/create/",
+      "callback": "prod(views.create_receipt)",
+      "line": 112,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "create_receipt",
+      "sap_call_references": [
+        "_normalize_sap_date",
+        "sap.create_receipt_from_production",
+        "sap.get_advanced_gl_account",
+        "sap.get_item_stock",
+        "sap.get_next_batch_number_suffix",
+        "sap.get_production_order",
+        "sap_payload.items"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "inventory/<str:item_code>/",
+      "callback": "prod(views.get_item_stock)",
+      "line": 114,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_item_stock",
+      "sap_call_references": [
+        "sap.get_item_stock"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "inventory/low-stock/",
+      "callback": "prod(views.get_low_stock_items)",
+      "line": 116,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_low_stock_items",
+      "sap_call_references": [
+        "sap.get_low_stock_items"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "item-name/<str:item_code>/",
+      "callback": "prod(views.get_item_name_only)",
+      "line": 118,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_item_name_only",
+      "sap_call_references": [
+        "sap.get_item_name"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "item-details/<str:item_code>/",
+      "callback": "prod(views.get_item_details_api)",
+      "line": 120,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_item_details_api",
+      "sap_call_references": [
+        "sap.get_item_details"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "warehouses/",
+      "callback": "views.get_warehouses",
+      "line": 122,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_warehouses",
+      "sap_call_references": [
+        "sap.get_warehouses",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "lookup_response"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "bin-locations/<str:warehouse_code>/",
+      "callback": "views.get_bin_locations_by_warehouse",
+      "line": 124,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_bin_locations_by_warehouse",
+      "sap_call_references": [
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "lookup_response"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/<str:warehouse_code>/hierarchy/",
+      "callback": "views.get_cold_storage_hierarchy",
+      "line": 126,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_cold_storage_hierarchy",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/<str:warehouse_code>/layout/",
+      "callback": "views.get_cold_storage_layout",
+      "line": 127,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_cold_storage_layout",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/bin/<int:abs_entry>/positions/",
+      "callback": "views.get_cold_storage_bin_positions",
+      "line": 128,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_cold_storage_bin_positions",
+      "sap_call_references": [
+        "ColdStorageBinLayout.objects.filter(sap_bin_abs_entry=abs_entry).values_list",
+        "ColdStorageBinLayout.objects.filter(sap_bin_abs_entry=abs_entry).values_list('warehouse_code', flat=True).first"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/positions/<int:position_id>/reserve/",
+      "callback": "transfer_admin(views.reserve_cold_storage_position)",
+      "line": 129,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "reserve_cold_storage_position",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/positions/<int:position_id>/release/",
+      "callback": "transfer_admin(views.release_cold_storage_position)",
+      "line": 130,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "release_cold_storage_position",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/positions/<int:position_id>/occupy/",
+      "callback": "transfer_admin(views.occupy_cold_storage_position)",
+      "line": 131,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "occupy_cold_storage_position",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/positions/<int:position_id>/vacate/",
+      "callback": "transfer_admin(views.vacate_cold_storage_position)",
+      "line": 132,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "vacate_cold_storage_position",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/bin/<int:abs_entry>/configure/",
+      "callback": "transfer_admin(views.configure_cold_storage_bin)",
+      "line": 133,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "configure_cold_storage_bin",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/allocate-preview/",
+      "callback": "transfer_admin(views.preview_cold_storage_allocation)",
+      "line": 134,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "preview_cold_storage_allocation",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "cold-storage/allocate-sequential/",
+      "callback": "transfer_admin(views.allocate_cold_storage_sequential)",
+      "line": 135,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "allocate_cold_storage_sequential",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "tax-codes/",
+      "callback": "views.get_tax_codes",
+      "line": 136,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_tax_codes",
+      "sap_call_references": [
+        "sap.get_tax_codes",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "grpo/tax-codes/",
+      "callback": "views.get_tax_codes",
+      "line": 138,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_tax_codes",
+      "sap_call_references": [
+        "sap.get_tax_codes",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "series/",
+      "callback": "prod(views.get_series_list)",
+      "line": 140,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_series_list",
+      "sap_call_references": [
+        "sap.get_series_list"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "account-codes/",
+      "callback": "prod(views.get_account_codes)",
+      "line": 142,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_account_codes",
+      "sap_call_references": [
+        "sap.get_account_codes"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-order-warehouse/<int:doc_entry>/",
+      "callback": "prod(views.get_production_order_warehouse)",
+      "line": 144,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_production_order_warehouse",
+      "sap_call_references": [
+        "sap.get_production_order",
+        "sap.get_warehouses"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "distribution-rule/<int:doc_entry>/",
+      "callback": "prod(views.get_distribution_rule)",
+      "line": 152,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_distribution_rule",
+      "sap_call_references": [
+        "sap.get_production_order"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-order-location/<int:doc_entry>/",
+      "callback": "prod(views.get_production_order_location)",
+      "line": 154,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_production_order_location",
+      "sap_call_references": [
+        "sap.get_production_order"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-order-general/<int:doc_entry>/",
+      "callback": "prod(views.get_production_order_general)",
+      "line": 162,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_production_order_general",
+      "sap_call_references": [
+        "sap.get_production_order"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-lines/",
+      "callback": "prod(views.get_production_lines)",
+      "line": 168,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_production_lines",
+      "sap_call_references": [
+        "sap._request"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-order-start-date/<int:doc_entry>/",
+      "callback": "prod(views.get_production_order_start_date)",
+      "line": 170,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_production_order_start_date",
+      "sap_call_references": [
+        "sap.get_production_order"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "receipts/next-number/",
+      "callback": "prod(views.get_next_receipt_number)",
+      "line": 178,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_next_receipt_number",
+      "sap_call_references": [
+        "sap.get_next_receipt_number"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "next-batch-number/<str:production_order_number>/",
+      "callback": "prod(views.get_next_batch_number_for_order)",
+      "line": 180,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_next_batch_number_for_order",
+      "sap_call_references": [
+        "sap.get_next_batch_number_suffix"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "item-batch-attributes/<str:item_code>/",
+      "callback": "prod(views.get_item_batch_attributes)",
+      "line": 182,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_item_batch_attributes",
+      "sap_call_references": [
+        "sap._request",
+        "sap.ensure_sql_query",
+        "sap.execute_sql_query"
+      ],
+      "query_optimization_references": [
+        "_cache_get",
+        "_cache_set",
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "batch-udf-metadata/",
+      "callback": "prod(views.get_batch_udf_metadata)",
+      "line": 184,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_batch_udf_metadata",
+      "sap_call_references": [
+        "sap._request",
+        "sap.get_user_fields_metadata"
+      ],
+      "query_optimization_references": [
+        "_cache_get",
+        "_cache_set",
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "uom-options/",
+      "callback": "prod(views.get_uom_options)",
+      "line": 186,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_uom_options",
+      "sap_call_references": [
+        "sap._http_request",
+        "sap.login",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "company-options/",
+      "callback": "prod(views.get_company_options)",
+      "line": 188,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_company_options",
+      "sap_call_references": [
+        "sap._http_request",
+        "sap.ensure_sql_query",
+        "sap.login",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "batch-details/<str:batch_number>/",
+      "callback": "prod(views.get_batch_details_by_number)",
+      "line": 190,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_batch_details_by_number",
+      "sap_call_references": [
+        "sap._request"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "debug/item-full/<str:item_code>/",
+      "callback": "prod(views.debug_item_full)",
+      "line": 192,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "debug_item_full",
+      "sap_call_references": [
+        "sap._request"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "debug/item-udf/<str:item_code>/",
+      "callback": "prod(views.debug_item_udf)",
+      "line": 194,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "debug_item_udf",
+      "sap_call_references": [
+        "sap._request"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "production-order-attribute-rules/<int:doc_entry>/",
+      "callback": "prod(views.get_production_order_attribute_rules)",
+      "line": 198,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_production_order_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/attribute-rules/",
+      "callback": "production_admin(views.admin_list_attribute_rules)",
+      "line": 200,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_list_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/attribute-rules/save/",
+      "callback": "production_admin(views.save_order_attribute_rules)",
+      "line": 202,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "save_order_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/attribute-rules/order/<int:doc_entry>/",
+      "callback": "production_admin(views.delete_order_attribute_rules)",
+      "line": 204,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "delete_order_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/users/",
+      "callback": "user_admin(views.admin_list_users)",
+      "line": 208,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_list_users",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "DjangoUser.objects.select_related",
+        "DjangoUser.objects.select_related('userprofile').prefetch_related",
+        "DjangoUser.objects.select_related('userprofile').prefetch_related('module_permissions').filter",
+        "DjangoUser.objects.select_related('userprofile').prefetch_related('module_permissions').filter(Q() if module else manageable_users_filter(request.user)).order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/module-permissions/modules/",
+      "callback": "views.admin_module_permission_modules",
+      "line": 210,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_module_permission_modules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/users/<int:user_id>/module-permissions/",
+      "callback": "views.admin_user_module_permissions",
+      "line": 212,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_user_module_permissions",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/users/<int:user_id>/",
+      "callback": "user_admin(views.admin_update_user)",
+      "line": 213,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_update_user",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "DjangoUser.objects.select_related",
+        "DjangoUser.objects.select_related('userprofile').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/users/<int:user_id>/reset-password/",
+      "callback": "user_admin(views.admin_reset_password)",
+      "line": 215,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_reset_password",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/users/<int:user_id>/set-active/",
+      "callback": "user_admin(views.admin_set_user_active)",
+      "line": 217,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_set_user_active",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "DjangoUser.objects.select_related",
+        "DjangoUser.objects.select_related('userprofile').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/users/<int:user_id>/delete/",
+      "callback": "user_admin(views.admin_delete_user)",
+      "line": 219,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_delete_user",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "DjangoUser.objects.select_related",
+        "DjangoUser.objects.select_related('userprofile').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "audit-log/",
+      "callback": "user_admin(audit_views.list_audit_logs)",
+      "line": 221,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\audit_views.py",
+      "function": "list_audit_logs",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "AuditLog.objects.all().select_related",
+        "AuditLog.objects.all().select_related('user').order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "audit-log/<int:log_id>/",
+      "callback": "user_admin(audit_views.get_audit_log_detail)",
+      "line": 222,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\audit_views.py",
+      "function": "get_audit_log_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "AuditLog.objects.select_related",
+        "AuditLog.objects.select_related('user').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "user-attribute-rules/me/",
+      "callback": "prod(views.get_my_user_attribute_rules)",
+      "line": 226,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_my_user_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/user-attribute-rules/",
+      "callback": "production_admin(views.admin_list_user_attribute_rules)",
+      "line": 228,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_list_user_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "User.objects.prefetch_related",
+        "UserAttributeRule.objects.select_related",
+        "UserAttributeRule.objects.select_related('user').filter",
+        "UserAttributeRule.objects.select_related('user').filter(user__in=eligible_users).order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/user-attribute-rules/set/",
+      "callback": "production_admin(views.admin_set_user_attribute_rules)",
+      "line": 230,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_set_user_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/user-attribute-rules/<int:user_id>/delete/",
+      "callback": "production_admin(views.admin_delete_user_attribute_rules)",
+      "line": 232,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_delete_user_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "warehouse-attribute-visibility-rules/<str:warehouse_code>/",
+      "callback": "prod(views.get_warehouse_attribute_visibility_rules)",
+      "line": 236,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_warehouse_attribute_visibility_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/warehouse-visibility-rules/",
+      "callback": "production_admin(views.admin_list_warehouse_visibility_rules)",
+      "line": 238,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_list_warehouse_visibility_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/warehouse-visibility-rules/set/",
+      "callback": "production_admin(views.admin_set_warehouse_visibility_rule)",
+      "line": 240,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_set_warehouse_visibility_rule",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/warehouse-visibility-rules/<int:rule_id>/delete/",
+      "callback": "production_admin(views.admin_delete_warehouse_visibility_rule)",
+      "line": 242,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_delete_warehouse_visibility_rule",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/warehouse-visibility-rules/by-warehouse/<str:warehouse_code>/delete/",
+      "callback": "production_admin(views.admin_delete_warehouse_visibility_rule_by_code)",
+      "line": 244,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_delete_warehouse_visibility_rule_by_code",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "warehouse-attribute-rules/<str:warehouse_code>/",
+      "callback": "prod(views.get_warehouse_attribute_rules)",
+      "line": 248,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_warehouse_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/warehouse-attribute-rules/",
+      "callback": "production_admin(views.admin_list_warehouse_attribute_rules)",
+      "line": 250,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_list_warehouse_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/warehouse-attribute-rules/set/",
+      "callback": "production_admin(views.admin_set_warehouse_attribute_rules)",
+      "line": 252,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_set_warehouse_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/warehouse-attribute-rules/<str:warehouse_code>/delete/",
+      "callback": "production_admin(views.admin_delete_warehouse_attribute_rules)",
+      "line": 254,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_delete_warehouse_attribute_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "order-attribute-visibility/<int:doc_entry>/",
+      "callback": "prod(views.get_order_attribute_visibility)",
+      "line": 258,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_order_attribute_visibility",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/order-attribute-visibility/",
+      "callback": "production_admin(views.admin_list_order_attribute_visibility)",
+      "line": 260,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_list_order_attribute_visibility",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/order-attribute-visibility/set/",
+      "callback": "production_admin(views.admin_set_order_attribute_visibility)",
+      "line": 262,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_set_order_attribute_visibility",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/order-attribute-visibility/order/<int:doc_entry>/",
+      "callback": "production_admin(views.admin_delete_order_attribute_visibility)",
+      "line": 264,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_delete_order_attribute_visibility",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "user-attribute-visibility/me/",
+      "callback": "prod(views.get_my_user_attribute_visibility)",
+      "line": 268,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_my_user_attribute_visibility",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/user-attribute-visibility/",
+      "callback": "production_admin(views.admin_list_user_attribute_visibility)",
+      "line": 270,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_list_user_attribute_visibility",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "User.objects.prefetch_related",
+        "UserAttributeVisibilityRule.objects.select_related",
+        "UserAttributeVisibilityRule.objects.select_related('user').filter",
+        "UserAttributeVisibilityRule.objects.select_related('user').filter(user__in=eligible_users).order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/user-attribute-visibility/set/",
+      "callback": "production_admin(views.admin_set_user_attribute_visibility)",
+      "line": 272,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_set_user_attribute_visibility",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/user-attribute-visibility/<int:user_id>/delete/",
+      "callback": "production_admin(views.admin_delete_user_attribute_visibility)",
+      "line": 274,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_delete_user_attribute_visibility",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/production-order-visibility-rules/",
+      "callback": "production_admin(views.admin_list_order_visibility_rules)",
+      "line": 278,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_list_order_visibility_rules",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/production-order-visibility-rules/bulk-update/",
+      "callback": "production_admin(views.admin_bulk_update_order_visibility)",
+      "line": 280,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "admin_bulk_update_order_visibility",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "reserve-next-batch-number/",
+      "callback": "prod(views.reserve_next_batch_number)",
+      "line": 284,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "reserve_next_batch_number",
+      "sap_call_references": [
+        "sap.ensure_sql_query",
+        "sap.execute_sql_query",
+        "sap.get_next_batch_number_suffix"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "pending-receipts/",
+      "callback": "prod(views.create_pending_receipt)",
+      "line": 286,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "create_pending_receipt",
+      "sap_call_references": [
+        "sap.ensure_sql_query",
+        "sap.execute_sql_query",
+        "sap.get_next_batch_number_suffix",
+        "sap.get_production_order",
+        "sap.get_warehouses",
+        "sap.get_warehouses().get"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipts/",
+      "callback": "prod(views.list_pending_receipts)",
+      "line": 288,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "list_pending_receipts",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PendingReceipt.objects.select_related",
+        "qs.prefetch_related"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipts/<int:receipt_id>/",
+      "callback": "prod(views.get_pending_receipt_detail)",
+      "line": 289,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "get_pending_receipt_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PendingReceipt.objects.prefetch_related",
+        "PendingReceipt.objects.prefetch_related('batches').select_related",
+        "PendingReceipt.objects.prefetch_related('batches').select_related('created_by', 'reviewed_by').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipts/<int:receipt_id>/approve-post/",
+      "callback": "production_admin(views.approve_post_pending_receipt)",
+      "line": 291,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "approve_post_pending_receipt",
+      "sap_call_references": [
+        "_normalize_sap_date",
+        "sap.create_receipt_from_production",
+        "sap.get_production_order"
+      ],
+      "query_optimization_references": [
+        "PendingReceipt.objects.prefetch_related",
+        "PendingReceipt.objects.prefetch_related('batches', 'batch_reservations').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipts/<int:receipt_id>/reject/",
+      "callback": "production_admin(views.reject_pending_receipt)",
+      "line": 293,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "reject_pending_receipt",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipts/<int:receipt_id>/batches/<int:batch_id>/",
+      "callback": "prod(views.update_pending_receipt_batch)",
+      "line": 295,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "update_pending_receipt_batch",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PendingReceiptBatch.objects.select_related",
+        "PendingReceiptBatch.objects.select_related('pending_receipt').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipts/<int:receipt_id>/batches/<int:batch_id>/delete/",
+      "callback": "prod(views.delete_pending_receipt_batch)",
+      "line": 297,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "delete_pending_receipt_batch",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipts/<int:receipt_id>/batches/<int:batch_id>/duplicate/",
+      "callback": "prod(views.duplicate_pending_receipt_batch)",
+      "line": 299,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "duplicate_pending_receipt_batch",
+      "sap_call_references": [
+        "sap.ensure_sql_query",
+        "sap.execute_sql_query",
+        "sap.get_next_batch_number_suffix"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipt-batches/bulk-update/",
+      "callback": "production_admin(views.bulk_update_pending_receipt_batches)",
+      "line": 303,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "bulk_update_pending_receipt_batches",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PendingReceiptBatch.objects.filter(id__in=affected_batch_ids).select_related",
+        "PendingReceiptBatch.objects.select_related",
+        "PendingReceiptBatch.objects.select_related('pending_receipt').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipts/<int:receipt_id>/post-extra-quantity/",
+      "callback": "production_admin(views.post_extra_quantity)",
+      "line": 307,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "post_extra_quantity",
+      "sap_call_references": [
+        "_normalize_sap_date",
+        "sap.create_receipt_from_production",
+        "sap.get_production_order"
+      ],
+      "query_optimization_references": [
+        "PendingReceipt.objects.prefetch_related",
+        "PendingReceipt.objects.prefetch_related('batches').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-receipts/<int:receipt_id>/change-order/",
+      "callback": "production_admin(views.change_pending_receipt_order)",
+      "line": 309,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\views.py",
+      "function": "change_pending_receipt_order",
+      "sap_call_references": [
+        "sap.ensure_sql_query",
+        "sap.execute_sql_query",
+        "sap.get_next_batch_number_suffix",
+        "sap.get_production_order",
+        "str(sap_order_num or request.data.get('new_production_order_doc_num') or '').strip"
+      ],
+      "query_optimization_references": [
+        "PendingReceipt.objects.prefetch_related",
+        "PendingReceipt.objects.prefetch_related('batches', 'batch_reservations').get",
+        "PendingReceiptBatch.objects.select_related",
+        "PendingReceiptBatch.objects.select_related('pending_receipt').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "pending-issues/available-batches/",
+      "callback": "prod(issue_views.get_production_issue_available_batches)",
+      "line": 312,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\issue_views.py",
+      "function": "get_production_issue_available_batches",
+      "sap_call_references": [
+        "sap.get_batch_bin_stock"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "pending-issues/",
+      "callback": "prod(issue_views.create_pending_issue)",
+      "line": 313,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\issue_views.py",
+      "function": "create_pending_issue",
+      "sap_call_references": [
+        "sap.get_production_order",
+        "sap_line.get",
+        "sap_lines_by_num.get",
+        "str(line_input.get('item_code') or line_input.get('ItemCode') or sap_item_code).strip",
+        "str(line_input.get('warehouse_code') or sap_line.get('Warehouse') or '').strip",
+        "str(sap_line.get('ItemNo') or sap_line.get('ItemCode') or '').strip"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-issues/",
+      "callback": "prod(issue_views.list_pending_issues)",
+      "line": 314,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\issue_views.py",
+      "function": "list_pending_issues",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PendingIssue.objects.select_related",
+        "PendingIssue.objects.select_related('created_by', 'reviewed_by', 'posted_by').prefetch_related"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-issues/<int:issue_id>/",
+      "callback": "prod(issue_views.get_pending_issue_detail)",
+      "line": 315,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\issue_views.py",
+      "function": "get_pending_issue_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PendingIssue.objects.select_related",
+        "PendingIssue.objects.select_related('created_by', 'reviewed_by', 'posted_by').prefetch_related",
+        "PendingIssue.objects.select_related('created_by', 'reviewed_by', 'posted_by').prefetch_related('lines').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-issues/<int:issue_id>/approve-post/",
+      "callback": "production_admin(issue_views.approve_post_pending_issue)",
+      "line": 316,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\issue_views.py",
+      "function": "approve_post_pending_issue",
+      "sap_call_references": [
+        "sap.create_issue_for_production",
+        "sap.get_production_order",
+        "sap_lines_by_num.get"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-issues/<int:issue_id>/reject/",
+      "callback": "production_admin(issue_views.reject_pending_issue)",
+      "line": 317,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\issue_views.py",
+      "function": "reject_pending_issue",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "admin/pending-issues/<int:issue_id>/reconcile/",
+      "callback": "production_admin(issue_views.reconcile_pending_issue)",
+      "line": 318,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\issue_views.py",
+      "function": "reconcile_pending_issue",
+      "sap_call_references": [
+        "_verify_sap_issue_document",
+        "sap._request",
+        "sap.get_issue_for_production",
+        "sap.get_production_order",
+        "sap_doc.get",
+        "sap_lines_by_baseline.get"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspections/",
+      "callback": "quality_views.list_pending_inspections",
+      "line": 321,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "list_pending_inspections",
+      "sap_call_references": [
+        "_looks_like_sap_code"
+      ],
+      "query_optimization_references": [
+        "PendingQualityInspection.objects.select_related",
+        "PendingQualityInspection.objects.select_related('created_by', 'reviewed_by').exclude",
+        "PendingQualityInspection.objects.select_related('created_by', 'reviewed_by').exclude(inspector_name='MANUAL').all"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspections/create/",
+      "callback": "quality_views.create_quality_inspection",
+      "line": 323,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "create_quality_inspection",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "_looks_like_sap_code"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspections/<int:inspection_id>/",
+      "callback": "quality_views.get_quality_inspection_detail",
+      "line": 325,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "get_quality_inspection_detail",
+      "sap_call_references": [
+        "_looks_like_sap_code"
+      ],
+      "query_optimization_references": [
+        "PendingQualityInspection.objects.select_related",
+        "PendingQualityInspection.objects.select_related('created_by', 'reviewed_by').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspections/<int:inspection_id>/grpo-draft/",
+      "callback": "quality_views.purchase_grpo_draft_for_inspection",
+      "line": 327,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "purchase_grpo_draft_for_inspection",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/grpo-drafts/<int:draft_id>/",
+      "callback": "quality_views.purchase_grpo_draft_detail",
+      "line": 329,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "purchase_grpo_draft_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PurchaseGRPODraft.objects.select_related",
+        "PurchaseGRPODraft.objects.select_related('inspection', 'created_by', 'updated_by', 'cancelled_by').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/grpo-drafts/<int:draft_id>/cancel/",
+      "callback": "quality_views.cancel_purchase_grpo_draft",
+      "line": 331,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "cancel_purchase_grpo_draft",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PurchaseGRPODraft.objects.select_related",
+        "PurchaseGRPODraft.objects.select_related('inspection').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/grpo-drafts/<int:draft_id>/approve-for-posting/",
+      "callback": "quality_views.approve_purchase_grpo_draft_for_posting",
+      "line": 333,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "approve_purchase_grpo_draft_for_posting",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PurchaseGRPODraft.objects.select_related",
+        "PurchaseGRPODraft.objects.select_related('inspection').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/grpo-drafts/<int:draft_id>/prepare-posting/",
+      "callback": "quality_views.prepare_purchase_grpo_posting",
+      "line": 335,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "prepare_purchase_grpo_posting",
+      "sap_call_references": [
+        "str(request.query_params.get('verify_sap', '')).strip",
+        "str(request.query_params.get('verify_sap', '')).strip().lower"
+      ],
+      "query_optimization_references": [
+        "PurchaseGRPODraft.objects.select_related",
+        "PurchaseGRPODraft.objects.select_related('inspection').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/grpo-drafts/<int:draft_id>/post-to-sap/",
+      "callback": "quality_views.post_purchase_grpo_draft_to_sap",
+      "line": 337,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "post_purchase_grpo_draft_to_sap",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PurchaseGRPODraft.objects.select_related",
+        "PurchaseGRPODraft.objects.select_related('inspection').get"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspections/<int:inspection_id>/approve/",
+      "callback": "quality_views.approve_post_quality_inspection",
+      "line": 339,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "approve_post_quality_inspection",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "_looks_like_sap_code",
+        "service.post_inspection_to_sap"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspections/<int:inspection_id>/reject/",
+      "callback": "quality_views.reject_quality_inspection",
+      "line": 341,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "reject_quality_inspection",
+      "sap_call_references": [
+        "_looks_like_sap_code"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspections/<int:inspection_id>/delete/",
+      "callback": "quality_views.delete_quality_inspection",
+      "line": 343,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "delete_quality_inspection",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/approve-bulk/",
+      "callback": "quality_views.approve_quality_inspection_bulk",
+      "line": 345,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "approve_quality_inspection_bulk",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "service.post_inspection_to_sap"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/delete-bulk/",
+      "callback": "quality_views.delete_quality_inspection_bulk",
+      "line": 347,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "delete_quality_inspection_bulk",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/batches/<str:batch_number>/",
+      "callback": "quality_views.get_quality_batch_details",
+      "line": 349,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "get_quality_batch_details",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap_client._request"
+      ],
+      "query_optimization_references": [
+        "PendingReceiptBatch.objects.filter(batch_number__iexact=normalized_batch).select_related",
+        "PendingReceiptBatch.objects.filter(batch_number__iexact=normalized_batch).select_related('pending_receipt').order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/item-groups/",
+      "callback": "quality_views.list_quality_item_groups",
+      "line": 351,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "list_quality_item_groups",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "_fetch_all_sap_pages",
+        "sap_client._request"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/farms/",
+      "callback": "quality_views.list_quality_farms",
+      "line": 353,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "list_quality_farms",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "_fetch_all_sap_pages",
+        "sap_client._request",
+        "sap_client.ensure_sql_query",
+        "sap_client.execute_sql_query"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "lookup_response"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/contractors/",
+      "callback": "quality_views.list_quality_contractors",
+      "line": 355,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "list_quality_contractors",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "_fetch_all_sap_pages",
+        "sap_client._request"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "lookup_response"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/items/",
+      "callback": "quality_views.list_quality_items",
+      "line": 357,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "list_quality_items",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "_fetch_all_sap_pages",
+        "sap_client._request",
+        "sap_client.get_open_production_orders"
+      ],
+      "query_optimization_references": [
+        "PendingReceiptBatch.objects.select_related",
+        "PendingReceiptBatch.objects.select_related('pending_receipt').all",
+        "PendingReceiptBatch.objects.select_related('pending_receipt').all().order_by",
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "lookup_response"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/cost-centers/",
+      "callback": "quality_views.list_quality_cost_centers",
+      "line": 359,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "list_quality_cost_centers",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap_client.get_profit_centers",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/categories/",
+      "callback": "quality_views.quality_categories_collection",
+      "line": 361,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "quality_categories_collection",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "invalidate_cache_namespaces"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/categories/<int:category_id>/",
+      "callback": "quality_views.quality_category_detail",
+      "line": 363,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "quality_category_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "invalidate_cache_namespaces"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspection-stages/",
+      "callback": "quality_views.inspection_stages_collection",
+      "line": 365,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "inspection_stages_collection",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "invalidate_cache_namespaces"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspection-stages/<int:stage_id>/",
+      "callback": "quality_views.inspection_stage_detail",
+      "line": 367,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "inspection_stage_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "invalidate_cache_namespaces"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/inspection-criteria/",
+      "callback": "quality_views.inspection_quality_criteria",
+      "line": 369,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "inspection_quality_criteria",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "QualityCriterion.objects.select_related",
+        "QualityCriterion.objects.select_related('category').filter",
+        "QualityCriterion.objects.select_related('category').filter(inspection_stage=stage, is_active=True).exclude",
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/criteria/",
+      "callback": "quality_views.quality_criteria_collection",
+      "line": 371,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "quality_criteria_collection",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "QualityCategory.objects.prefetch_related",
+        "QualityCategory.objects.prefetch_related('criteria').all",
+        "QualityCriterion.objects.select_related",
+        "QualityCriterion.objects.select_related('inspection_stage', 'category').all",
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "invalidate_cache_namespaces"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/criteria/<int:criterion_id>/",
+      "callback": "quality_views.quality_criterion_detail",
+      "line": 373,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "quality_criterion_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "QualityCriterion.objects.select_related",
+        "QualityCriterion.objects.select_related('inspection_stage', 'category').get",
+        "invalidate_cache_namespaces"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/item-criteria/",
+      "callback": "quality_views.item_quality_criteria_collection",
+      "line": 375,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "item_quality_criteria_collection",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "ItemQualityCriterion.objects.select_related",
+        "ItemQualityCriterion.objects.select_related('inspection_stage', 'quality_criterion', 'quality_criterion__inspection_stage', 'quality_criterion__category').all",
+        "ItemQualityCriterion.objects.select_related('inspection_stage', 'quality_criterion', 'quality_criterion__inspection_stage', 'quality_criterion__category').filter",
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "invalidate_cache_namespaces"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "quality/item-criteria/<int:mapping_id>/",
+      "callback": "quality_views.item_quality_criterion_detail",
+      "line": 377,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\quality_views.py",
+      "function": "item_quality_criterion_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "invalidate_cache_namespaces"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "grpo/pending-shipments/",
+      "callback": "grpo_views.list_pending_grpo_shipments",
+      "line": 381,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\grpo_views.py",
+      "function": "list_pending_grpo_shipments",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PendingQualityInspection.objects.exclude(grpo_drafts__status=PurchaseGRPODraft.POSTED).exclude(status=PendingQualityInspection.REJECTED).exclude(decision__iexact='Rejected').prefetch_related",
+        "PendingQualityInspection.objects.exclude(grpo_drafts__status=PurchaseGRPODraft.POSTED).exclude(status=PendingQualityInspection.REJECTED).exclude(decision__iexact='Rejected').prefetch_related(active_drafts_prefetch).order_by",
+        "ScaleDraft.objects.filter(is_closed=True, status__in=[ScaleDraft.STATUS_COMPLETED, ScaleDraft.STATUS_SENT_TO_QUALITY], product_weight__gt=0).exclude(grpo_drafts__status=PurchaseGRPODraft.POSTED).exclude(id__in=seen_scale_draft_ids).prefetch_related",
+        "ScaleDraft.objects.filter(is_closed=True, status__in=[ScaleDraft.STATUS_COMPLETED, ScaleDraft.STATUS_SENT_TO_QUALITY], product_weight__gt=0).exclude(grpo_drafts__status=PurchaseGRPODraft.POSTED).exclude(id__in=seen_scale_draft_ids).prefetch_related(scale_active_drafts_prefetch).select_related",
+        "ScaleDraft.objects.filter(is_closed=True, status__in=[ScaleDraft.STATUS_COMPLETED, ScaleDraft.STATUS_SENT_TO_QUALITY], product_weight__gt=0).exclude(grpo_drafts__status=PurchaseGRPODraft.POSTED).exclude(id__in=seen_scale_draft_ids).prefetch_related(scale_active_drafts_prefetch).select_related('vehicle', 'quotation').order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "grpo/review/",
+      "callback": "grpo_views.list_completed_grpo_reviews",
+      "line": 383,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\grpo_views.py",
+      "function": "list_completed_grpo_reviews",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "PurchaseGRPODraft.objects.filter(status=PurchaseGRPODraft.POSTED).select_related",
+        "PurchaseGRPODraft.objects.filter(status=PurchaseGRPODraft.POSTED).select_related('inspection', 'created_by', 'posted_by', 'scale_draft').order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "grpo/manual-receiving/",
+      "callback": "grpo_views.create_manual_receiving_request",
+      "line": 385,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\grpo_views.py",
+      "function": "create_manual_receiving_request",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap_client._request"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "grpo/scale-drafts/<int:scale_draft_id>/grpo-draft/",
+      "callback": "grpo_views.create_or_get_scale_draft_grpo",
+      "line": 387,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\grpo_views.py",
+      "function": "create_or_get_scale_draft_grpo",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/locations/",
+      "callback": "purchase_quotation_views.list_warehouse_locations",
+      "line": 391,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "list_warehouse_locations",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap.get_warehouse_locations",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "warehouse-locations/",
+      "callback": "purchase_quotation_views.list_warehouse_locations",
+      "line": 393,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "list_warehouse_locations",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap.get_warehouse_locations",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/currencies/",
+      "callback": "purchase_quotation_views.list_currencies",
+      "line": 395,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "list_currencies",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap.get_currencies",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "currencies/",
+      "callback": "purchase_quotation_views.list_currencies",
+      "line": 397,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "list_currencies",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap.get_currencies",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/drafts/",
+      "callback": "purchase_quotation_views.list_purchase_quotation_drafts",
+      "line": 399,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "list_purchase_quotation_drafts",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/create/",
+      "callback": "purchase_quotation_views.create_purchase_quotation_draft",
+      "line": 401,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "create_purchase_quotation_draft",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/<int:draft_id>/",
+      "callback": "purchase_quotation_views.purchase_quotation_draft_detail",
+      "line": 403,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "purchase_quotation_draft_detail",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/<int:draft_id>/approve/",
+      "callback": "purchase_quotation_views.approve_purchase_quotation_draft",
+      "line": 405,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "approve_purchase_quotation_draft",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/<int:draft_id>/prepare-posting/",
+      "callback": "purchase_quotation_views.prepare_purchase_quotation_posting",
+      "line": 407,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "prepare_purchase_quotation_posting",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/<int:draft_id>/post-to-sap/",
+      "callback": "purchase_quotation_views.post_purchase_quotation_to_sap",
+      "line": 409,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "post_purchase_quotation_to_sap",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/<int:draft_id>/cancel/",
+      "callback": "purchase_quotation_views.cancel_purchase_quotation_draft",
+      "line": 411,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "cancel_purchase_quotation_draft",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "purchase-quotations/review/",
+      "callback": "purchase_quotation_views.list_completed_purchase_quotations",
+      "line": 413,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\purchase_quotation_views.py",
+      "function": "list_completed_purchase_quotations",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/documents/",
+      "callback": "customization_delivery_views.customization_documents",
+      "line": 421,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_delivery_views.py",
+      "function": "customization_documents",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/documents/<int:doc_entry>/",
+      "callback": "customization_delivery_views.customization_document_detail",
+      "line": 423,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_delivery_views.py",
+      "function": "customization_document_detail",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery-documents/",
+      "callback": "customization_delivery_views.delivery_documents",
+      "line": 425,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_delivery_views.py",
+      "function": "delivery_documents",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery-documents/<int:doc_entry>/",
+      "callback": "customization_delivery_views.delivery_document_detail",
+      "line": 427,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_delivery_views.py",
+      "function": "delivery_document_detail",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/customization/drafts/",
+      "callback": "customization_views.list_or_create_customization_drafts",
+      "line": 430,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "list_or_create_customization_drafts",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get",
+        "service.post_quotation_to_sap"
+      ],
+      "query_optimization_references": [
+        "CustomizationDraft.objects.all().prefetch_related",
+        "CustomizationDraft.objects.all().prefetch_related('lines').select_related",
+        "CustomizationDraft.objects.filter(is_local_creation=True).prefetch_related",
+        "CustomizationDraft.objects.filter(is_local_creation=True).prefetch_related('lines').select_related",
+        "workflow_page"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/customization/drafts/<int:draft_id>/",
+      "callback": "customization_views.customization_draft_detail",
+      "line": 431,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "customization_draft_detail",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get"
+      ],
+      "query_optimization_references": [
+        "CustomizationDraft.objects.prefetch_related",
+        "CustomizationDraft.objects.prefetch_related('lines').select_related"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/customization/drafts/<int:draft_id>/submit/",
+      "callback": "customization_views.submit_customization_draft",
+      "line": 432,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "submit_customization_draft",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/customization/drafts/<int:draft_id>/approve/",
+      "callback": "customization_views.approve_customization_draft",
+      "line": 433,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "approve_customization_draft",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/customization/drafts/<int:draft_id>/reject/",
+      "callback": "customization_views.reject_customization_draft",
+      "line": 434,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "reject_customization_draft",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/customization/drafts/<int:draft_id>/patch-quotation/",
+      "callback": "customization_views.patch_quotation_to_sap",
+      "line": 435,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "patch_quotation_to_sap",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get",
+        "service.patch_sap_quotation"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/customization/drafts/<int:draft_id>/customer-approval/",
+      "callback": "customization_views.record_customer_approval",
+      "line": 436,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "record_customer_approval",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/customization/drafts/<int:draft_id>/create-order/",
+      "callback": "customization_views.create_sales_order",
+      "line": 437,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "create_sales_order",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get",
+        "service.post_sales_order_to_sap"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/drafts/",
+      "callback": "delivery_views.list_or_create_delivery_drafts",
+      "line": 440,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "list_or_create_delivery_drafts",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "DeliveryDraft.objects.all().prefetch_related",
+        "DeliveryDraft.objects.all().prefetch_related('lines__batches').select_related",
+        "workflow_page"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/drafts/<int:draft_id>/",
+      "callback": "delivery_views.delivery_draft_detail",
+      "line": 441,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "delivery_draft_detail",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "DeliveryDraft.objects.prefetch_related",
+        "DeliveryDraft.objects.prefetch_related('lines__batches').select_related"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/drafts/<int:draft_id>/submit/",
+      "callback": "delivery_views.submit_delivery_draft",
+      "line": 442,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "submit_delivery_draft",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/drafts/<int:draft_id>/approve/",
+      "callback": "delivery_views.approve_delivery_draft",
+      "line": 443,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "approve_delivery_draft",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/drafts/<int:draft_id>/reject/",
+      "callback": "delivery_views.reject_delivery_draft",
+      "line": 444,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "reject_delivery_draft",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/drafts/<int:draft_id>/post/",
+      "callback": "delivery_views.post_delivery_to_sap",
+      "line": 445,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "post_delivery_to_sap",
+      "sap_call_references": [
+        "service.post_delivery_to_sap"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/drafts/<int:draft_id>/reconcile/",
+      "callback": "delivery_views.reconcile_delivery_draft",
+      "line": 446,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "reconcile_delivery_draft",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/quotations/create/",
+      "callback": "customization_views.create_sales_quotation_and_draft",
+      "line": 449,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "create_sales_quotation_and_draft",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get",
+        "service.post_quotation_to_sap"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/quotations/posting/<str:request_key>/",
+      "callback": "customization_views.quotation_posting_status",
+      "line": 450,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "quotation_posting_status",
+      "sap_call_references": [
+        "(draft.original_sap_snapshot or {}).get",
+        "draft.original_sap_snapshot.get"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/customers/",
+      "callback": "customization_views.list_sales_customers",
+      "line": 451,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "list_sales_customers",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap._request",
+        "sap.ensure_sql_query",
+        "sap.execute_sql_query",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get_or_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/items/",
+      "callback": "customization_views.list_sales_items",
+      "line": 452,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "list_sales_items",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap._request"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/quotation-metadata/",
+      "callback": "customization_views.sales_quotation_metadata",
+      "line": 453,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "sales_quotation_metadata",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap._request",
+        "sap._request('GET', 'ShippingTypes?$select=Code,Name&$orderby=Code').get",
+        "sap_master_namespace"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get_or_set"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/quotation-context/",
+      "callback": "customization_views.sales_quotation_context",
+      "line": 454,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_views.py",
+      "function": "sales_quotation_context",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap._request"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/eligible-orders/",
+      "callback": "delivery_views.list_eligible_delivery_orders",
+      "line": 455,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "list_eligible_delivery_orders",
+      "sap_call_references": [
+        "CustomizationDraft.objects.filter(status=CustomizationDraft.STATUS_ORDER_POSTED).exclude(sap_order_doc_entry='').order_by",
+        "SAPServiceLayer",
+        "order_drafts.filter(is_local_creation=True).exclude(sap_order_doc_num='').order_by",
+        "sap_client.get_sales_order",
+        "sap_local_currency"
+      ],
+      "query_optimization_references": [
+        "DeliveryDraft.objects.filter(sales_order_doc_entry__in=entries).prefetch_related",
+        "DeliveryDraft.objects.filter(sales_order_doc_entry__in=entries).prefetch_related('lines').order_by",
+        "order_drafts.prefetch_related"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/posted-documents/<int:doc_entry>/",
+      "callback": "delivery_views.posted_delivery_document",
+      "line": 456,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "posted_delivery_document",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap._request",
+        "sap_local_currency"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/delivery/report/",
+      "callback": "delivery_views.delivery_review_report",
+      "line": 457,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "delivery_review_report",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/orders/",
+      "callback": "delivery_views.list_workflow_sales_orders",
+      "line": 458,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "list_workflow_sales_orders",
+      "sap_call_references": [
+        "CustomizationDraft.objects.filter(status=CustomizationDraft.STATUS_ORDER_POSTED).exclude(sap_order_doc_entry='').order_by",
+        "SAPServiceLayer",
+        "order_drafts.filter(is_local_creation=True).exclude(sap_order_doc_num='').order_by",
+        "sap_client.get_sales_order",
+        "sap_local_currency"
+      ],
+      "query_optimization_references": [
+        "DeliveryDraft.objects.filter(sales_order_doc_entry__in=entries).prefetch_related",
+        "DeliveryDraft.objects.filter(sales_order_doc_entry__in=entries).prefetch_related('lines').order_by",
+        "order_drafts.prefetch_related"
+      ]
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/orders/documents/<int:doc_entry>/",
+      "callback": "customization_delivery_views.sales_order_document_detail",
+      "line": 459,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\customization_delivery_views.py",
+      "function": "sales_order_document_detail",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\api\\urls.py",
+      "route": "customization-delivery/batches/",
+      "callback": "delivery_views.list_available_batches",
+      "line": 460,
+      "live_endpoint_measured": false,
+      "source": "backend\\api\\delivery_views.py",
+      "function": "list_available_batches",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap.execute_sql_query"
+      ],
+      "query_optimization_references": [
+        "PendingReceiptBatch.objects.filter(batch_number__in=[row['batch_number'] for row in selected], pending_receipt__status='POSTED').select_related",
+        "PendingReceiptBatch.objects.filter(batch_number__in=[row['batch_number'] for row in selected], pending_receipt__status='POSTED').select_related('pending_receipt').order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\receipt_project\\urls.py",
+      "route": "admin/",
+      "callback": "admin.site.urls",
+      "line": 5,
+      "live_endpoint_measured": false
+    },
+    {
+      "url_module": "backend\\receipt_project\\urls.py",
+      "route": "api/scale/",
+      "callback": "include('scale.urls')",
+      "line": 6,
+      "live_endpoint_measured": false
+    },
+    {
+      "url_module": "backend\\receipt_project\\urls.py",
+      "route": "scale-management/",
+      "callback": "include('scale.deployment_urls')",
+      "line": 7,
+      "live_endpoint_measured": false
+    },
+    {
+      "url_module": "backend\\receipt_project\\urls.py",
+      "route": "api/",
+      "callback": "include('api.urls')",
+      "line": 8,
+      "live_endpoint_measured": false
+    },
+    {
+      "url_module": "backend\\scale\\deployment_urls.py",
+      "route": "deploy/",
+      "callback": "deployment_views.scale_agent_deploy_view",
+      "line": 6,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\deployment_views.py",
+      "function": "scale_agent_deploy_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "live-weight/",
+      "callback": "views.live_weight_view",
+      "line": 6,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "live_weight_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "receive-weight/",
+      "callback": "views.receive_weight_api",
+      "line": 7,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "receive_weight_api",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "devices/",
+      "callback": "views.scale_devices_collection",
+      "line": 10,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_devices_collection",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "devices/<int:device_id>/",
+      "callback": "views.scale_device_detail",
+      "line": 11,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_device_detail",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "vehicles/",
+      "callback": "views.scale_vehicles_collection",
+      "line": 14,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_vehicles_collection",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "vehicles/entry/",
+      "callback": "views.scale_vehicle_entry",
+      "line": 15,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_vehicle_entry",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "vehicles/exit/",
+      "callback": "views.scale_vehicle_exit",
+      "line": 16,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_vehicle_exit",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "item-elements/",
+      "callback": "views.scale_item_elements_collection",
+      "line": 19,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_item_elements_collection",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "item-elements/<int:element_id>/",
+      "callback": "views.scale_item_element_detail",
+      "line": 20,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_item_element_detail",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "master-data/farms/",
+      "callback": "views.scale_receiving_farms_view",
+      "line": 23,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_receiving_farms_view",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "sap_client.ensure_sql_query",
+        "sap_client.execute_sql_query"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set",
+        "lookup_response"
+      ]
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "master-data/item-groups/",
+      "callback": "views.scale_receiving_item_groups_view",
+      "line": 24,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_receiving_item_groups_view",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "_fetch_all_sap_pages"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_set"
+      ]
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "master-data/items/",
+      "callback": "views.scale_receiving_items_view",
+      "line": 25,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_receiving_items_view",
+      "sap_call_references": [
+        "SAPServiceLayer",
+        "_fetch_all_sap_pages"
+      ],
+      "query_optimization_references": [
+        "build_cache_key",
+        "cache_get",
+        "cache_key_parts.append",
+        "cache_key_parts.extend",
+        "cache_set",
+        "lookup_response"
+      ]
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "available-quotations/",
+      "callback": "views.available_purchase_quotations_view",
+      "line": 27,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "available_purchase_quotations_view",
+      "sap_call_references": [
+        "PurchaseQuotationDraft.objects.filter(status=PurchaseQuotationDraft.POSTED).exclude(sap_doc_entry='').exclude",
+        "PurchaseQuotationDraft.objects.filter(status=PurchaseQuotationDraft.POSTED).exclude(sap_doc_entry='').exclude(sap_doc_entry__isnull=True).exclude",
+        "PurchaseQuotationDraft.objects.filter(status=PurchaseQuotationDraft.POSTED).exclude(sap_doc_entry='').exclude(sap_doc_entry__isnull=True).exclude(scale_drafts__status__in=[ScaleDraft.STATUS_FIRST_WEIGHT, ScaleDraft.STATUS_SECOND_WEIGHT_PENDING]).exclude",
+        "PurchaseQuotationDraft.objects.filter(status=PurchaseQuotationDraft.POSTED).exclude(sap_doc_entry='').exclude(sap_doc_entry__isnull=True).exclude(scale_drafts__status__in=[ScaleDraft.STATUS_FIRST_WEIGHT, ScaleDraft.STATUS_SECOND_WEIGHT_PENDING]).exclude(scale_drafts__grpo_drafts__status__in=[PurchaseGRPODraft.POSTED, PurchaseGRPODraft.APPROVED_FOR_POSTING, PurchaseGRPODraft.PENDING_REVIEW, PurchaseGRPODraft.DRAFT]).distinct"
+      ],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "drafts/",
+      "callback": "views.scale_drafts_list_view",
+      "line": 28,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_drafts_list_view",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "ScaleDraft.objects.select_related",
+        "ScaleDraft.objects.select_related('vehicle', 'scale_device', 'created_by').prefetch_related",
+        "ScaleDraft.objects.select_related('vehicle', 'scale_device', 'created_by').prefetch_related('allocations').all"
+      ]
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "drafts/first-weight/",
+      "callback": "views.scale_draft_first_weight_view",
+      "line": 29,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_draft_first_weight_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "drafts/<int:draft_id>/",
+      "callback": "views.scale_draft_detail_view",
+      "line": 30,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_draft_detail_view",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "ScaleDraft.objects.select_related",
+        "ScaleDraft.objects.select_related('vehicle', 'scale_device', 'created_by', 'closed_by', 'permit').prefetch_related",
+        "ScaleDraft.objects.select_related('vehicle', 'scale_device', 'created_by', 'closed_by', 'permit').prefetch_related('draft_elements__item_element').get"
+      ]
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "drafts/<int:draft_id>/second-weight/",
+      "callback": "views.scale_draft_second_weight_view",
+      "line": 31,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_draft_second_weight_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "drafts/<int:draft_id>/elements/",
+      "callback": "views.scale_draft_elements_view",
+      "line": 32,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_draft_elements_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "drafts/<int:draft_id>/allocations/",
+      "callback": "views.scale_draft_allocations_view",
+      "line": 33,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_draft_allocations_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "drafts/<int:draft_id>/send-to-quality/",
+      "callback": "views.scale_draft_send_to_quality_view",
+      "line": 34,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_draft_send_to_quality_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "drafts/<int:draft_id>/cancel/",
+      "callback": "views.scale_draft_cancel_view",
+      "line": 35,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_draft_cancel_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "quality/pending-drafts/",
+      "callback": "views.quality_pending_scale_drafts_view",
+      "line": 38,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "quality_pending_scale_drafts_view",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "ScaleDraft.objects.filter(is_closed=True, shipping_operation__isnull=True, product_weight__gt=Decimal('0.00'), status__in=[ScaleDraft.STATUS_COMPLETED, ScaleDraft.STATUS_SENT_TO_QUALITY]).select_related",
+        "ScaleDraft.objects.filter(is_closed=True, shipping_operation__isnull=True, product_weight__gt=Decimal('0.00'), status__in=[ScaleDraft.STATUS_COMPLETED, ScaleDraft.STATUS_SENT_TO_QUALITY]).select_related('vehicle', 'created_by').prefetch_related",
+        "ScaleDraft.objects.filter(is_closed=True, shipping_operation__isnull=True, product_weight__gt=Decimal('0.00'), status__in=[ScaleDraft.STATUS_COMPLETED, ScaleDraft.STATUS_SENT_TO_QUALITY]).select_related('vehicle', 'created_by').prefetch_related('allocations').order_by"
+      ]
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "receipts/",
+      "callback": "views.scale_receipts_collection",
+      "line": 41,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_receipts_collection",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "ScaleReceipt.objects.select_related",
+        "ScaleReceipt.objects.select_related('created_by').prefetch_related"
+      ]
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "receipts/<int:receipt_id>/",
+      "callback": "views.scale_receipt_detail",
+      "line": 42,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_receipt_detail",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "entry-exit-permits/",
+      "callback": "views.scale_entry_exit_permits_collection",
+      "line": 45,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_entry_exit_permits_collection",
+      "sap_call_references": [],
+      "query_optimization_references": [
+        "ScaleEntryExitPermit.objects.select_related",
+        "ScaleEntryExitPermit.objects.select_related('created_by').prefetch_related"
+      ]
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "entry-exit-permits/<int:permit_id>/",
+      "callback": "views.scale_entry_exit_permit_detail",
+      "line": 46,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_entry_exit_permit_detail",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "simulator/set/",
+      "callback": "views.scale_simulator_set_view",
+      "line": 49,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_simulator_set_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    },
+    {
+      "url_module": "backend\\scale\\urls.py",
+      "route": "simulator/status/",
+      "callback": "views.scale_simulator_status_view",
+      "line": 50,
+      "live_endpoint_measured": false,
+      "source": "backend\\scale\\views.py",
+      "function": "scale_simulator_status_view",
+      "sap_call_references": [],
+      "query_optimization_references": []
+    }
+  ]
+}

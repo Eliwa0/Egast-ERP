@@ -1,0 +1,1 @@
+import{i as e,r as t}from"./I18nContext-B8z1OFo1.js";import n from"./ShippingDeliveryPage-Cu0uEjeI.js";e();var r=t();function i(){return(0,r.jsx)(n,{})}export{i as default};

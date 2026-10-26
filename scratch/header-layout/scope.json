@@ -1,0 +1,12 @@
+{
+  "changed_since_previous_verified_snapshot": [
+    "frontend/src/styles/pages/sales-readiness.css"
+  ],
+  "previous_snapshot_sha256": "b95a39ef3497ebaeff504850e17fcd05e732af0fb0c93b32a4201140fbe64715",
+  "check_command": [
+    ".venv/Scripts/python.exe",
+    "scratch/header-layout/check.py"
+  ],
+  "check_exit_code": 0,
+  "cases": 28
+}

@@ -1,0 +1,661 @@
+{
+  "read_only": true,
+  "measurements": [
+    {
+      "label": "SAP authentication",
+      "samples": [
+        {
+          "ms": 2581.61,
+          "blocked_operations": 0,
+          "sap_calls": 1,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 2581.61
+    },
+    {
+      "label": "ProductionOrders first 5 rows",
+      "samples": [
+        {
+          "ms": 317.77,
+          "blocked_operations": 0,
+          "sap_calls": 1,
+          "success": true,
+          "rows": 5
+        }
+      ],
+      "median_ms": 317.77
+    },
+    {
+      "label": "Legacy tracking reads, same live codes",
+      "samples": [
+        {
+          "ms": 3076.38,
+          "blocked_operations": 0,
+          "sap_calls": 20,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 3595.41,
+          "blocked_operations": 0,
+          "sap_calls": 20,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 3103.66,
+          "blocked_operations": 0,
+          "sap_calls": 20,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 3103.66
+    },
+    {
+      "label": "Current bulk tracking reads, same live codes",
+      "samples": [
+        {
+          "ms": 795.8,
+          "blocked_operations": 0,
+          "sap_calls": 5,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 825.75,
+          "blocked_operations": 0,
+          "sap_calls": 5,
+          "success": true,
+          "rows": null
+        },
+        {
+          "ms": 809.0,
+          "blocked_operations": 0,
+          "sap_calls": 5,
+          "success": true,
+          "rows": null
+        }
+      ],
+      "median_ms": 809.0
+    }
+  ],
+  "http": [
+    {
+      "method": "POST",
+      "entity": "Login",
+      "status": 200,
+      "ms": 2581.39
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 316.69
+    },
+    {
+      "method": "GET",
+      "entity": "ProductionOrders",
+      "status": 200,
+      "ms": 184.72
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 123.06
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 297.62
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 93.34
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 172.77
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 140.59
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 156.46
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 173.01
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 141.06
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 109.89
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 141.25
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 173.21
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 172.31
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 153.73
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.74
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 170.48
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 156.01
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 123.91
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 124.42
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 156.3
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 139.64
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 157.01
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 171.32
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 171.84
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 156.91
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 137.19
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 139.91
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 220.18
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 138.82
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 170.08
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 109.03
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 201.64
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 219.46
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 157.2
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 125.53
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 139.69
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 216.34
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 169.55
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 543.64
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 92.76
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.77
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 169.91
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.38
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 172.86
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 156.88
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.32
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 140.15
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 173.76
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 171.7
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 141.92
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 170.16
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 170.64
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 170.58
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 140.16
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 140.31
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 188.46
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 139.28
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 123.91
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 109.0
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 170.91
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 140.54
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 201.15
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 139.92
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 140.05
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 189.54
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 124.64
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 187.53
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 154.7
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.8
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 186.52
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 140.71
+    },
+    {
+      "method": "GET",
+      "entity": "Items",
+      "status": 200,
+      "ms": 154.5
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.07
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 187.65
+    },
+    {
+      "method": "GET",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.45
+    },
+    {
+      "method": "POST",
+      "entity": "SQLQueries",
+      "status": 200,
+      "ms": 155.84
+    }
+  ],
+  "blocked": [],
+  "tracking_flag_shapes": [
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tNO",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tNO",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tYES",
+      "ManageSerialNumbers": "tNO"
+    },
+    {
+      "ManageBatchNumbers": "tNO",
+      "ManageSerialNumbers": "tNO"
+    }
+  ],
+  "tracking_comparison": {
+    "codes": 10,
+    "equal_flags": true,
+    "sampling": "First ten distinct codes of the same production order; three repetitions."
+  },
+  "endpoint_metrics": [],
+  "limitations": "Five sequential samples; no production p95, load test or browser render timings."
+}

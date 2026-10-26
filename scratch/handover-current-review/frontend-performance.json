@@ -1,0 +1,114 @@
+{
+  "completed": true,
+  "environment": "local Vite, intercepted HTTP, warm browser cache; not production timing",
+  "rows": [
+    {
+      "route": "/customization-delivery/quotations",
+      "samples": 30,
+      "warmup_excluded": 1,
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "en",
+      "theme": "light",
+      "screen_data_visible_includes_navigation_and_two_frames": {
+        "mean_ms": 675.47,
+        "median_ms": 672.02,
+        "p95_ms": 709.05
+      },
+      "fixture_http_resource_duration": {
+        "mean_ms": 8.31,
+        "median_ms": 6.4,
+        "p95_ms": 14.1
+      },
+      "requests_per_navigation": [
+        3
+      ],
+      "page_errors": [],
+      "sap_ms": null,
+      "pure_react_cpu_ms": null
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "samples": 30,
+      "warmup_excluded": 1,
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "en",
+      "theme": "light",
+      "screen_data_visible_includes_navigation_and_two_frames": {
+        "mean_ms": 679.47,
+        "median_ms": 681.46,
+        "p95_ms": 738.39
+      },
+      "fixture_http_resource_duration": {
+        "mean_ms": 6.85,
+        "median_ms": 6.3,
+        "p95_ms": 9.2
+      },
+      "requests_per_navigation": [
+        3
+      ],
+      "page_errors": [],
+      "sap_ms": null,
+      "pure_react_cpu_ms": null
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "samples": 30,
+      "warmup_excluded": 1,
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "en",
+      "theme": "light",
+      "screen_data_visible_includes_navigation_and_two_frames": {
+        "mean_ms": 672.63,
+        "median_ms": 671.18,
+        "p95_ms": 714.95
+      },
+      "fixture_http_resource_duration": {
+        "mean_ms": 8.85,
+        "median_ms": 8.4,
+        "p95_ms": 13.4
+      },
+      "requests_per_navigation": [
+        6
+      ],
+      "page_errors": [],
+      "sap_ms": null,
+      "pure_react_cpu_ms": null
+    },
+    {
+      "route": "/shipping-loading",
+      "samples": 30,
+      "warmup_excluded": 1,
+      "viewport": [
+        1440,
+        900
+      ],
+      "language": "en",
+      "theme": "light",
+      "screen_data_visible_includes_navigation_and_two_frames": {
+        "mean_ms": 674.85,
+        "median_ms": 680.83,
+        "p95_ms": 704.21
+      },
+      "fixture_http_resource_duration": {
+        "mean_ms": 9.99,
+        "median_ms": 8.8,
+        "p95_ms": 17.5
+      },
+      "requests_per_navigation": [
+        10
+      ],
+      "page_errors": [],
+      "sap_ms": null,
+      "pure_react_cpu_ms": null
+    }
+  ]
+}

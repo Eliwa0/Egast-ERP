@@ -1,0 +1,44 @@
+[
+  {
+    "source": "frontend\\scripts\\test-responsive-browser.mjs",
+    "sha256": "47c603f8061fa5c6c2c0bb6a686f90187197df0570791caa807ca2dae05dd807",
+    "adapter": "signature-light.mjs",
+    "changes": "output directory only"
+  },
+  {
+    "source": "frontend\\scripts\\test-responsive-browser.mjs",
+    "sha256": "47c603f8061fa5c6c2c0bb6a686f90187197df0570791caa807ca2dae05dd807",
+    "adapter": "signature-dark.mjs",
+    "changes": "output directory only"
+  },
+  {
+    "source": "frontend\\scripts\\test-sales-print-readiness.py",
+    "sha256": "30fd402ccdc190d36506770917774d612578e64cee57cbf6ce4b9c30d736646a",
+    "adapter": "print-check.py",
+    "changes": "origin and output directory only"
+  },
+  {
+    "source": "frontend\\scripts\\verify-responsive-interactions.py",
+    "sha256": "26a276aa5d6f5e71a8717143a205f4ae35126922d100d360bbe2655ac3375b4e",
+    "adapter": "interactions-check.py",
+    "changes": "output directory only"
+  },
+  {
+    "source": "frontend/scripts/test-select-ux-browser.py",
+    "sha256": "f8bf7bc783196d0b71f240b18771595d9644dc6f24de7a1d3aaded2df96f07e4",
+    "adapter": "test-select-ux-browser.py",
+    "changes": "origin and output paths only"
+  },
+  {
+    "source": "frontend/scripts/test-master-search-workflow-ui.py",
+    "sha256": "bb412a37096cf363d6c90102bc16dae059ec9dcd5ade2f7336c3407058abd2c2",
+    "adapter": "test-master-search-workflow-ui.py",
+    "changes": "origin and output paths only"
+  },
+  {
+    "source": "frontend/scripts/test-sales-order-independent-ui.py",
+    "sha256": "a67671d3a12261c5fd9e2341b073b8d1131baf1cf49999b78fa755f542784c79",
+    "adapter": "test-sales-order-independent-ui.py",
+    "changes": "origin and output paths only"
+  }
+]

@@ -1,0 +1,633 @@
+/* Customization & Delivery module - read-only screens.
+   Scoped to .cd-* classes so nothing here can affect existing modules. */
+
+/* Document lists share the existing page, card and form tokens. */
+.sales-document-card { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.card-panel.sales-document-card--active { border-color: var(--primary); }
+.sales-document-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap: 24px; }
+.sales-document-toolbar__row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.sales-document-toolbar__filters { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.sales-document-toolbar__search { flex: 1 1 240px; max-width: 360px; min-width: 0; }
+.sales-document-quantities { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 88px), 1fr)); gap: 12px; padding: 12px; border-radius: var(--radius-md); background: var(--bg-muted); text-align: center; }
+.sales-document-quantities > div { min-width: 0; }
+@media (max-width: 600px) {
+  .sales-document-toolbar__search { max-width: none; flex-basis: 100%; }
+}
+
+.cd-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.cd-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: var(--text-muted, inherit);
+}
+
+.cd-field .app-input {
+  min-width: 150px;
+}
+
+.cd-filter-actions {
+  margin-inline-start: auto;
+}
+
+.cd-table-view {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.cd-cards-view {
+  display: none;
+}
+
+.cd-table-wrap {
+  overflow-x: auto;
+  max-width: 100%;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  -webkit-overflow-scrolling: touch;
+}
+
+.cd-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.cd-table th,
+.cd-table td {
+  padding: 7px 8px;
+  text-align: start;
+  border-bottom: 1px solid var(--border);
+}
+
+.cd-table th {
+  font-weight: 600;
+  background: var(--bg-soft);
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.cd-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Compact desktop/tablet adjustments (<= 1100px) */
+@media (max-width: 1100px) {
+  .cd-table {
+    font-size: 0.8rem;
+  }
+
+  .cd-table th,
+  .cd-table td {
+    padding: 8px 6px;
+  }
+
+  .cd-table .doc-trace-chain--inline {
+    gap: 3px;
+  }
+
+  .cd-table .doc-trace-chip {
+    padding: 2px 6px;
+    font-size: 0.72rem;
+  }
+
+  .cd-table .app-button.app-button--compact {
+    padding: 3px 6px;
+    font-size: 0.75rem;
+  }
+
+  .cd-muted {
+    font-size: 0.72rem;
+  }
+}
+
+/* Standard Compact App Button */
+.app-button--compact {
+  min-height: var(--compact-action-height, 32px);
+  height: 32px;
+  padding: 5px 10px !important;
+  font-size: 0.82rem !important;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Mobile & tablet portrait stacked cards (<= 850px) */
+@media (max-width: 850px) {
+  .cd-table-view {
+    display: none !important;
+  }
+
+  .cd-cards-view {
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Mobile Document Card */
+.cd-doc-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg, 8px);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.cd-doc-card:hover,
+.cd-doc-card:focus-visible {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+  outline: none;
+}
+
+.cd-doc-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.cd-doc-card__title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.cd-doc-card__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--primary);
+}
+
+.cd-doc-card__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 14px;
+}
+
+@media (max-width: 480px) {
+  .cd-doc-card {
+    padding: 12px;
+  }
+
+  .cd-doc-card__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+}
+
+.cd-doc-card__field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.cd-doc-card__label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.cd-doc-card__value {
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 500;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.cd-doc-card__trace-row {
+  background: var(--bg-soft);
+  border-radius: var(--radius-sm, 6px);
+  padding: 8px 10px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.cd-doc-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  width: 100%;
+}
+
+.cd-doc-card__footer .app-button:not(.app-action-icon-btn) {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Tablet card actions (between 481px and 850px) */
+@media (max-width: 850px) and (min-width: 481px) {
+  .cd-doc-card__footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .cd-doc-card__footer .app-button:not(.app-action-icon-btn) {
+    flex: 1 1 0;
+    min-width: 0;
+    justify-content: center;
+  }
+}
+
+/* Mobile card actions (<= 480px / 390px) */
+@media (max-width: 480px) {
+  .cd-doc-card__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .cd-doc-card__footer .app-button:not(.app-action-icon-btn) {
+    width: 100%;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Actions Column & Cell (Desktop Table) */
+.cd-actions-col,
+.cd-actions-cell {
+  width: 85px;
+  min-width: 85px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cd-row {
+  cursor: pointer;
+}
+
+.cd-row:hover,
+.cd-row:focus-visible {
+  background: var(--bg-muted);
+  outline: none;
+}
+
+.cd-strong {
+  font-weight: 600;
+}
+
+.cd-muted {
+  color: var(--text-muted, inherit);
+  font-size: 0.78rem;
+}
+
+.cd-customer {
+  font-weight: 500;
+}
+
+/* Sales Orders Review uses the shared page header, surface, fields and badges. */
+.sales-orders-review-page .sales-orders-review__header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+}
+
+.sales-orders-review-page .sales-orders-review__header-actions .app-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+}
+
+.sales-orders-review-page {
+  gap: 18px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.sales-orders-review-page > .page-header {
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.sales-orders-review-page .sales-orders-review__filters {
+  display: block;
+  margin-bottom: 0;
+  padding: 18px;
+}
+
+.sales-orders-review__filters-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.sales-orders-review__filters-heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.sales-orders-review__filters-heading svg {
+  color: var(--primary);
+}
+
+.sales-orders-review__filters-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+
+.sales-orders-review__filter-field {
+  min-width: 0;
+}
+
+.sales-orders-review__filter-field .app-input,
+.sales-orders-review__filter-field .app-select {
+  min-width: 0;
+  width: 100%;
+  height: 42px;
+}
+
+.sales-orders-review__search-wrap {
+  position: relative;
+}
+
+.sales-orders-review__search-wrap svg {
+  position: absolute;
+  inset-inline-start: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.sales-orders-review__search-wrap .app-input {
+  padding-inline-start: 38px;
+}
+
+.sales-orders-review__clear {
+  flex: none;
+}
+
+.sales-orders-review-page .sales-orders-review__results {
+  padding: 16px;
+  min-width: 0;
+}
+
+.sales-orders-review__table-wrap {
+  max-width: 100%;
+}
+
+.sales-orders-review__table-wrap .cd-table th {
+  vertical-align: middle;
+}
+
+.sales-orders-review__table-wrap .cd-table td {
+  vertical-align: middle;
+}
+
+.sales-orders-review__order-number {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.sales-orders-review__base-quotation {
+  margin-top: 5px;
+}
+
+.sales-orders-review__status {
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .sales-orders-review__filters-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 580px) {
+  .sales-orders-review__filters-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sales-orders-review-page > .page-header {
+    align-items: flex-start;
+  }
+}
+
+.cd-status {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(127, 127, 127, 0.18);
+}
+
+.cd-status--bost_open,
+.cd-status--o {
+  background: rgba(59, 130, 246, 0.18);
+}
+
+.cd-status--bost_close,
+.cd-status--bost_paid,
+.cd-status--c,
+.cd-status--p {
+  background: rgba(16, 185, 129, 0.18);
+}
+
+.cd-status--bost_delivered,
+.cd-status--d {
+  background: rgba(139, 92, 246, 0.18);
+}
+
+.cd-status--none {
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.cd-section {
+  margin-bottom: 16px;
+}
+
+.cd-section__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.cd-count {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: rgba(127, 127, 127, 0.18);
+}
+
+/* Document metadata grid.
+
+   `min-width: 0` on the items is what stops a long unbroken value (an Arabic
+   customer name, a long code) from forcing its track wider than the column and
+   colliding with the neighbouring field. `minmax(min(100%, 230px), 1fr)` keeps
+   the track from exceeding the container on narrow viewports, and the value
+   wraps instead of overflowing. */
+.cd-field-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 16px 24px;
+}
+
+.cd-field-grid > * {
+  min-width: 0;
+}
+
+.cd-field-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.cd-field-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.cd-field-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.cd-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--danger);
+  background: var(--bg-danger-soft);
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.cd-hint,
+.cd-readonly-note {
+  margin: 10px 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Responsive: below the auto-fit breakpoint the metadata collapses to a single
+   column, and the filter row stacks so nothing is squeezed. The item table keeps
+   its own horizontal scroll inside .cd-table-wrap. */
+@media (max-width: 720px) {
+  .cd-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cd-field .app-input {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .cd-filter-actions {
+    margin-inline-start: 0;
+  }
+
+  .cd-field-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
+.delivery-report-applied-filters {
+  display: none;
+}
+
+@media print {
+  .delivery-analytics-report .delivery-report-filters,
+  .delivery-analytics-report .delivery-report-print-actions,
+  .delivery-analytics-report .delivery-print-column,
+  .delivery-analytics-report .app-button,
+  .delivery-analytics-report .cd-readonly-note {
+    display: none !important;
+  }
+
+  .delivery-analytics-report .delivery-report-applied-filters {
+    display: block;
+    margin: 0 0 12px;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 11px;
+  }
+
+  .delivery-analytics-report .card-panel {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+
+  .delivery-analytics-report .cd-table-wrap {
+    overflow: visible;
+  }
+
+  .delivery-analytics-report--single .delivery-report-analytics-sections {
+    display: none !important;
+  }
+}

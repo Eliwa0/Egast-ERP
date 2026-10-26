@@ -1,0 +1,77 @@
+{
+  "completed": true,
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/quality/cost-centers/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/quality/cost-centers/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/purchase-quotations/41/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/purchase-quotations/currencies/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/quality/item-groups/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/purchase-quotations/41/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/quality/item-groups/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/purchase-quotations/41/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/purchase-quotations/41/"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/purchase-quotations/41/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/quality/cost-centers/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/quality/cost-centers/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/purchase-quotations/42/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/purchase-quotations/currencies/"
+    },
+    {
+      "method": "GET",
+      "path": "/api/quality/item-groups/"
+    }
+  ],
+  "errors": [],
+  "cases": [
+    "initial load",
+    "edit and rerender without extra GET",
+    "explicit refresh",
+    "in-flight stale vendor response",
+    "SPA draft switch without vendor leakage"
+  ]
+}

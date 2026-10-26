@@ -1,0 +1,8 @@
+{
+  "tls_flag_source": "backend/.env",
+  "tls_verification_enabled": false,
+  "requests_ca_bundle_configured": false,
+  "curl_ca_bundle_configured": false,
+  "live_connections_executed": 0,
+  "certificate_chain_validated": false
+}

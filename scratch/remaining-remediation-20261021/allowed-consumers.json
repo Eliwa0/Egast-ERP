@@ -1,0 +1,632 @@
+[
+  {
+    "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+    "line": 4,
+    "source": "import {AuthProvider} from '../../src/contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+    "line": 5,
+    "source": "import {I18nProvider} from '../../src/contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/scripts/fixtures/purchase-vendor-lifecycle.jsx",
+    "line": 6,
+    "source": "import {ToastProvider} from '../../src/components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+    "line": 5,
+    "source": "import { AuthProvider } from '../../src/contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/scripts/fixtures/select-ux-harness.jsx",
+    "line": 6,
+    "source": "import { I18nProvider } from '../../src/contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/App.jsx",
+    "line": 9,
+    "source": "import { AuthProvider, useAuth } from './contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/App.jsx",
+    "line": 10,
+    "source": "import { I18nProvider, useI18n } from './contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/App.jsx",
+    "line": 11,
+    "source": "import { ToastProvider } from './components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/components/ProductionPalletCards.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ProductionPalletTypesPanel.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ShippingDeliveryHandoff.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ShippingManifestSummary.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/customization/CustomizationWorkflowPanel.jsx",
+    "line": 4,
+    "source": "import { useAuth } from '../../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/components/customization/DocumentTraceabilityChain.jsx",
+    "line": 4,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/delivery/DeliveryWorkflowPanel.jsx",
+    "line": 3,
+    "source": "import { useAuth } from '../../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/ActionIconButton.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/AppLoadingOverlay.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/AppPageLoader.jsx",
+    "line": 4,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/ConfirmDialog.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/LoadingSkeleton.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/RemoteAutocomplete.jsx",
+    "line": 6,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/SearchableSelect.jsx",
+    "line": 6,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/StagedDeleteDialog.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/StandardDropdown.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/ToastProvider.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/ToastProvider.jsx",
+    "line": 7,
+    "source": "export function ToastProvider({ children }) {"
+  },
+  {
+    "file": "frontend/src/components/ui/WizardStepper.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../../context/I18nContext';"
+  },
+  {
+    "file": "frontend/src/components/ui/WorkflowPagination.jsx",
+    "line": 1,
+    "source": "import { useI18n } from '../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/contexts/AuthContext.jsx",
+    "line": 70,
+    "source": "export const useAuth = () => useContext(AuthContext);"
+  },
+  {
+    "file": "frontend/src/hooks/useQualityWizardController.js",
+    "line": 3,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/hooks/useQualityWizardController.js",
+    "line": 4,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/hooks/useRemoteOptions.js",
+    "line": 4,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/modules/transfer/components/ColdStorageMap.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/modules/transfer/components/PhysicalTransfer.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+    "line": 2,
+    "source": "import { useI18n } from '../../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/modules/transfer/hooks/useTransferWorkflow.js",
+    "line": 3,
+    "source": "import { useAuth } from '../../../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+    "line": 5,
+    "source": "import { useAuth } from '../../../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/modules/transfer/pages/TransferPage.jsx",
+    "line": 6,
+    "source": "import { useI18n } from '../../../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/ActivityLogPage.jsx",
+    "line": 7,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/CreateUserPage.jsx",
+    "line": 6,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/CreateUserPage.jsx",
+    "line": 7,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/CustomizationDeliveryPage.jsx",
+    "line": 4,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/CustomizationDetailPage.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/CustomizationPage.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveriesPage.jsx",
+    "line": 21,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveriesPage.jsx",
+    "line": 22,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveriesPage.jsx",
+    "line": 23,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+    "line": 27,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+    "line": 28,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveryCreateWizardPage.jsx",
+    "line": 29,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveryDetailPage.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveryPage.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+    "line": 8,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/DeliveryReviewPage.jsx",
+    "line": 9,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/GRPOPage.jsx",
+    "line": 4,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/GRPOPage.jsx",
+    "line": 5,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/GRPOReviewPage.jsx",
+    "line": 14,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/GRPOReviewPage.jsx",
+    "line": 15,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/Home.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/Home.jsx",
+    "line": 4,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+    "line": 4,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+    "line": 5,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/InspectionStagesManagementPage.jsx",
+    "line": 6,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/IssueReviewPage.jsx",
+    "line": 17,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/IssueReviewPage.jsx",
+    "line": 18,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 21,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/IssueWizard.jsx",
+    "line": 22,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+    "line": 5,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/ItemCriteriaMappingPage.jsx",
+    "line": 6,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/LoginPage.jsx",
+    "line": 4,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/LoginPage.jsx",
+    "line": 5,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/Production.jsx",
+    "line": 4,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 5,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/ProductionOrderRulesPage.jsx",
+    "line": 6,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "line": 7,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "line": 8,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseGRPODraftPage.jsx",
+    "line": 10,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 6,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 7,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationDraftPage.jsx",
+    "line": 9,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+    "line": 4,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/PurchaseQuotationReviewPage.jsx",
+    "line": 5,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/QualityCategoriesManagementPage.jsx",
+    "line": 4,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+    "line": 4,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/QualityCriteriaManagementPage.jsx",
+    "line": 5,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/QualityLandingPage.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/QualityReviewPage.jsx",
+    "line": 5,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/QualityReviewPage.jsx",
+    "line": 7,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/QualityReviewPage.jsx",
+    "line": 8,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 8,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptReviewPage.jsx",
+    "line": 9,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 11,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/ReceiptWizard.jsx",
+    "line": 12,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/ReceivingInspectionWizard.jsx",
+    "line": 4,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/RulesHubPage.jsx",
+    "line": 4,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/RulesHubPage.jsx",
+    "line": 5,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/SalesDocumentDetailPage.jsx",
+    "line": 17,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/SalesDocumentListPage.jsx",
+    "line": 18,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/SalesOrdersPage.jsx",
+    "line": 20,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/SalesOrdersPage.jsx",
+    "line": 21,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+    "line": 19,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/SalesOrdersReviewPage.jsx",
+    "line": 20,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+    "line": 26,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/SalesQuotationCreatePage.jsx",
+    "line": 27,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+    "line": 23,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+    "line": 24,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/SalesQuotationsPage.jsx",
+    "line": 25,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+    "line": 22,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/SalesQuotationsReviewPage.jsx",
+    "line": 23,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+    "line": 4,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+    "line": 5,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/ShippingDeliveryPage.jsx",
+    "line": 7,
+    "source": "import { useToast } from '../components/ui/ToastProvider';"
+  },
+  {
+    "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+    "line": 2,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/ShippingLoadingPage.jsx",
+    "line": 3,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+    "line": 3,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/ShippingReceivingPage.jsx",
+    "line": 4,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/TransferReviewPage.jsx",
+    "line": 5,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/TransferReviewPage.jsx",
+    "line": 8,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/TransferRulesPage.jsx",
+    "line": 6,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/TransferRulesPage.jsx",
+    "line": 7,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  },
+  {
+    "file": "frontend/src/pages/UserManagementPage.jsx",
+    "line": 11,
+    "source": "import { useAuth } from '../contexts/AuthContext';"
+  },
+  {
+    "file": "frontend/src/pages/UserManagementPage.jsx",
+    "line": 12,
+    "source": "import { useI18n } from '../contexts/I18nContext';"
+  }
+]

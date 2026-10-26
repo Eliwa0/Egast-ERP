@@ -1,0 +1,150 @@
+{
+  "database": "postgresql",
+  "run": 28,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "unexpected_http": [],
+  "cases": [
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_calculate_line_open_quantity",
+      "ms": 15.17,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_closed_order_rejection",
+      "ms": 9.93,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_create_draft_from_sales_order",
+      "ms": 23.93,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_delivery_api_endpoints_permissions",
+      "ms": 88.03,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_duplicate_active_delivery_draft_prevention",
+      "ms": 15.49,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_list_available_batches_endpoint",
+      "ms": 26.85,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_live_open_qty_re_verification_detects_concurrency_conflict",
+      "ms": 31.39,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_manager_review_lifecycle",
+      "ms": 24.91,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_native_delivery_note_posting",
+      "ms": 58.21,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_over_delivery_rejection",
+      "ms": 19.38,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_rejected_draft_can_reopen_without_active_replacement",
+      "ms": 22.52,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_rejected_draft_cannot_reactivate_beside_replacement",
+      "ms": 41.76,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_workflow.DeliveryWorkflowTests.test_update_draft_and_batch_allocations",
+      "ms": 33.46,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_cost_center_endpoints_load_each_requested_dimension",
+      "ms": 82.28,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_grpo_vehicle_number_survives_save_reload_and_appears_in_review",
+      "ms": 132.89,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_pending_shipments_exposes_unconsumed_scale_draft_and_avoids_duplicate",
+      "ms": 75.44,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_incomplete_scale_draft_returns_4xx",
+      "ms": 33.3,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_creates_grpo_draft",
+      "ms": 44.81,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_post_scale_draft_is_idempotent",
+      "ms": 63.94,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_profit_center_sap_query_is_filtered_and_bounded",
+      "ms": 19.15,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests.PurchaseGRPOScaleDraftAPITests.test_serializer_scale_draft_and_quality_draft",
+      "ms": 49.25,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_configuration_cleanup.Stage5WithoutConfigurationTests.test_direct_load_has_no_policy_lookup_or_sap_post",
+      "ms": 83.14,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_delivery_creation_concurrency.DeliveryCreationConcurrencyTests.test_same_order_initialization_has_one_winner",
+      "ms": 182.0,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_shipping_handoff.ShippingConcurrencyTests.test_concurrent_delivery_creation_returns_one_draft",
+      "ms": 754.44,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_shipping_handoff.ShippingConcurrencyTests.test_concurrent_submission_records_each_pallet_once",
+      "ms": 679.96,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_configuration_cleanup.TransferConfigurationCleanupTests.test_configuration_endpoints_removed",
+      "ms": 1.15,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_configuration_cleanup.TransferConfigurationCleanupTests.test_stage4_ignores_revision_and_stored_contract_and_posts_user_destination",
+      "ms": 0.88,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_migration.TransferPolicyMigrationRuntimeTests.test_missing_policy_table_is_fixed_without_resurrecting_removed_api",
+      "ms": 3069.05,
+      "unexpected_http": 0
+    }
+  ]
+}

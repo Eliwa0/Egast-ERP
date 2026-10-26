@@ -1,0 +1,61 @@
+{
+  "results": [
+    {
+      "route": "/shipping-loading",
+      "lang": "en",
+      "width": 390,
+      "touch": false,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/shipping-loading",
+      "body": 349,
+      "scroll": 375,
+      "viewport": 375,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": [
+        "console.error: API Error: Object",
+        "console.error: API Error: Object"
+      ]
+    }
+  ],
+  "requests": [
+    "/api/shipping/operations/discover/",
+    "/api/me/"
+  ],
+  "blockedWrites": [
+    {
+      "method": "POST",
+      "path": "/api/shipping/operations/discover/"
+    },
+    {
+      "method": "POST",
+      "path": "/api/shipping/operations/discover/"
+    }
+  ],
+  "fixtureMode": "populated",
+  "auditTheme": "light"
+}

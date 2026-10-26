@@ -1,0 +1,5772 @@
+{
+  "results": [
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "26px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 60,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [],
+      "url": "/",
+      "body": 647,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 545,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 256,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 521,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 613,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 355,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 268,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 280,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 484,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "26px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 60,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [],
+      "url": "/",
+      "body": 647,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 545,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 296,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 521,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 613,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 355,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 268,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 320,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 484,
+      "scroll": 320,
+      "viewport": 320,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "26px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 60,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [],
+      "url": "/",
+      "body": 647,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 545,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 336,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 521,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 613,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 355,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 268,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 360,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 484,
+      "scroll": 360,
+      "viewport": 360,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "26px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 60,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [],
+      "url": "/",
+      "body": 647,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 545,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 366,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 521,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 613,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 355,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 268,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 390,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 484,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "26px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 60,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [],
+      "url": "/",
+      "body": 647,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 545,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 388,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 521,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 613,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 355,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 268,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 412,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 484,
+      "scroll": 412,
+      "viewport": 412,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "26px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 60,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [],
+      "url": "/",
+      "body": 647,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 545,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 456,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 521,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 613,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 355,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 268,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 480,
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 484,
+      "scroll": 480,
+      "viewport": 480,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "26px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 60,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [],
+      "url": "/",
+      "body": 647,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "24px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 545,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "24px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 576,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "24px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 521,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "24px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "24px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 613,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "24px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 355,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "24px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 268,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 600,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "24px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 577,
+      "scroll": 600,
+      "viewport": 600,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "26px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 60,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [],
+      "url": "/",
+      "body": 647,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 545,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 744,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 521,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 613,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 355,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 268,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 768,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "22px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 577,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 63,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [],
+      "url": "/",
+      "body": 710,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 612,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 908,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 2570,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 588,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 707,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 680,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 422,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 336,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 820,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 646,
+      "scroll": 820,
+      "viewport": 820,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 63,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [],
+      "url": "/",
+      "body": 710,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 612,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 908,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 2590,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 588,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 707,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 680,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 422,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 336,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 1024,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 646,
+      "scroll": 1024,
+      "viewport": 1024,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 63,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [],
+      "url": "/",
+      "body": 710,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 612,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 908,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 2590,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "EN",
+          "width": 36,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 562,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 707,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 680,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 422,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 336,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 1280,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 646,
+      "scroll": 1280,
+      "viewport": 1280,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 63,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [],
+      "url": "/",
+      "body": 710,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 612,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 908,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 2590,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/devices",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/devices",
+      "body": 588,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 707,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/deliveries",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/deliveries",
+      "body": 680,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "issue-panel-title",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue",
+      "body": 422,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/issue-review",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "issue-review-search-input",
+          "size": "15.2px",
+          "weight": "400"
+        }
+      ],
+      "url": "/issue-review",
+      "body": 336,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/quotations/new",
+      "lang": "en",
+      "width": 1440,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 المراجعة›",
+          "width": 122.5625,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ القواعد›",
+          "width": 112.171875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "EN",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "تسجيل الخروج",
+          "width": 120.296875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "H2",
+          "cls": "",
+          "size": "24px",
+          "weight": "600"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused css-13meb6w-MuiInputBase-input-MuiOutlinedInput-input",
+          "size": "14px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/quotations/new",
+      "body": 588,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/login",
+      "lang": "en",
+      "width": 1920,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "login-title",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/login",
+      "body": 63,
+      "scroll": 1920,
+      "viewport": 1920,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/",
+      "lang": "en",
+      "width": 1920,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [],
+      "url": "/",
+      "body": 710,
+      "scroll": 1920,
+      "viewport": 1920,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/grpo",
+      "lang": "en",
+      "width": 1920,
+      "touch": true,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/grpo",
+      "body": 612,
+      "scroll": 1920,
+      "viewport": 1920,
+      "offenders": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    }
+  ],
+  "requests": [
+    "/api/me/",
+    "/api/grpo/pending-shipments/",
+    "/api/scale/drafts/",
+    "/status",
+    "/api/scale/devices/",
+    "/api/customization-delivery/orders/",
+    "/api/shipping/deliveries/",
+    "/api/customization-delivery/delivery/eligible-orders/",
+    "/api/customization-delivery/delivery/drafts/",
+    "/api/open-production-orders/",
+    "/api/admin/pending-issues/",
+    "/api/tax-codes/",
+    "/api/customization-delivery/quotation-context/",
+    "/api/customization-delivery/quotation-metadata/"
+  ],
+  "blockedWrites": [],
+  "fixtureMode": "populated",
+  "auditTheme": "dark"
+}

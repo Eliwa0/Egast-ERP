@@ -1,0 +1,1514 @@
+--- before/backend/api/customization_views.py
++++ after/backend/api/customization_views.py
+@@ -133,6 +133,17 @@
+     service = CustomizationService()
+ 
+     if request.method == "GET":
++        from .services.workflow_pagination import numeric_identifier
++        try:
++            for name in ['id', 'quotation_doc_entry', 'quotation', 'order_number']:
++                if request.query_params.get(name):
++                    numeric_identifier(request.query_params[name], name)
++            for name in ['draft_ids', 'order_entries']:
++                for value in request.query_params.get(name, '').split(','):
++                    if value:
++                        numeric_identifier(value, name)
++        except ValueError as error:
++            return Response({'success': False, 'error': str(error)}, status=400)
+         include_external = request.query_params.get("include_external") == "true"
+         if include_external:
+             qs = CustomizationDraft.objects.all().prefetch_related("lines").select_related(
+@@ -146,8 +157,7 @@
+         if status_filter:
+             status_val = status_filter.strip()
+             if status_val == "DRAFT":
+-                # Only return true drafts that are NOT yet posted to SAP!
+-                qs = qs.filter(status=CustomizationDraft.STATUS_DRAFT, quotation_doc_entry__isnull=True)
++                qs = qs.filter(status=CustomizationDraft.STATUS_DRAFT)
+             elif status_val == 'REJECTED':
+                 qs = qs.filter(status__in=['INTERNAL_REJECTED', 'CUSTOMER_REJECTED'])
+             elif status_val == "READY_FOR_ORDER":
+@@ -183,6 +193,7 @@
+             s = search.strip()
+             qs = qs.filter(
+                 Q(quotation_doc_num__icontains=s) |
++                Q(quotation_doc_entry__icontains=s) |
+                 Q(customer_code__icontains=s) |
+                 Q(customer_name__icontains=s) |
+                 Q(sap_order_doc_num__icontains=s) |
+@@ -203,7 +214,7 @@
+             'ready': sum(counts.get(s, 0) for s in tab_groups['READY']), 'ordered': counts.get('ORDER_POSTED', 0)}
+         if request.query_params.get('tab') in tab_groups:
+             qs = qs.filter(status__in=tab_groups[request.query_params['tab']])
+-        rows, pagination = workflow_page(qs, request.query_params, ['customer_code', 'customer_name', 'quotation_doc_num', 'sap_order_doc_num', 'id', 'lines__item_code', 'lines__item_description'])
++        rows, pagination = workflow_page(qs, request.query_params, ['customer_code', 'customer_name', 'quotation_doc_num', 'quotation_doc_entry', 'sap_order_doc_num', 'id', 'lines__item_code', 'lines__item_description'])
+         drafts = [_serialize_draft(d) for d in rows]
+         return Response({"success": True, "drafts": drafts, 'pagination': pagination, 'workflow_counts': workflow_counts})
+ 
+--- before/backend/api/delivery_views.py
++++ after/backend/api/delivery_views.py
+@@ -31,6 +31,35 @@
+ )
+ 
+ logger = logging.getLogger(__name__)
++
++
++@api_view(['GET'])
++@require_module_access(MODULE_DELIVERY)
++def delivery_review_report(request):
++    from django.http import StreamingHttpResponse
++    from .services.delivery_review_report import report_page, report_lines, report_groups, print_report_rows
++    from .services.workflow_pagination import workflow_bounds, workflow_metadata
++    try:
++        field = request.query_params.get('field')
++        if field:
++            group = {'customers': 'byCustomer', 'items': 'byItem', 'salesOrders': 'bySalesOrder'}.get(field)
++            if not group:
++                raise ValueError('Invalid report lookup field.')
++            # Lookup options come from all posted documents, independent of visible pages.
++            query = report_groups(report_lines({}), group)
++            search = request.query_params.get('search', '').strip()[:150]
++            if search:
++                query = query.filter(Q(key__icontains=search) | Q(label__icontains=search))
++            size, offset = workflow_bounds({'page_size': request.query_params.get('limit', 25), 'offset': request.query_params.get('offset', 0)})
++            count = query.count()
++            metadata = workflow_metadata({'page_size': size, 'offset': offset}, count)
++            return Response({'options': list(query[offset:offset + size]), 'has_more': metadata['has_more'], 'next_offset': offset + size if metadata['has_more'] else None})
++        report_lines(request.query_params)  # Validate before starting a streaming response.
++        if request.query_params.get('output') == 'print':
++            return StreamingHttpResponse(print_report_rows(request.query_params), content_type='text/html; charset=utf-8')
++        return Response({'success': True, 'report': report_page(request.query_params, _serialize_delivery_draft)})
++    except ValueError as error:
++        return Response({'success': False, 'error': str(error)}, status=400)
+ 
+ 
+ def _serialize_delivery_draft(draft: DeliveryDraft) -> Dict[str, Any]:
+@@ -114,6 +143,13 @@
+     service = DeliveryPostingService()
+ 
+     if request.method == "GET":
++        from .services.workflow_pagination import numeric_identifier
++        try:
++            for name in ['document', 'sales_order_doc_entry']:
++                if request.query_params.get(name):
++                    numeric_identifier(request.query_params[name], name)
++        except ValueError as error:
++            return Response({'success': False, 'error': str(error)}, status=400)
+         qs = DeliveryDraft.objects.all().prefetch_related("lines__batches").select_related(
+             "created_by", "reviewed_by", "posted_by"
+         )
+@@ -389,11 +425,34 @@
+     if request.query_params.get('draft_ids'):
+         ids = request.query_params['draft_ids'].split(',')[:50]
+         order_drafts = order_drafts.filter(id__in=[int(value) for value in ids if value.isdigit()])
+-    from .services.workflow_pagination import workflow_page
+-    order_drafts, pagination = workflow_page(order_drafts, request.query_params,
+-        ['customer_code', 'customer_name', 'sap_order_doc_num', 'quotation_doc_num', 'lines__item_code', 'lines__item_description'])
++    from .services.workflow_pagination import workflow_queryset, workflow_bounds, workflow_metadata, numeric_identifier
++    try:
++        for name in ['id', 'order_number']:
++            if request.query_params.get(name):
++                numeric_identifier(request.query_params[name], name)
++        for value in request.query_params.get('draft_ids', '').split(','):
++            if value:
++                numeric_identifier(value, 'draft_ids')
++    except ValueError as error:
++        return Response({'success': False, 'error': str(error)}, status=400)
++    if request.query_params.get('local_only') == 'true':
++        order_drafts = order_drafts.filter(is_local_creation=True).exclude(sap_order_doc_num='').order_by('-created_at')
++    if request.query_params.get('id'):
++        order_drafts = order_drafts.filter(id=request.query_params['id'])
++    if request.query_params.get('order_number'):
++        order_drafts = order_drafts.filter(sap_order_doc_num=request.query_params['order_number'])
++    order_drafts = workflow_queryset(order_drafts, request.query_params,
++        ['customer_code', 'customer_name', 'sap_order_doc_num', 'quotation_doc_num', 'quotation_doc_entry', 'lines__item_code', 'lines__item_description'])
+ 
+     sap_client = SAPServiceLayer()
++    from .services.workflow_order_reads import read_candidate_orders
++    order_drafts = list(order_drafts.prefetch_related('lines'))
++    entries = [int(draft.sap_order_doc_entry) for draft in order_drafts]
++    # Small candidate sets retain the existing single-document read path.
++    candidate_orders = read_candidate_orders(sap_client, entries) if len(entries) > 50 else {}
++    deliveries_by_order = {}
++    for delivery in DeliveryDraft.objects.filter(sales_order_doc_entry__in=entries).prefetch_related('lines').order_by('-posted_at', '-id'):
++        deliveries_by_order.setdefault(delivery.sales_order_doc_entry, []).append(delivery)
+     cards = []
+ 
+     for draft in order_drafts:
+@@ -407,7 +466,9 @@
+         order_data = {}
+ 
+         try:
+-            order_data = sap_client.get_sales_order(doc_entry)
++            order_data = candidate_orders.get(doc_entry)
++            if order_data is None:
++                order_data = sap_client.get_sales_order(doc_entry)
+             if isinstance(order_data, dict) and not order_data.get("error"):
+                 doc_lines = order_data.get("DocumentLines") or []
+                 for l in doc_lines:
+@@ -428,14 +489,14 @@
+ 
+         # Fallback if SAP read failed: calculate from draft lines and posted deliveries
+         if total_ordered == 0.0:
+-            for line in draft.lines.filter(is_selected=True):
++            for line in draft.lines.all():
++                if not line.is_selected:
++                    continue
+                 total_ordered += float(line.customized_quantity)
+                 items_list.append(line.item_description or line.item_code)
+             # Check posted deliveries for this order
+-            posted_lines = DeliveryDraftLine.objects.filter(
+-                draft__sales_order_doc_entry=doc_entry,
+-                draft__status=DeliveryDraft.STATUS_POSTED,
+-            )
++            posted_lines = [line for delivery in deliveries_by_order.get(doc_entry, [])
++                if delivery.status == DeliveryDraft.STATUS_POSTED for line in delivery.lines.all()]
+             delivered_qty = sum(float(pl.delivery_quantity) for pl in posted_lines)
+             total_open = max(0.0, total_ordered - delivered_qty)
+ 
+@@ -450,15 +511,13 @@
+         doc_total = float(sap_total) if sap_total is not None else sum(
+             float(line.customized_quantity or 0) * float(line.customized_unit_price or 0)
+             * (1 - float(line.discount_percent or 0) / 100)
+-            for line in draft.lines.filter(is_selected=True)
++            for line in draft.lines.all() if line.is_selected
+         )
+ 
+         # Check posted deliveries for this order
+-        posted_deliveries_qs = DeliveryDraft.objects.filter(
+-            sales_order_doc_entry=doc_entry,
+-            status=DeliveryDraft.STATUS_POSTED,
+-        ).order_by("-posted_at", "-id")
+-        posted_deliveries_count = posted_deliveries_qs.count()
++        related_deliveries = deliveries_by_order.get(doc_entry, [])
++        posted_deliveries_qs = [delivery for delivery in related_deliveries if delivery.status == DeliveryDraft.STATUS_POSTED]
++        posted_deliveries_count = len(posted_deliveries_qs)
+         posted_deliveries = [
+             {
+                 "id": pd.id,
+@@ -470,9 +529,9 @@
+         ]
+ 
+         # Check for in-flight delivery drafts
+-        active_draft = DeliveryDraft.objects.filter(
+-            sales_order_doc_entry=doc_entry
+-        ).exclude(status__in=[DeliveryDraft.STATUS_POSTED, DeliveryDraft.STATUS_REJECTED]).first()
++        active_draft = max((delivery for delivery in related_deliveries
++            if delivery.status not in [DeliveryDraft.STATUS_POSTED, DeliveryDraft.STATUS_REJECTED]),
++            key=lambda delivery: (delivery.created_at, delivery.id), default=None)
+ 
+         cards.append({
+             "customization_draft_id": draft.id,
+@@ -505,16 +564,26 @@
+     else:
+         filtered_cards = cards
+ 
++    delivery_status = request.query_params.get('delivery_status', 'ALL')
++    if delivery_status != 'ALL':
++        def status_for(card):
++            if card['delivered_quantity'] >= card['ordered_quantity'] and card['ordered_quantity'] > 0:
++                return 'FULLY_DELIVERED'
++            return 'PARTIAL' if card['delivered_quantity'] > 0 else 'NOT_DELIVERED'
++        filtered_cards = [card for card in filtered_cards if status_for(card) == delivery_status]
++    size, offset = workflow_bounds(request.query_params)
++    pagination = workflow_metadata(request.query_params, len(filtered_cards))
++
+     return Response({
+         "success": True,
+-        "orders": filtered_cards,
++        "orders": filtered_cards[offset:offset + size],
+         'pagination': pagination,
+         "counts": {
+             "total": len(cards),
+             "active": len([c for c in cards if c["has_remaining"]]),
+             "completed": len([c for c in cards if not c["has_remaining"]]),
+         }
+-        , 'counts_scope': 'current_candidate_page'
++        , 'counts_scope': 'full_candidate_dataset'
+     })
+ 
+ 
+--- before/backend/api/urls.py
++++ after/backend/api/urls.py
+@@ -442,6 +442,7 @@
+     path("customization-delivery/quotation-context/", customization_views.sales_quotation_context),
+     path("customization-delivery/delivery/eligible-orders/", delivery_views.list_eligible_delivery_orders),
+     path("customization-delivery/delivery/posted-documents/<int:doc_entry>/", delivery_views.posted_delivery_document),
++    path("customization-delivery/delivery/report/", delivery_views.delivery_review_report),
+     path("customization-delivery/orders/", delivery_views.list_workflow_sales_orders),
+     path("customization-delivery/orders/documents/<int:doc_entry>/", customization_delivery_views.sales_order_document_detail),
+     path("customization-delivery/batches/", delivery_views.list_available_batches),
+--- before/backend/api/services/workflow_pagination.py
++++ after/backend/api/services/workflow_pagination.py
+@@ -1,12 +1,21 @@
+ from django.db.models import Q
+ 
+ 
+-def workflow_page(queryset, params, fields):
++def workflow_bounds(params):
+     try:
+         size = min(50, max(1, int(params.get('page_size', 25))))
+         offset = max(0, min(1000000, int(params.get('offset', 0))))
+     except (ValueError, TypeError):
+         size, offset = 25, 0
++    return size, offset
++
++
++def workflow_metadata(params, count):
++    size, offset = workflow_bounds(params)
++    return {'offset': offset, 'page_size': size, 'total': count, 'has_more': offset + size < count}
++
++
++def workflow_queryset(queryset, params, fields):
+     search = str(params.get('search') or '').strip()[:150]
+     if search:
+         condition = Q()
+@@ -14,5 +23,21 @@
+             condition |= Q(**{f'{field}__icontains': search})
+         queryset = queryset.filter(condition).distinct()
+     queryset = queryset.order_by(*(queryset.query.order_by or queryset.model._meta.ordering), '-pk')
++    return queryset
++
++
++def workflow_page(queryset, params, fields):
++    queryset = workflow_queryset(queryset, params, fields)
++    size, offset = workflow_bounds(params)
+     count = queryset.count()
+-    return queryset[offset:offset + size], {'offset': offset, 'page_size': size, 'total': count, 'has_more': offset + size < count}
++    return queryset[offset:offset + size], workflow_metadata(params, count)
++
++
++def numeric_identifier(value, name):
++    if value is not None and (not str(value).isascii() or not str(value).isdigit()):
++        raise ValueError(f'Invalid {name}; a numeric document identifier is required.')
++    if value is None:
++        return None
++    if len(str(value)) > 19 or int(value) > 9223372036854775807:
++        raise ValueError(f'Invalid {name}; document identifier is out of range.')
++    return int(value)
+--- before/backend/api/services/delivery_review_report.py
++++ after/backend/api/services/delivery_review_report.py
+@@ -0,0 +1,105 @@
++"""Read-only report queries. Filter lines before aggregating or paging documents."""
++from datetime import date, timezone
++from django.db.models import Count, Sum, Value, F, CharField, Subquery, OuterRef
++from django.db.models.functions import Coalesce, NullIf, TruncDate, Cast, Concat
++from django.utils.html import escape
++from api.models_delivery import DeliveryDraft, DeliveryDraftLine
++from .workflow_pagination import workflow_page, workflow_bounds, workflow_metadata, numeric_identifier
++
++
++def report_lines(params):
++    drafts = DeliveryDraft.objects.filter(status='POSTED').exclude(sap_doc_entry='').exclude(sap_doc_num='')
++    if params.get('document'):
++        from django.db.models import Q
++        number = numeric_identifier(params['document'], 'document')
++        drafts = drafts.filter(Q(id=number) | Q(sap_doc_entry=str(number)) | Q(sap_doc_num=str(number)))
++    lines = DeliveryDraftLine.objects.filter(draft__in=drafts).annotate(
++        report_date=Coalesce(TruncDate('draft__posted_at', tzinfo=timezone.utc), F('draft__doc_date')),
++        customer_key=Coalesce(NullIf('draft__customer_code', Value('')), F('draft__customer_name')),
++    )
++    for name, lookup in [('customer', 'customer_key'), ('salesOrder', 'draft__sales_order_doc_num'), ('item', 'item_code')]:
++        if params.get(name):
++            lines = lines.filter(**{lookup: params[name]})
++    for name, lookup in [('dateFrom', 'report_date__gte'), ('dateTo', 'report_date__lte')]:
++        if params.get(name):
++            try:
++                value = date.fromisoformat(params[name])
++            except ValueError as error:
++                raise ValueError(f'Invalid {name}; use YYYY-MM-DD.') from error
++            lines = lines.filter(**{lookup: value})
++    return lines
++
++
++GROUPS = {
++    'byCustomer': (F('customer_key'), Coalesce(NullIf('draft__customer_name', Value('')), NullIf('customer_key', Value('')), Value('—'))),
++    'byItem': (F('item_code'), Coalesce(NullIf('item_description', Value('')), F('item_code'))),
++    'bySalesOrder': (F('draft__sales_order_doc_num'), Concat(Value('#'), 'draft__sales_order_doc_num')),
++    'byDate': (Cast('report_date', CharField()), Cast('report_date', CharField())),
++}
++
++
++def report_groups(lines, name):
++    key, label = GROUPS[name]
++    labels = lines.annotate(group_key=key, group_label=label).filter(group_key=OuterRef('group_key')).order_by(
++        '-draft__created_at', '-draft_id', 'line_number', 'id').values('group_label')[:1]
++    return lines.order_by().annotate(group_key=key).values('group_key').annotate(
++        key=F('group_key'), label=Subquery(labels), quantity=Coalesce(Sum('delivery_quantity'), 0.0),
++        deliveries=Count('draft_id', distinct=True), salesOrders=Count(NullIf('draft__sales_order_doc_num', Value('')), distinct=True),
++    ).order_by('group_key')
++
++
++def report_summary(lines):
++    return lines.aggregate(deliveries=Count('draft_id', distinct=True), quantity=Coalesce(Sum('delivery_quantity'), 0.0),
++        customers=Count('customer_key', distinct=True), salesOrders=Count('draft__sales_order_doc_num', distinct=True),
++        items=Count('item_code', distinct=True))
++
++
++def report_page(params, serialize):
++    lines = report_lines(params)
++    documents = DeliveryDraft.objects.filter(id__in=lines.values('draft_id')).prefetch_related('lines__batches').select_related(
++        'created_by', 'reviewed_by', 'posted_by')
++    page, pagination = workflow_page(documents, params, [])
++    ids = [draft.id for draft in page]
++    quantities = {row['draft_id']: row['quantity'] for row in lines.filter(draft_id__in=ids).order_by().values('draft_id').annotate(quantity=Sum('delivery_quantity'))}
++    matching_items = {}
++    for row in lines.filter(draft_id__in=ids).order_by('line_number', 'id').values('draft_id', 'item_code', 'item_description'):
++        matching_items.setdefault(row['draft_id'], []).append(row['item_description'] or row['item_code'])
++    details = [{'id': draft.id, 'draft': serialize(draft),
++        'date': (draft.posted_at.date() if draft.posted_at else draft.doc_date).isoformat(),
++        'items': ', '.join(matching_items[draft.id]), 'quantity': quantities[draft.id]} for draft in page]
++    groups, group_pagination = {}, {}
++    for name in GROUPS:
++        query = report_groups(lines, name)
++        # Group values are calculated over all filtered lines; only their display is paged.
++        group_params = {'page_size': params.get('page_size', 25), 'offset': params.get('group_offset', 0)}
++        size, offset = workflow_bounds(group_params)
++        groups[name] = list(query[offset:offset + size])
++        group_pagination[name] = workflow_metadata(group_params, query.count())
++    return {'summary': report_summary(lines), 'details': details, **groups,
++        'pagination': pagination, 'group_pagination': group_pagination}
++
++
++def print_report_rows(params):
++    """Generate complete printable rows on the server, never an unbounded document JSON list."""
++    lines = report_lines(params).select_related('draft').order_by('-draft__created_at', '-draft_id', 'line_number', 'id')
++    yield '<table data-report-part="details"><tbody>'
++    previous, item_names, quantity, draft = None, [], 0, None
++    def row(current, names, amount):
++        cells = [f'#{current.sap_doc_num}', f'#{current.sales_order_doc_num}', current.customer_name or current.customer_code,
++            ', '.join(names), f'{amount:,.3f}'.rstrip('0').rstrip('.'),
++            (current.posted_at.date() if current.posted_at else current.doc_date).isoformat()]
++        return '<tr>' + ''.join(f'<td>{escape(value)}</td>' for value in cells) + '</tr>'
++    for line in lines.iterator(chunk_size=500):
++        if previous is not None and previous != line.draft_id:
++            yield row(draft, item_names, quantity)
++            item_names, quantity = [], 0
++        previous, draft = line.draft_id, line.draft
++        item_names.append(line.item_description or line.item_code)
++        quantity += line.delivery_quantity or 0
++    if draft is not None:
++        yield row(draft, item_names, quantity)
++    yield '</tbody></table><table data-report-part="items"><tbody>'
++    for group in report_groups(report_lines(params), 'byItem').iterator(chunk_size=500):
++        amount = f'{group["quantity"]:,.3f}'.rstrip('0').rstrip('.')
++        yield f'<tr><td>{escape(group["label"])}</td><td>{escape(amount)}</td></tr>'
++    yield '</tbody></table>'
+--- before/backend/api/services/workflow_order_reads.py
++++ after/backend/api/services/workflow_order_reads.py
+@@ -0,0 +1,31 @@
++"""Bounded, read-only SAP batches for filtering the full workflow candidate set."""
++from urllib.parse import urlencode
++
++
++def read_candidate_orders(sap, entries):
++    result = {}
++    for start in range(0, len(entries), 50):
++        batch = entries[start:start + 50]
++        offset = 0
++        while offset < len(batch):
++            endpoint = 'Orders?' + urlencode({'$filter': ' or '.join(f'DocEntry eq {entry}' for entry in batch),
++                '$select': 'DocEntry,DocNum,DocCurrency,DocTotal,DocDate,DocumentStatus,DocumentLines',
++                '$orderby': 'DocEntry asc', '$top': len(batch)-offset, '$skip': offset})
++            try:
++                response = sap._request('GET', endpoint)
++            except Exception:
++                break  # Existing per-document read/fallback handles missing or unavailable entries.
++            if not isinstance(response, dict) or response.get('error'):
++                break
++            rows = response.get('value')
++            if not isinstance(rows, list) or not rows:
++                break
++            for row in rows:
++                if isinstance(row, dict) and str(row.get('DocEntry', '')).isdigit():
++                    entry = int(row['DocEntry'])
++                    if entry in batch:
++                        result[entry] = row
++            offset += len(rows)
++            if not (response.get('odata.nextLink') or response.get('@odata.nextLink')):
++                break
++    return result
+--- before/backend/api/tests_sales_scope_regressions.py
++++ after/backend/api/tests_sales_scope_regressions.py
+@@ -0,0 +1,208 @@
++from datetime import datetime, timezone
++from unittest.mock import Mock, patch
++from urllib.parse import parse_qs, urlsplit
++import re
++from django.contrib.auth.models import User
++from django.test import TestCase
++from rest_framework.test import APIClient
++from api.models_customization import CustomizationDraft, CustomizationDraftLine
++from api.models_delivery import DeliveryDraft, DeliveryDraftLine
++from api.services.customization_service import CustomizationService
++from api.services.workflow_order_reads import read_candidate_orders
++
++BASE = '/api/customization-delivery/'
++
++
++class SalesScopeRegressions(TestCase):
++    def setUp(self):
++        self.user = User.objects.create_superuser('scope-fix', password='fixture')
++        self.client = APIClient()
++        self.client.force_authenticate(self.user)
++
++    def quote(self, **kwargs):
++        return CustomizationDraft.objects.create(created_by=self.user, customer_code='C001', currency='USD', **kwargs)
++
++    def test_draft_filter_keeps_sap_linked_drafts(self):
++        linked = self.quote(status='DRAFT', quotation_doc_entry=901)
++        local = self.quote(status='DRAFT')
++        self.quote(status='ORDER_POSTED', quotation_doc_entry=902)
++        response = self.client.get(BASE+'customization/drafts/', {'status':'DRAFT'})
++        self.assertEqual(response.status_code, 200)
++        self.assertEqual({d['id'] for d in response.data['drafts']}, {linked.id, local.id})
++        self.assertEqual(response.data['pagination']['total'], 2)
++
++    def test_docentry_search_finds_old_document_outside_first_page(self):
++        old = self.quote(status='DRAFT', quotation_doc_entry=873492)
++        for i in range(30):
++            self.quote(status='DRAFT', quotation_doc_entry=100+i)
++        first = self.client.get(BASE+'customization/drafts/').data
++        self.assertNotIn(old.id, [d['id'] for d in first['drafts']])
++        result = self.client.get(BASE+'customization/drafts/', {'search':'873492'}).data
++        self.assertEqual([d['id'] for d in result['drafts']], [old.id])
++        self.assertEqual(result['pagination']['total'], 1)
++
++    def test_invalid_numeric_deep_links_return_400_without_sap(self):
++        cases = [('delivery/drafts/', 'document'), ('delivery/report/', 'document'),
++            ('orders/', 'id'), ('orders/', 'order_number'), ('orders/', 'draft_ids'),
++            ('customization/drafts/', 'id'), ('customization/drafts/', 'quotation'),
++            ('customization/drafts/', 'quotation_doc_entry'), ('customization/drafts/', 'order_entries')]
++        with patch('api.services.sap_service.SAPServiceLayer.get_sales_order') as sap:
++            for path, parameter in cases:
++                for value in ['invalid', '-1', '9'*100, '١٢']:
++                    with self.subTest(path=path, parameter=parameter, value=value):
++                        response = self.client.get(BASE+path, {parameter:value})
++                        self.assertEqual(response.status_code, 400, getattr(response, 'data', None))
++            sap.assert_not_called()
++
++    def seed_deliveries(self):
++        for i in range(30):
++            draft = DeliveryDraft.objects.create(sales_order_doc_entry=i+10, sales_order_doc_num=str(100+i%3),
++                customer_code='C'+str(i%2), customer_name='<Buyer & '+str(i%2)+'>', status='POSTED',
++                sap_doc_entry=str(800+i), sap_doc_num=str(900+i), doc_date='2026-09-01', doc_due_date='2026-09-01',
++                posted_at=datetime(2026, 10, 1+i%2, tzinfo=timezone.utc), created_by=self.user)
++            for j, quantity in enumerate([2., 3.]):
++                DeliveryDraftLine.objects.create(draft=draft, line_number=j, item_code='I'+str(j),
++                    item_description='Item '+str(j), delivery_quantity=quantity, warehouse_code='WH')
++
++    def test_report_global_totals_and_groups_are_invariant_between_pages(self):
++        self.seed_deliveries()
++        first = self.client.get(BASE+'delivery/report/').data['report']
++        second = self.client.get(BASE+'delivery/report/', {'offset':25}).data['report']
++        expected = {'deliveries':30, 'quantity':150., 'customers':2, 'salesOrders':3, 'items':2}
++        self.assertEqual(first['summary'], expected)
++        self.assertEqual(second['summary'], expected)
++        self.assertEqual(len(first['details']), 25)
++        self.assertEqual(len(second['details']), 5)
++        self.assertTrue(set(d['id'] for d in first['details']).isdisjoint(d['id'] for d in second['details']))
++        for name in ['byCustomer', 'byItem', 'bySalesOrder', 'byDate']:
++            self.assertEqual(first[name], second[name])
++            self.assertEqual(sum(g['quantity'] for g in first[name]), 150.)
++        self.assertEqual(second['pagination']['total'], 30)
++
++    def test_report_item_and_date_filters_apply_before_aggregation_and_pagination(self):
++        self.seed_deliveries()
++        params = {'item':'I0', 'dateFrom':'2026-10-02', 'dateTo':'2026-10-02', 'page_size':5}
++        for offset in [0, 5]:
++            report = self.client.get(BASE+'delivery/report/', {**params, 'offset':offset}).data['report']
++            self.assertEqual(report['summary']['deliveries'], 15)
++            self.assertEqual(report['summary']['quantity'], 30.)
++            self.assertEqual(report['summary']['items'], 1)
++            self.assertEqual(report['pagination']['total'], 15)
++            self.assertTrue(all(d['quantity']==2. and d['date']=='2026-10-02' for d in report['details']))
++            self.assertTrue(all(len(d['draft']['lines'])==2 for d in report['details']))
++
++    def test_print_contains_complete_filtered_report_and_escaped_labels(self):
++        self.seed_deliveries()
++        response = self.client.get(BASE+'delivery/report/', {'item':'I0', 'output':'print', 'offset':25})
++        self.assertEqual(response.status_code, 200)
++        html = b''.join(response.streaming_content).decode()
++        self.assertEqual(html.count('<tr>'), 31)  # 30 documents + one item total.
++        for number in range(900, 930):
++            self.assertIn('#'+str(number), html)
++        self.assertIn('&lt;Buyer &amp;', html)
++        self.assertNotIn('Item 1', html)
++        self.assertIn('<td>60</td>', html)
++
++    def test_report_lookups_browse_and_search_full_dataset_with_bounded_pages(self):
++        self.seed_deliveries()
++        for i in range(30):
++            DeliveryDraft.objects.filter(sap_doc_num=str(900+i)).update(customer_code='B'+str(i), customer_name='Buyer '+str(i))
++        first = self.client.get(BASE+'delivery/report/', {'field':'customers'}).data
++        self.assertEqual(len(first['options']), 25)
++        self.assertEqual(first['next_offset'], 25)
++        second = self.client.get(BASE+'delivery/report/', {'field':'customers', 'offset':25}).data
++        self.assertEqual(len(second['options']), 5)
++        self.assertIsNone(second['next_offset'])
++        key = second['options'][0]['key']
++        searched = self.client.get(BASE+'delivery/report/', {'field':'customers', 'search':key}).data
++        self.assertIn(key, [o['key'] for o in searched['options']])
++
++    def seed_orders(self):
++        for i in range(30):
++            draft = self.quote(status='ORDER_POSTED', sap_order_doc_entry=str(100+i), sap_order_doc_num=str(1000+i))
++            CustomizationDraftLine.objects.create(draft=draft, line_number=0, item_code='ITEM',
++                original_quantity=10, customized_quantity=10, original_unit_price=1, customized_unit_price=1)
++
++    def test_order_and_delivery_status_filter_entire_candidates_before_paging(self):
++        self.seed_orders()
++        # Newest 25 orders are completed; active orders exist outside the old first page.
++        def order(entry):
++            remaining = 5 if entry < 105 else 0
++            return {'DocumentLines':[{'Quantity':10, 'RemainingOpenQuantity':remaining}]}
++        with patch('api.services.sap_service.SAPServiceLayer.get_sales_order', side_effect=order):
++            for endpoint in ['orders/', 'delivery/eligible-orders/']:
++                active = self.client.get(BASE+endpoint, {'filter':'active'}).data
++                self.assertEqual(active['pagination']['total'], 5)
++                self.assertEqual(len(active['orders']), 5)
++                self.assertEqual(active['counts'], {'total':30, 'active':5, 'completed':25})
++                self.assertTrue(all(o['sales_order_doc_entry']<105 for o in active['orders']))
++                complete = self.client.get(BASE+endpoint, {'filter':'completed', 'page_size':10, 'offset':10}).data
++                self.assertEqual(complete['pagination']['total'], 25)
++                self.assertEqual(len(complete['orders']), 10)
++            partial = self.client.get(BASE+'orders/', {'filter':'all', 'delivery_status':'PARTIAL', 'local_only':'true', 'page_size':2, 'offset':2}).data
++            self.assertEqual(partial['pagination']['total'], 5)
++            self.assertEqual(len(partial['orders']), 2)
++            self.assertTrue(all(o['delivered_quantity']==5 for o in partial['orders']))
++
++    def test_quote_recovery_definitive_rejection_vs_pending_never_reposts(self):
++        sap = Mock(base_url='https://fixture', company_db='Fixture')
++        sap._request.return_value = {'error':{'code':-1, 'message':{'value':'Invalid warehouse'}}}
++        sap.create_sales_quotation.side_effect = lambda data: sap._request('POST', 'Quotations', data)
++        request = {'customer_code':'C001', 'currency':'USD', 'lines':[{'item_code':'ITEM','quantity':2,'unit_price':3}]}
++        with patch('api.customization_views.CustomizationService', return_value=CustomizationService(sap)):
++            rejected = self.client.post(BASE+'quotations/create/', {**request, 'request_key':'rejected'}, format='json')
++            self.assertEqual(rejected.status_code, 502)
++            for _ in range(2):
++                response = self.client.get(BASE+'quotations/posting/rejected/')
++                self.assertEqual(response.status_code, 502)
++                self.assertEqual(response.data['state'], 'REJECTED')
++                self.assertFalse(response.data['is_ambiguous'])
++            sap._request.assert_called_once()
++            sap._request.return_value = {'error':'timeout'}
++            pending = self.client.post(BASE+'quotations/create/', {**request, 'customer_code':'C002', 'request_key':'pending'}, format='json')
++            self.assertEqual(pending.status_code, 502)
++            sap._request.return_value = {'value':[]}
++            for _ in range(2):
++                response = self.client.get(BASE+'quotations/posting/pending/')
++                self.assertEqual(response.status_code, 202)
++                self.assertTrue(response.data['is_ambiguous'])
++            self.assertEqual(sum(c.args[0]=='POST' for c in sap._request.call_args_list), 2)
++
++    def test_bulk_candidate_reads_follow_sap_pages_and_ignore_unrequested_ids(self):
++        sap = Mock()
++        sap._request.side_effect = [
++            {'value':[{'DocEntry':1}, {'DocEntry':999}], 'odata.nextLink':'Orders?$skip=2'},
++            {'value':[{'DocEntry':2}]},
++        ]
++        result = read_candidate_orders(sap, [1, 2, 3])
++        self.assertEqual(set(result), {1, 2})
++        self.assertEqual(sap._request.call_count, 2)
++        self.assertTrue(all(c.args[0]=='GET' for c in sap._request.call_args_list))
++        self.assertIn('%24skip=2', sap._request.call_args.args[1])
++
++    def test_bulk_candidate_read_failure_keeps_existing_individual_fallback(self):
++        sap = Mock()
++        sap._request.side_effect = TimeoutError('Unavailable')
++        self.assertEqual(read_candidate_orders(sap, [1, 2]), {})
++        sap._request.assert_called_once()
++
++    def test_large_order_filter_uses_full_bulk_statuses_before_paging(self):
++        for i in range(60):
++            self.quote(status='ORDER_POSTED', sap_order_doc_entry=str(100+i), sap_order_doc_num=str(1000+i))
++        def batch(method, endpoint):
++            self.assertEqual(method, 'GET')
++            query = parse_qs(urlsplit(endpoint).query)
++            entries = [int(value) for value in re.findall(r'DocEntry eq (\d+)', query['$filter'][0])]
++            return {'value':[{'DocEntry':entry, 'DocCurrency':'USD', 'DocTotal':10,
++                'DocumentLines':[{'Quantity':10,'RemainingOpenQuantity':5 if entry < 130 else 0}]} for entry in entries]}
++        with patch('api.services.sap_service.SAPServiceLayer._request', side_effect=batch) as transport, \
++                patch('api.services.sap_service.SAPServiceLayer.get_sales_order') as individual:
++            first = self.client.get(BASE+'orders/', {'filter':'active'}).data
++            second = self.client.get(BASE+'orders/', {'filter':'active', 'offset':25}).data
++            self.assertEqual(first['pagination']['total'], 30)
++            self.assertEqual(second['pagination']['total'], 30)
++            self.assertEqual(len(first['orders']), 25)
++            self.assertEqual(len(second['orders']), 5)
++            self.assertEqual(first['counts'], {'total':60, 'active':30, 'completed':30})
++            individual.assert_not_called()
++            self.assertEqual(transport.call_count, 4)
+--- before/backend/api/tests_sales_performance.py
++++ after/backend/api/tests_sales_performance.py
+@@ -1,4 +1,5 @@
+ import json
++import re
+ from pathlib import Path
+ from time import perf_counter
+ from unittest.mock import Mock, patch
+@@ -74,6 +75,13 @@
+         sap.get_sales_order.return_value = {'DocEntry': 1, 'DocCurrency': 'USD', 'DocTotal': 6000,
+             'DocumentLines': [{'ItemCode': 'ITEM', 'ItemDescription': 'Long fixture item description', 'Quantity': 250,
+                               'RemainingOpenQuantity': 250, 'WarehouseCode': 'WH'}]}
++        def batch_read(method, endpoint):
++            self.assertEqual(method, 'GET')
++            query = parse_qs(urlsplit(endpoint).query)
++            entries = [int(value) for value in re.findall(r'DocEntry eq (\d+)', query['$filter'][0])]
++            self.assertLessEqual(len(entries), 50)
++            return {'value': [{**sap.get_sales_order.return_value, 'DocEntry': entry} for entry in entries]}
++        sap._request.side_effect = batch_read
+         previous = 0
+         for size in [1000, 5000, 10000]:
+             quotes = CustomizationDraft.objects.bulk_create([CustomizationDraft(
+@@ -99,6 +107,7 @@
+                 ('Delivery Orders', '/api/customization-delivery/delivery/eligible-orders/?filter=all', 'orders'),
+                 ('Posted Deliveries', '/api/customization-delivery/delivery/drafts/?status=POSTED', 'drafts')]:
+                 sap.get_sales_order.reset_mock()
++                sap._request.reset_mock()
+                 started = perf_counter()
+                 with patch('api.services.sap_service.SAPServiceLayer', return_value=sap):
+                     first = client.get(endpoint, {'page_size': 25})
+@@ -114,6 +123,7 @@
+                 ids = 'id' if collection == 'drafts' else 'customization_draft_id'
+                 self.assertFalse({d[ids] for d in first.data[collection]} & {d[ids] for d in next_page.data[collection]})
+                 self.assertLessEqual(sap.get_sales_order.call_count, 51)
++                self.assertLessEqual(sap._request.call_count, 2*((size+49)//50))
+                 metrics.append({'list': label, 'dataset': size, 'browser_requests': 3,
+                     'sap_reads_initial_plus_next_plus_search': sap.get_sales_order.call_count,
+                     'initial_bytes': len(first.content), 'search_bytes': len(search.content),
+--- before/frontend/src/pages/SalesQuotationCreatePage.jsx
++++ after/frontend/src/pages/SalesQuotationCreatePage.jsx
+@@ -1,4 +1,5 @@
+ import '../styles/pages/sales-readiness.css';
++import { isDefinitiveQuotationRejection } from '../utils/quotationPostingRecovery';
+ import StandardDropdown from '../components/ui/StandardDropdown';
+ import { customerSearch, salesItemSearch, warehouseSearch } from '../services/masterDataSearch';
+ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+@@ -112,10 +113,16 @@
+       const result = await fetchQuotationPosting(requestKey);
+       if (result.state === 'CONFIRMED') { setCreatedResult(result); setPostingUncertain(false); setStep(6); }
+       else if (result.state === 'VERIFYING') { setPostingUncertain(true); setSubmitError(t('customizationDelivery.checkingPosting')); setStep(6); }
+-      else if (result.state === 'REJECTED') { setPostingUncertain(false); setSubmitError(result.error); setStep(6); }
+-    } catch (error) { setPostingUncertain(true); setSubmitError(error.response?.data?.error || t('customizationDelivery.checkingPosting')); setStep(6); }
++      else if (isDefinitiveQuotationRejection(result)) { setPostingUncertain(false); setSubmitError(result.error); setStep(6); setSearchParams({}, { replace: true }); }
++    } catch (error) {
++      const rejected = isDefinitiveQuotationRejection(error.response?.data);
++      setPostingUncertain(!rejected);
++      setSubmitError(error.response?.data?.error || t('customizationDelivery.checkingPosting'));
++      setStep(6);
++      if (rejected) setSearchParams({}, { replace: true });
++    }
+     finally { setSubmitting(false); }
+-  }, [requestKey, t]);
++  }, [requestKey, t, setSearchParams]);
+   useEffect(() => { checkPosting(); }, [checkPosting]);
+ 
+   // Direct print state for created quotation
+@@ -463,6 +470,7 @@
+       console.error('Failed to create sales quotation in SAP:', err);
+       const uncertain = err.response?.data?.is_ambiguous === true || !err.response;
+       setPostingUncertain(uncertain);
++      if (!uncertain) setSearchParams({}, { replace: true });
+       const msg =
+         err.response?.data?.error ||
+         err.message ||
+--- before/frontend/src/pages/SalesQuotationsPage.jsx
++++ after/frontend/src/pages/SalesQuotationsPage.jsx
+@@ -56,7 +56,7 @@
+   const [activeTab, setActiveTab] = useState('ALL');
+   const [serverCounts, setServerCounts] = useState(null);
+   const paging = useWorkflowPagination(search, activeTab);
+-  const { params: pageParams, setInfo: setPageInfo } = paging;
++  const { params: pageParams, setInfo: setPageInfo, requestGuard } = paging;
+ 
+   // Action loading state
+   const [actionLoadingId, setActionLoadingId] = useState(null);
+@@ -119,22 +119,25 @@
+   }, [printRequest, t, toast, lang]);
+ 
+   const loadDrafts = useCallback(async () => {
++    const identity = requestGuard.begin();
+     setLoading(true);
+     setError(null);
+     try {
+       const data = await fetchCustomizationDrafts({ ...pageParams, tab: activeTab });
++      if (!requestGuard.isCurrent(identity)) return;
+       setDrafts(data || []);
+       setPageInfo(data?.pagination);
+       setServerCounts(data?.workflowCounts || null);
+     } catch (err) {
++      if (!requestGuard.isCurrent(identity)) return;
+       console.error('Failed to load quotation drafts:', err);
+       const msg = err.response?.data?.error || t('common.errorLoadingData');
+       setError(msg);
+       toast.error(msg);
+     } finally {
+-      setLoading(false);
++      if (requestGuard.isCurrent(identity)) setLoading(false);
+     }
+-  }, [t, toast, pageParams, setPageInfo, activeTab]);
++  }, [t, toast, pageParams, setPageInfo, requestGuard, activeTab]);
+ 
+   useEffect(() => {
+     loadDrafts();
+@@ -172,24 +175,8 @@
+       list = list.filter((d) => d.status === 'ORDER_POSTED');
+     }
+ 
+-    const q = search.trim().toLowerCase();
+-    if (q) {
+-      list = list.filter((d) => {
+-        const docNum = String(d.quotation_doc_num || '').toLowerCase();
+-        const orderNum = String(d.sap_order_doc_num || '').toLowerCase();
+-        const custName = String(d.customer_name || '').toLowerCase();
+-        const custCode = String(d.customer_code || '').toLowerCase();
+-        return (
+-          docNum.includes(q) ||
+-          orderNum.includes(q) ||
+-          custName.includes(q) ||
+-          custCode.includes(q) ||
+-          (d.lines || []).some(line => String(line.item_code || '').toLowerCase().includes(q) || String(line.item_description || '').toLowerCase().includes(q))
+-        );
+-      });
+-    }
+     return list;
+-  }, [drafts, activeTab, search]);
++  }, [drafts, activeTab]);
+ 
+   // Actions
+   const handleSubmitReview = async (draftId) => {
+--- before/frontend/src/pages/SalesQuotationsReviewPage.jsx
++++ after/frontend/src/pages/SalesQuotationsReviewPage.jsx
+@@ -46,33 +46,36 @@
+   const [error, setError] = useState(null);
+   const [search, setSearch] = useState('');
+   const [statusFilter, setStatusFilter] = useState('ALL');
+-  const paging = useWorkflowPagination(search, statusFilter);
+-  const { params: pageParams, setInfo: setPageInfo } = paging;
++  const paging = useWorkflowPagination(search, JSON.stringify([statusFilter, targetId, targetQuotation]));
++  const { params: pageParams, setInfo: setPageInfo, requestGuard } = paging;
+ 
+   // Read-only quotation inspection modal state
+   const [selectedQuotation, setSelectedQuotation] = useState(null);
+ 
+   const loadData = useCallback(async () => {
++    const identity = requestGuard.begin();
+     setLoading(true);
+     setError(null);
+     try {
+       const quotationData = await fetchCustomizationDrafts({ ...pageParams, status: statusFilter === 'ALL' ? undefined : statusFilter, ...(targetId ? { id: targetId, offset: 0 } : targetQuotation ? { quotation: targetQuotation, offset: 0 } : {}) });
+       const ids = quotationData.filter(draft => draft.status === 'ORDER_POSTED').map(draft => draft.id);
+       const deliveryData = ids.length ? await fetchWorkflowSalesOrders({ draft_ids: ids.join(','), page_size: 50, filter: 'all' }) : { orders: [] };
++      if (!requestGuard.isCurrent(identity)) return;
+       setDrafts(quotationData || []);
+       setPageInfo(quotationData?.pagination);
+       setDeliveryDrafts((deliveryData.orders || []).flatMap(order => (order.posted_deliveries || []).map(delivery => ({
+         ...delivery, sales_order_doc_num: order.sales_order_doc_num,
+       }))));
+     } catch (err) {
++      if (!requestGuard.isCurrent(identity)) return;
+       console.error('Failed to load sales quotation drafts:', err);
+       const msg = err.response?.data?.error || t('common.errorLoadingData');
+       setError(msg);
+       toast.error(msg);
+     } finally {
+-      setLoading(false);
++      if (requestGuard.isCurrent(identity)) setLoading(false);
+     }
+-  }, [t, toast, pageParams, setPageInfo, targetId, targetQuotation, statusFilter]);
++  }, [t, toast, pageParams, setPageInfo, requestGuard, targetId, targetQuotation, statusFilter]);
+ 
+   useEffect(() => {
+     loadData();
+@@ -134,33 +137,8 @@
+       }
+     }
+ 
+-    const q = search.trim().toLowerCase();
+-    if (q) {
+-      result = result.filter((d) => {
+-        const docNum = String(d.quotation_doc_num || '').toLowerCase();
+-        const docEntry = String(d.quotation_doc_entry || '').toLowerCase();
+-        const draftIdStr = String(d.id || '').toLowerCase();
+-        const custCode = String(d.customer_code || '').toLowerCase();
+-        const custName = String(d.customer_name || '').toLowerCase();
+-        const linesMatch = (d.lines || []).some(
+-          (l) =>
+-            String(l.item_code || '').toLowerCase().includes(q) ||
+-            String(l.item_description || '').toLowerCase().includes(q)
+-        );
+-
+-        return (
+-          docNum.includes(q) ||
+-          docEntry.includes(q) ||
+-          draftIdStr.includes(q) ||
+-          custCode.includes(q) ||
+-          custName.includes(q) ||
+-          linesMatch
+-        );
+-      });
+-    }
+-
+     return result;
+-  }, [quotationDrafts, search, statusFilter]);
++  }, [quotationDrafts, statusFilter]);
+ 
+   const getQuotationStatusBadge = (status) => {
+     switch (status) {
+--- before/frontend/src/pages/SalesOrdersPage.jsx
++++ after/frontend/src/pages/SalesOrdersPage.jsx
+@@ -39,9 +39,9 @@
+   const [loading, setLoading] = useState(true);
+   const [error, setError] = useState(null);
+   const [search, setSearch] = useState('');
+-  const paging = useWorkflowPagination(search);
+-  const { params: pageParams, setInfo: setPageInfo } = paging;
+   const [filterMode, setFilterMode] = useState('all'); // 'all', 'active', 'completed'
++  const paging = useWorkflowPagination(search, filterMode);
++  const { params: pageParams, setInfo: setPageInfo, requestGuard } = paging;
+ 
+   // Print state for sales orders
+   const [printRequest, setPrintRequest] = useState(null);
+@@ -95,24 +95,27 @@
+   }, [printRequest, printingOrder, t, toast, lang]);
+ 
+   const loadOrders = useCallback(async () => {
++    const identity = requestGuard.begin();
+     setLoading(true);
+     setError(null);
+     try {
+-      const data = await fetchWorkflowSalesOrders({ ...pageParams, filter: 'all' });
++      const data = await fetchWorkflowSalesOrders({ ...pageParams, filter: filterMode });
++      if (!requestGuard.isCurrent(identity)) return;
+       setOrders(data?.orders || []);
+       setPageInfo(data?.pagination);
+       if (data?.counts) {
+         setCounts(data.counts);
+       }
+     } catch (err) {
++      if (!requestGuard.isCurrent(identity)) return;
+       console.error('Failed to load workflow sales orders:', err);
+       const msg = err.response?.data?.error || t('common.errorLoadingData');
+       setError(msg);
+       toast.error(msg);
+     } finally {
+-      setLoading(false);
++      if (requestGuard.isCurrent(identity)) setLoading(false);
+     }
+-  }, [t, toast, pageParams, setPageInfo]);
++  }, [t, toast, pageParams, setPageInfo, requestGuard, filterMode]);
+ 
+   useEffect(() => {
+     loadOrders();
+@@ -546,7 +549,7 @@
+           />
+         </div>
+       )}
+-      <WorkflowPagination paging={paging} loading={loading} countsOnPage />
++      <WorkflowPagination paging={paging} loading={loading} />
+     </div>
+   );
+ }
+--- before/frontend/src/pages/SalesOrdersReviewPage.jsx
++++ after/frontend/src/pages/SalesOrdersReviewPage.jsx
+@@ -47,36 +47,40 @@
+   const [loading, setLoading] = useState(true);
+   const [error, setError] = useState(null);
+   const [search, setSearch] = useState('');
+-  const paging = useWorkflowPagination(search);
+-  const { params: pageParams, setInfo: setPageInfo } = paging;
+   const [statusFilter, setStatusFilter] = useState('ALL');
+   const [deliveryStatusFilter, setDeliveryStatusFilter] = useState('ALL'); // ALL, NOT_DELIVERED, PARTIAL, FULLY_DELIVERED
++  const paging = useWorkflowPagination(search, JSON.stringify([statusFilter, deliveryStatusFilter, targetId, targetOrder]));
++  const { params: pageParams, setInfo: setPageInfo, requestGuard } = paging;
+ 
+   // Read-only inspection modal state
+   const [selectedDraft, setSelectedDraft] = useState(null);
+ 
+   const loadData = useCallback(async () => {
++    const identity = requestGuard.begin();
+     setLoading(true);
+     setError(null);
+     try {
+-      const orderData = await fetchCustomizationDrafts({ ...pageParams, status: 'ORDER_POSTED', ...(targetId ? { id: targetId, offset: 0 } : targetOrder ? { order_number: targetOrder, offset: 0 } : {}) });
+-      const ids = orderData.map(draft => draft.id);
+-      const deliveryData = ids.length ? await fetchWorkflowSalesOrders({ draft_ids: ids.join(','), page_size: 50, filter: 'all' }) : { orders: [] };
++      const deliveryData = await fetchWorkflowSalesOrders({ ...pageParams, filter: 'all', local_only: true,
++        delivery_status: deliveryStatusFilter, ...(targetId ? { id: targetId, offset: 0 } : targetOrder ? { order_number: targetOrder, offset: 0 } : {}) });
++      const ids = (deliveryData.orders || []).map(order => order.customization_draft_id);
++      const orderData = ids.length ? await fetchCustomizationDrafts({ draft_ids: ids.join(','), page_size: 50 }) : [];
++      if (!requestGuard.isCurrent(identity)) return;
+       setDrafts(orderData || []);
+-      setPageInfo(orderData?.pagination);
++      setPageInfo(deliveryData?.pagination);
+       setOrderSummaries(deliveryData.orders || []);
+       setDeliveryDrafts((deliveryData.orders || []).flatMap(order => (order.posted_deliveries || []).map(delivery => ({
+         ...delivery, sales_order_doc_num: order.sales_order_doc_num,
+       }))));
+     } catch (err) {
++      if (!requestGuard.isCurrent(identity)) return;
+       console.error('Failed to load sales order drafts:', err);
+       const msg = err.response?.data?.error || t('common.errorLoadingData');
+       setError(msg);
+       toast.error(msg);
+     } finally {
+-      setLoading(false);
++      if (requestGuard.isCurrent(identity)) setLoading(false);
+     }
+-  }, [t, toast, pageParams, setPageInfo, targetId, targetOrder]);
++  }, [t, toast, pageParams, setPageInfo, requestGuard, targetId, targetOrder, deliveryStatusFilter]);
+ 
+   useEffect(() => {
+     loadData();
+@@ -97,7 +101,7 @@
+         if (match) setSelectedDraft(match);
+       }
+     }
+-  }, [drafts, loading, targetId, targetOrder]);
++  }, [drafts, loading, targetId, targetOrder, deliveryStatusFilter]);
+ 
+   const resetFilters = () => {
+     setSearch('');
+@@ -181,32 +185,8 @@
+       });
+     }
+ 
+-    const q = search.trim().toLowerCase();
+-    if (q) {
+-      result = result.filter((d) => {
+-        const docNum = String(d.quotation_doc_num || '').toLowerCase();
+-        const docEntry = String(d.quotation_doc_entry || '').toLowerCase();
+-        const custCode = String(d.customer_code || '').toLowerCase();
+-        const custName = String(d.customer_name || '').toLowerCase();
+-        const orderNum = String(d.sap_order_doc_num || '').toLowerCase();
+-        const linesMatch = (d.lines || []).some(
+-          (l) =>
+-            String(l.item_code || '').toLowerCase().includes(q) ||
+-            String(l.item_description || '').toLowerCase().includes(q)
+-        );
+-
+-        return (
+-          docNum.includes(q) ||
+-          docEntry.includes(q) ||
+-          custCode.includes(q) ||
+-          custName.includes(q) ||
+-          orderNum.includes(q) ||
+-          linesMatch
+-        );
+-      });
+-    }
+     return result;
+-  }, [workflowDrafts, search, statusFilter, deliveryStatusFilter, getOrderDeliveryProgress]);
++  }, [workflowDrafts, statusFilter, deliveryStatusFilter, getOrderDeliveryProgress]);
+ 
+   const getDeliveryStatusBadge = (deliveryStatus, percentDelivered) => {
+     switch (deliveryStatus) {
+--- before/frontend/src/pages/DeliveriesPage.jsx
++++ after/frontend/src/pages/DeliveriesPage.jsx
+@@ -46,9 +46,9 @@
+   const [loading, setLoading] = useState(true);
+   const [error, setError] = useState(null);
+   const [search, setSearch] = useState('');
+-  const paging = useWorkflowPagination(search);
+-  const { params: pageParams, setInfo: setPageInfo } = paging;
+   const [filterMode, setFilterMode] = useState('active'); // 'active', 'completed', 'all', 'pending'
++  const paging = useWorkflowPagination(search, filterMode);
++  const { params: pageParams, setInfo: setPageInfo, requestGuard } = paging;
+ 
+   // Action states for pending drafts
+   const [actionLoadingId, setActionLoadingId] = useState(null);
+@@ -56,6 +56,7 @@
+   const [rejectionReason, setRejectionReason] = useState('');
+ 
+   const loadOrders = useCallback(async () => {
++    const identity = requestGuard.begin();
+     setLoading(true);
+     setError(null);
+     try {
+@@ -63,6 +64,7 @@
+         fetchEligibleDeliveryOrders({ ...pageParams, filter: filterMode === 'pending' ? 'all' : filterMode }),
+         fetchDeliveryDrafts({ ...pageParams, status: 'PENDING_REVIEW' }).catch(() => []),
+       ]);
++      if (!requestGuard.isCurrent(identity)) return;
+       setOrders(data?.orders || []);
+       setPageInfo(filterMode === 'pending' ? draftsData?.pagination : data?.pagination);
+       setPendingDrafts(draftsData || []);
+@@ -70,14 +72,15 @@
+         setCounts(data.counts);
+       }
+     } catch (err) {
++      if (!requestGuard.isCurrent(identity)) return;
+       console.error('Failed to load eligible delivery orders:', err);
+       const msg = err.response?.data?.error || t('common.errorLoadingData');
+       setError(msg);
+       toast.error(msg);
+     } finally {
+-      setLoading(false);
++      if (requestGuard.isCurrent(identity)) setLoading(false);
+     }
+-  }, [filterMode, t, toast, pageParams, setPageInfo]);
++  }, [filterMode, t, toast, pageParams, setPageInfo, requestGuard]);
+ 
+   useEffect(() => {
+     loadOrders();
+@@ -641,7 +644,7 @@
+           </div>
+         </div>
+       )}
+-      <WorkflowPagination paging={paging} loading={loading} countsOnPage />
++      <WorkflowPagination paging={paging} loading={loading} />
+     </div>
+   );
+ }
+--- before/frontend/src/pages/DeliveryReviewPage.jsx
++++ after/frontend/src/pages/DeliveryReviewPage.jsx
+@@ -14,7 +14,8 @@
+ import DeliveryReportPrintable from '../components/print/DeliveryReportPrintable';
+ import DocumentTraceabilityChain from '../components/customization/DocumentTraceabilityChain';
+ import {
+-  fetchDeliveryDrafts,
++  fetchDeliveryReviewReport,
++  fetchDeliveryReportPrint,
+   fetchCustomizationDrafts,
+ } from '../services/customizationDeliveryService';
+ import {
+@@ -25,19 +26,15 @@
+ import '../styles/pages/customization-delivery.css';
+ 
+ const EMPTY_FILTERS = { dateFrom: '', dateTo: '', customer: '', salesOrder: '', item: '' };
+-const isCompletedDelivery = (draft) =>
+-  draft?.status === 'POSTED' && Boolean(draft?.sap_doc_entry) && Boolean(draft?.sap_doc_num);
+-const deliveryDate = (draft) => draft.posted_at?.slice(0, 10) || draft.doc_date || '';
+ const customerKey = (draft) => draft.customer_code || draft.customer_name || '';
+ const customerLabel = (draft) => draft.customer_name || draft.customer_code || '—';
+ 
+-const incrementGroup = (map, key, label, deliveryId, orderNumber, quantity) => {
+-  if (!map.has(key)) map.set(key, { key, label, deliveryIds: new Set(), orderNumbers: new Set(), quantity: 0 });
+-  const group = map.get(key);
+-  group.deliveryIds.add(deliveryId);
+-  if (orderNumber) group.orderNumbers.add(orderNumber);
+-  group.quantity += quantity;
+-};
++const EMPTY_REPORT = { summary: { deliveries: 0, quantity: 0, customers: 0, salesOrders: 0, items: 0 },
++  details: [], byCustomer: [], byItem: [], bySalesOrder: [], byDate: [] };
++const REPORT_SOURCES = Object.fromEntries(['customers', 'salesOrders', 'items'].map(field => [field, {
++  endpoint: '/customization-delivery/delivery/report/', params: { field }, collection: 'options', browse: true,
++  mapOption: row => ({ value: String(row.key), label: row.label }),
++}]));
+ 
+ export default function DeliveryReviewPage() {
+   const navigate = useNavigate();
+@@ -53,31 +50,36 @@
+   const [loading, setLoading] = useState(true);
+   const [error, setError] = useState(null);
+   const [filters, setFilters] = useState(EMPTY_FILTERS);
+-  const paging = useWorkflowPagination(filters.customer || filters.salesOrder || filters.item);
+-  const { params: pageParams, setInfo: setPageInfo } = paging;
++  const [report, setReport] = useState(EMPTY_REPORT);
++  const paging = useWorkflowPagination('', JSON.stringify([filters, targetDelivery]));
++  const { params: pageParams, setInfo: setPageInfo, requestGuard } = paging;
+   const [selectedDelivery, setSelectedDelivery] = useState(null);
+   const [printRequest, setPrintRequest] = useState(null);
+   const printContainerRef = useRef(null);
+ 
+   const loadData = useCallback(async () => {
++    const identity = requestGuard.begin();
+     setLoading(true);
+     setError(null);
+     try {
+-      const deliveries = await fetchDeliveryDrafts({ ...pageParams, status: 'POSTED', ...(targetDelivery ? { document: targetDelivery, offset: 0 } : {}) });
++      const data = await fetchDeliveryReviewReport({ ...pageParams, ...filters, ...(targetDelivery ? { document: targetDelivery, offset: 0 } : {}) });
++      const deliveries = data.details.map(detail => detail.draft);
+       const entries = [...new Set(deliveries.map(draft => draft.sales_order_doc_entry))];
+       const quotations = entries.length ? await fetchCustomizationDrafts({ order_entries: entries.join(','), page_size: 50 }) : [];
+-      const validDeliveries = (deliveries || []).filter(isCompletedDelivery);
+-      setDrafts(validDeliveries);
+-      setPageInfo(deliveries.pagination);
++      if (!requestGuard.isCurrent(identity)) return;
++      setReport(data);
++      setDrafts(deliveries);
++      setPageInfo(data.pagination);
+       setQuotationDrafts(quotations || []);
+     } catch (err) {
++      if (!requestGuard.isCurrent(identity)) return;
+       const message = err.response?.data?.error || t('common.errorLoadingData');
+       setError(message);
+       toast.error(message);
+     } finally {
+-      setLoading(false);
++      if (requestGuard.isCurrent(identity)) setLoading(false);
+     }
+-  }, [t, toast, pageParams, setPageInfo, targetDelivery]);
++  }, [t, toast, pageParams, setPageInfo, targetDelivery, filters, requestGuard]);
+ 
+   useEffect(() => {
+     loadData();
+@@ -124,94 +126,26 @@
+     [drafts]
+   );
+ 
+-  const report = useMemo(() => {
+-    const rows = drafts
+-      .flatMap((draft) =>
+-        (draft.lines || []).map((line) => ({
+-          draft,
+-          line,
+-          date: deliveryDate(draft),
+-          quantity: Number(line.delivery_quantity) || 0,
+-        }))
+-      )
+-      .filter(({ draft, line, date }) => {
+-        if (filters.dateFrom && date < filters.dateFrom) return false;
+-        if (filters.dateTo && date > filters.dateTo) return false;
+-        if (filters.customer && customerKey(draft) !== filters.customer) return false;
+-        if (filters.salesOrder && String(draft.sales_order_doc_num) !== filters.salesOrder) return false;
+-        if (filters.item && String(line.item_code) !== filters.item) return false;
+-        return true;
+-      });
+-
+-    const deliveryIds = new Set();
+-    const customers = new Set();
+-    const salesOrders = new Set();
+-    const items = new Set();
+-    const byCustomer = new Map();
+-    const byItem = new Map();
+-    const bySalesOrder = new Map();
+-    const byDate = new Map();
+-    let totalQuantity = 0;
+-
+-    rows.forEach(({ draft, line, date, quantity }) => {
+-      deliveryIds.add(draft.id);
+-      customers.add(customerKey(draft));
+-      salesOrders.add(draft.sales_order_doc_num);
+-      items.add(line.item_code);
+-      totalQuantity += quantity;
+-      incrementGroup(byCustomer, customerKey(draft), customerLabel(draft), draft.id, draft.sales_order_doc_num, quantity);
+-      incrementGroup(byItem, line.item_code, line.item_description || line.item_code, draft.id, draft.sales_order_doc_num, quantity);
+-      incrementGroup(bySalesOrder, draft.sales_order_doc_num, `#${draft.sales_order_doc_num}`, draft.id, draft.sales_order_doc_num, quantity);
+-      incrementGroup(byDate, date, date, draft.id, draft.sales_order_doc_num, quantity);
+-    });
+-
+-    const groups = (map) =>
+-      Array.from(map.values()).map((group) => ({
+-        ...group,
+-        deliveries: group.deliveryIds.size,
+-        salesOrders: group.orderNumbers.size,
+-      }));
+-
+-    const details = Array.from(deliveryIds).map((id) => {
+-      const deliveryRows = rows.filter(({ draft }) => draft.id === id);
+-      const draft = deliveryRows[0].draft;
+-      return {
+-        id,
+-        draft,
+-        date: deliveryRows[0].date,
+-        items: deliveryRows.map(({ line }) => line.item_description || line.item_code).join(', '),
+-        quantity: deliveryRows.reduce((sum, row) => sum + row.quantity, 0),
+-      };
+-    });
+-
+-    return {
+-      rows,
+-      summary: {
+-        deliveries: deliveryIds.size,
+-        quantity: totalQuantity,
+-        customers: customers.size,
+-        salesOrders: salesOrders.size,
+-        items: items.size,
+-      },
+-      byCustomer: groups(byCustomer),
+-      byItem: groups(byItem),
+-      bySalesOrder: groups(bySalesOrder),
+-      byDate: groups(byDate),
+-      details,
+-    };
+-  }, [drafts, filters]);
+-
+   const updateFilter = (name, value) => setFilters((current) => ({ ...current, [name]: value }));
+   const resetFilters = () => setFilters(EMPTY_FILTERS);
+   const hasFilters = Object.values(filters).some(Boolean);
+ 
+-  const printReport = (deliveryId = null) => {
++  const printReport = async (deliveryId = null) => {
+     const printWindow = openBlankPrintWindow();
+     if (!printWindow) {
+       toast.error(t('quality.printWindowBlocked'));
+       return;
+     }
+-    setPrintRequest({ deliveryId, printWindow, generatedAt: new Date().toLocaleString() });
++    try {
++      const params = { ...filters, ...(targetDelivery ? { document: targetDelivery } : {}) };
++      const [freshReport, rowsHtml] = deliveryId ? [report, null] : await Promise.all([
++        fetchDeliveryReviewReport(params), fetchDeliveryReportPrint(params),
++      ]);
++      setPrintRequest({ deliveryId, printWindow, report: freshReport, rowsHtml, generatedAt: new Date().toLocaleString() });
++    } catch (err) {
++      printWindow.close();
++      toast.error(err.response?.data?.error || t('common.errorLoadingData'));
++    }
+   };
+ 
+   const summaryCards = [
+@@ -233,7 +167,15 @@
+   useEffect(() => {
+     if (!printRequest) return undefined;
+     const timer = window.setTimeout(() => {
+-      const sheets = Array.from(printContainerRef.current?.querySelectorAll('.a4-print-sheet') || []);
++      const sheets = Array.from(printContainerRef.current?.querySelectorAll('.a4-print-sheet') || []).map(sheet => sheet.cloneNode(true));
++      if (printRequest.rowsHtml && sheets[0]) {
++        const parsed = new DOMParser().parseFromString(printRequest.rowsHtml, 'text/html');
++        const bodies = sheets[0].querySelectorAll('.delivery-print-table tbody');
++        ['details', 'items'].forEach((part, index) => {
++          const body = parsed.querySelector(`[data-report-part="${part}"] tbody`);
++          if (body && bodies[index]) bodies[index].replaceWith(body.cloneNode(true));
++        });
++      }
+       const opened = printRequest.deliveryId
+         ? writePrintDocument({
+             printWindow: printRequest.printWindow,
+@@ -317,6 +259,7 @@
+             <SearchableSelect
+               className="app-select"
+               value={filters.customer}
++              searchSource={REPORT_SOURCES.customers}
+               onChange={(e) => updateFilter('customer', e.target.value)}
+             >
+               <option value="">{t('customizationDelivery.allCustomers')}</option>
+@@ -332,6 +275,7 @@
+             <SearchableSelect
+               className="app-select"
+               value={filters.salesOrder}
++              searchSource={REPORT_SOURCES.salesOrders}
+               onChange={(e) => updateFilter('salesOrder', e.target.value)}
+             >
+               <option value="">{t('customizationDelivery.allSalesOrders')}</option>
+@@ -347,6 +291,7 @@
+             <SearchableSelect
+               className="app-select"
+               value={filters.item}
++              searchSource={REPORT_SOURCES.items}
+               onChange={(e) => updateFilter('item', e.target.value)}
+             >
+               <option value="">{t('customizationDelivery.allItems')}</option>
+@@ -1116,7 +1061,7 @@
+       {printRequest && (
+         <div ref={printContainerRef} aria-hidden="true" style={{ display: 'none' }}>
+           <DeliveryReportPrintable
+-            report={report}
++            report={{ ...printRequest.report, byItem: printRequest.report.summary.items ? [{ label: '', quantity: 0 }] : [] }}
+             filters={filters}
+             filterLabels={filterLabels}
+             delivery={printRequest.deliveryId ? report.details.find((detail) => detail.id === printRequest.deliveryId) : null}
+--- before/frontend/src/hooks/useWorkflowPagination.js
++++ after/frontend/src/hooks/useWorkflowPagination.js
+@@ -1,6 +1,8 @@
+-import { useCallback, useEffect, useMemo, useState } from 'react';
++import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
++import { createLatestRequestGuard } from '../utils/latestRequest';
+ 
+ export default function useWorkflowPagination(search, filterKey = '') {
++  const [requestGuard] = useState(createLatestRequestGuard);
+   const [position, setPosition] = useState({ key: filterKey, offset: 0 });
+   const offset = position.key === filterKey ? position.offset : 0;
+   const setOffset = useCallback(value => setPosition({ key: filterKey, offset: value }), [filterKey]);
+@@ -12,5 +14,9 @@
+     return () => clearTimeout(timer);
+   }, [search, query, setOffset]);
+   const params = useMemo(() => ({ offset, page_size: 25, search: query }), [offset, query]);
+-  return { params, info, setInfo, setOffset };
++  useLayoutEffect(() => {
++    requestGuard.invalidate();
++    return () => requestGuard.invalidate();
++  }, [requestGuard, query, filterKey, offset]);
++  return { params, info, setInfo, setOffset, requestGuard };
+ }
+--- before/frontend/src/services/customizationDeliveryService.js
++++ after/frontend/src/services/customizationDeliveryService.js
+@@ -221,6 +221,16 @@
+   return data;
+ }
+ 
++export async function fetchDeliveryReviewReport(params = {}) {
++  const { data } = await API.get(`${BASE}delivery/report/`, { params });
++  return data.report;
++}
++
++export async function fetchDeliveryReportPrint(params = {}) {
++  const { data } = await API.get(`${BASE}delivery/report/`, { params: { ...params, output: 'print' }, responseType: 'text' });
++  return data;
++}
++
+ const _cachedBatches = new Map();
+ const BATCH_CACHE_TTL = 30 * 1000; // 30 seconds
+ 
+--- before/frontend/src/utils/latestRequest.js
++++ after/frontend/src/utils/latestRequest.js
+@@ -0,0 +1,8 @@
++export function createLatestRequestGuard() {
++  let sequence = 0;
++  return {
++    begin: () => ++sequence,
++    isCurrent: identity => identity === sequence,
++    invalidate: () => { sequence += 1; },
++  };
++}
+--- before/frontend/src/utils/quotationPostingRecovery.js
++++ after/frontend/src/utils/quotationPostingRecovery.js
+@@ -0,0 +1,2 @@
++export const isDefinitiveQuotationRejection = data =>
++  data?.state === 'REJECTED' && data?.is_ambiguous === false;
+--- before/frontend/scripts/test-sales-scope-regressions.mjs
++++ after/frontend/scripts/test-sales-scope-regressions.mjs
+@@ -0,0 +1,24 @@
++import assert from 'node:assert/strict';
++import { createLatestRequestGuard } from '../src/utils/latestRequest.js';
++import { isDefinitiveQuotationRejection } from '../src/utils/quotationPostingRecovery.js';
++
++assert.equal(isDefinitiveQuotationRejection({ state: 'REJECTED', is_ambiguous: false }), true);
++for (const data of [{ state: 'REJECTED', is_ambiguous: true }, { state: 'PENDING', is_ambiguous: true }, {}, null]) {
++  assert.equal(isDefinitiveQuotationRejection(data), false);
++}
++const guard = createLatestRequestGuard();
++let resolveApple, resolveBanana, visible;
++const apply = async (query, promise) => {
++  const identity = guard.begin();
++  const result = await promise;
++  if (guard.isCurrent(identity)) visible = { query, result };
++};
++const apple = apply('apple', new Promise(resolve => { resolveApple = resolve; }));
++const banana = apply('banana', new Promise(resolve => { resolveBanana = resolve; }));
++resolveBanana(['banana']); await banana;
++resolveApple(['apple']); await apple;
++assert.deepEqual(visible, { query: 'banana', result: ['banana'] });
++const inFlight = guard.begin();
++guard.invalidate(); // A changed filter/search or unmount invalidates even before its next request.
++assert.equal(guard.isCurrent(inFlight), false);
++console.log('PASS: definitive rejection classification and stale response race/invalidation');
+--- before/frontend/scripts/test-sales-journey-browser.py
++++ after/frontend/scripts/test-sales-journey-browser.py
+@@ -32,7 +32,7 @@
+ from django.core.management import call_command
+ from django.contrib.auth.models import User
+ from rest_framework.test import APIClient
+-from api.models_delivery import DeliveryDraft
++from api.models_delivery import DeliveryDraft, DeliveryDraftLine
+ from api.models_customization import CustomizationDraft, CustomizationDraftLine
+ from playwright.sync_api import sync_playwright, expect
+ 
+@@ -44,12 +44,18 @@
+ USER = {'id': admin.id, 'username': admin.username, 'role': 'admin', 'is_superuser': True}
+ documents, posted_documents, calls, sap_calls, errors = {}, {}, [], [], []
+ fail_next_quotation = False
++reject_next_quotation = False
++delayed_search = False
++delayed_responses = []
+ lose_next_order_response = False
+ lose_next_quotation_response = False
+ 
+ def sap_request(_self, method, endpoint, data=None, **_kwargs):
+-    global fail_next_quotation, lose_next_order_response, lose_next_quotation_response
++    global fail_next_quotation, reject_next_quotation, lose_next_order_response, lose_next_quotation_response
+     sap_calls.append({'method': method, 'endpoint': endpoint, 'payload': deepcopy(data)})
++    if method == 'POST' and endpoint == 'Quotations' and reject_next_quotation:
++        reject_next_quotation = False
++        return {'error': {'code': -1, 'message': {'value': 'Definitive fixture rejection'}}}
+     if method == 'POST' and endpoint == 'Quotations' and fail_next_quotation:
+         fail_next_quotation = False
+         return {'error': 'Connection timed out; posting outcome unknown'}
+@@ -140,6 +146,13 @@
+         response = client.get(path + ('?' + parsed.query if parsed.query else ''))
+     else:
+         response = getattr(client, request.method.lower())(path, payload or {}, format='json')
++    if response.streaming:
++        route.fulfill(status=response.status_code, content_type=response.headers['Content-Type'], headers=headers,
++            body=b''.join(response.streaming_content))
++        return
++    if delayed_search and params.get('search') == ['Performance 00002'] and path.endswith('/customization/drafts/'):
++        delayed_responses.append((route, response, headers))
++        return
+     assert response.headers.get('Content-Type', '').startswith('application/json'), (path, response.status_code, response.content[:300])
+     respond(json.loads(response.content), response.status_code)
+ 
+@@ -399,6 +412,81 @@
+         assert len(listing_calls)==3, listing_calls
+         rendering.append({'dataset':size,'first_render_ms':render_ms,'initial_cards':25,'search_cards':1,'list_requests':len(listing_calls)})
+     (ROOT/'scratch/readiness-browser-performance.json').write_text(json.dumps(rendering,indent=2),encoding='utf-8')
++    # A real out-of-order list request must not replace the current query's results.
++    delayed_search = True
++    search = page.locator('.sales-readiness-workflow input[type=search]')
++    search.fill('Performance 00002')
++    page.wait_for_timeout(600)
++    assert delayed_responses, 'Older query was not sent'
++    search.fill('Performance 00001')
++    expect(page.locator('.quotation-card')).to_have_count(1)
++    expect(page.locator('.quotation-card')).to_contain_text('Performance 00001')
++    page.wait_for_timeout(600)
++    for route, response, headers in delayed_responses:
++        route.fulfill(status=response.status_code, content_type='application/json', headers=headers, body=response.content)
++    page.wait_for_timeout(300)
++    expect(page.locator('.quotation-card')).to_contain_text('Performance 00001')
++    delayed_search = False
++
++    # Reload a persisted definitive rejection through the same GET recovery path.
++    reject_next_quotation = True
++    before = len(sap_calls)
++    rejected = client.post('/api/customization-delivery/quotations/create/', {'request_key':'browser-rejected',
++        'customer_code':'REJECTED-CUSTOMER', 'currency':'USD', 'lines':[{'item_code':'FRUIT','quantity':3,'unit_price':7}]}, format='json')
++    assert rejected.status_code == 502 and rejected.data['is_ambiguous'] is False
++    page.goto('http://127.0.0.1:5189/customization-delivery/quotations/new?posting=browser-rejected')
++    expect(page.locator('body')).to_contain_text('Definitive fixture rejection')
++    expect(page.get_by_role('button', name='Try Again', exact=True)).to_be_enabled()
++    expect(page.locator('body')).not_to_contain_text('Checking document status in SAP')
++    assert 'posting=' not in page.url
++    assert sum(c['method']=='POST' and c['endpoint']=='Quotations' for c in sap_calls[before:]) == 1
++    snapshot(page, 'quotation-definitive-rejection-recovery')
++
++    # Delivery summaries and print must include all 30 posted documents, across both pages.
++    for i in range(29):
++        draft = DeliveryDraft.objects.create(status='POSTED', sales_order_doc_entry=2002, sales_order_doc_num='6002',
++            customer_code='C001', customer_name='Fixture Buyer', sap_doc_entry=str(8000+i), sap_doc_num=str(9000+i),
++            doc_date='2026-10-04', doc_due_date='2026-10-04', created_by=admin)
++        DeliveryDraftLine.objects.create(draft=draft,line_number=0,item_code='FRUIT',item_description='Fixture Fruit',
++            delivery_quantity=5,warehouse_code='WH')
++    page.goto('http://127.0.0.1:5189/customization-delivery/review/deliveries')
++    expect(page.locator('.cd-table-view tbody tr')).to_have_count(25)
++    summary = page.locator('.delivery-report-analytics-sections').inner_text()
++    assert '395' in summary and '30' in summary, summary
++    page.get_by_role('navigation',name='Document pages').get_by_role('button',name='Next',exact=True).click()
++    expect(page.locator('.cd-table-view tbody tr')).to_have_count(5)
++    assert page.locator('.delivery-report-analytics-sections').inner_text() == summary
++    with page.expect_popup() as popup:
++        page.get_by_role('button',name='Print Report',exact=True).first.click()
++    printed = popup.value
++    expect(printed.locator('.delivery-print-table').first.locator('tbody tr')).to_have_count(30)
++    expect(printed.locator('body')).to_contain_text('395')
++    expect(printed.locator('body')).to_contain_text('9000')
++    expect(printed.locator('body')).to_contain_text('9028')
++    expect(printed.locator('body')).to_contain_text('7001')
++    printed.close()
++    # Changing an order filter while on page two resets the offset and filters all candidates.
++    for i in range(30):
++        entry = 9100+i
++        document = {**deepcopy(documents['Orders']), 'DocEntry':entry, 'DocNum':8100+i, 'DocumentLines':[
++            {'ItemCode':'FRUIT', 'Quantity':10, 'RemainingOpenQuantity':5 if i%2 else 0}]}
++        posted_documents[('Orders', entry)] = document
++        CustomizationDraft.objects.create(status='ORDER_POSTED',is_local_creation=True,customer_code='FILTER',
++            customer_name='Filter fixture', currency='USD', sap_order_doc_entry=str(entry),sap_order_doc_num=str(8100+i),created_by=admin)
++    page.goto('http://127.0.0.1:5189/customization-delivery/orders')
++    page.get_by_role('button',name=re.compile('All')).filter(has_text='All').first.click()
++    expect(page.locator('.workflow-pagination span')).to_contain_text('1–25')
++    page.get_by_role('navigation',name='Document pages').get_by_role('button',name='Next',exact=True).click()
++    expect(page.locator('.workflow-pagination span')).to_contain_text('26')
++    page.get_by_role('button',name=re.compile('Active')).first.click()
++    expect(page.locator('.workflow-pagination span')).to_contain_text('1–15 / 15')
++    assert calls[-1]['params'].get('offset') == ['0'], calls[-1]
++    page.goto('http://127.0.0.1:5189/customization-delivery/review')
++    page.get_by_role('combobox').last.select_option('PARTIAL')
++    expect(page.locator('.workflow-pagination span')).to_contain_text('1–15 / 15')
++    assert not errors, errors
++    (ROOT/'scratch/sales-journey/scope-regressions-network.json').write_text(json.dumps({'browser':calls,'sap_transport':sap_calls},indent=2,default=str),encoding='utf-8')
++    print('PASS: late search ignored, definitive rejection recovery enables retry, delivery page totals invariant, full 30-document print.')
+     browser.close()
+ from django.db import connections
+ connections.close_all()

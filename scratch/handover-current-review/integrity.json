@@ -1,0 +1,15 @@
+{
+  "root": "C:\\Users\\hp\\Desktop\\receipt_from_production",
+  "git_head": "b654abbab74a615437cdff9cd596868d3605443c",
+  "snapshot_sha256": "6fd5b4174d4cec8d504b927c3b31404436ae3e78d1ce294a65dab0a554420e9a",
+  "pinned_nonprotected_files": 499,
+  "app_changes_during_task": [],
+  "working_tree_drift": [],
+  "frozen_input_drift": [],
+  "current_visual_cases": 108,
+  "current_visual_page_errors": 0,
+  "current_visual_console": 0,
+  "api_comparison_cases": 108,
+  "api_count_differences": 0,
+  "protected_content_rehashed": false
+}

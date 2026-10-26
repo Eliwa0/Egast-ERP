@@ -1,0 +1,134 @@
+[
+  {
+    "list": "Quotations",
+    "dataset": 1000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 0,
+    "initial_bytes": 86130,
+    "search_bytes": 3595,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 140.18
+  },
+  {
+    "list": "Sales Orders",
+    "dataset": 1000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 1,
+    "initial_bytes": 15914,
+    "search_bytes": 806,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 906.36
+  },
+  {
+    "list": "Delivery Orders",
+    "dataset": 1000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 1,
+    "initial_bytes": 15914,
+    "search_bytes": 806,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 860.44
+  },
+  {
+    "list": "Posted Deliveries",
+    "dataset": 1000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 0,
+    "initial_bytes": 49747,
+    "search_bytes": 2069,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 147.95
+  },
+  {
+    "list": "Quotations",
+    "dataset": 5000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 0,
+    "initial_bytes": 86279,
+    "search_bytes": 3595,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 417.16
+  },
+  {
+    "list": "Sales Orders",
+    "dataset": 5000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 1,
+    "initial_bytes": 15914,
+    "search_bytes": 806,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 4472.93
+  },
+  {
+    "list": "Delivery Orders",
+    "dataset": 5000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 1,
+    "initial_bytes": 15914,
+    "search_bytes": 806,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 4530.24
+  },
+  {
+    "list": "Posted Deliveries",
+    "dataset": 5000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 0,
+    "initial_bytes": 49872,
+    "search_bytes": 2069,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 324.47
+  },
+  {
+    "list": "Quotations",
+    "dataset": 10000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 0,
+    "initial_bytes": 86308,
+    "search_bytes": 3595,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 796.19
+  },
+  {
+    "list": "Sales Orders",
+    "dataset": 10000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 1,
+    "initial_bytes": 15967,
+    "search_bytes": 806,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 9231.41
+  },
+  {
+    "list": "Delivery Orders",
+    "dataset": 10000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 1,
+    "initial_bytes": 15967,
+    "search_bytes": 806,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 9922.5
+  },
+  {
+    "list": "Posted Deliveries",
+    "dataset": 10000,
+    "browser_requests": 3,
+    "sap_reads_initial_plus_next_plus_search": 0,
+    "initial_bytes": 49898,
+    "search_bytes": 2069,
+    "returned_initial": 25,
+    "returned_search": 1,
+    "three_requests_ms": 1126.46
+  }
+]

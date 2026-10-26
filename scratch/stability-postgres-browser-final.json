@@ -1,0 +1,35 @@
+{
+  "database": "postgresql",
+  "run": 5,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "unexpected_http": [],
+  "cases": [
+    {
+      "test": "api.tests_sales_quotation_currency.SalesQuotationCurrencyTests.test_browser_form_to_backend_to_sap_transport_and_reopen",
+      "ms": 8170.62,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_sales_quotation_currency.SalesQuotationCurrencyTests.test_default_currency_full_api_round_trip_and_order",
+      "ms": 216.21,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_sales_quotation_currency.SalesQuotationCurrencyTests.test_explicit_currency_is_preserved_not_overwritten",
+      "ms": 191.83,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_sales_quotation_currency.SalesQuotationCurrencyTests.test_import_and_legacy_display_use_actual_sap_currency",
+      "ms": 118.34,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_sales_quotation_currency.SalesQuotationCurrencyTests.test_local_save_defaults_to_usd_and_posts_usd",
+      "ms": 167.22,
+      "unexpected_http": 0
+    }
+  ]
+}

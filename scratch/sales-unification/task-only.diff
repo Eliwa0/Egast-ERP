@@ -1,0 +1,530 @@
+--- before/frontend/src/pages/DeliveriesPage.jsx
++++ after/frontend/src/pages/DeliveriesPage.jsx
+@@ -23,6 +23,7 @@
+ import { useAuth } from '../contexts/AuthContext';
+ import { canManageDelivery } from '../utils/roles';
+ import PageHeader from '../components/ui/PageHeader';
++import SalesDocumentCard from '../components/ui/SalesDocumentCard';
+ import ShippingDeliveryHandoff from '../components/ShippingDeliveryHandoff';
+ import EmptyState from '../components/ui/EmptyState';
+ import { getProductIcon } from '../utils/productIcon';
+@@ -160,9 +161,9 @@
+ 
+       {/* Tabs and Search */}
+       <ShippingDeliveryHandoff />
+-      <section className="card-panel" style={{ padding: '14px 18px', marginBottom: '20px' }}>
+-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
++      <section className="card-panel sales-document-toolbar">
++        <div className="sales-document-toolbar__row">
++          <div className="sales-document-toolbar__filters">
+             <button
+               type="button"
+               className={`app-button app-button--compact ${filterMode === 'active' ? 'app-button--primary' : 'app-button--secondary'}`}
+@@ -194,7 +195,7 @@
+             </button>
+           </div>
+ 
+-          <div style={{ flex: '1 1 240px', maxWidth: '360px' }}>
++          <div className="sales-document-toolbar__search">
+             <input
+               type="search"
+               className="app-input"
+@@ -232,24 +233,16 @@
+             }
+           />
+         ) : (
+-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 360px), 1fr))', gap: '20px' }}>
++          <div className="sales-document-grid">
+             {pendingDrafts.map((d) => {
+               const totalDraftQty = (d.lines || []).reduce((sum, l) => sum + (Number(l.delivery_quantity) || 0), 0);
+               const isSubmittingThis = actionLoadingId === d.id;
+ 
+               return (
+-                <div
++                <SalesDocumentCard
+                   key={d.id}
+-                  className="card-panel"
+-                  style={{
+-                    padding: '20px',
+-                    display: 'flex',
+-                    flexDirection: 'column',
+-                    gap: '14px',
+-                    borderRadius: '12px',
+-                    border: '1px solid var(--border)',
+-                    background: 'var(--bg-elevated)',
+-                  }}
++                  
++                  
+                 >
+                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '10px' }}>
+                     <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+@@ -374,7 +367,7 @@
+                       </button>
+                     )}
+                   </div>
+-                </div>
++                </SalesDocumentCard>
+               );
+             })}
+           </div>
+@@ -395,7 +388,7 @@
+           onAction={() => navigate('/customization-delivery/orders')}
+         />
+       ) : (
+-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 360px), 1fr))', gap: '20px' }}>
++        <div className="sales-document-grid">
+           {filteredOrders.map((order) => {
+             const totalOrdered = Number(order.ordered_quantity) || 0;
+             const totalDelivered = Number(order.delivered_quantity) || 0;
+@@ -403,21 +396,10 @@
+             const percent = totalOrdered > 0 ? Math.min(100, Math.round((totalDelivered / totalOrdered) * 100)) : 0;
+ 
+             return (
+-              <div
++              <SalesDocumentCard
+                 key={order.sales_order_doc_entry}
+-                className="card-panel"
+-                style={{
+-                  display: 'flex',
+-                  flexDirection: 'column',
+-                  gap: '14px',
+-                  padding: '20px',
+-                  border: order.has_remaining
+-                    ? '1px solid var(--primary, #3b82f6)'
+-                    : '1px solid var(--border)',
+-                  borderRadius: '12px',
+-                  background: 'var(--bg-elevated)',
+-                  boxShadow: 'var(--shadow-sm, 0 2px 8px rgba(0,0,0,0.1))',
+-                }}
++                
++                active={order.has_remaining}
+               >
+                 {/* Header */}
+                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '10px' }}>
+@@ -488,15 +470,7 @@
+ 
+                   {/* Quantity Breakdown Cards */}
+                   <div
+-                    style={{
+-                      display: 'grid',
+-                      gridTemplateColumns: 'repeat(3, 1fr)',
+-                      gap: '8px',
+-                      padding: '10px',
+-                      borderRadius: '8px',
+-                      background: 'var(--bg-muted, rgba(255,255,255,0.03))',
+-                      textAlign: 'center',
+-                    }}
++                    className="sales-document-quantities"
+                   >
+                     <div>
+                       <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+@@ -596,7 +570,7 @@
+                     </button>
+                   )}
+                 </div>
+-              </div>
++              </SalesDocumentCard>
+             );
+           })}
+         </div>
+--- before/frontend/src/pages/PurchaseQuotationDraftPage.jsx
++++ after/frontend/src/pages/PurchaseQuotationDraftPage.jsx
+@@ -112,7 +112,7 @@
+   };
+ }
+ 
+-function PurchaseQuotationDraftPage({ postedViewOnly = false }) {
++function PurchaseQuotationDraftForm({ postedViewOnly = false }) {
+   const { user } = useAuth();
+   const canAdministerQuotation = canManagePurchaseQuotation(user);
+   const { draftId } = useParams();
+@@ -163,6 +163,9 @@
+   const [vendorName, setVendorName] = useState('');
+   const vendorCardCodeRef = useRef(vendorCardCode);
+   const vendorNameRef = useRef(vendorName);
++  const vendorDraftRef = useRef(draftId);
++  const vendorEditRevisionRef = useRef(0);
++  const draftLoadRequestRef = useRef(null);
+ 
+   const tRef = useRef(t);
+   tRef.current = t;
+@@ -185,6 +188,8 @@
+   const [contactPersonCode, setContactPersonCode] = useState('');
+   const [vendorRefNo, setVendorRefNo] = useState('');
+   const [currency, setCurrency] = useState('EGP');
++  const currencyRef = useRef(currency);
++  useEffect(() => { currencyRef.current = currency; }, [currency]);
+   const [groupNo, setGroupNo] = useState('');
+   const [postingDate, setPostingDate] = useState(getTodayDate());
+   const [validUntil, setValidUntil] = useState(getTodayDate());
+@@ -282,6 +287,7 @@
+     if (!code) return;
+ 
+     // 1. Update React state immediately
++    vendorEditRevisionRef.current += 1;
+     setVendorCardCode(code);
+     setVendorName(name);
+ 
+@@ -386,17 +392,27 @@
+ 
+   const loadDraftData = useCallback(async () => {
+     if (!draftId) return;
++    if (vendorDraftRef.current !== draftId) {
++      vendorDraftRef.current = draftId;
++      vendorCardCodeRef.current = '';
++      vendorNameRef.current = '';
++    }
++    const request = Symbol('purchase-quotation-load');
++    draftLoadRequestRef.current = request;
++    const vendorRevision = vendorEditRevisionRef.current;
+     setLoading(true);
+     try {
+       const data = await loadPurchaseQuotationDraft(draftId);
++      if (draftLoadRequestRef.current !== request) return;
+       setDraft(data);
+       if (data) {
++        const vendorEditedDuringLoad = vendorRevision !== vendorEditRevisionRef.current;
+         // Non-destructive vendor resolution
+         const incomingVendor = (data.vendor_card_code || '').trim();
+         const incomingVendorName = (data.vendor_name || '').trim();
+         const incomingCurrency = (data.currency || '').trim();
+ 
+-        if (incomingVendor) {
++        if (incomingVendor && !vendorEditedDuringLoad) {
+           // Backend has valid vendor -> sync state + refs + storage
+           setVendorCardCode(incomingVendor);
+           vendorCardCodeRef.current = incomingVendor;
+@@ -405,8 +421,8 @@
+           saveVendorToStorage(draftId, incomingVendor, incomingVendorName, incomingCurrency);
+         } else {
+           // Backend returned empty vendor. Check effective local vendor first!
+-          const localEffective = vendorCardCodeRef.current || vendorCardCode || getStoredVendor(draftId)?.cardCode || '';
+-          const localName = vendorNameRef.current || vendorName || getStoredVendor(draftId)?.name || '';
++          const localEffective = vendorCardCodeRef.current || getStoredVendor(draftId)?.cardCode || '';
++          const localName = vendorNameRef.current || getStoredVendor(draftId)?.name || '';
+           if (localEffective) {
+             // Keep local vendor! DO NOT destroy it with empty backend response!
+             setVendorCardCode(localEffective);
+@@ -415,7 +431,7 @@
+               setVendorName(localName);
+               vendorNameRef.current = localName;
+             }
+-            saveVendorToStorage(draftId, localEffective, localName, incomingCurrency || currency);
++            saveVendorToStorage(draftId, localEffective, localName, incomingCurrency || currencyRef.current);
+           } else {
+             // Genuinely no vendor anywhere
+             setVendorCardCode('');
+@@ -430,7 +446,7 @@
+         setContainerQuantity(data.container_quantity !== undefined && data.container_quantity !== null ? String(data.container_quantity) : '0');
+         setContactPersonCode(data.contact_person_code || '');
+         setVendorRefNo(data.vendor_ref_no || '');
+-        if (data.currency) setCurrency(data.currency);
++        if (data.currency && !vendorEditedDuringLoad) setCurrency(data.currency);
+         setGroupNo(data.group_no || '');
+         setPostingDate(data.posting_date || getTodayDate());
+         setValidUntil(data.valid_until || getTodayDate());
+@@ -529,15 +545,17 @@
+         }
+       }
+     } catch (err) {
++      if (draftLoadRequestRef.current !== request) return;
+       console.error('Failed to load draft:', err);
+       toastRef.current?.error(tRef.current?.('purchaseQuotation.loadFailed') || 'Failed to load draft');
+     } finally {
+-      setLoading(false);
+-    }
+-  }, [currency, draftId]);
++      if (draftLoadRequestRef.current === request) setLoading(false);
++    }
++  }, [draftId]);
+ 
+   useEffect(() => {
+     loadDraftData();
++    return () => { draftLoadRequestRef.current = null; };
+   }, [loadDraftData]);
+ 
+   // Load SAP master data on mount
+@@ -1086,7 +1104,7 @@
+         onSearchResults={(rows) => setFarms(rows.map((row) => ({ ...row, code: row.farmCode, name: row.farmName })))}
+         onSelectOption={(option) => {
+           if (option?.raw) handleSelectVendor({ ...option.raw, code: option.raw.farmCode, name: option.raw.farmName });
+-          else { setVendorCardCode(''); vendorCardCodeRef.current = ''; setVendorName(''); vendorNameRef.current = ''; clearStoredVendor(draftId); }
++          else { vendorEditRevisionRef.current += 1; setVendorCardCode(''); vendorCardCodeRef.current = ''; setVendorName(''); vendorNameRef.current = ''; clearStoredVendor(draftId); }
+         }} />
+ 
+       {renderWizardNav(1)}
+@@ -2313,4 +2331,7 @@
+   );
+ }
+ 
+-export default PurchaseQuotationDraftPage;
++export default function PurchaseQuotationDraftPage(props) {
++  const { draftId } = useParams();
++  return <PurchaseQuotationDraftForm key={draftId} {...props} />;
++}
+--- before/frontend/src/pages/SalesOrdersPage.jsx
++++ after/frontend/src/pages/SalesOrdersPage.jsx
+@@ -20,6 +20,7 @@
+ import { useI18n } from '../contexts/I18nContext';
+ import { useToast } from '../components/ui/ToastProvider';
+ import PageHeader from '../components/ui/PageHeader';
++import SalesDocumentCard from '../components/ui/SalesDocumentCard';
+ import EmptyState from '../components/ui/EmptyState';
+ import AppSpinner from '../components/ui/AppSpinner';
+ import LoadingSkeleton from '../components/ui/LoadingSkeleton';
+@@ -144,7 +145,7 @@
+             : 'Track Sales Orders and ordered, delivered, and remaining quantities. Create deliveries later from the Delivery module.'
+         }
+         actions={
+-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
++          <div className="sales-document-toolbar__filters">
+             <button
+               type="button"
+               className="app-button app-button--secondary app-button--compact"
+@@ -175,9 +176,9 @@
+       />
+ 
+       {/* Tabs and Search */}
+-      <section className="card-panel" style={{ padding: '14px 18px', marginBottom: '20px' }}>
+-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
++      <section className="card-panel sales-document-toolbar">
++        <div className="sales-document-toolbar__row">
++          <div className="sales-document-toolbar__filters">
+             <button
+               type="button"
+               className={`app-button app-button--compact ${filterMode === 'all' ? 'app-button--primary' : 'app-button--secondary'}`}
+@@ -201,7 +202,7 @@
+             </button>
+           </div>
+ 
+-          <div style={{ flex: '1 1 240px', maxWidth: '360px' }}>
++          <div className="sales-document-toolbar__search">
+             <input
+               type="search"
+               className="app-input"
+@@ -244,7 +245,7 @@
+           onAction={() => navigate('/customization-delivery/quotations')}
+         />
+       ) : (
+-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 360px), 1fr))', gap: '20px' }}>
++        <div className="sales-document-grid">
+           {filteredOrders.map((order) => {
+             const totalOrdered = Number(order.ordered_quantity) || 0;
+             const totalDelivered = Number(order.delivered_quantity) || 0;
+@@ -254,18 +255,10 @@
+             const isFullyDelivered = !order.has_remaining || remaining <= 0.0001;
+ 
+             return (
+-              <div
++              <SalesDocumentCard
+                 key={order.sales_order_doc_entry}
+-                className="card-panel"
+-                style={{
+-                  padding: '20px',
+-                  display: 'flex',
+-                  flexDirection: 'column',
+-                  gap: '14px',
+-                  borderRadius: '12px',
+-                  border: '1px solid var(--border)',
+-                  background: 'var(--bg-elevated)',
+-                }}
++                
++                
+               >
+                 {/* Header */}
+                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '10px' }}>
+@@ -355,15 +348,7 @@
+ 
+                   {/* Quantity Breakdown Cards */}
+                   <div
+-                    style={{
+-                      display: 'grid',
+-                      gridTemplateColumns: 'repeat(3, 1fr)',
+-                      gap: '8px',
+-                      padding: '10px',
+-                      borderRadius: '8px',
+-                      background: 'var(--bg-muted, rgba(255,255,255,0.03))',
+-                      textAlign: 'center',
+-                    }}
++                    className="sales-document-quantities"
+                   >
+                     <div>
+                       <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+@@ -524,7 +509,7 @@
+                     </>
+                   )}
+                 </div>
+-              </div>
++              </SalesDocumentCard>
+             );
+           })}
+         </div>
+--- before/frontend/src/pages/SalesQuotationsPage.jsx
++++ after/frontend/src/pages/SalesQuotationsPage.jsx
+@@ -25,6 +25,7 @@
+ import { useAuth } from '../contexts/AuthContext';
+ import { canManageCustomization } from '../utils/roles';
+ import PageHeader from '../components/ui/PageHeader';
++import SalesDocumentCard from '../components/ui/SalesDocumentCard';
+ import EmptyState from '../components/ui/EmptyState';
+ import AppSpinner from '../components/ui/AppSpinner';
+ import LoadingSkeleton from '../components/ui/LoadingSkeleton';
+@@ -353,7 +354,7 @@
+             : 'Manage sales quotations: direct creation in SAP Business One and instant conversion to Sales Orders.'
+         }
+         actions={
+-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
++          <div className="sales-document-toolbar__filters">
+             <button
+               type="button"
+               className="app-button app-button--secondary app-button--compact"
+@@ -384,9 +385,9 @@
+       />
+ 
+       {/* Tabs and Search */}
+-      <section className="card-panel" style={{ padding: '14px 18px', marginBottom: '20px' }}>
+-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
++      <section className="card-panel sales-document-toolbar">
++        <div className="sales-document-toolbar__row">
++          <div className="sales-document-toolbar__filters">
+             <button
+               type="button"
+               className={`app-button app-button--compact ${activeTab === 'ALL' ? 'app-button--primary' : 'app-button--secondary'}`}
+@@ -424,7 +425,7 @@
+             </button>
+           </div>
+ 
+-          <div style={{ flex: '1 1 240px', maxWidth: '360px' }}>
++          <div className="sales-document-toolbar__search">
+             <input
+               type="search"
+               className="app-input"
+@@ -467,7 +468,7 @@
+           onAction={() => navigate('/customization-delivery/quotations/new')}
+         />
+       ) : (
+-        <div className="quotations-grid">
++        <div className="sales-document-grid">
+           {filteredDrafts.map((draft) => {
+             const isActing = actionLoadingId === draft.id;
+             const itemsSummary = (draft.lines || [])
+@@ -477,18 +478,10 @@
+               .join(', ') + ((draft.lines || []).length > 3 ? ` (+${draft.lines.length - 3} more)` : '');
+ 
+             return (
+-              <div
++              <SalesDocumentCard
+                 key={draft.id}
+-                className="card-panel quotation-card"
+-                style={{
+-                  padding: '20px',
+-                  display: 'flex',
+-                  flexDirection: 'column',
+-                  gap: '14px',
+-                  borderRadius: '12px',
+-                  border: '1px solid var(--border)',
+-                  background: 'var(--bg-elevated)',
+-                }}
++                className="quotation-card"
++                
+               >
+                 {/* Header */}
+                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '10px' }}>
+@@ -717,7 +710,7 @@
+                     </button>
+                   )}
+                 </div>
+-              </div>
++              </SalesDocumentCard>
+             );
+           })}
+         </div>
+--- before/frontend/src/styles/pages/customization-delivery.css
++++ after/frontend/src/styles/pages/customization-delivery.css
+@@ -1,5 +1,18 @@
+ /* Customization & Delivery module - read-only screens.
+    Scoped to .cd-* classes so nothing here can affect existing modules. */
++
++/* Document lists share the existing page, card and form tokens. */
++.sales-document-card { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
++.card-panel.sales-document-card--active { border-color: var(--primary); }
++.sales-document-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap: 24px; }
++.sales-document-toolbar__row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
++.sales-document-toolbar__filters { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
++.sales-document-toolbar__search { flex: 1 1 240px; max-width: 360px; min-width: 0; }
++.sales-document-quantities { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 88px), 1fr)); gap: 12px; padding: 12px; border-radius: var(--radius-md); background: var(--bg-muted); text-align: center; }
++.sales-document-quantities > div { min-width: 0; }
++@media (max-width: 600px) {
++  .sales-document-toolbar__search { max-width: none; flex-basis: 100%; }
++}
+ 
+ .cd-filters {
+   display: flex;
+--- before/frontend/src/styles/pages/shipping-loading.css
++++ after/frontend/src/styles/pages/shipping-loading.css
+@@ -1,36 +1,36 @@
+-.shipping-loading { max-width: 1200px; margin: auto; padding: 24px 16px; color: var(--color-text, #172b4d); }
++.shipping-loading { width: 100%; min-width: 0; margin: 0; padding: 0; color: var(--text); }
+ .shipping-loading button:not(.MuiButtonBase-root), .shipping-loading input:not(.MuiInputBase-input), .shipping-loading select {
+-  font: inherit; min-height: 52px; padding: 12px 16px; border: 1px solid var(--color-border, #cbd5e1);
+-  border-radius: 10px; color: inherit; background: var(--color-surface, white); box-sizing: border-box;
++  font: inherit; min-height: 52px; padding: 12px 16px; border: 1px solid var(--border);
++  border-radius: var(--radius-md); color: inherit; background: var(--bg-elevated); box-sizing: border-box;
+ }
+ .shipping-loading button:not(.MuiButtonBase-root) { cursor: pointer; font-weight: 700; }
+ .shipping-loading button:not(.MuiButtonBase-root):disabled { opacity: .55; cursor: default; }
+-.shipping-loading :focus-visible { outline: 3px solid var(--color-primary, #1264ad); outline-offset: 3px; }
++.shipping-loading :focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+ .shipping-loading label:not(.MuiFormLabel-root) { display: grid; gap: 8px; min-width: 0; }
+ .shipping-loading input:not(.MuiInputBase-input), .shipping-loading select { width: 100%; min-width: 0; }
+-.shipping-loading .shipping-primary { background: var(--color-primary, #1264ad); color: white; }
+-.shipping-cards, .shipping-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
++.shipping-loading .shipping-primary { background: var(--primary); color: white; }
++.shipping-cards, .shipping-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+ .shipping-cards { margin: 24px 0; }
+ .shipping-loading .shipping-card { display: grid; gap: 12px; text-align: start; padding: 24px; }
+ .shipping-card h2 { margin: 4px 0; }
+-.shipping-status { width: fit-content; padding: 6px 12px; border-radius: 8px; background: #fff4d6; color: #805400; font-size: .9rem; }
+-.shipping-status--READY, .shipping-status--WEIGHED, .shipping-status--DELIVERY_CREATED { background: #dcfce7; color: #166534; }
+-.shipping-ticket, .shipping-pallet { margin: 20px 0; padding: 20px; border: 1px solid var(--color-border, #cbd5e1); border-radius: 14px; background: var(--color-surface, white); overflow-wrap: anywhere; }
++.shipping-status { width: fit-content; padding: 6px 12px; border-radius: 8px; background: var(--bg-warning-soft); color: var(--warning); font-size: .9rem; }
++.shipping-status--READY, .shipping-status--WEIGHED, .shipping-status--DELIVERY_CREATED { background: var(--bg-success-soft); color: var(--success); }
++.shipping-ticket, .shipping-pallet { margin: 20px 0; padding: 20px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-elevated); overflow-wrap: anywhere; }
+ .shipping-pallet > strong { display: block; margin-bottom: 16px; }
+ .shipping-pallet > button { margin-top: 16px; }
+ .shipping-actions, .shipping-scan { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin: 16px 0; }
+ .shipping-actions > label, .shipping-scan > label { flex: 1; }
+-.shipping-actions--sticky { position: sticky; bottom: 0; padding: 16px; background: var(--color-surface, white); box-shadow: 0 -4px 12px #0001; border-radius: 12px; }
+-.shipping-error, .shipping-success { padding: 16px; margin: 12px 0; border-radius: 10px; line-height: 1.6; }
+-.shipping-error { background: #fee2e2; color: #991b1b; }
+-.shipping-success { background: #dcfce7; color: #166534; }
++.shipping-actions--sticky { position: sticky; bottom: 0; padding: 16px; background: var(--bg-elevated); box-shadow: var(--shadow-sm); border-radius: var(--radius-lg); }
++.shipping-error, .shipping-success { padding: 16px; margin: 12px 0; border-radius: var(--radius-md); line-height: 1.6; }
++.shipping-error { background: var(--bg-danger-soft); color: var(--danger); }
++.shipping-success { background: var(--bg-success-soft); color: var(--success); }
+ .shipping-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; list-style: none; padding: 0; margin: 24px 0; }
+-.shipping-steps li { display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 12px; background: var(--color-surface, white); border: 1px solid var(--color-border, #cbd5e1); }
+-.shipping-steps li.shipping-step--active { border-color: var(--color-primary, #1264ad); font-weight: 700; }
+-.shipping-steps li > span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: #e6efff; color: #1264ad; flex-shrink: 0; }
+-.shipping-section { margin: 24px 0; padding: 20px; border: 1px solid var(--color-border, #cbd5e1); border-radius: 14px; background: var(--color-surface, white); }
+-.shipping-order-line { display: grid; gap: 8px; padding: 16px; background: var(--color-surface, white); border: 1px solid var(--color-border, #cbd5e1); border-radius: 10px; }
+-.shipping-empty { padding: 20px; background: #f1f5f9; border-radius: 10px; color: #334155; }
++.shipping-steps li { display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: var(--radius-lg); background: var(--bg-elevated); border: 1px solid var(--border); }
++.shipping-steps li.shipping-step--active { border-color: var(--primary); font-weight: 700; }
++.shipping-steps li > span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--bg-primary-soft); color: var(--primary); flex-shrink: 0; }
++.shipping-section { margin: 24px 0; padding: 20px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-elevated); }
++.shipping-order-line { display: grid; gap: 8px; padding: 16px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-md); }
++.shipping-empty { padding: 20px; background: var(--bg-soft); border-radius: var(--radius-md); color: var(--text-muted); }
+ .shipping-loading .card-panel { padding: 24px; }
+ .shipping-element-row { display: grid; grid-template-columns: minmax(200px, 1fr) 150px 190px; align-items: end; gap: 16px; padding: 14px; margin: 12px 0; border: 1px solid var(--border, #d5e2f0); border-radius: var(--radius-md, 8px); background: var(--bg-soft, #edf3f8); }
+ .shipping-element-total { display: grid; gap: 6px; text-align: center; padding: 12px; border: 1px solid var(--border, #d5e2f0); border-radius: 8px; background: var(--bg-elevated, white); }
+@@ -43,5 +43,5 @@
+ @media(max-width: 600px) {
+   .shipping-cards, .shipping-fields { grid-template-columns: 1fr; }
+   .shipping-actions > button, .shipping-scan > button, .shipping-scan > label { width: 100%; flex-basis: 100%; }
+-  .shipping-loading { padding: 16px 10px; }
++  .shipping-loading { padding: 0; }
+ }

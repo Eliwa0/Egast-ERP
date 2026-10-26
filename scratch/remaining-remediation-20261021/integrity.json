@@ -1,0 +1,8 @@
+{
+  "snapshot_sha256": "6fd5b4174d4cec8d504b927c3b31404436ae3e78d1ce294a65dab0a554420e9a",
+  "frozen_drift": [],
+  "workspace_drift": [],
+  "task_source_changes": [],
+  "protected_sources_reviewed": false,
+  "live_sap_connections": 0
+}

@@ -1,0 +1,83 @@
+{
+  "status": "required-before-contract-change",
+  "known_entry_points_from_allowed_imports_only": [
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 76,
+      "specifier": "./modules/scale/pages/ScaleLandingPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 77,
+      "specifier": "./modules/scale/pages/ScaleReceiptPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 78,
+      "specifier": "./modules/scale/pages/ScaleWeighingPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 79,
+      "specifier": "./modules/scale/pages/ScaleDraftsPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 80,
+      "specifier": "./modules/scale/pages/ScaleDraftDetailPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 81,
+      "specifier": "./modules/scale/pages/ScaleDevicesPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 82,
+      "specifier": "./modules/scale/pages/ScaleItemElementsPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 83,
+      "specifier": "./modules/scale/pages/ScaleEntryExitPermitsPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 84,
+      "specifier": "./modules/scale/pages/ScaleEntryPermitPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    },
+    {
+      "importer": "frontend/src/App.jsx",
+      "line": 85,
+      "specifier": "./modules/scale/pages/ScaleExitPermitPage",
+      "reason": "Reference observed in allowed source only; destination not opened or traversed."
+    }
+  ],
+  "coverage_required": "All protected sources and tests that directly or transitively import/reexport the three target modules, including dynamic/computed imports and import aliases. Entry list is a lower bound, not a complete protected file inventory.",
+  "requested_record_fields": [
+    "consumer resolved path",
+    "consumer revision/hash supplied by project owner",
+    "import source and resolved path",
+    "imported names including namespace/default",
+    "reexport chains",
+    "dynamic import members",
+    "provider/hook uses",
+    "analysis tool and version",
+    "unresolved edges and explicit no-consumer results"
+  ],
+  "target_modules": [
+    "frontend/src/contexts/AuthContext.jsx",
+    "frontend/src/contexts/I18nContext.jsx",
+    "frontend/src/components/ui/ToastProvider.jsx"
+  ],
+  "protected_files_read": false
+}

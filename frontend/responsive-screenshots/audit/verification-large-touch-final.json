@@ -1,0 +1,1286 @@
+{
+  "completed": true,
+  "results": [
+    {
+      "state": "device-ip",
+      "route": "/scale/devices",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1920,
+        "scroll": 1920,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Scale Devices & Indicators",
+            "size": "36px"
+          }
+        ],
+        "fields": [
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 684,
+            "y": 136.1875,
+            "width": 537
+          },
+          {
+            "placeholder": "e.g. Main Inbound Weighbridge",
+            "font": "16px",
+            "x": 684,
+            "y": 235.09375,
+            "width": 537
+          },
+          {
+            "placeholder": "e.g. 192.168.1.150",
+            "font": "16px",
+            "x": 684,
+            "y": 402.09375,
+            "width": 347.328125
+          },
+          {
+            "placeholder": "8000",
+            "font": "16px",
+            "x": 1047.328125,
+            "y": 402.09375,
+            "width": 173.671875
+          },
+          {
+            "placeholder": "e.g. Inbound Gate Weighbridge 1",
+            "font": "16px",
+            "x": 684,
+            "y": 478.09375,
+            "width": 537
+          },
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 655,
+            "y": 554.09375,
+            "width": 38
+          }
+        ]
+      },
+      "screenshot": "verification-focus-en-light-1920-device-ip.png"
+    },
+    {
+      "state": "device-port",
+      "route": "/scale/devices",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1920,
+        "scroll": 1920,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Scale Devices & Indicators",
+            "size": "36px"
+          }
+        ],
+        "fields": [
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 684,
+            "y": 136.1875,
+            "width": 537
+          },
+          {
+            "placeholder": "e.g. Main Inbound Weighbridge",
+            "font": "16px",
+            "x": 684,
+            "y": 235.09375,
+            "width": 537
+          },
+          {
+            "placeholder": "e.g. 192.168.1.150",
+            "font": "16px",
+            "x": 684,
+            "y": 402.09375,
+            "width": 347.328125
+          },
+          {
+            "placeholder": "8000",
+            "font": "16px",
+            "x": 1047.328125,
+            "y": 402.09375,
+            "width": 173.671875
+          },
+          {
+            "placeholder": "e.g. Inbound Gate Weighbridge 1",
+            "font": "16px",
+            "x": 684,
+            "y": 478.09375,
+            "width": 537
+          },
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 655,
+            "y": 554.09375,
+            "width": 38
+          }
+        ]
+      },
+      "screenshot": "verification-focus-en-light-1920-device-port.png"
+    },
+    {
+      "state": "scale-draft-cards",
+      "route": "/scale/drafts",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Weighing Drafts & History",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-1920-scale-draft-cards.png"
+    },
+    {
+      "state": "sales-orders",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Sales Orders",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-1920-sales-orders.png"
+    },
+    {
+      "state": "sales-review-menu",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Sales Orders",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-1920-sales-review-menu.png"
+    },
+    {
+      "state": "sales-order-print",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "paper": {
+        "pages": 1,
+        "widthPt": 841.9199829101562,
+        "heightPt": 594.9599609375
+      },
+      "screenshot": "verification-sales-print-en-light-1920.png"
+    },
+    {
+      "state": "deliveries",
+      "route": "/customization-delivery/deliveries",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Delivery",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-1920-deliveries.png"
+    },
+    {
+      "state": "shipping-truck",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Shipping / Container loading",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-1920-shipping-truck.png"
+    },
+    {
+      "state": "shipping-scan",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Shipping / Container loading",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-1920-shipping-scan.png"
+    },
+    {
+      "state": "shipping-packaging",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Shipping / Container loading",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-1920-shipping-packaging.png"
+    },
+    {
+      "state": "shipping-review-no-save",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Shipping / Container loading",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-light-1920-shipping-review-no-save.png"
+    },
+    {
+      "state": "device-ip",
+      "route": "/scale/devices",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1920,
+        "scroll": 1920,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "أجهزة ومؤشرات الميزان",
+            "size": "36px"
+          }
+        ],
+        "fields": [
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 699,
+            "y": 136.1875,
+            "width": 537
+          },
+          {
+            "placeholder": "e.g. Main Inbound Weighbridge",
+            "font": "16px",
+            "x": 699,
+            "y": 235.09375,
+            "width": 537
+          },
+          {
+            "placeholder": "e.g. 192.168.1.150",
+            "font": "16px",
+            "x": 888.671875,
+            "y": 402.09375,
+            "width": 347.328125
+          },
+          {
+            "placeholder": "8000",
+            "font": "16px",
+            "x": 699,
+            "y": 402.09375,
+            "width": 173.671875
+          },
+          {
+            "placeholder": "e.g. Inbound Gate Weighbridge 1",
+            "font": "16px",
+            "x": 699,
+            "y": 478.09375,
+            "width": 537
+          },
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 1144,
+            "y": 554.09375,
+            "width": 38
+          }
+        ]
+      },
+      "screenshot": "verification-focus-ar-light-1920-device-ip.png"
+    },
+    {
+      "state": "device-port",
+      "route": "/scale/devices",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1920,
+        "scroll": 1920,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "أجهزة ومؤشرات الميزان",
+            "size": "36px"
+          }
+        ],
+        "fields": [
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 699,
+            "y": 136.1875,
+            "width": 537
+          },
+          {
+            "placeholder": "e.g. Main Inbound Weighbridge",
+            "font": "16px",
+            "x": 699,
+            "y": 235.09375,
+            "width": 537
+          },
+          {
+            "placeholder": "e.g. 192.168.1.150",
+            "font": "16px",
+            "x": 888.671875,
+            "y": 402.09375,
+            "width": 347.328125
+          },
+          {
+            "placeholder": "8000",
+            "font": "16px",
+            "x": 699,
+            "y": 402.09375,
+            "width": 173.671875
+          },
+          {
+            "placeholder": "e.g. Inbound Gate Weighbridge 1",
+            "font": "16px",
+            "x": 699,
+            "y": 478.09375,
+            "width": 537
+          },
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 1144,
+            "y": 554.09375,
+            "width": 38
+          }
+        ]
+      },
+      "screenshot": "verification-focus-ar-light-1920-device-port.png"
+    },
+    {
+      "state": "scale-draft-cards",
+      "route": "/scale/drafts",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "مسودات وتذاكر الميزان",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-light-1920-scale-draft-cards.png"
+    },
+    {
+      "state": "sales-orders",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "أوامر البيع",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-light-1920-sales-orders.png"
+    },
+    {
+      "state": "sales-review-menu",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "أوامر البيع",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-light-1920-sales-review-menu.png"
+    },
+    {
+      "state": "sales-order-print",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "paper": {
+        "pages": 1,
+        "widthPt": 841.9199829101562,
+        "heightPt": 594.9599609375
+      },
+      "screenshot": "verification-sales-print-ar-light-1920.png"
+    },
+    {
+      "state": "deliveries",
+      "route": "/customization-delivery/deliveries",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "التسليم",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-light-1920-deliveries.png"
+    },
+    {
+      "state": "shipping-truck",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "الشحن / تحميل الحاويات",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-light-1920-shipping-truck.png"
+    },
+    {
+      "state": "shipping-scan",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "الشحن / تحميل الحاويات",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-light-1920-shipping-scan.png"
+    },
+    {
+      "state": "shipping-packaging",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "الشحن / تحميل الحاويات",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-light-1920-shipping-packaging.png"
+    },
+    {
+      "state": "shipping-review-no-save",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "light",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "light",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "الشحن / تحميل الحاويات",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-light-1920-shipping-review-no-save.png"
+    },
+    {
+      "state": "device-ip",
+      "route": "/scale/devices",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1920,
+        "scroll": 1920,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Scale Devices & Indicators",
+            "size": "36px"
+          }
+        ],
+        "fields": [
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 685,
+            "y": 137.1875,
+            "width": 535
+          },
+          {
+            "placeholder": "e.g. Main Inbound Weighbridge",
+            "font": "16px",
+            "x": 685,
+            "y": 236.09375,
+            "width": 535
+          },
+          {
+            "placeholder": "e.g. 192.168.1.150",
+            "font": "16px",
+            "x": 685,
+            "y": 403.09375,
+            "width": 346
+          },
+          {
+            "placeholder": "8000",
+            "font": "16px",
+            "x": 1047,
+            "y": 403.09375,
+            "width": 173
+          },
+          {
+            "placeholder": "e.g. Inbound Gate Weighbridge 1",
+            "font": "16px",
+            "x": 685,
+            "y": 479.09375,
+            "width": 535
+          },
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 656,
+            "y": 555.09375,
+            "width": 38
+          }
+        ]
+      },
+      "screenshot": "verification-focus-en-dark-1920-device-ip.png"
+    },
+    {
+      "state": "device-port",
+      "route": "/scale/devices",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1920,
+        "scroll": 1920,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Scale Devices & Indicators",
+            "size": "36px"
+          }
+        ],
+        "fields": [
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 685,
+            "y": 137.1875,
+            "width": 535
+          },
+          {
+            "placeholder": "e.g. Main Inbound Weighbridge",
+            "font": "16px",
+            "x": 685,
+            "y": 236.09375,
+            "width": 535
+          },
+          {
+            "placeholder": "e.g. 192.168.1.150",
+            "font": "16px",
+            "x": 685,
+            "y": 403.09375,
+            "width": 346
+          },
+          {
+            "placeholder": "8000",
+            "font": "16px",
+            "x": 1047,
+            "y": 403.09375,
+            "width": 173
+          },
+          {
+            "placeholder": "e.g. Inbound Gate Weighbridge 1",
+            "font": "16px",
+            "x": 685,
+            "y": 479.09375,
+            "width": 535
+          },
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 656,
+            "y": 555.09375,
+            "width": 38
+          }
+        ]
+      },
+      "screenshot": "verification-focus-en-dark-1920-device-port.png"
+    },
+    {
+      "state": "scale-draft-cards",
+      "route": "/scale/drafts",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Weighing Drafts & History",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-dark-1920-scale-draft-cards.png"
+    },
+    {
+      "state": "sales-orders",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Sales Orders",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-dark-1920-sales-orders.png"
+    },
+    {
+      "state": "sales-review-menu",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Sales Orders",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-dark-1920-sales-review-menu.png"
+    },
+    {
+      "state": "sales-order-print",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "paper": {
+        "pages": 1,
+        "widthPt": 841.9199829101562,
+        "heightPt": 594.9599609375
+      },
+      "screenshot": "verification-sales-print-en-dark-1920.png"
+    },
+    {
+      "state": "deliveries",
+      "route": "/customization-delivery/deliveries",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Delivery",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-dark-1920-deliveries.png"
+    },
+    {
+      "state": "shipping-truck",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Shipping / Container loading",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-dark-1920-shipping-truck.png"
+    },
+    {
+      "state": "shipping-scan",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Shipping / Container loading",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-dark-1920-shipping-scan.png"
+    },
+    {
+      "state": "shipping-packaging",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Shipping / Container loading",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-dark-1920-shipping-packaging.png"
+    },
+    {
+      "state": "shipping-review-no-save",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "en",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "en",
+        "h1": [
+          {
+            "text": "Shipping / Container loading",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-en-dark-1920-shipping-review-no-save.png"
+    },
+    {
+      "state": "device-ip",
+      "route": "/scale/devices",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1920,
+        "scroll": 1920,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "أجهزة ومؤشرات الميزان",
+            "size": "36px"
+          }
+        ],
+        "fields": [
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 700,
+            "y": 137.1875,
+            "width": 535
+          },
+          {
+            "placeholder": "e.g. Main Inbound Weighbridge",
+            "font": "16px",
+            "x": 700,
+            "y": 236.09375,
+            "width": 535
+          },
+          {
+            "placeholder": "e.g. 192.168.1.150",
+            "font": "16px",
+            "x": 889,
+            "y": 403.09375,
+            "width": 346
+          },
+          {
+            "placeholder": "8000",
+            "font": "16px",
+            "x": 700,
+            "y": 403.09375,
+            "width": 173
+          },
+          {
+            "placeholder": "e.g. Inbound Gate Weighbridge 1",
+            "font": "16px",
+            "x": 700,
+            "y": 479.09375,
+            "width": 535
+          },
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 1143,
+            "y": 555.09375,
+            "width": 38
+          }
+        ]
+      },
+      "screenshot": "verification-focus-ar-dark-1920-device-ip.png"
+    },
+    {
+      "state": "device-port",
+      "route": "/scale/devices",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1920,
+        "scroll": 1920,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "أجهزة ومؤشرات الميزان",
+            "size": "36px"
+          }
+        ],
+        "fields": [
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 700,
+            "y": 137.1875,
+            "width": 535
+          },
+          {
+            "placeholder": "e.g. Main Inbound Weighbridge",
+            "font": "16px",
+            "x": 700,
+            "y": 236.09375,
+            "width": 535
+          },
+          {
+            "placeholder": "e.g. 192.168.1.150",
+            "font": "16px",
+            "x": 889,
+            "y": 403.09375,
+            "width": 346
+          },
+          {
+            "placeholder": "8000",
+            "font": "16px",
+            "x": 700,
+            "y": 403.09375,
+            "width": 173
+          },
+          {
+            "placeholder": "e.g. Inbound Gate Weighbridge 1",
+            "font": "16px",
+            "x": 700,
+            "y": 479.09375,
+            "width": 535
+          },
+          {
+            "placeholder": "",
+            "font": "16px",
+            "x": 1143,
+            "y": 555.09375,
+            "width": 38
+          }
+        ]
+      },
+      "screenshot": "verification-focus-ar-dark-1920-device-port.png"
+    },
+    {
+      "state": "scale-draft-cards",
+      "route": "/scale/drafts",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "مسودات وتذاكر الميزان",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-dark-1920-scale-draft-cards.png"
+    },
+    {
+      "state": "sales-orders",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "أوامر البيع",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-dark-1920-sales-orders.png"
+    },
+    {
+      "state": "sales-review-menu",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "أوامر البيع",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-dark-1920-sales-review-menu.png"
+    },
+    {
+      "state": "sales-order-print",
+      "route": "/customization-delivery/orders",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "paper": {
+        "pages": 1,
+        "widthPt": 841.9199829101562,
+        "heightPt": 594.9599609375
+      },
+      "screenshot": "verification-sales-print-ar-dark-1920.png"
+    },
+    {
+      "state": "deliveries",
+      "route": "/customization-delivery/deliveries",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "التسليم",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-dark-1920-deliveries.png"
+    },
+    {
+      "state": "shipping-truck",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "الشحن / تحميل الحاويات",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-dark-1920-shipping-truck.png"
+    },
+    {
+      "state": "shipping-scan",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "الشحن / تحميل الحاويات",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-dark-1920-shipping-scan.png"
+    },
+    {
+      "state": "shipping-packaging",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "الشحن / تحميل الحاويات",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-dark-1920-shipping-packaging.png"
+    },
+    {
+      "state": "shipping-review-no-save",
+      "route": "/shipping-loading",
+      "width": 1920,
+      "height": 560,
+      "lang": "ar",
+      "theme": "dark",
+      "metrics": {
+        "width": 1905,
+        "scroll": 1905,
+        "theme": "dark",
+        "lang": "ar",
+        "h1": [
+          {
+            "text": "الشحن / تحميل الحاويات",
+            "size": "36px"
+          }
+        ],
+        "fields": []
+      },
+      "screenshot": "verification-focus-ar-dark-1920-shipping-review-no-save.png"
+    }
+  ],
+  "failures": []
+}

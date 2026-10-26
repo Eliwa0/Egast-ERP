@@ -1,0 +1,23 @@
+[
+  {
+    "file": "frontend\\src\\components\\ui\\ToastProvider.jsx",
+    "line": 78,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "severity": 2
+  },
+  {
+    "file": "frontend\\src\\contexts\\AuthContext.jsx",
+    "line": 70,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "severity": 2
+  },
+  {
+    "file": "frontend\\src\\contexts\\I18nContext.jsx",
+    "line": 47,
+    "rule": "react-refresh/only-export-components",
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "severity": 2
+  }
+]

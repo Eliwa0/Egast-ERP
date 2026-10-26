@@ -1,0 +1,124 @@
+{
+  "environment": "isolated fixtures; not live SAP or UI latency",
+  "comparison": "Existing legacy/current code paths in this snapshot, NOT a new implementation before/after",
+  "p95_method": "nearest rank, 30 samples",
+  "unexpected_http": 0,
+  "rows": [
+    {
+      "workflow": "item_tracking",
+      "mode": "legacy",
+      "samples": 30,
+      "records": 10,
+      "transport_delay_ms": 2,
+      "simulated_page_size": 5,
+      "request_counts": [
+        20
+      ],
+      "measured_wrapper_wall": {
+        "mean_ms": 50.197,
+        "median_ms": 50.054,
+        "p95_ms": 52.135
+      },
+      "django_middleware_wall": {
+        "mean_ms": 49.726,
+        "median_ms": 49.675,
+        "p95_ms": 51.54
+      },
+      "fixture_sap_spans": {
+        "mean_ms": 48.71,
+        "median_ms": 48.675,
+        "p95_ms": 50.3
+      },
+      "errors": 0,
+      "timeouts": 0,
+      "equivalent_fixture_output": true
+    },
+    {
+      "workflow": "item_tracking",
+      "mode": "current",
+      "samples": 30,
+      "records": 10,
+      "transport_delay_ms": 2,
+      "simulated_page_size": 5,
+      "request_counts": [
+        2
+      ],
+      "measured_wrapper_wall": {
+        "mean_ms": 5.396,
+        "median_ms": 5.302,
+        "p95_ms": 5.856
+      },
+      "django_middleware_wall": {
+        "mean_ms": 5.164,
+        "median_ms": 5.03,
+        "p95_ms": 5.56
+      },
+      "fixture_sap_spans": {
+        "mean_ms": 4.557,
+        "median_ms": 4.48,
+        "p95_ms": 4.9
+      },
+      "errors": 0,
+      "timeouts": 0,
+      "equivalent_fixture_output": true
+    },
+    {
+      "workflow": "order_candidates",
+      "mode": "legacy",
+      "samples": 30,
+      "records": 10,
+      "transport_delay_ms": 2,
+      "simulated_page_size": 5,
+      "request_counts": [
+        10
+      ],
+      "measured_wrapper_wall": {
+        "mean_ms": 25.344,
+        "median_ms": 25.417,
+        "p95_ms": 25.87
+      },
+      "django_middleware_wall": {
+        "mean_ms": 24.951,
+        "median_ms": 24.97,
+        "p95_ms": 25.36
+      },
+      "fixture_sap_spans": {
+        "mean_ms": 24.426,
+        "median_ms": 24.435,
+        "p95_ms": 24.92
+      },
+      "errors": 0,
+      "timeouts": 0,
+      "equivalent_fixture_output": true
+    },
+    {
+      "workflow": "order_candidates",
+      "mode": "current",
+      "samples": 30,
+      "records": 10,
+      "transport_delay_ms": 2,
+      "simulated_page_size": 5,
+      "request_counts": [
+        2
+      ],
+      "measured_wrapper_wall": {
+        "mean_ms": 5.475,
+        "median_ms": 5.476,
+        "p95_ms": 6.218
+      },
+      "django_middleware_wall": {
+        "mean_ms": 5.215,
+        "median_ms": 5.22,
+        "p95_ms": 5.97
+      },
+      "fixture_sap_spans": {
+        "mean_ms": 4.676,
+        "median_ms": 4.705,
+        "p95_ms": 5.0
+      },
+      "errors": 0,
+      "timeouts": 0,
+      "equivalent_fixture_output": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "command": [
+      "node",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\context-tls-followup\\context-alternatives.mjs"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production",
+    "exit_code": 0,
+    "seconds": 10.807
+  },
+  {
+    "command": [
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\.venv\\Scripts\\python.exe",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\context-tls-followup\\tls-offline.py"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production",
+    "exit_code": 0,
+    "seconds": 0.822
+  },
+  {
+    "command": [
+      "node",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\frontend\\node_modules\\eslint\\bin\\eslint.js",
+      "src/contexts/AuthContext.jsx",
+      "src/contexts/I18nContext.jsx",
+      "src/components/ui/ToastProvider.jsx"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\frontend",
+    "exit_code": 1,
+    "seconds": 2.893
+  }
+]

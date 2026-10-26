@@ -1,0 +1,130 @@
+--- stability-start/frontend/src/App.jsx
++++ current/frontend/src/App.jsx
+@@ -1,4 +1,5 @@
+ import React, { lazy, Suspense, useEffect, useState } from 'react';
++import ErrorBoundary from './components/common/ErrorBoundary';
+ import { BrowserRouter as Router, Routes, Route, Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+ import { Menu, X } from 'lucide-react';
+ import meemLogo from './assets/logos/meem-logo.png';
+@@ -666,8 +667,9 @@
+ 
+       <main className="app-content">
+         <PageTransition>
+-          <Suspense fallback={<Loading label={t('common.loading')} />}>
+-          <Routes>
++          <ErrorBoundary>
++            <Suspense fallback={<Loading label={t('common.loading')} />}>
++            <Routes>
+             <Route path="/login" element={<LoginPage />} />
+             <Route path="/" element={<RequireAuth><Home /></RequireAuth>} />
+ 
+@@ -761,7 +763,8 @@
+             <Route path="/scale/entry-exit-permits/entry" element={<RequireAuth allow={canAccessScale}><ScaleEntryPermitPage /></RequireAuth>} />
+             <Route path="/scale/entry-exit-permits/exit" element={<RequireAuth allow={canAccessScale}><ScaleExitPermitPage /></RequireAuth>} />
+           </Routes>
+-          </Suspense>
++            </Suspense>
++          </ErrorBoundary>
+         </PageTransition>
+       </main>
+ 
+--- stability-start/frontend/src/contexts/I18nContext.jsx
++++ current/frontend/src/contexts/I18nContext.jsx
+@@ -25,6 +25,7 @@
+ 
+   // t('wizard.step1')  or  t('common.save')
+   const t = useCallback((path, ...args) => {
++    if (!path || typeof path !== 'string') return '';
+     const keys = path.split('.');
+     let node = translations[lang];
+     for (const k of keys) {
+--- stability-start/frontend/src/modules/transfer/components/ColdStorageMap.jsx
++++ current/frontend/src/modules/transfer/components/ColdStorageMap.jsx
+@@ -400,7 +400,7 @@
+       } else {
+         setFeedback({
+           type: 'success',
+-          text: `✅ السعة كافية: سيتم التسكين بالترتيب المتتابع داخل: ${data.planned_allocations.map((p) => p.position_code).join(', ')}.`,
++          text: `✅ السعة كافية: سيتم التسكين بالترتيب المتتابع داخل: ${Array.isArray(data?.planned_allocations) ? data.planned_allocations.map((p) => p.position_code).join(', ') : ''}.`,
+         });
+       }
+     } catch (err) {
+@@ -427,7 +427,7 @@
+       });
+       setFeedback({
+         type: 'success',
+-        text: `✅ تم تسكين ${res.allocated_count} بالته بالترتيب المتتابع بنجاح.`,
++        text: `✅ تم تسكين ${res?.allocated_count ?? count} بالته بالترتيب المتتابع بنجاح.`,
+       });
+       setSeqPreviewData(null);
+       await loadLayout(true);
+@@ -502,11 +502,12 @@
+       .filter((pos) => pos.status === 'AVAILABLE')
+       .map((pos) => ({ bin, pos })));
+     const matches = available.filter(({ bin, pos }) => !query ||
+-      bin.bin_code.toUpperCase().includes(query) || pos.position_code.toUpperCase().includes(query));
++      String(bin?.bin_code || '').toUpperCase().includes(query) ||
++      String(pos?.position_code || '').toUpperCase().includes(query));
+     const scanLocation = (event) => {
+       event.preventDefault();
+       if (!query || loading) return;
+-      const exact = available.filter(({ pos }) => pos.position_code.toUpperCase() === query);
++      const exact = available.filter(({ pos }) => String(pos?.position_code || '').toUpperCase() === query);
+       if (exact.length === 1) {
+         const { bin, pos } = exact[0];
+         handleSelectPosition(pos, bin, bin.path);
+@@ -514,7 +515,7 @@
+         setShowLocations(false);
+         return;
+       }
+-      const bin = bins.find((entry) => entry.bin_code.toUpperCase() === query);
++      const bin = bins.find((entry) => String(entry?.bin_code || '').toUpperCase() === query);
+       const positions = bin?.positions?.filter((pos) => pos.status === 'AVAILABLE') || [];
+       if (positions.length === 1) {
+         handleSelectPosition(positions[0], bin, bin.path);
+@@ -539,7 +540,7 @@
+         </form>
+         {loading && <p role="status">{t('transfer.loadingLayout')}</p>}
+         {error && <p role="alert">{error}</p>}
+-        {feedback && <p role="alert">{feedback.text}</p>}
++        {feedback && <p role="alert">{typeof feedback.text === 'string' ? feedback.text : JSON.stringify(feedback.text)}</p>}
+         {selectedBinCode && <div className="cs-map__quick-selected" role="status">
+           <span>{ar ? 'المكان المختار' : 'Selected location'}</span>
+           <strong dir="ltr">{selectedPosition?.position_code || selectedBinCode}</strong>
+@@ -740,7 +741,7 @@
+       {/* ── Error State ────────────────────────────────────────────────── */}
+       {!loading && error && (
+         <div className="cs-map__status-box">
+-          <p className="cs-map__error-text">⚠️ {error}</p>
++          <p className="cs-map__error-text">⚠️ {typeof error === 'string' ? error : JSON.stringify(error)}</p>
+           <button
+             type="button"
+             className="cs-map__btn cs-map__btn--primary"
+@@ -1249,7 +1250,7 @@
+                           ? (t(`transfer.${allocType === 'STAGING_ONLY' ? 'stagingOnly' : allocType === 'NON_ALLOCATABLE' ? 'nonAllocatable' : 'unconfigured'}`) || allocType)
+                           : isReservedOutbound
+                           ? (t('transfer.statusReservedOutbound') || 'Reserved Outbound')
+-                          : (t(`transfer.status${pos.status.charAt(0) + pos.status.slice(1).toLowerCase()}`) || pos.status)}
++                          : (pos?.status ? (t(`transfer.status${pos.status.charAt(0) + pos.status.slice(1).toLowerCase()}`) || pos.status) : '')}
+                       </span>
+                       {showsBatchDetails && batchNumber && (
+                         <span className="cs-map__pos-batch-meta">
+@@ -1285,7 +1286,7 @@
+                     <span className="cs-map__pos-meta-badge">
+                       {selectedPosition.status === 'RESERVED_OUTBOUND'
+                         ? (t('transfer.statusReservedOutbound') || 'Reserved Outbound')
+-                        : (t(`transfer.status${selectedPosition.status.charAt(0) + selectedPosition.status.slice(1).toLowerCase()}`) || selectedPosition.status)}
++                        : (selectedPosition?.status ? (t(`transfer.status${selectedPosition.status.charAt(0) + selectedPosition.status.slice(1).toLowerCase()}`) || selectedPosition.status) : '')}
+                     </span>
+                   </div>
+                   <div className="cs-map__pos-meta-grid">
+--- stability-start/frontend/src/modules/transfer/pages/TransferPage.jsx
++++ current/frontend/src/modules/transfer/pages/TransferPage.jsx
+@@ -1,6 +1,7 @@
+ import { binSearch } from '../../../services/masterDataSearch';
+ import React, { useCallback, useEffect, useRef, useState } from 'react';
+ import { useNavigate } from 'react-router-dom';
++import { MapPin } from 'lucide-react';
+ import { useAuth } from '../../../contexts/AuthContext';
+ import { useI18n } from '../../../contexts/I18nContext';
+ import SearchableSelect from '../../../components/ui/SearchableSelect';

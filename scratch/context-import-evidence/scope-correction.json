@@ -1,0 +1,12 @@
+{
+  "initial_read_excluded_mixed_scripts": [
+    "frontend/scripts/test-click-traceability.mjs",
+    "frontend/scripts/test-module-permissions.mjs",
+    "frontend/scripts/test-print-render.mjs",
+    "frontend/scripts/test-shipping-loading-wizard.mjs",
+    "frontend/scripts/test_modal.mjs"
+  ],
+  "executed": false,
+  "modified": false,
+  "final_scope_files": 175
+}

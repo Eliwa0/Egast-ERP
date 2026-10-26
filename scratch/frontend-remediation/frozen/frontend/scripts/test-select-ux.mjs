@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import React from 'react';
+import { optionsFromChildren, optionsFromProp } from '../src/components/ui/selectOptions.js';
+import { fetchOptionsPage, mergeOptionRows } from '../src/services/remoteOptions.js';
+import { clearSearchCache } from '../src/services/searchCache.js';
+
+const children = [React.createElement('option', { value: 142, disabled: true }, 'Bin One'), React.createElement('option', { value: 'USD' }, 'Dollar')];
+assert.deepEqual(optionsFromChildren(children).map(({ value, disabled }) => ({ value, disabled })), [{ value: '142', disabled: true }, { value: 'USD', disabled: false }]);
+assert.equal(optionsFromProp([{ value: 'A', label: React.createElement('span', {}, 'Visible name') }])[0].label, 'Visible name');
+clearSearchCache();
+const calls = [];
+const api = { get: async (endpoint, request) => {
+  calls.push({ endpoint, ...request.params });
+  return { data: { data: { warehouses: [{ code: `W${request.params.offset}` }], next_offset: request.params.offset === 0 ? 25 : null } } };
+} };
+const args = { endpoint: '/warehouses/', collection: 'warehouses', params: { policy_options: 'true' }, browse: true, query: '', scope: 'user:1/company:A' };
+const [a, b] = await Promise.all([fetchOptionsPage(api, args), fetchOptionsPage(api, args)]);
+assert.equal(a, b);
+assert.equal(calls.length, 1);
+assert.equal(calls[0].limit, 25);
+assert.equal(calls[0].initial, 1);
+assert.equal(calls[0].policy_options, 'true');
+assert.equal(a.nextOffset, 25);
+const second = await fetchOptionsPage(api, { ...args, offset: 25 });
+assert.equal(second.nextOffset, null);
+assert.equal(calls[1].offset, 25);
+await fetchOptionsPage(api, { ...args, scope: 'user:2/company:A' });
+assert.equal(calls.length, 3);
+await fetchOptionsPage(api, { ...args, params: { warehouse: 'parent-changed' } });
+assert.equal(calls.length, 4);
+assert.deepEqual(mergeOptionRows([{ code: 'A', name: 'Old' }], [{ code: 'A', name: 'New' }, { code: 'B' }]).map((row) => row.code), ['A', 'B']);
+await assert.rejects(fetchOptionsPage({ get: async () => ({ data: { warehouses: Array.from({ length: 26 }, () => ({})) } }) }, { ...args, scope: 'oversized' }));
+await assert.rejects(fetchOptionsPage({ get: async () => ({ data: { warehouses: [], next_offset: 0 } }) }, { ...args, scope: 'invalid-page' }));
+console.log('Select UX contracts passed: option values/labels, 25-row bound, pagination, cache dedup, user/parent isolation, merge and invalid responses.');

@@ -1,0 +1,70 @@
+{
+  "database": "postgresql",
+  "run": 12,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "unexpected_http": [],
+  "cases": [
+    {
+      "test": "api.tests_pending_transfer_posting_concurrency.PendingTransferPostingConcurrencyTests.test_bulk_post_skips_transfer_claimed_by_single_post",
+      "ms": 238.77,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_pending_transfer_posting_concurrency.PendingTransferPostingConcurrencyTests.test_concurrent_single_posts_call_sap_once",
+      "ms": 369.12,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_pending_transfer_posting_concurrency.PendingTransferPostingConcurrencyTests.test_different_transfers_can_reach_sap_concurrently",
+      "ms": 273.45,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_pending_transfer_posting_concurrency.PendingTransferPostingConcurrencyTests.test_posted_transfer_cannot_call_sap",
+      "ms": 87.44,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_pending_transfer_posting_concurrency.PendingTransferPostingConcurrencyTests.test_sap_failure_becomes_failed_and_retry_succeeds",
+      "ms": 149.04,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests.ScaleDraftNumberingConcurrencyTestCase.test_concurrent_drafts_for_same_item_get_unique_sequence_numbers",
+      "ms": 174.55,
+      "unexpected_http": 0
+    },
+    {
+      "test": "scale.tests.ScaleDraftNumberingConcurrencyTestCase.test_zero_package_count_validation",
+      "ms": 0.15,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferConcurrencyTests.test_concurrent_arrival",
+      "ms": 337.66,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_physical_transfer.PhysicalTransferConcurrencyTests.test_concurrent_two_container_loading",
+      "ms": 446.61,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_shipping_handoff.ShippingConcurrencyTests.test_concurrent_delivery_creation_returns_one_draft",
+      "ms": 795.57,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_shipping_handoff.ShippingConcurrencyTests.test_concurrent_submission_records_each_pallet_once",
+      "ms": 671.81,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_stage5_loading.Stage5LoadingConcurrencyTests.test_two_first_loads_have_one_winner_without_warehouse_permissions",
+      "ms": 394.5,
+      "unexpected_http": 0
+    }
+  ]
+}

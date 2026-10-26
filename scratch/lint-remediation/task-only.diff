@@ -1,0 +1,489 @@
+--- before/frontend/src/hooks/useCostCenterOptions.js
++++ after/frontend/src/hooks/useCostCenterOptions.js
+@@ -15,9 +15,8 @@
+   const latestRequest = useRef({});
+ 
+   const requestDimension = useCallback((dimension) => {
+-    const nonce = Date.now();
++    const nonce = Symbol('cost-center-request');
+     latestRequest.current[dimension] = nonce;
+-    setState((prev) => ({ ...prev, costCentersLoading: true }));
+ 
+     loadWithRetry(() => loadCostCenters(dimension))
+       .then((rows) => {
+@@ -50,6 +49,7 @@
+ 
+   const reloadCostCenter = useCallback(
+     (dimension) => {
++      setState((prev) => ({ ...prev, costCentersLoading: true }));
+       requestDimension(dimension);
+     },
+     [requestDimension],
+@@ -63,4 +63,4 @@
+     costCenterError2: state.costCenterError2,
+     reloadCostCenter,
+   };
+-}+}
+--- before/frontend/src/pages/IssueReviewPage.jsx
++++ after/frontend/src/pages/IssueReviewPage.jsx
+@@ -515,7 +515,7 @@
+     setIsActionProcessing(true);
+     setActionFeedback(null);
+     try {
+-      const res = await approvePostPendingIssue(activeIssue.id);
++      await approvePostPendingIssue(activeIssue.id);
+       setShowApproveModal(false);
+       setActionFeedback({
+         type: 'success',
+--- before/frontend/src/pages/IssueWizard.jsx
++++ after/frontend/src/pages/IssueWizard.jsx
+@@ -1,5 +1,5 @@
+ import SearchableSelect from '../components/ui/SearchableSelect';
+-import { binSearch } from '../services/masterDataSearch';
++import { } from '../services/masterDataSearch';
+ import React, { useState, useEffect, useMemo, useRef } from 'react';
+ import { useNavigate } from 'react-router-dom';
+ import {
+@@ -68,7 +68,7 @@
+   const [loadingAvailableBatches, setLoadingAvailableBatches] = useState({});
+   // Cache of warehouseCode -> bin list
+   const [warehouseBinsCache, setWarehouseBinsCache] = useState({});
+-  const [loadingBins, setLoadingBins] = useState(false);
++  const [, ] = useState(false);
+   // Batch lookup loading states
+   const [batchLookupLoading, setBatchLookupLoading] = useState({});
+ 
+@@ -1245,7 +1245,7 @@
+                         compAllocations.map((alloc, idx) => {
+                           const lookupKey = `${comp.lineNumber}-${idx}`;
+                           const isLookingUp = batchLookupLoading[lookupKey];
+-                          const selectedBatchDetails = (availableBatchesCache[comp.lineNumber] || []).find(
++                          (availableBatchesCache[comp.lineNumber] || []).find(
+                             (b) => (b.batch_number || b.dist_number) === alloc.batchNumber
+                           );
+ 
+--- before/frontend/src/pages/ProductionOrderRulesPage.jsx
++++ after/frontend/src/pages/ProductionOrderRulesPage.jsx
+@@ -500,7 +500,7 @@
+     } catch (err) {
+       setLookupError(err.response?.data?.error || err.message || 'Failed to load order.');
+     } finally { setLookingUp(false); }
+-  }, [fetchOptionsForOrder]);
++  }, [fetchOptionsForOrder, t]);
+ 
+   const handleLoadFromSidebar = useCallback(async (entry) => {
+     const order = {
+@@ -521,11 +521,7 @@
+     await fetchOptionsForOrder(order);
+   }, [fetchOptionsForOrder]);
+ 
+-  const toggleOrderVisibility = (key) => {
+-    setLocalVisibility((prev) =>
+-      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
+-    );
+-  };
++  
+ 
+   const handleSave = async () => {
+     if (!currentOrder) return;
+@@ -574,7 +570,7 @@
+   };
+ 
+   const configuredCount = RULE_FIELDS.filter((f) => (localRules[f.key] || []).length > 0).length;
+-  const hiddenCount = localVisibility.length;
++  localVisibility.length;
+ 
+   return (
+     <div className="rules-tab-layout">
+@@ -816,11 +812,7 @@
+     setSaveError('');
+   };
+ 
+-  const toggleUserVisibility = (key) => {
+-    setLocalVisibility((prev) =>
+-      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
+-    );
+-  };
++  
+ 
+   const handleSave = async () => {
+     if (!selectedUserId) return;
+@@ -863,7 +855,7 @@
+   };
+ 
+   const configuredCount = RULE_FIELDS.filter((f) => (localRules[f.key] || []).length > 0).length;
+-  const hiddenCount = localVisibility.length;
++  localVisibility.length;
+ 
+   return (
+     <div className="rules-tab-layout">
+@@ -1035,7 +1027,7 @@
+     } finally {
+       setLoadingOrders(false);
+     }
+-  }, []);
++  }, [t]);
+ 
+   const handleSelectWarehouse = (code) => {
+     setSelectedWhCode(code);
+@@ -1076,7 +1068,7 @@
+   const hiddenCount = Object.values(rules).filter(Boolean).length;
+   const selectedWh = warehouses.find((w) => w.code === selectedWhCode);
+ 
+-  const filteredWarehouses = warehouses.filter((w) => {
++  warehouses.filter((w) => {
+     if (!whSearch.trim()) return true;
+     const q = whSearch.toLowerCase();
+     return w.code.toLowerCase().includes(q) || (w.name || '').toLowerCase().includes(q);
+@@ -1265,7 +1257,7 @@
+   const [saveError, setSaveError] = useState('');
+   const [saveSuccess, setSaveSuccess] = useState('');
+   const [deletingCode, setDeletingCode] = useState(null);
+-  const [warehouseDropdownOpen, setWarehouseDropdownOpen] = useState(false);
++  const [, setWarehouseDropdownOpen] = useState(false);
+ 
+   const srcRef = useRef({ uomOpts: [], companyOpts: [] });
+ 
+@@ -1418,7 +1410,7 @@
+   };
+ 
+   const selectedWh = warehouses.find((w) => w.code === selectedWhCode);
+-  const selectedWhLabel = selectedWh
++  selectedWh
+     ? `${selectedWh.code}${selectedWh.name ? ` — ${selectedWh.name}` : ''}`
+     : (loadingWarehouses ? t('rules.loadingWarehouses') : t('rules.selectWarehouseDefault'));
+   const configuredCount = WAREHOUSE_RULE_FIELDS.filter((f) => (localRules[f.key] || []).length > 0).length;
+--- before/frontend/src/pages/PurchaseGRPODraftPage.jsx
++++ after/frontend/src/pages/PurchaseGRPODraftPage.jsx
+@@ -17,7 +17,6 @@
+ import AppSpinner from '../components/ui/AppSpinner';
+ import LoadingSkeleton from '../components/ui/LoadingSkeleton';
+ import {
+-  approvePurchaseGRPODraftForPosting,
+   checkBatchDetails,
+   createManualReceivingRequest,
+   loadPurchaseGRPODraft,
+@@ -305,7 +304,7 @@
+     return () => { current = false; };
+   }, [form.warehouse_code, binProbeScope]);
+   const [previewLoading, setPreviewLoading] = useState(false);
+-  const [approving, setApproving] = useState(false);
++  const [approving] = useState(false);
+   const [posting, setPosting] = useState(false);
+   const [postingPreview, setPostingPreview] = useState(null);
+   const [activeStep, setActiveStep] = useState(0);
+@@ -353,7 +352,7 @@
+   const isManualCreate = Boolean(manualCreate) && !draft;
+   const isManual = isManualCreate || isManualDraft;
+   const canEdit = !postedViewOnly && Boolean(isManualCreate || (draft && EDITABLE_STATUSES.has(draft.status)));
+-  const canApproveForPosting = canManageGrpo(user) && draft && EDITABLE_STATUSES.has(draft.status);
++  canManageGrpo(user) && draft && EDITABLE_STATUSES.has(draft.status);
+   const canPostToSap = canAccessGrpo(user) && Boolean(draft && (EDITABLE_STATUSES.has(draft.status) || draft.status === 'APPROVED_FOR_POSTING'));
+   const hasSapDocumentInfo = draft?.status === 'POSTED' || hasValue(draft?.sap_doc_entry) || hasValue(draft?.sap_doc_num);
+   const wizardSteps = isManual
+@@ -419,7 +418,7 @@
+     batch_attribute_2: '',
+   }), []);
+ 
+-  const getBatchFieldOptions = useCallback((fieldKey, currentValue = '', fallbackOptions = []) => {
++  const getBatchFieldOptions = useCallback((fieldKey, ...[, fallbackOptions = []]) => {
+     const stored = (batchAttributes.field_options?.[fieldKey] || []).map((i) => ({
+       value: i.value,
+       label: i.description && i.description !== i.value ? `${i.value} - ${i.description}` : i.value,
+@@ -1258,31 +1257,7 @@
+     }
+   };
+ 
+-  const handleApproveForPosting = async () => {
+-    if (!draft || approving || isPosted) return;
+-    if (canEdit && !validateAllEditableSteps()) return;
+-    setApproving(true);
+-    setErrors({});
+-    try {
+-      const approved = await approvePurchaseGRPODraftForPosting(draft.id);
+-      setDraft(approved);
+-      setForm(createDraftForm(approved || {}));
+-      setPostingPreview(null);
+-      setActiveStep(reviewIndex);
+-      setMaxReachedStep(reviewIndex);
+-      toast.success(t('quality.grpoDraftApprovedForPosting'));
+-    } catch (error) {
+-      console.error(error);
+-      const responseErrors = error.response?.data?.errors;
+-      if (responseErrors && typeof responseErrors === 'object') {
+-        setErrors(responseErrors);
+-        setActiveStep(firstErrorStep(responseErrors));
+-      }
+-      toast.error(error.response?.data?.error || t('quality.grpoApproveFailed'));
+-    } finally {
+-      setApproving(false);
+-    }
+-  };
++  
+ 
+   const handlePostToSap = async () => {
+     if (!draft || posting || isPosted || !canPostToSap) return;
+--- before/frontend/src/pages/PurchaseQuotationDraftPage.jsx
++++ after/frontend/src/pages/PurchaseQuotationDraftPage.jsx
+@@ -117,7 +117,7 @@
+   const canAdministerQuotation = canManagePurchaseQuotation(user);
+   const { draftId } = useParams();
+   const navigate = useNavigate();
+-  const location = useLocation();
++  useLocation();
+   const { t, lang } = useI18n();
+   const toast = useToast();
+ 
+@@ -128,7 +128,7 @@
+   const [posting, setPosting] = useState(false);
+   const [cancelling, setCancelling] = useState(false);
+   const [verifyingPayload, setVerifyingPayload] = useState(false);
+-  const [errors, setErrors] = useState({});
++  const [, setErrors] = useState({});
+   const [activeStep, setActiveStep] = useState(0);
+   const [maxReachedStep, setMaxReachedStep] = useState(0);
+ 
+@@ -142,7 +142,7 @@
+     costCenterError2,
+     reloadCostCenter,
+   } = useCostCenterOptions();
+-  const [currencies, setCurrencies] = useState([]);
++  const [, setCurrencies] = useState([]);
+   const [farms, setFarms] = useState([]);
+   const [itemGroups, setItemGroups] = useState([]);
+   const [loadingItemGroups, setLoadingItemGroups] = useState(true);
+--- before/frontend/src/pages/ReceiptReviewPage.jsx
++++ after/frontend/src/pages/ReceiptReviewPage.jsx
+@@ -666,8 +666,10 @@
+     return { top, left, width: DROPDOWN_WIDTH };
+   }, []);
+ 
++  const filterIsOpen = Boolean(openFilter);
++  const filterKey = openFilter?.fk;
+   useEffect(() => {
+-    if (!openFilter) return;
++    if (!filterIsOpen) return;
+     const updatePosition = () => {
+       if (filterRafRef.current) cancelAnimationFrame(filterRafRef.current);
+       filterRafRef.current = requestAnimationFrame(() => {
+@@ -685,7 +687,7 @@
+       window.removeEventListener('resize', updatePosition);
+       if (filterRafRef.current) cancelAnimationFrame(filterRafRef.current);
+     };
+-  }, [getFilterPosition, openFilter?.fk]);
++  }, [getFilterPosition, filterKey, filterIsOpen]);
+ 
+   // ── derived: top-level filtered receipts ──────────────────────────────────────
+   const tlReceipts = useMemo(() => {
+@@ -1369,7 +1371,7 @@
+           batch_id: getBatchId(b),
+         };
+       });
+-  }, [filteredRows, selectedIds, getRowKey, getReceiptId, getBatchId, edits]);
++  }, [filteredRows, selectedIds, getRowKey, getReceiptId, getBatchId, edits, itemDescMap]);
+ 
+   const handleExportExcel = useCallback(() => {
+     const rows = getExportRows();
+@@ -1521,7 +1523,7 @@
+           try {
+             const orderRes = await API.get(`/production-orders/by-number/${sourceOrderNumber}/`);
+             orderCache.set(sourceOrderNumber, orderRes.data.data?.order || null);
+-          } catch (err) {
++          } catch  {
+             orderCache.set(sourceOrderNumber, null);
+           }
+         }
+@@ -1542,7 +1544,7 @@
+             try {
+               const binRes = await API.get(`/bin-locations/${warehouseCode}/`);
+               binCache.set(warehouseCode, binRes.data.data?.locations || []);
+-            } catch (err) {
++            } catch  {
+               binCache.set(warehouseCode, []);
+             }
+           }
+@@ -1771,7 +1773,7 @@
+       const lookupReceipts = lookupRes.data.data?.receipts || [];
+       const preview = await buildImportPreview(rows, lookupReceipts);
+       setImportModal({ fileName: file.name, preview, error: '' });
+-    } catch (err) {
++    } catch  {
+       setImportModal({ fileName: file.name, preview: null, error: 'Could not read Excel file.' });
+     }
+   }, [buildImportPreview]);
+@@ -2129,7 +2131,7 @@
+                 </thead>
+ 
+                 <tbody>
+-                  {filteredRows.map(({ r, b, isFirst }) => {
++                  {filteredRows.map(({ r, b}) => {
+                     const bg           = colorMap.get(r.id) || 'var(--bg-elevated)';
+                     const rowKey       = b ? getRowKey(r, b) : '';
+                     const isSelected   = b && r.status !== 'POSTED' ? selectedIds.has(rowKey) : false;
+--- before/frontend/src/pages/ReceiptWizard.jsx
++++ after/frontend/src/pages/ReceiptWizard.jsx
+@@ -12,7 +12,7 @@
+ import { useI18n } from '../contexts/I18nContext';
+ import { canManageProduction } from '../utils/roles';
+ import {
+-  escapeHtml, getCleanProductName, getUomMeasurement, printBatchLabels,
++   getCleanProductName, getUomMeasurement, printBatchLabels,
+ } from '../utils/printBatchLabels';
+ 
+ // ── brand images (drop files into src/assets/brands/ — auto-discovered) ───────
+@@ -354,7 +354,7 @@
+   const [selectedUom, setSelectedUom] = useState(null);
+   const [companyOptions, setCompanyOptions] = useState([]);
+   const [batchUdfMetadata, setBatchUdfMetadata] = useState({});
+-  const [nextBatchReservation, setNextBatchReservation] = useState({ batch_number: '', reservation_id: null });
++  const [, setNextBatchReservation] = useState({ batch_number: '', reservation_id: null });
+   const [addingBatch, setAddingBatch] = useState(false);
+   const [loadingOrderData, setLoadingOrderData] = useState(false);
+   const [orderLoadError, setOrderLoadError] = useState('');
+@@ -435,7 +435,7 @@
+   const displayedItemName = itemName || orderFull?.ItemName || orderFull?.ItemDescription || itemCode || '';
+   const plannedQty = orderFull?.PlannedQuantity || selectedOrder?.plannedQty || 0;
+   const completedQty = orderFull?.CompletedQuantity || selectedOrder?.completedQty || 0;
+-  const remainingQty = plannedQty - completedQty;
++  plannedQty - completedQty;
+ 
+   useEffect(() => {
+     traceRules('wizard-user-state', {
+@@ -592,7 +592,7 @@
+       setUserAttributeRules(rules);
+       setUserHiddenFields(hidden);
+     });
+-  }, []);
++  }, [user]);
+ 
+   // ── auto-scroll active attribute chip into view (mobile UX) ──────────────
+   useEffect(() => {
+@@ -992,6 +992,7 @@
+       console.timeEnd('load-order-data');
+     }
+   }, [
++    t,
+     loadBatchAttributesForItem,
+     loadBinLocationsForWarehouse,
+     user,
+@@ -1031,7 +1032,7 @@
+     const da = getOrderCompareDate(a).replace(/-/g, '');
+     const db = getOrderCompareDate(b).replace(/-/g, '');
+     return db.localeCompare(da);
+-  }), [openOrders, search, statusFilter, dateFilter, userWarehouse]);
++  }), [openOrders, search, dateFilter, userWarehouse]);
+ 
+   const hasActiveFilters = search.trim() || statusFilter !== 'all' || dateFilter;
+ 
+@@ -1044,11 +1045,11 @@
+     return fallback;
+   }, [batchUdfMetadata]);
+ 
+-  const getInitialField = useCallback((key, fallback = '') =>
++  useCallback((key, fallback = '') =>
+     batchAttributes.latest_batch_fields?.[key] || getUdfDefault(key, fallback),
+     [batchAttributes, getUdfDefault]);
+ 
+-  const getBatchFieldOptions = useCallback((fieldKey, currentValue = '', fallbackOptions = []) => {
++  const getBatchFieldOptions = useCallback((fieldKey, ...[, fallbackOptions = []]) => {
+     const stored = (batchAttributes.field_options?.[fieldKey] || []).map((i) => ({
+       value: i.value, label: i.description && i.description !== i.value ? `${i.value} - ${i.description}` : i.value,
+     }));
+@@ -1210,7 +1211,7 @@
+     batches.reduce((s, b) => s + (parseFloat(b.quantity) || 0), 0), [batches]);
+   const totalBatchUnitCount = useMemo(() =>
+     batches.reduce((s, b) => s + (parseInt(b.unitCount) || 0), 0), [batches]);
+-  const batchTotalsMatch = Math.abs(totalBatchQty - Number(quantity || 0)) <= 0.01;
++  Math.abs(totalBatchQty - Number(quantity || 0)) <= 0.01;
+   const batchUnitCountsMatch = totalBatchUnitCount === Number(unitCount || 0);
+ 
+   // ── step navigation ────────────────────────────────────────────────────────
+@@ -1873,7 +1874,7 @@
+                 setBatchSubMaxReached((s) => ({ ...s, [batch.id]: Math.max(s[batch.id] ?? 0, nextSub) }));
+               };
+               const subStepNext = () => goToSubStep(Math.min(2, subStep + 1));
+-              const subStepPrev = () => setBatchSubSteps((s) => ({ ...s, [batch.id]: Math.max(0, (s[batch.id] ?? 0) - 1) }));
++              
+               const goToBatchStep = (i) => { if (i <= subMaxReached) setBatchSubSteps((s) => ({ ...s, [batch.id]: i })); };
+               const batchUomOption = findBatchUomOption(batch);
+               const batchUomValue = batch.uom || (batchUomOption ? getUomRuleValue(batchUomOption) : selectedUom?.value || '');
+@@ -1975,7 +1976,7 @@
+                   : getBatchFieldOptions(attrDef.key, batch[attrDef.stateKey]);
+               // UI-only intersection of order + user + warehouse rules — never touches state or payload
+               const attrOpts = applyAllowedRules(attrDef.key, rawAttrOpts, orderAttributeRules, userAttributeRules, warehouseAttrRules);
+-              const attrHasCards = attrOpts.length > 0;
++              attrOpts.length > 0;
+               const attrNext = () => {
+                 const nextIdx = attrIdx + 1;
+                 if (nextIdx < visibleAttrFields.length) {
+--- before/frontend/src/pages/SalesDocumentDetailPage.jsx
++++ after/frontend/src/pages/SalesDocumentDetailPage.jsx
+@@ -17,7 +17,7 @@
+ import { useI18n } from '../contexts/I18nContext';
+ import PageHeader from '../components/ui/PageHeader';
+ import LoadingSkeleton from '../components/ui/LoadingSkeleton';
+-import { formatQuantity } from './SalesDocumentListPage';
++import { formatQuantity } from '../utils/salesDocumentFormatting';
+ import { getProductIcon } from '../utils/productIcon';
+ 
+ function Field({ label, value, icon }) {
+--- before/frontend/src/pages/SalesDocumentListPage.jsx
++++ after/frontend/src/pages/SalesDocumentListPage.jsx
+@@ -20,24 +20,6 @@
+ import LoadingSkeleton from '../components/ui/LoadingSkeleton';
+ import EmptyState from '../components/ui/EmptyState';
+ import '../styles/pages/customization-delivery.css';
+-
+-export function formatQuantity(value) {
+-  if (value === null || value === undefined || value === '') return '—';
+-  const numeric = Number(value);
+-  if (Number.isNaN(numeric)) return String(value);
+-  return numeric.toLocaleString();
+-}
+-
+-export function formatMoney(value, currency) {
+-  if (value === null || value === undefined || value === '') return '—';
+-  const numeric = Number(value);
+-  if (Number.isNaN(numeric)) return String(value);
+-  const amount = numeric.toLocaleString(undefined, {
+-    minimumFractionDigits: 2,
+-    maximumFractionDigits: 2,
+-  });
+-  return currency ? `${amount} ${currency}` : amount;
+-}
+ 
+ function StatusPill({ label, code }) {
+   if (!label) return <span className="cd-status cd-status--none">—</span>;
+--- before/frontend/src/pages/UserManagementPage.jsx
++++ after/frontend/src/pages/UserManagementPage.jsx
+@@ -406,7 +406,7 @@
+           { label: t('users.disabled'), value: disabledCount, icon: CircleOff, tone: 'danger' },
+         ].map(({ label, value, icon: StatIcon, tone }) => (
+           <div key={label} className="um-stat-card">
+-            <div className={`um-stat-card__icon um-stat-card__icon--${tone}`}><StatIcon size={17} /></div>
++            <div className={`um-stat-card__icon um-stat-card__icon--${tone}`}>{React.createElement(StatIcon, { size: 17 })}</div>
+             <div className="um-stat-card__content">
+               <div className="um-stat-card__label">{label}</div>
+               <div className="um-stat-card__value">{value}</div>
+--- before/frontend/src/services/purchaseGrpoService.js
++++ after/frontend/src/services/purchaseGrpoService.js
+@@ -202,7 +202,7 @@
+   try {
+     const response = await API.get(`/quality/batches/${encodeURIComponent(batchNumber)}/`);
+     return response.data?.batch || null;
+-  } catch (err) {
++  } catch {
+     return null;
+   }
+ }
+--- before/frontend/src/components/customization/CustomizationWorkflowPanel.jsx
++++ after/frontend/src/components/customization/CustomizationWorkflowPanel.jsx
+@@ -35,7 +35,7 @@
+ 
+   const [showRejectModal, setShowRejectModal] = useState(false);
+   const [rejectionReason, setRejectionReason] = useState('');
+-  const [approveNotes, setApproveNotes] = useState('');
++  const [approveNotes, ] = useState('');
+   const [docDueDate, setDocDueDate] = useState('');
+ 
+   const loadDraft = useCallback(async () => {

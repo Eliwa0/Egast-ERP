@@ -1,0 +1,614 @@
+/* ==========================================================================
+   SearchableSelect Component Styles
+   Visual Design & Standards:
+   - Matches the application's standard form field design (.app-input)
+   - Height: 44px (dense: 34px)
+   - Border radius: var(--radius-md, 8px)
+   - Background: var(--bg-muted) (light) / var(--bg-soft) (dark)
+   - Border: exactly ONE visible border on .MuiOutlinedInput-notchedOutline
+   - Chevron arrow: cleanly integrated SVG chevron, vertically centered
+   - Scoped popup: max 560px, comfortable padding, wrapping long text, no page overflow
+   - BiDi support: isolated LTR code rendering and RTL text support
+   ========================================================================== */
+
+.searchable-select__dropdown-search {
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.searchable-select__dropdown-search .MuiOutlinedInput-root {
+  color: var(--text);
+  background-color: var(--bg-muted);
+  font-family: var(--font-family);
+}
+.searchable-select__dropdown-search .MuiOutlinedInput-notchedOutline { border-color: var(--border); }
+.searchable-select__dropdown-search input { text-align: start; }
+
+.standard-dropdown select {
+  width: 100%;
+  min-height: 44px;
+  padding-block: 8px;
+  font: inherit;
+}
+.standard-dropdown--dense select { min-height: 34px; padding-block: 4px; }
+.standard-dropdown .form-label { display: block; margin-bottom: 6px; }
+.standard-dropdown small { display: block; color: var(--text-muted); margin-top: 4px; }
+.standard-dropdown select[aria-invalid='true'] { border-color: var(--danger, #dc2626); }
+.standard-dropdown-multiple { min-width: 0; }
+.standard-dropdown-multiple .MuiOutlinedInput-root {
+  min-height: 44px;
+  color: var(--text-primary);
+  background-color: var(--bg-muted);
+  font-family: var(--font-family);
+}
+.standard-dropdown-multiple .MuiInputLabel-root,
+.standard-dropdown-multiple .MuiSelect-icon { color: var(--text-muted); }
+.standard-dropdown-multiple .MuiOutlinedInput-notchedOutline { border-color: var(--border-color); }
+[dir='rtl'] .standard-dropdown-multiple .MuiSelect-select { padding-left: 32px; padding-right: 14px; }
+[dir='rtl'] .standard-dropdown-multiple .MuiSelect-icon { left: 7px; right: auto; }
+.searchable-select__paper .MuiMenuItem-root { color: var(--text-primary); white-space: normal; }
+.searchable-select__paper .MuiCheckbox-root { color: var(--text-muted); }
+.searchable-select__paper .MuiMenuItem-root.Mui-selected { background: var(--bg-primary-soft); }
+
+/* --------------------------------------------------------------------------
+   1. OUTER CONTAINERS: 100% VISUAL-NEUTRAL
+   Ensures outer wrappers never produce unwanted margins, paddings, or borders.
+   -------------------------------------------------------------------------- */
+.searchable-select,
+.searchable-select.MuiAutocomplete-root,
+.MuiAutocomplete-root.searchable-select,
+div.searchable-select,
+.searchable-select.app-input,
+.searchable-select.app-select,
+.searchable-select.cell-input,
+.grpo-draft-page .searchable-select,
+.grpo-draft-page .searchable-select.app-input,
+.grpo-draft-page .searchable-select.app-select,
+html[data-theme='dark'] .grpo-draft-page .searchable-select,
+html[data-theme='dark'] .grpo-draft-page .searchable-select.app-input,
+html[data-theme='dark'] .grpo-draft-page .searchable-select.app-select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
+.searchable-select:not(.MuiAutocomplete-fullWidth),
+.searchable-select.rr-filter-input,
+.searchable-select.rr-filter-status,
+.searchable-select.bulk-toolbar__field-select,
+.searchable-select.bulk-toolbar__uom-select {
+  width: auto !important;
+}
+
+.searchable-select.rr-filter-status {
+  min-width: 130px !important;
+}
+
+.searchable-select .MuiFormControl-root {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  display: block !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. THE ONE AND ONLY VISIBLE CONTROL: .MuiOutlinedInput-root
+   Matches .app-input: height 44px, var(--radius-md), var(--bg-muted)
+   -------------------------------------------------------------------------- */
+.searchable-select .MuiOutlinedInput-root {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 44px !important;
+  height: 44px !important;
+  box-sizing: border-box !important;
+  background-color: var(--bg-muted) !important;
+  color: var(--text) !important;
+  border-radius: var(--radius-md, 8px) !important;
+  font-family: var(--font-family) !important;
+  font-size: 14px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 14px !important;
+  padding-right: 42px !important;
+  cursor: pointer !important;
+  transition: border-color var(--transition, 180ms ease), box-shadow var(--transition, 180ms ease), background-color var(--transition, 180ms ease) !important;
+}
+
+html[data-theme='dark'] .searchable-select .MuiOutlinedInput-root {
+  background-color: var(--bg-soft) !important;
+  color: var(--text) !important;
+}
+
+/* External label styling (if MUI label prop is used) */
+.searchable-select .MuiFormLabel-root {
+  color: var(--text-muted);
+  font-family: var(--font-family);
+}
+
+.searchable-select .MuiFormLabel-root.Mui-focused {
+  color: var(--primary);
+}
+
+/* Single visible outline border */
+.searchable-select .MuiOutlinedInput-notchedOutline {
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md, 8px) !important;
+  transition: border-color var(--transition, 180ms ease);
+}
+
+.searchable-select .MuiOutlinedInput-notchedOutline legend {
+  display: none !important;
+}
+
+html[data-theme='dark'] .searchable-select .MuiOutlinedInput-notchedOutline {
+  border-color: var(--border-strong) !important;
+}
+
+/* Hover state */
+.searchable-select .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--border-strong) !important;
+}
+
+/* Focus state - matches .app-input:focus */
+.searchable-select .MuiOutlinedInput-root.Mui-focused {
+  background-color: var(--bg-muted) !important;
+  box-shadow: 0 0 0 3px var(--bg-primary-soft) !important;
+}
+
+html[data-theme='dark'] .searchable-select .MuiOutlinedInput-root.Mui-focused {
+  background-color: var(--bg-soft) !important;
+}
+
+.searchable-select .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--primary) !important;
+  border-width: 1px !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. INPUT ELEMENT INSIDE THE CONTROL
+   -------------------------------------------------------------------------- */
+.searchable-select .MuiInputBase-input,
+.searchable-select .MuiOutlinedInput-input {
+  height: 44px !important;
+  box-sizing: border-box !important;
+  line-height: 44px !important;
+  padding: 0 !important;
+  color: var(--text) !important;
+  caret-color: var(--primary) !important;
+  font-family: var(--font-family) !important;
+  font-size: 14px !important;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-align: left;
+  cursor: pointer !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  unicode-bidi: plaintext !important;
+}
+
+.searchable-select__multi-value {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text);
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 44px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Rules warehouse values share one row with a reserved area for both icons. */
+.transfer-rules-grid .searchable-select.transfer-rules-warehouse-select .MuiOutlinedInput-root {
+  display: flex;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  gap: 0;
+  padding-inline-start: 14px !important;
+  padding-inline-end: 64px !important;
+}
+.transfer-rules-grid .searchable-select.transfer-rules-warehouse-select .MuiAutocomplete-input {
+  flex: 1 1 0 !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  direction: ltr;
+  text-align: start !important;
+}
+.transfer-rules-grid .searchable-select.transfer-rules-warehouse-select .searchable-select__multi-value {
+  flex: 1 1 0;
+  max-width: 100%;
+  text-align: start;
+  line-height: 1.5;
+}
+.transfer-rules-grid .searchable-select.transfer-rules-warehouse-select:not(.Mui-focused) .searchable-select__multi-value + .MuiAutocomplete-input {
+  flex: 0 0 0 !important;
+}
+.transfer-rules-grid .searchable-select.transfer-rules-warehouse-select .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+  inset-inline-end: 10px !important;
+  inset-inline-start: auto !important;
+}
+
+html[data-theme='dark'] .searchable-select .MuiInputBase-input,
+html[data-theme='dark'] .searchable-select .MuiOutlinedInput-input {
+  -webkit-text-fill-color: var(--text) !important;
+}
+
+/* Placeholder */
+.searchable-select .MuiInputBase-input::placeholder,
+.searchable-select .MuiOutlinedInput-input::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 1 !important;
+}
+
+html[data-theme='dark'] .searchable-select .MuiInputBase-input::placeholder,
+html[data-theme='dark'] .searchable-select .MuiOutlinedInput-input::placeholder {
+  color: var(--text-subtle) !important;
+  -webkit-text-fill-color: var(--text-subtle) !important;
+}
+
+/* Disabled state */
+.searchable-select .MuiInputBase-root.Mui-disabled {
+  opacity: 0.88 !important;
+  cursor: not-allowed !important;
+  background-color: var(--bg-muted) !important;
+  color: var(--text-muted) !important;
+}
+
+html[data-theme='dark'] .searchable-select .MuiInputBase-root.Mui-disabled {
+  background-color: var(--bg-soft) !important;
+}
+
+.searchable-select .MuiInputBase-root.Mui-disabled .MuiOutlinedInput-notchedOutline {
+  border-color: var(--border) !important;
+}
+
+.searchable-select .MuiInputBase-root.Mui-disabled .MuiInputBase-input {
+  cursor: not-allowed !important;
+  color: var(--text-muted) !important;
+  -webkit-text-fill-color: var(--text-muted) !important;
+}
+
+/* Error state */
+.searchable-select--error .MuiOutlinedInput-notchedOutline,
+.searchable-select.app-input--error .MuiOutlinedInput-notchedOutline,
+.searchable-select.app-input--invalid .MuiOutlinedInput-notchedOutline,
+.searchable-select .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: var(--danger) !important;
+}
+
+.searchable-select--error .MuiOutlinedInput-root.Mui-focused,
+.searchable-select.app-input--error .MuiOutlinedInput-root.Mui-focused,
+.searchable-select.app-input--invalid .MuiOutlinedInput-root.Mui-focused,
+.searchable-select .MuiOutlinedInput-root.Mui-error.Mui-focused {
+  box-shadow: 0 0 0 3px var(--bg-danger-soft) !important;
+  border-color: var(--danger) !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. END ADORNMENT (CHEVRON & CLEAR) - INTEGRATED
+   -------------------------------------------------------------------------- */
+.searchable-select .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+  position: absolute !important;
+  right: 12px !important;
+  left: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 2px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.searchable-select .MuiAutocomplete-popupIndicator {
+  color: var(--text-muted) !important;
+  padding: 4px !important;
+  margin: 0 !important;
+  background-color: transparent !important;
+  border-radius: var(--radius-sm, 4px) !important;
+  cursor: pointer !important;
+  transition: color var(--transition, 180ms ease), transform var(--transition, 180ms ease) !important;
+}
+
+.searchable-select .MuiAutocomplete-popupIndicator:hover {
+  color: var(--text) !important;
+  background-color: transparent !important;
+}
+
+.searchable-select .searchable-select__chevron {
+  display: block;
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+}
+
+.searchable-select .MuiAutocomplete-popupIndicatorOpen {
+  transform: rotate(180deg) !important;
+}
+
+.searchable-select .MuiAutocomplete-clearIndicator {
+  color: var(--text-muted) !important;
+  padding: 3px !important;
+  margin: 0 !important;
+  font-size: 16px !important;
+  background-color: transparent !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  transition: color var(--transition, 180ms ease), background-color var(--transition, 180ms ease) !important;
+}
+
+.searchable-select .MuiAutocomplete-clearIndicator:hover {
+  color: var(--danger, #c2410c) !important;
+  background-color: var(--bg-danger-soft) !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. RTL ALIGNMENT
+   -------------------------------------------------------------------------- */
+[dir='rtl'] .searchable-select .MuiOutlinedInput-root,
+html[lang='ar'] .searchable-select .MuiOutlinedInput-root {
+  padding-right: 14px !important;
+  padding-left: 42px !important;
+}
+
+[dir='rtl'] .searchable-select .MuiInputBase-input,
+html[lang='ar'] .searchable-select .MuiInputBase-input,
+[dir='rtl'] .searchable-select .MuiOutlinedInput-input,
+html[lang='ar'] .searchable-select .MuiOutlinedInput-input {
+  text-align: right !important;
+  direction: rtl;
+}
+
+[dir='rtl'] .searchable-select .MuiOutlinedInput-root .MuiAutocomplete-endAdornment,
+html[lang='ar'] .searchable-select .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+  right: auto !important;
+  left: 12px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. DENSE MODIFIER (TABLE CELLS)
+   -------------------------------------------------------------------------- */
+.searchable-select--dense {
+  width: 100%;
+  min-width: 96px;
+}
+
+.searchable-select--dense .MuiOutlinedInput-root {
+  min-height: 34px !important;
+  height: 34px !important;
+  border-radius: var(--radius-sm, 6px) !important;
+  padding-left: 10px !important;
+  padding-right: 32px !important;
+}
+
+.searchable-select--dense .MuiOutlinedInput-notchedOutline {
+  border-radius: var(--radius-sm, 6px) !important;
+}
+
+.searchable-select--dense .MuiOutlinedInput-input {
+  height: 34px !important;
+  line-height: 34px !important;
+  font-size: 13px !important;
+}
+
+.searchable-select--dense .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+  right: 6px !important;
+  left: auto !important;
+}
+
+.searchable-select--dense .searchable-select__chevron {
+  width: 14px;
+  height: 14px;
+}
+
+.searchable-select--dense .MuiAutocomplete-popupIndicator,
+.searchable-select--dense .MuiAutocomplete-clearIndicator {
+  padding: 2px !important;
+}
+
+[dir='rtl'] .searchable-select--dense .MuiOutlinedInput-root,
+html[lang='ar'] .searchable-select--dense .MuiOutlinedInput-root {
+  padding-right: 10px !important;
+  padding-left: 32px !important;
+}
+
+[dir='rtl'] .searchable-select--dense .MuiOutlinedInput-root .MuiAutocomplete-endAdornment,
+html[lang='ar'] .searchable-select--dense .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+  right: auto !important;
+  left: 6px !important;
+}
+
+/* --------------------------------------------------------------------------
+   7. POPPER / DROPDOWN PAPER & LISTBOX
+   Scoped strictly to .searchable-select__popper
+   -------------------------------------------------------------------------- */
+.searchable-select__popper {
+  /* Portaled options must sit above both MUI and the custom modal layers. */
+  z-index: 1000000 !important;
+  max-width: min(560px, calc(100vw - 32px)) !important;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .searchable-select__popper {
+    max-width: calc(100vw - 20px) !important;
+  }
+}
+
+/* Dropdown Paper */
+.searchable-select__popper .searchable-select__paper {
+  background-color: var(--bg-elevated) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md, 8px) !important;
+  box-shadow: var(--shadow-lg) !important;
+  overflow: hidden;
+  margin-top: 4px;
+  min-width: 100%;
+  width: max-content;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html[data-theme='dark'] .searchable-select__popper .searchable-select__paper {
+  background-color: var(--bg-elevated) !important;
+  border-color: var(--border-strong) !important;
+}
+
+/* Listbox container */
+.searchable-select__popper .searchable-select__listbox {
+  background-color: var(--bg-elevated) !important;
+  color: var(--text) !important;
+  padding: 6px !important;
+  margin: 0 !important;
+  max-height: min(280px, 40vh);
+  max-height: min(280px, 40dvh);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+  min-width: 100%;
+  width: max-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.searchable-select__popper .searchable-select__listbox::-webkit-scrollbar {
+  width: 6px;
+}
+
+.searchable-select__popper .searchable-select__listbox::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.searchable-select__popper .searchable-select__listbox::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 999px;
+}
+
+.searchable-select__popper .searchable-select__listbox::-webkit-scrollbar-thumb:hover {
+  background-color: var(--border-strong);
+}
+
+/* Options */
+.searchable-select__popper .searchable-select__option {
+  display: block;
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 38px;
+  margin: 0 0 2px 0 !important;
+  box-sizing: border-box;
+  padding: 9px 12px !important;
+  border-radius: var(--radius-sm, 4px) !important;
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  font-family: var(--font-family) !important;
+  color: var(--text) !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow: visible;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.searchable-select__popper .searchable-select__option:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Option Hover / Focused */
+.searchable-select__popper .searchable-select__option.Mui-focused,
+.searchable-select__popper .searchable-select__option:hover {
+  background-color: var(--bg-soft) !important;
+  color: var(--text) !important;
+}
+
+/* Option Selected */
+.searchable-select__popper .searchable-select__option[aria-selected='true'],
+.searchable-select__popper .searchable-select__option.searchable-select__option--selected {
+  background-color: var(--bg-primary-soft) !important;
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+}
+
+/* Option Selected + Focused/Hover */
+.searchable-select__popper .searchable-select__option[aria-selected='true'].Mui-focused,
+.searchable-select__popper .searchable-select__option[aria-selected='true']:hover,
+.searchable-select__popper .searchable-select__option.searchable-select__option--selected.Mui-focused,
+.searchable-select__popper .searchable-select__option.searchable-select__option--selected:hover {
+  background-color: var(--bg-primary-soft) !important;
+  color: var(--primary-strong, var(--primary)) !important;
+  font-weight: 600 !important;
+}
+
+/* Bidi label markup within options */
+.searchable-select__label-wrap {
+  display: inline;
+  unicode-bidi: isolate;
+}
+
+.searchable-select__code-bdi {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline;
+  font-weight: 600;
+}
+
+.searchable-select__desc-bdi {
+  unicode-bidi: isolate !important;
+  display: inline;
+}
+
+.searchable-select__sep {
+  color: var(--text-muted);
+  margin: 0 4px;
+}
+
+.searchable-select__plain-bdi {
+  unicode-bidi: isolate !important;
+  display: inline;
+}
+
+/* No options / Loading */
+.searchable-select__popper .MuiAutocomplete-noOptions,
+.searchable-select__popper .MuiAutocomplete-loading {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: var(--font-family);
+  color: var(--text-muted);
+  background-color: var(--bg-elevated);
+}
+
+[dir='rtl'] .searchable-select__popper .searchable-select__option,
+html[lang='ar'] .searchable-select__popper .searchable-select__option {
+  text-align: right;
+}
+
+[dir='rtl'] .searchable-select__popper .MuiAutocomplete-noOptions,
+html[lang='ar'] .searchable-select__popper .MuiAutocomplete-noOptions,
+[dir='rtl'] .searchable-select__popper .MuiAutocomplete-loading,
+html[lang='ar'] .searchable-select__popper .MuiAutocomplete-loading {
+  text-align: right;
+}

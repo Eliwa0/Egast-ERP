@@ -1,0 +1,49 @@
+[
+  {
+    "name": "lint",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "node_modules/eslint/bin/eslint.js",
+      ".",
+      "--ignore-pattern",
+      "**/modules/scale/**",
+      "--ignore-pattern",
+      "**/*[Ss]cale*",
+      "--ignore-pattern",
+      "**/fixtures/responsive-harness.jsx",
+      "--ignore-pattern",
+      "**/i18n/translations.js",
+      "--format",
+      "json",
+      "--output-file",
+      "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\lint-final.json"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen\\frontend",
+    "exit_code": 1,
+    "seconds": 25.83,
+    "snapshot_sha256": "8070e3575d2a3f4d6493aa42ddeb4b9b49b76a6a8e8f7193a5fd2703760bc4f2"
+  },
+  {
+    "name": "translations",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "scripts/check-i18n.js"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen\\frontend",
+    "exit_code": 0,
+    "seconds": 0.27,
+    "snapshot_sha256": "8070e3575d2a3f4d6493aa42ddeb4b9b49b76a6a8e8f7193a5fd2703760bc4f2"
+  },
+  {
+    "name": "build",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "node_modules/vite/bin/vite.js",
+      "build"
+    ],
+    "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\scratch\\lint-remediation\\frozen\\frontend",
+    "exit_code": 0,
+    "seconds": 4.37,
+    "snapshot_sha256": "8070e3575d2a3f4d6493aa42ddeb4b9b49b76a6a8e8f7193a5fd2703760bc4f2"
+  }
+]

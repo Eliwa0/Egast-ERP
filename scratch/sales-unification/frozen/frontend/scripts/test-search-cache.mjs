@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import { cachedSearch, clearSearchCache } from '../src/services/searchCache.js';
+
+clearSearchCache();
+let calls = 0;
+const loader = async () => { calls += 1; return [{ code: 'A', name: 'Result' }]; };
+const [first, second] = await Promise.all([cachedSearch('user:1/query:ab', loader), cachedSearch('user:1/query:ab', loader)]);
+assert.equal(calls, 1);
+assert.equal(first, second);
+assert.equal(await cachedSearch('user:1/query:ab', loader), first);
+assert.equal(calls, 1);
+await cachedSearch('user:2/query:ab', loader);
+assert.equal(calls, 2);
+let emptyCalls = 0;
+await cachedSearch('empty', async () => { emptyCalls += 1; return []; });
+await cachedSearch('empty', async () => { emptyCalls += 1; return []; });
+assert.equal(emptyCalls, 1);
+await assert.rejects(cachedSearch('failure', async () => { throw new Error('unavailable'); }));
+assert.deepEqual(await cachedSearch('failure', async () => []), []);
+clearSearchCache();
+await cachedSearch('user:1/query:ab', loader);
+assert.equal(calls, 3);
+console.log('Search cache: 8 assertions passed (dedup, reuse, scope, empty results, retry, clear).');

@@ -1,0 +1,544 @@
+{
+  "results": [
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 280,
+      "navigation": "navigate",
+      "actualTheme": "light",
+      "actualLang": "en",
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "remoteFields": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 256,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 390,
+      "navigation": "resize",
+      "actualTheme": "light",
+      "actualLang": "en",
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "remoteFields": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 366,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 768,
+      "navigation": "resize",
+      "actualTheme": "light",
+      "actualLang": "en",
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 819,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "remoteFields": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 744,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/scale/drafts",
+      "lang": "en",
+      "width": 1440,
+      "navigation": "resize",
+      "actualTheme": "light",
+      "actualLang": "en",
+      "touch": false,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorPrimary css-w7wuus-MuiButtonBase-root-MuiButton-root",
+          "text": "+ Weighing Station",
+          "width": 196.734375,
+          "height": 35.875
+        },
+        {
+          "cls": "MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeSmall MuiButton-colorPrimary css-1owbudb-MuiButtonBase-root-MuiButton-root",
+          "text": "Open →",
+          "width": 76.359375,
+          "height": 27.46875
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input rr-filter-input",
+          "size": "12px",
+          "weight": "400"
+        }
+      ],
+      "url": "/scale/drafts",
+      "body": 908,
+      "scroll": 1440,
+      "viewport": 1440,
+      "offenders": [],
+      "remoteFields": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [
+        {
+          "cls": "MuiTable-root css-i47q45-MuiTable-root",
+          "width": 2590,
+          "columns": 11
+        }
+      ],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 280,
+      "navigation": "navigate",
+      "actualTheme": "light",
+      "actualLang": "en",
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 280,
+      "viewport": 280,
+      "offenders": [],
+      "remoteFields": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 390,
+      "navigation": "resize",
+      "actualTheme": "light",
+      "actualLang": "en",
+      "touch": true,
+      "height": 740,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "21.6px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 390,
+      "viewport": 390,
+      "offenders": [],
+      "remoteFields": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 768,
+      "navigation": "resize",
+      "actualTheme": "light",
+      "actualLang": "en",
+      "touch": true,
+      "height": 900,
+      "smallTargets": [],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "28.8px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "16px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 640,
+      "scroll": 768,
+      "viewport": 768,
+      "offenders": [],
+      "remoteFields": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    },
+    {
+      "route": "/customization-delivery/orders",
+      "lang": "en",
+      "width": 1440,
+      "navigation": "resize",
+      "actualTheme": "light",
+      "actualLang": "en",
+      "touch": false,
+      "height": 900,
+      "smallTargets": [
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "📋 Review›",
+          "width": 117.25,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn",
+          "text": "⚙️ Rules›",
+          "width": 105.921875,
+          "height": 36
+        },
+        {
+          "cls": "toolbar-icon-btn lang-toggle-btn",
+          "text": "ع",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "cls": "app-button app-button--secondary toolbar-nav-btn toolbar-signout",
+          "text": "Sign out",
+          "width": 85.671875,
+          "height": 36
+        }
+      ],
+      "fonts": [
+        {
+          "tag": "H1",
+          "cls": "",
+          "size": "36px",
+          "weight": "700"
+        },
+        {
+          "tag": "INPUT",
+          "cls": "app-input",
+          "size": "15px",
+          "weight": "400"
+        }
+      ],
+      "url": "/customization-delivery/orders",
+      "body": 707,
+      "scroll": 1425,
+      "viewport": 1425,
+      "offenders": [],
+      "remoteFields": [],
+      "dialogs": [],
+      "dropdowns": [],
+      "tables": [],
+      "icons": [],
+      "errors": []
+    }
+  ],
+  "requests": [
+    "/api/scale/drafts/",
+    "/api/me/",
+    "/api/customization-delivery/orders/"
+  ],
+  "blockedWrites": [],
+  "simulatedWrites": [],
+  "fixtureMode": "populated",
+  "auditTheme": "light",
+  "completed": true,
+  "resizeMatrix": true,
+  "sourceHashes": {
+    "styles/global.css": "a31d775f81bb60ec64c9020abebfae928fe32ffe59a4ba55ce2cdf02f657a30b",
+    "styles/responsive-mobile.css": "9c7eb92e6e60fed90ad492960a3bb7dba565f029f44b22af940095e7f79012be",
+    "styles/pages/sales-readiness.css": "7c42fb596f768e964c0967fe1b0e47dcc4324800a793bf1676a3d99ddff8d178"
+  }
+}

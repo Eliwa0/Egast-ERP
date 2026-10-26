@@ -1,0 +1,440 @@
+{
+  "database": "sqlite",
+  "run": 86,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "unexpected_http": [],
+  "cases": [
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_activation_sap_unavailable_fails_closed",
+      "ms": 16.51,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_active_configuration_immutable",
+      "ms": 12.41,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_active_route_overrides_legacy_for_selected_stage_only",
+      "ms": 11.19,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_bin_disabled_warehouse_and_enforced_default_rejected",
+      "ms": 7.38,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_bin_validation_nonexistent_parent_inactive_system_absentry",
+      "ms": 8.2,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_caller_cannot_inject_snapshot_on_creation",
+      "ms": 7.8,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_company_and_endpoint_isolation",
+      "ms": 42.16,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_database_prevents_two_active_revisions",
+      "ms": 10.51,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_draft_and_disabled_do_not_override_legacy",
+      "ms": 10.07,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_enabled_false_metadata_does_not_gate_runtime_execution",
+      "ms": 13.41,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_foreign_policy_detail_and_activation_are_hidden",
+      "ms": 12.37,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_historical_domain_lifecycle_keeps_immutable_history",
+      "ms": 16.92,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_historical_domain_readiness_is_fresh_without_mutating_revision",
+      "ms": 9.77,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_historical_domain_unavailable_and_stale_edit_fail_closed",
+      "ms": 11.14,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_historical_stage1_domain_validates_without_technical_fields",
+      "ms": 9.8,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_historical_stage3_incomplete_draft_cannot_activate",
+      "ms": 11.39,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_historical_stage4_multi_source_data_is_not_guessed_or_rewritten",
+      "ms": 11.21,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_historical_stage4_service_preserves_explicit_sources_and_destination",
+      "ms": 14.96,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_historical_validation_distinguishes_invalid_metadata_and_unavailable_sap",
+      "ms": 9.87,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_invalid_routes_and_fields_rejected",
+      "ms": 9.21,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_missing_routes_draft_cannot_activate",
+      "ms": 8.84,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_new_snapshot_preserved_across_policy_change_and_disable",
+      "ms": 17.77,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_no_bin_defaults_or_names_inferred",
+      "ms": 13.97,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_no_fixed_stage2_bin_required_when_physical_layout_exists",
+      "ms": 16.52,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_old_unsnapshotted_request_uses_legacy_even_with_active_policy",
+      "ms": 12.76,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_partial_failed_sap_lookup_cannot_validate",
+      "ms": 9.55,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_pending_creation_and_update_strip_retired_policy_snapshot",
+      "ms": 22.14,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_policy_does_not_grant_user_warehouse_access",
+      "ms": 29.11,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_policy_warehouse_failure_is_not_cached_as_success",
+      "ms": 19.15,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_policy_warehouse_options_admin_guard_and_active_flags",
+      "ms": 16.12,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_posted_snapshot_cannot_repost_after_policy_change",
+      "ms": 21.78,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_removed_admin_api_cannot_mutate_or_audit_historical_revisions",
+      "ms": 21.54,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_removed_effective_form_endpoint_does_not_seed_revisions",
+      "ms": 13.98,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_removed_policy_api_is_unavailable_to_regular_users",
+      "ms": 19.13,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_removed_policy_endpoint_remains_removed_for_super_admin",
+      "ms": 12.26,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_revision_replaces_active_without_mutating_previous_config",
+      "ms": 16.71,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_runtime_ignores_retired_snapshots_but_preserves_user_selected_route",
+      "ms": 18.22,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_snapshot_company_switch_and_tampering_rejected",
+      "ms": 13.98,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_snapshot_stores_selected_intent_only",
+      "ms": 12.58,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage1_and_stage2_operational_metadata_is_server_owned",
+      "ms": 7.49,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage1_cannot_activate_bin_allocation_it_does_not_post",
+      "ms": 11.1,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage2_activation_requires_warehouse_physical_layout",
+      "ms": 9.66,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage2_cold_storage_route_needs_no_fixed_bin_or_manual_internal_settings",
+      "ms": 13.6,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage2_explicit_nonphysical_intermediate_route",
+      "ms": 11.28,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage2_invalid_explicit_destination_type_is_validation_error",
+      "ms": 8.38,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage2_physical_route_activates_without_pinning_destination_bin",
+      "ms": 14.71,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage2_warehouse_route_derives_supported_nonphysical_behavior",
+      "ms": 12.12,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage3_existing_source_vacate_capability_can_be_configured",
+      "ms": 16.12,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage3_missing_physical_source_stays_draft",
+      "ms": 9.17,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage4_missing_or_invalid_intermediate_cannot_activate",
+      "ms": 12.02,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stage_both_and_unknown_rejected",
+      "ms": 8.7,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stale_admin_edit_rejected",
+      "ms": 12.7,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stale_bin_identity_rejected_under_saved_revision",
+      "ms": 20.46,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_stale_live_warehouse_rejected_without_sap_post",
+      "ms": 12.07,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_unknown_sap_safety_flags_fail_closed",
+      "ms": 7.33,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_persisted_transfer_policy.PersistedTransferPolicyTests.test_warehouse_nonexistent_inactive_and_wrong_exact_code",
+      "ms": 11.3,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_authority.TransferPolicyAuthorityTests.test_active_precedes_newer_draft_and_draft_precedes_disabled",
+      "ms": 10.04,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_authority.TransferPolicyAuthorityTests.test_administration_does_not_change_execution_resolver_or_stored_contract",
+      "ms": 12.45,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_authority.TransferPolicyAuthorityTests.test_explicit_shipping_bin_is_saved_only_to_draft",
+      "ms": 8.9,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_authority.TransferPolicyAuthorityTests.test_foreign_company_draft_cannot_override_this_company",
+      "ms": 7.67,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_authority.TransferPolicyAuthorityTests.test_independent_active_draft_and_incomplete_draft_display_as_persisted",
+      "ms": 11.22,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_authority.TransferPolicyAuthorityTests.test_legacy_only_when_stage_has_no_saved_revision",
+      "ms": 8.0,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_authority.TransferPolicyAuthorityTests.test_new_draft_defaults_have_no_warehouse_or_bin_mapping",
+      "ms": 8.07,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_authority.TransferPolicyAuthorityTests.test_stage2_valid_existing_mapping_remains_activatable",
+      "ms": 14.4,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_configuration_cleanup.Stage5WithoutConfigurationTests.test_direct_load_has_no_policy_lookup_or_sap_post",
+      "ms": 14.94,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyAuthorizationTests.test_policy_acceptance_does_not_grant_user_access",
+      "ms": 12.86,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyAuthorizationTests.test_removed_frontend_config_endpoint_does_not_expose_policy",
+      "ms": 7.41,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyAuthorizationTests.test_user_grants_do_not_bypass_operational_policy",
+      "ms": 27.39,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_cache_and_policy_scope_isolate_same_company_on_different_endpoints",
+      "ms": 9.66,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_current_stage_policies_and_legacy_source",
+      "ms": 3.38,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_explicit_pair_representation_cannot_expand_to_another_destination",
+      "ms": 2.53,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_intermediate_discovery_only_when_legacy_setting_missing",
+      "ms": 3.94,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_invalid_request_header_does_not_trigger_sap_discovery",
+      "ms": 4.46,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_legacy_route_constraints_and_stage_validation",
+      "ms": 3.47,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_master_data_boundary_is_pure_and_not_a_legacy_restriction",
+      "ms": 2.66,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_missing_fridge_preserves_legacy_source_and_destination_fallback",
+      "ms": 4.67,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_missing_intermediate_preserves_skipped_membership_validation",
+      "ms": 5.57,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_mock_discovery_never_calls_sap",
+      "ms": 3.06,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_policy_is_deterministic_and_not_shared",
+      "ms": 4.04,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_stage1_and_stage2_sap_payloads_unchanged",
+      "ms": 2.52,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_stage3_sap_payload_unchanged_without_dock_destination",
+      "ms": 1.81,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_stage4_active_source_and_user_selected_destination_reach_sap_payload",
+      "ms": 3.91,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy.TransferPolicyTests.test_validation_and_config_use_resolver",
+      "ms": 2.06,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_policy_migration.TransferPolicyMigrationRuntimeTests.test_missing_policy_table_is_fixed_without_resurrecting_removed_api",
+      "ms": 2181.74,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_configuration_cleanup.TransferConfigurationCleanupTests.test_configuration_endpoints_removed",
+      "ms": 1.05,
+      "unexpected_http": 0
+    },
+    {
+      "test": "api.tests_transfer_configuration_cleanup.TransferConfigurationCleanupTests.test_stage4_ignores_revision_and_stored_contract_and_posts_user_destination",
+      "ms": 0.8,
+      "unexpected_http": 0
+    }
+  ]
+}

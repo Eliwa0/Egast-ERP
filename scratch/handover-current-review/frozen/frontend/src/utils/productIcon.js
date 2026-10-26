@@ -1,0 +1,35 @@
+export const getProductIcon = (text = '') => {
+  const value = String(text).toLowerCase();
+  if (value.includes('برتقال') || value.includes('برتقان') || value.includes('orange')) return '🍊';
+  if (value.includes('يوسفي') || value.includes('tangerine') || value.includes('mandarin')) return '🍊';
+  if (value.includes('ليمون') || value.includes('لمون') || value.includes('lemon')) return '🍋';
+  if (value.includes('جريب فروت') || value.includes('grapefruit')) return '🍊';
+  if (value.includes('مانجو') || value.includes('مانجه') || value.includes('mango')) return '🥭';
+  if (value.includes('رمان') || value.includes('pomegranate')) return '❤️';
+  if (value.includes('بطاطس') || value.includes('potato')) return '🥔';
+  if (value.includes('ذرة') || value.includes('ذره') || value.includes('corn') || value.includes('maize')) return '🌽';
+  if (value.includes('لب') || value.includes('seed')) return '🌻';
+  if (value.includes('طماطم') || value.includes('tomato')) return '🍅';
+  if (value.includes('بصل') || value.includes('onion')) return '🧅';
+  if (value.includes('فول سوداني') || value.includes('peanut')) return '🥜';
+  if (value.includes('جزر') || value.includes('carrot')) return '🥕';
+  if (value.includes('قرع عسل') || value.includes('قرع') || value.includes('pumpkin')) return '🎃';
+  if (value.includes('عنب') || value.includes('grape')) return '🍇';
+  if (value.includes('فراولة') || value.includes('فراوله') || value.includes('strawberry')) return '🍓';
+  if (value.includes('بلح') || value.includes('تمر') || value.includes('date')) return '🌴';
+  if (value.includes('ثوم') || value.includes('توم') || value.includes('garlic')) return '🧄';
+  if (value.includes('بطيخ') || value.includes('watermelon')) return '🍉';
+  if (value.includes('شمام') || value.includes('كنتالوب') || value.includes('melon')) return '🍈';
+  if (value.includes('فلفل') || value.includes('pepper')) return '🌶️';
+  if (value.includes('خيار') || value.includes('cucumber')) return '🥒';
+  if (value.includes('باذنجان') || value.includes('eggplant')) return '🍆';
+  if (value.includes('بروكلي') || value.includes('قرنبيط') || value.includes('broccoli') || value.includes('cauliflower')) return '🥦';
+  if (value.includes('جوافة') || value.includes('جوافه') || value.includes('guava')) return '🍐';
+  if (value.includes('خوخ') || value.includes('مشمش') || value.includes('peach') || value.includes('apricot')) return '🍑';
+  if (value.includes('تفاح') || value.includes('apple')) return '🍎';
+  if (value.includes('موز') || value.includes('banana')) return '🍌';
+  if (value.includes('زيتون') || value.includes('olive')) return '🫒';
+  return '📦';
+};
+
+export default getProductIcon;

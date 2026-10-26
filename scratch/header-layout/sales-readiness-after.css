@@ -1,0 +1,30 @@
+.workflow-pagination { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; margin-block: 24px; }
+.workflow-pagination button { min-height: 44px; }
+/* Reserve desktop actions; long breadcrumbs shrink inside the brand instead
+   of moving the actions onto another row. Mobile keeps its existing drawer. */
+@media screen and (min-width: 1101px) {
+  body:has(.sales-readiness-workflow) .app-toolbar__content { flex-wrap: nowrap; }
+  body:has(.sales-readiness-workflow) .app-brand { flex: 1 1 0; min-width: 0; }
+  body:has(.sales-readiness-workflow) .app-brand__text { flex: 1 1 0; min-width: 0; }
+  body:has(.sales-readiness-workflow) .logo-frame--header { flex-shrink: 0; }
+  body:has(.sales-readiness-workflow) .breadcrumb { min-width: 0; max-width: 100%; flex-wrap: nowrap; }
+  body:has(.sales-readiness-workflow) .breadcrumb__item { min-width: 0; flex: 0 1 auto; }
+  body:has(.sales-readiness-workflow) .app-toolbar__actions { flex: 0 0 auto; flex-wrap: nowrap; }
+  body:has(.sales-readiness-workflow) .toolbar-review-menu--review > .toolbar-review-menu__list {
+    inset-inline-start: 0;
+    inset-inline-end: auto;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body:has(.sales-readiness-workflow) .app-toolbar__content { flex-wrap: wrap; }
+  body:has(.sales-readiness-workflow) .app-toolbar__actions { min-width: 0; max-width: 100%; flex-wrap: wrap; }
+}
+@media (max-width: 768px) {
+  .sales-readiness-workflow { min-width: 0; max-width: 100%; }
+  .sales-readiness-workflow .cd-table-wrap { max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; }
+  .sales-readiness-workflow .cd-table { min-width: 760px; }
+  .sales-readiness-workflow .cd-table-wrap::before { content: attr(aria-label); display: block; position: sticky; inset-inline-start: 0; font-size: 12px; color: var(--text-muted); padding-block: 8px; width: fit-content; }
+  .sales-readiness-workflow .app-button { min-height: 44px; max-width: 100%; white-space: normal; }
+  .sales-readiness-workflow .card-panel { min-width: 0; overflow-wrap: anywhere; }
+  .sales-readiness-workflow .card-panel > div[style*="display: flex"] { flex-wrap: wrap; }
+}

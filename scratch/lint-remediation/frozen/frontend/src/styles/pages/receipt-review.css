@@ -1,0 +1,125 @@
+.rr-page {
+  background: var(--page-bg);
+}
+
+.rr-toolbar,
+.rr-filters,
+.rr-grid,
+.rr-card {
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.rr-filter-input,
+.rr-search-input,
+.rr-select {
+  min-height: 40px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.rr-filter-input:focus,
+.rr-search-input:focus,
+.rr-select:focus {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-color: var(--color-primary);
+}
+
+.rr-grid-loading {
+  padding: 18px;
+}
+
+.rr-grid-loading .skeleton-row {
+  grid-template-columns: 1.3fr 1fr 0.8fr 0.7fr;
+}
+
+.rr-row:hover {
+  background: var(--surface-elevated);
+}
+
+.rr-action-btn {
+  min-height: 34px;
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 780px) {
+  .rr-toolbar,
+  .rr-filters {
+    gap: 10px;
+  }
+
+  .rr-table-wrap {
+    overflow-x: auto;
+  }
+}
+
+/* ── GRPO Batch Balance Banner ── */
+.batch-balance-banner {
+  padding: 16px 20px;
+  border-radius: var(--radius-md, 10px);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.batch-balance-banner--success {
+  background: var(--bg-success-soft, #e8f5e9);
+  border: 1px solid var(--success, #2e7d32);
+}
+
+.batch-balance-banner--warning {
+  background: var(--bg-warning-soft, #fff8e1);
+  border: 1px solid var(--warning, #f57f17);
+}
+
+.batch-balance-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.batch-balance-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.batch-balance-label {
+  font-size: 0.8rem;
+  color: var(--text-muted, #666);
+  font-weight: 500;
+}
+
+.batch-balance-val {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text, #111);
+}
+
+.batch-balance-status {
+  padding-top: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.batch-balance-msg {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.batch-balance-msg--ok {
+  color: var(--success, #2e7d32);
+}
+
+.batch-balance-msg--err {
+  color: var(--danger, #c62828);
+}
+
+.grpo-batch-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+

@@ -1,0 +1,243 @@
+{
+  "completed": true,
+  "results": [
+    {
+      "lang": "en",
+      "route": "/login",
+      "kind": "cold-production-fixture",
+      "elapsed_ms": 739.5,
+      "js_files": [
+        "/assets/api-r9jFnkCv.js",
+        "/assets/index-Xw-z9X3u.js",
+        "/assets/AppSpinner-B0lgtCzS.js",
+        "/assets/createLucideIcon-DnoL2B97.js",
+        "/assets/I18nContext-B8z1OFo1.js"
+      ],
+      "js_bytes": 562351,
+      "js_gzip_bytes": 164084
+    },
+    {
+      "lang": "en",
+      "route": "/",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 99.9,
+      "new_js_files": [],
+      "body_chars": 622
+    },
+    {
+      "lang": "en",
+      "route": "/scale/devices",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 364.2,
+      "new_js_files": [
+        "/assets/Box-BWhQbXqR.js",
+        "/assets/Button-BqkF7Z2g.js",
+        "/assets/ButtonBase-JPCFMfgh.js",
+        "/assets/CardContent-D8yiIiIQ.js",
+        "/assets/Chip-BV6omo1C.js",
+        "/assets/CircularProgress-BCSUiuVF.js",
+        "/assets/ConfirmDialog-ChxtxcTU.js",
+        "/assets/DialogTitle-7BY0LD42.js",
+        "/assets/EmptyState-CNUKEbbm.js",
+        "/assets/LoadingSkeleton-DWFO2NXe.js",
+        "/assets/PageHeader-u6pETJqK.js",
+        "/assets/ScaleDevicesPage-BUrMtUSt.js",
+        "/assets/SearchableSelect-BhvwjAuK.js",
+        "/assets/SearchableSelect-DLlfidkw.js",
+        "/assets/StandardDropdown-CvOKlnWg.js",
+        "/assets/TableRow-p2zxcLS6.js",
+        "/assets/TextField-DHwHOwLv.js",
+        "/assets/createSimplePaletteValueFilter-CI-lP4ve.js",
+        "/assets/dividerClasses-Cl_f1tkL.js",
+        "/assets/scaleApi-BHJB3X64.js",
+        "/assets/searchCache-7L6Hhbmy.js",
+        "/assets/useLiveScaleWeight-DHV5cmxx.js"
+      ],
+      "body_chars": 431
+    },
+    {
+      "lang": "en",
+      "route": "/customization-delivery/orders",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 396.3,
+      "new_js_files": [
+        "/assets/SalesDocumentPrintable-D9YFJNDz.js",
+        "/assets/SalesOrdersPage-BrhItqTY.js",
+        "/assets/WorkflowPagination-CW40bsa2.js",
+        "/assets/circle-check-DInTjc9_.js",
+        "/assets/clock-C4UkH7Hf.js",
+        "/assets/customizationDeliveryService-DG5fHIVd.js",
+        "/assets/file-text-Bq-DA7n2.js",
+        "/assets/package-DbfX6vj2.js",
+        "/assets/printDocument-DW4D31Dp.js",
+        "/assets/printer-Dy18pNqP.js",
+        "/assets/productIcon-D2AO-1gA.js",
+        "/assets/refresh-cw-B-FMOTZC.js",
+        "/assets/truck-oRJ7JjSr.js"
+      ],
+      "body_chars": 597
+    },
+    {
+      "lang": "en",
+      "route": "/receipt",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 369.2,
+      "new_js_files": [
+        "/assets/ActionIconButton-BE2SE7B7.js",
+        "/assets/JsBarcode-Dl2evN9B.js",
+        "/assets/ReceiptWizard-C2wkVNCN.js",
+        "/assets/printBatchLabels-DcxERKk6.js",
+        "/assets/tamar-i733gUwE.js"
+      ],
+      "body_chars": 209
+    },
+    {
+      "lang": "en",
+      "route": "/issue",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 326.2,
+      "new_js_files": [
+        "/assets/IssueWizard-DXJZbtnU.js",
+        "/assets/arrow-left-DZKHNy5O.js",
+        "/assets/arrow-right-CFgnLLN_.js",
+        "/assets/circle-alert-Cw3Id-wa.js",
+        "/assets/layers-Cs8PNMFO.js",
+        "/assets/masterDataSearch-CGkVTPmA.js",
+        "/assets/plus-jkIQf_gp.js",
+        "/assets/productionIssueService-B5ldwRBr.js",
+        "/assets/trash-2-0zXMmMWN.js"
+      ],
+      "body_chars": 308
+    },
+    {
+      "lang": "en",
+      "instrumented_api_records": 12,
+      "bounded": true
+    },
+    {
+      "lang": "en",
+      "API_fixture_requests": 13,
+      "uncaught": [],
+      "writes": []
+    },
+    {
+      "lang": "ar",
+      "route": "/login",
+      "kind": "cold-production-fixture",
+      "elapsed_ms": 727.6,
+      "js_files": [
+        "/assets/api-r9jFnkCv.js",
+        "/assets/index-Xw-z9X3u.js",
+        "/assets/AppSpinner-B0lgtCzS.js",
+        "/assets/createLucideIcon-DnoL2B97.js",
+        "/assets/I18nContext-B8z1OFo1.js"
+      ],
+      "js_bytes": 562351,
+      "js_gzip_bytes": 164084
+    },
+    {
+      "lang": "ar",
+      "route": "/",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 95.9,
+      "new_js_files": [],
+      "body_chars": 568
+    },
+    {
+      "lang": "ar",
+      "route": "/scale/devices",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 365.5,
+      "new_js_files": [
+        "/assets/Box-BWhQbXqR.js",
+        "/assets/Button-BqkF7Z2g.js",
+        "/assets/ButtonBase-JPCFMfgh.js",
+        "/assets/CardContent-D8yiIiIQ.js",
+        "/assets/Chip-BV6omo1C.js",
+        "/assets/CircularProgress-BCSUiuVF.js",
+        "/assets/ConfirmDialog-ChxtxcTU.js",
+        "/assets/DialogTitle-7BY0LD42.js",
+        "/assets/EmptyState-CNUKEbbm.js",
+        "/assets/LoadingSkeleton-DWFO2NXe.js",
+        "/assets/PageHeader-u6pETJqK.js",
+        "/assets/ScaleDevicesPage-BUrMtUSt.js",
+        "/assets/SearchableSelect-BhvwjAuK.js",
+        "/assets/SearchableSelect-DLlfidkw.js",
+        "/assets/StandardDropdown-CvOKlnWg.js",
+        "/assets/TableRow-p2zxcLS6.js",
+        "/assets/TextField-DHwHOwLv.js",
+        "/assets/createSimplePaletteValueFilter-CI-lP4ve.js",
+        "/assets/dividerClasses-Cl_f1tkL.js",
+        "/assets/scaleApi-BHJB3X64.js",
+        "/assets/searchCache-7L6Hhbmy.js",
+        "/assets/useLiveScaleWeight-DHV5cmxx.js"
+      ],
+      "body_chars": 419
+    },
+    {
+      "lang": "ar",
+      "route": "/customization-delivery/orders",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 357.9,
+      "new_js_files": [
+        "/assets/SalesDocumentPrintable-D9YFJNDz.js",
+        "/assets/SalesOrdersPage-BrhItqTY.js",
+        "/assets/WorkflowPagination-CW40bsa2.js",
+        "/assets/circle-check-DInTjc9_.js",
+        "/assets/clock-C4UkH7Hf.js",
+        "/assets/customizationDeliveryService-DG5fHIVd.js",
+        "/assets/file-text-Bq-DA7n2.js",
+        "/assets/package-DbfX6vj2.js",
+        "/assets/printDocument-DW4D31Dp.js",
+        "/assets/printer-Dy18pNqP.js",
+        "/assets/productIcon-D2AO-1gA.js",
+        "/assets/refresh-cw-B-FMOTZC.js",
+        "/assets/truck-oRJ7JjSr.js"
+      ],
+      "body_chars": 567
+    },
+    {
+      "lang": "ar",
+      "route": "/receipt",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 353.4,
+      "new_js_files": [
+        "/assets/ActionIconButton-BE2SE7B7.js",
+        "/assets/JsBarcode-Dl2evN9B.js",
+        "/assets/ReceiptWizard-C2wkVNCN.js",
+        "/assets/printBatchLabels-DcxERKk6.js",
+        "/assets/tamar-i733gUwE.js"
+      ],
+      "body_chars": 198
+    },
+    {
+      "lang": "ar",
+      "route": "/issue",
+      "kind": "SPA-production-fixture",
+      "elapsed_ms": 336.2,
+      "new_js_files": [
+        "/assets/IssueWizard-DXJZbtnU.js",
+        "/assets/arrow-left-DZKHNy5O.js",
+        "/assets/arrow-right-CFgnLLN_.js",
+        "/assets/circle-alert-Cw3Id-wa.js",
+        "/assets/layers-Cs8PNMFO.js",
+        "/assets/masterDataSearch-CGkVTPmA.js",
+        "/assets/plus-jkIQf_gp.js",
+        "/assets/productionIssueService-B5ldwRBr.js",
+        "/assets/trash-2-0zXMmMWN.js"
+      ],
+      "body_chars": 247
+    },
+    {
+      "lang": "ar",
+      "instrumented_api_records": 12,
+      "bounded": true
+    },
+    {
+      "lang": "ar",
+      "API_fixture_requests": 13,
+      "uncaught": [],
+      "writes": []
+    }
+  ]
+}

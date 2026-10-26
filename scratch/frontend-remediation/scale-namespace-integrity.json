@@ -1,0 +1,22 @@
+[
+  {
+    "scope": "en.nav.scale",
+    "exactSourceUnchanged": true,
+    "unchangedIgnoringEol": true
+  },
+  {
+    "scope": "en.scale",
+    "exactSourceUnchanged": true,
+    "unchangedIgnoringEol": true
+  },
+  {
+    "scope": "ar.nav.scale",
+    "exactSourceUnchanged": true,
+    "unchangedIgnoringEol": true
+  },
+  {
+    "scope": "ar.scale",
+    "exactSourceUnchanged": true,
+    "unchangedIgnoringEol": true
+  }
+]

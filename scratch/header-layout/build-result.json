@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "node_modules/vite/bin/vite.js",
+    "build"
+  ],
+  "cwd": "C:\\Users\\hp\\Desktop\\receipt_from_production\\frontend",
+  "exit_code": 0,
+  "seconds": 2.13,
+  "css_sha256": "1dabc22097e649933d40a11258033ab35ec3e2a3acfd587601b83a4ff0ba3414"
+}
